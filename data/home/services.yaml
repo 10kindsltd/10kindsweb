@@ -1,25 +1,26 @@
 enable: true
 
-title: "Our main services"
-text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nec quam nibh elit pellentesque velit netus suspendisse. Sed enim, pretium, montes, in ut dolor urna."
+title: "How we work"
+text: "We meet you where you are and help you build towards where you want to be. Three clear engagements — from a no-obligation first conversation to ongoing strategic leadership."
+
 cards:
   - image: "images/services-web-development.png"
-    title: "Web development"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+    title: "Free Initial Consultation"
+    text: "Not sure where AI fits in your business? Start here. In a focused 30-minute session we get to know your business and give you an honest, jargon-free assessment of where AI can make a real difference. No obligation, no sales pitch."
     button:
-      label: "Learn more"
-      link: "#"
+      label: "Book now"
+      link: "/services/free-consultation/"
 
   - image: "images/services-web-development.png"
-    title: "Web development"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+    title: "AI Strategy Workshop"
+    text: "A structured deep-dive that maps your business processes, identifies your highest-impact AI opportunities, and produces a clear, prioritised roadmap you can act on straight away. Leave with a concrete plan, not a vague slide deck."
     button:
-      label: "Learn more"
-      link: "#"
+      label: "Find out more"
+      link: "/services/ai-strategy-workshop/"
 
   - image: "images/services-web-development.png"
-    title: "Web development"
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Molestie in malesuada eget fames purus ligula luctus tellus. Habitant condimentum sit gravida praesent. "
+    title: "Fractional AI Leadership"
+    text: "Get the strategic expertise of a Chief AI Officer without the full-time hire. We embed with your team on a part-time basis to lead your AI adoption, evaluate tools and vendors, upskill your people, and keep your business ahead of the curve."
     button:
-      label: "Learn more"
-      link: "#"
+      label: "Find out more"
+      link: "/services/fractional-ai-leadership/"

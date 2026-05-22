@@ -1,0 +1,65 @@
+{{ define "main" }}
+
+  {{/* Hero */}}
+  <section class="bg-tertiary/25 py-16 xl:py-24">
+    <div class="container mx-auto px-4 text-center">
+      <h1 class="mb-6 text-5xl font-bold xl:text-7xl">{{ .Title }}</h1>
+      {{ with .Params.tagline }}
+        <p class="mx-auto mt-4 max-w-2xl text-lg text-gray-500">{{ . }}</p>
+      {{ end }}
+      {{ with .Params.intro }}
+        <p class="mx-auto mt-6 max-w-3xl text-gray-600">{{ . }}</p>
+      {{ end }}
+      {{ with .Params.cta }}
+        <div class="mt-10 flex justify-center">
+          {{ partial "components/button/primary" (dict "label" .button "href" .link) }}
+        </div>
+      {{ end }}
+    </div>
+  </section>
+
+  {{/* Alternating sections */}}
+  {{ range $i, $s := .Params.sections }}
+    <section class="py-16 xl:py-24 {{ if eq (mod $i 2) 1 }}bg-tertiary/25{{ end }}">
+      <div class="container mx-auto px-4">
+        <div class="grid items-center gap-12 xl:grid-cols-2 xl:gap-20">
+
+          {{/* Image - alternates side */}}
+          <div class="{{ if eq (mod $i 2) 0 }}xl:order-2{{ end }} flex items-center justify-center">
+            {{ partial "utilities/image" (dict "src" $s.image "class" "max-w-full rounded-2xl") }}
+          </div>
+
+          {{/* Text + items */}}
+          <div>
+            <h2 class="mb-4 text-3xl font-bold xl:text-4xl">{{ $s.heading }}</h2>
+            {{ with $s.body }}
+              <p class="mb-8 text-gray-600">{{ . }}</p>
+            {{ end }}
+            {{ with $s.items }}
+              <div class="flex flex-col gap-6">
+                {{ range . }}
+                  <div class="border-l-4 border-gray-200 pl-5">
+                    <h3 class="mb-1 font-bold">{{ .title }}</h3>
+                    <p class="text-sm text-gray-600">{{ .text }}</p>
+                  </div>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* Bottom CTA */}}
+  {{ with .Params.cta }}
+    <section class="bg-tertiary/25 py-20">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="mb-6 text-3xl font-bold">{{ .heading }}</h2>
+        {{ partial "components/button/primary" (dict "label" .button "href" .link) }}
+      </div>
+    </section>
+  {{ end }}
+
+{{ end }}

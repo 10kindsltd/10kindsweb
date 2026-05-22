@@ -1,13 +1,10 @@
 enable: true
 
-title: "How to **level up** your business"
-text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Est faucibus tellus leo non pellentesque lorem vel. Arcu magna eros, potenti duis."
+title: "Confused how AI can help your business?"
+text: "Most businesses know they need to adopt AI — few know where to begin. We cut through the hype and build a practical AI strategy tailored to your business, your people, and your goals. We work remotely with clients across the UK."
 
 buttons:
-  - label: "How we work"
-    link: "#"
-
-  - label: "Let's talk"
-    link: ""
+  - label: "Get your free consultation"
+    link: "/contact/"
 
 image: "images/hero-image.png"
