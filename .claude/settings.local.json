@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(hugo server *)",
+      "WebFetch(domain:10kinds.co.uk)",
+      "Bash(cp -r _vendor/github.com/writeonlycode/hugo-up-business/layouts/* layouts/)",
+      "Bash(cp -r _vendor/github.com/writeonlycode/hugo-up-business/assets/* assets/)"
+    ]
+  }
+}

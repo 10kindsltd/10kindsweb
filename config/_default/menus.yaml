@@ -3,17 +3,17 @@ main:
     url: "/#hero"
     weight: 1
 
-  - name: "How we work"
-    url: "/#"
-    weight: 2
-
-  - name: "Our team"
-    url: "/#"
-    weight: 3
-
-  - name: "Pricing"
-    url: "/#"
-    weight: 4
+#  - name: "How we work"
+#    url: "/#"
+#    weight: 2
+#
+#  - name: "Our team"
+#    url: "/#"
+#    weight: 3
+#
+#  - name: "Pricing"
+#    url: "/#"
+#    weight: 4
 
   - name: "Blog"
     url: "/blog"
@@ -29,17 +29,17 @@ footer:
     url: "/#hero"
     weight: 1
 
-  - name: "How we work"
-    url: "/#"
-    weight: 2
-
-  - name: "Our team"
-    url: "/#"
-    weight: 3
-
-  - name: "Pricing"
-    url: "/#"
-    weight: 4
+#  - name: "How we work"
+#    url: "/#"
+#    weight: 2
+#
+#  - name: "Our team"
+#    url: "/#"
+#    weight: 3
+#
+#  - name: "Pricing"
+#    url: "/#"
+#    weight: 4
 
   - name: "Blog"
     url: "/blog"
