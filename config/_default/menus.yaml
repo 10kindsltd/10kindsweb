@@ -3,13 +3,13 @@ main:
     url: "/#hero"
     weight: 1
 
-  - name: "How we work"
+  - name: "Services"
     url: "/#services"
     weight: 2
 
-  - name: "Blog"
-    url: "/blog"
-    weight: 5
+#  - name: "Blog"
+#    url: "/blog"
+#    weight: 5
 
 buttons:
   - name: "Book a free call"

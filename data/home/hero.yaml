@@ -1,10 +1,10 @@
 enable: true
 
-title: "Confused how AI can help your business?"
-text: "Most businesses know they need to adopt AI — few know where to begin. We cut through the hype and build a practical AI strategy tailored to your business, your people, and your goals. We work remotely with clients across the UK."
+title: "I'll show you how AI can work in your business"
+text: "Most AI advice is either hype from people who can't build, or jargon from people who can't see the business case. I do both: senior AI strategy grounded in what's actually buildable, for SMEs who want results, not buzzwords."
 
 buttons:
-  - label: "Get your free consultation"
+  - label: "Book a free AI Clarity Call"
     link: "/contact/"
 
 image: "images/hero-image.png"
