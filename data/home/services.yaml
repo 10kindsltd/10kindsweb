@@ -1,26 +1,26 @@
 enable: true
 
-title: "What to expect"
+title: "How we work together"
 text: "I meet you where you are and help you build towards where you want to be — from a no-obligation first conversation to embedded strategic leadership. Most clients start with a conversation or a Discovery Day. Where it goes from there depends on you."
 
 cards:
   - image: "images/services-web-development.png"
-    title: "AI Clarity Call"
-    text: "Not sure where AI fits in your business? In a focused 30 minutes we get to know your business and give you an honest, jargon-free read on where AI could make a real difference. No obligation, no sales pitch - you leave with a clearer head either way."
+    title: "AI Clarity Call - free, 30 minutes"
+    text: "Not sure where AI fits in your business? In a focused 30 minutes I get to know your business and give you an honest, jargon-free read on where AI could make a real difference. No obligation, no sales pitch - you leave with a clearer head either way."
     button:
       label: "Book a call"
       link: "/services/clarity-call/"
 
   - image: "images/services-web-development.png"
     title: "AI Discovery Day"
-    text: "A focused strategic audit of your business. We map your workflows, pinpoint your highest-ROI AI opportunities, and hand you a prioritised roadmap you can act on straight away. You leave knowing exactly where to start and why - a concrete plan, not a vague slide deck."
+    text: "A focused strategic audit of your business. I map your top workflows, pinpoint your highest-ROI AI opportunities, and hand you a prioritised roadmap you can act on straight away. You leave knowing exactly where to start and why - a concrete plan, not a vague slide deck."
     button:
       label: "Find out more"
       link: "/services/ai-discovery-day/"
 
   - image: "images/services-web-development.png"
     title: "Ongoing AI Partnership"
-    text: "Senior AI expertise, on tap, for as long as you need it. Whether you want an advisor to guide decisions and sense-check vendors, or an embedded fractional AI leader accountable for delivery, we work at the level your business is ready for — combining board-level strategy with hands-on technical judgement. The expertise of a Chief AI Officer, without the full-time hire."
+    text: "Senior AI expertise, on tap, for as long as you need it. Whether you want an advisor to guide decisions and sense-check vendors, or an embedded fractional AI leader accountable for delivery, I work at the level your business is ready for. The expertise of a Chief AI Officer, without the full-time hire."
     button:
       label: "Find out more"
       link: "/services/ai-partnership/"

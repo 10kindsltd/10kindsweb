@@ -7,12 +7,12 @@ intro: "I sit on both sides of the table most consultants only see one of."
 sides:
   - heading: "On the business side"
     image: "images/uol-logo.svg"
-    text: "A postgraduate in business administration — so I can sit in your board meeting and talk ROI, priorities, and what's actually worth doing."
+    text: "A **postgraduate in Business Administration** — so I can sit in your board meeting and talk ROI, priorities, and what's actually worth doing."
   - heading: "On the technical side"
     image: "images/aws-cert.png"
     image_link: "https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url"
     image_link_new_window: true
-    text: "[AWS Certified in Generative AI](https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url) — so I can build prototypes to test ideas, brief and manage developers, and tell you straight whether what a vendor is proposing makes sense, technically and commercially."
+    text: "[AWS Certified Generative AI Professional](https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url) — so I can build prototypes to test ideas, brief and manage developers, and tell you straight whether what a vendor is proposing makes sense, technically and commercially."
 
 summary: "That combination is rare, and it's the whole point. You get strategy that's grounded in reality, and technical judgement that's grounded in your business goals — from one person, accountable to you. No hype. No wasted budget. Just a clear path from \"we should probably do something with AI\" to something that actually works."
 
