@@ -1,19 +1,51 @@
 <section id="why-me" class="py-16">
   <div class="container mx-auto px-4">
     <div class="mx-auto max-w-3xl">
-      {{ with .title }}
+      {{- $w := .whyme }}
+      {{- $sizeMap := dict }}
+      {{- range .creds.items }}
+        {{- if and .image .size }}
+          {{- $sizeMap = merge $sizeMap (dict .image .size) }}
+        {{- end }}
+      {{- end }}
+      {{ with $w.title }}
         <h2 class="mb-6 text-4xl font-bold xl:text-5xl">{{ . }}</h2>
       {{ end }}
-      {{ with .intro }}
+      {{ with $w.intro }}
         <p class="mb-8 text-lg">{{ . }}</p>
       {{ end }}
-      {{ if .sides }}
+      {{ if $w.sides }}
         <div class="mb-8 grid gap-6 xl:grid-cols-2">
-          {{ range .sides }}
+          {{ range $w.sides }}
             <div class="bg-tertiary rounded-2xl px-6 py-8">
-              {{ with .heading }}
-                <h3 class="text-primary mb-3 font-semibold">{{ . }}</h3>
-              {{ end }}
+              <div class="mb-3 flex items-center justify-between gap-4">
+                {{ with .heading }}
+                  <h3 class="text-primary font-semibold">{{ . }}</h3>
+                {{ end }}
+                {{ if .image }}
+                  {{ $side := . }}
+                  {{ with resources.Get $side.image }}
+                    {{ $isSVG := eq .MediaType.SubType "svg" }}
+                    {{ $size := index $sizeMap $side.image }}
+                    {{ $imgHTML := "" }}
+                    {{ if and $size (not $isSVG) }}
+                      {{ $resized := .Resize (printf "%dx" $size) }}
+                      {{ $imgHTML = printf "<img src=\"%s\" width=\"%d\" height=\"%d\" alt=\"\">" $resized.RelPermalink $resized.Width $resized.Height }}
+                    {{ else if $size }}
+                      {{ $imgHTML = printf "<img src=\"%s\" width=\"%d\" alt=\"\">" .RelPermalink $size }}
+                    {{ else }}
+                      {{ $imgHTML = printf "<img src=\"%s\" alt=\"\">" .RelPermalink }}
+                    {{ end }}
+                    {{ if $side.image_link }}
+                      {{ $target := "" }}
+                      {{ if $side.image_link_new_window }}{{ $target = " target=\"_blank\" rel=\"noopener noreferrer\"" }}{{ end }}
+                      <a href="{{ $side.image_link }}"{{ $target | safeHTMLAttr }}>{{ $imgHTML | safeHTML }}</a>
+                    {{ else }}
+                      {{ $imgHTML | safeHTML }}
+                    {{ end }}
+                  {{ end }}
+                {{ end }}
+              </div>
               {{ with .text }}
                 <div class="prose prose-sm">{{ . | markdownify }}</div>
               {{ end }}
@@ -21,10 +53,10 @@
           {{ end }}
         </div>
       {{ end }}
-      {{ with .summary }}
+      {{ with $w.summary }}
         <p class="mb-4">{{ . }}</p>
       {{ end }}
-      {{ with .footer }}
+      {{ with $w.footer }}
         <p class="text-gray-500">{{ . }}</p>
       {{ end }}
     </div>
