@@ -1,7 +1,7 @@
 enable: true
 
-title: "Ready to start your AI journey?"
+title: "Ready to see how AI fits into your business?"
 #image: "images/hero-image.png"
 button:
-  label: "Get your free consultation"
+  label: "Book your free AI Clarity Call"
   link: "/contact/"

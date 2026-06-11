@@ -1,0 +1,32 @@
+<section id="why-me" class="py-16">
+  <div class="container mx-auto px-4">
+    <div class="mx-auto max-w-3xl">
+      {{ with .title }}
+        <h2 class="mb-6 text-4xl font-bold xl:text-5xl">{{ . }}</h2>
+      {{ end }}
+      {{ with .intro }}
+        <p class="mb-8 text-lg">{{ . }}</p>
+      {{ end }}
+      {{ if .sides }}
+        <div class="mb-8 grid gap-6 xl:grid-cols-2">
+          {{ range .sides }}
+            <div class="bg-tertiary rounded-2xl px-6 py-8">
+              {{ with .heading }}
+                <h3 class="text-primary mb-3 font-semibold">{{ . }}</h3>
+              {{ end }}
+              {{ with .text }}
+                <div class="prose prose-sm">{{ . | markdownify }}</div>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+      {{ with .summary }}
+        <p class="mb-4">{{ . }}</p>
+      {{ end }}
+      {{ with .footer }}
+        <p class="text-gray-500">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+</section>

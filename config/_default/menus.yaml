@@ -3,9 +3,13 @@ main:
     url: "/#hero"
     weight: 1
 
+  - name: "Why me"
+    url: "/#why-me"
+    weight: 2
+
   - name: "Services"
     url: "/#services"
-    weight: 2
+    weight: 3
 
 #  - name: "Blog"
 #    url: "/blog"
