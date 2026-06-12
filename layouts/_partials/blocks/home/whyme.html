@@ -57,7 +57,7 @@
         <p class="mb-4">{{ . }}</p>
       {{ end }}
       {{ with $w.footer }}
-        <p class="text-gray-500">{{ . }}</p>
+        <p class="text-gray-500">{{ .|markdownify }}</p>
       {{ end }}
     </div>
   </div>

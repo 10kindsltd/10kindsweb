@@ -1,0 +1,55 @@
+<section id="contact" class="py-16">
+  <div class="container mx-auto px-4">
+    <div class="mx-auto max-w-xl">
+      {{ with .title }}
+        <h2 class="mb-2 text-4xl font-bold xl:text-5xl">{{ . }}</h2>
+      {{ end }}
+      {{ with .text }}
+        <p class="text-lg mb-8 text-gray-500">{{ . }}</p>
+      {{ end }}
+      <form id="contact_form" action="#" method="POST" class="flex flex-col gap-6">
+        <input type="hidden" name="domain" value="10kinds.co.uk" />
+
+        <div class="flex flex-col gap-2">
+          <label for="sender_name" class="font-semibold">Name</label>
+          <input
+            type="text"
+            id="sender_name"
+            name="sender_name"
+            placeholder="Your name"
+            class="rounded-lg bg-tertiary border border-gray-300 px-4 py-3 focus:border-gray-500 focus:outline-none"
+          />
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label for="sender_email" class="font-semibold">Email address</label>
+          <input
+            type="email"
+            id="sender_email"
+            name="sender_email"
+            placeholder="you@example.com"
+            class="rounded-lg bg-tertiary border border-gray-300 px-4 py-3 focus:border-gray-500 focus:outline-none"
+          />
+        </div>
+
+        <div class="flex flex-col gap-2">
+          <label for="body" class="font-semibold">Message</label>
+          <p class="text-sm text-gray-500">Please include your phone number if you'd like me to call you.</p>
+          <textarea
+            id="body"
+            name="body"
+            rows="7"
+            placeholder="Tell us about your business and what you're hoping to achieve with AI..."
+            class="rounded-lg bg-tertiary border border-gray-300 px-4 py-3 focus:border-gray-500 focus:outline-none"
+          ></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="bg-primary hover:bg-primary/90 rounded px-8 py-2 text-white duration-500">
+            Send message
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

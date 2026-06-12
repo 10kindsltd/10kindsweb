@@ -5,6 +5,6 @@ text: "Most AI advice is either hype from people who can't build, or jargon from
 
 buttons:
   - label: "Book a free AI Clarity Call"
-    link: "/contact/"
+    link: "/#contact"
 
 image: "images/hero-image.png"

@@ -16,4 +16,6 @@
   {{ with .Site.Data.home.bespoke }}{{ if .enable }}{{ partial "blocks/home/bespoke.html" . }}{{ end }}{{ end }}
 
   {{ with .Site.Data.home.cta }}{{ if .enable }}{{ partial "blocks/home/cta.html" . }}{{ end }}{{ end }}
+
+  {{ with .Site.Data.home.contact }}{{ if .enable }}{{ partial "blocks/home/contact.html" . }}{{ end }}{{ end }}
 {{ end }}
