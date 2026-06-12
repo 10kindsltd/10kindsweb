@@ -10,8 +10,8 @@ favicons:
   backgroundColor: "#FFFFFF"
   faviconColor: "#000000"
 
-#social:
-#  dribbble: "#"
+social:
+  linkedin: "https://www.linkedin.com/in/al-bates-uk/"
 #  instagram: "#"
 #  facebook: "#"
 #  twitter: "#"

@@ -8,9 +8,9 @@
         <p class="text-center text-sm xl:text-start">{{ site.Params.description }}</p>
         {{ with .Site.Params.social }}
           <ul class="flex gap-4">
-            {{ with .dribbble }}
-              <li class="bg-primary/10 text-primary flex size-8 items-center justify-center rounded-full">
-                <a class="" href="{{ . }}" aria-label="Dribble">{{ partial "icons/dribbble.html" }}</a>
+            {{ with .linkedin }}
+              <li class="flex size-8 items-center justify-center rounded-full">
+                <a class="" href="{{ . }}" aria-label="LinkedIn" target="_blank">{{ partial "icons/linkedin.html" }}</a>
               </li>
             {{ end }}
             {{ with .instagram }}
