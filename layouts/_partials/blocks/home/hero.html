@@ -6,9 +6,15 @@
           {{ . | markdownify }}
         </h1>
       {{ end }}
+      <div>
       {{ with .text }}
-        <p class="text-center xl:text-start text-lg">{{ . | markdownify }}</p>
+        {{ range (split . "\n") }}
+          {{ if . }}
+            <p class="text-center xl:text-start text-lg mb-4">{{ . | markdownify }}</p>
+          {{ end }}
+        {{ end }}
       {{ end }}
+      </div>
       {{ if .buttons }}
         <div class="flex flex-col items-center gap-4 xl:flex-row xl:gap-8">
           {{ range $i, $e := .buttons }}
