@@ -91,7 +91,6 @@
       "justify-end",
       "justify-start",
       "lg:grid-cols-2",
-      "lg:m-0",
       "m-auto",
       "max-w-2xl",
       "max-w-3xl",
