@@ -64,7 +64,6 @@
       "fixed",
       "flex",
       "flex-col",
-      "flex-row",
       "focus:border-gray-500",
       "focus:outline-none",
       "font-bold",
