@@ -88,6 +88,7 @@
       "items-start",
       "justify-between",
       "justify-center",
+      "justify-end",
       "justify-start",
       "lg:grid-cols-2",
       "max-w-2xl",
