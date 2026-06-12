@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Free Initial Consultation"
 tagline: "Find out where AI can make a real difference to your business — with no obligation and no jargon."
 intro: "Most business owners know AI matters. Very few know where to actually start. This free one-hour call gives you clarity: an honest, expert view of where AI could genuinely help your business, what it would take, and whether it's worth pursuing."

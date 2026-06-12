@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Fractional AI Leadership"
 tagline: "Senior AI expertise, embedded in your business — without the full-time cost."
 intro: "For SMEs that are serious about AI adoption but not yet ready to hire a full-time Chief AI Officer, Fractional AI Leadership gives you exactly that expertise on a flexible, part-time basis. We become a trusted part of your leadership team — helping you move fast, avoid expensive mistakes, and build an AI capability that lasts."

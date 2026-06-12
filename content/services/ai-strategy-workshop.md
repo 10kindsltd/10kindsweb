@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "AI Strategy Workshop"
 tagline: "Leave with a concrete AI roadmap — not a vague slide deck."
 intro: "The AI Strategy Workshop is a structured, half-day engagement that goes well beyond initial conversation. We dig deep into how your business works, map the processes that matter most, score your AI opportunities by impact and feasibility, and hand you a prioritised roadmap you can start executing the following week."
