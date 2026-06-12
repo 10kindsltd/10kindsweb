@@ -1,7 +1,7 @@
 enable: true
 
 title: "What I offer"
-text: "I meet you where you are and help you build towards where you want to be — from a no-obligation first conversation to embedded strategic leadership. Most clients start with a conversation or a Discovery Day. Where it goes from there depends on you."
+text: "I meet you where you are and help you build towards where you want to be, from a no-obligation first conversation to embedded strategic leadership – whatever suits you."
 
 cards:
   - image: "images/services-web-development.png"
@@ -15,7 +15,7 @@ cards:
   - image: "images/services-web-development.png"
     supertitle: "About a day"
     title: "AI Discovery"
-    text: "A focused strategic audit of your business. I map your top workflows, pinpoint your highest-ROI AI opportunities, and hand you a prioritised roadmap you can act on straight away. You leave knowing exactly where to start and why."
+    text: "A focused strategic audit of your business. I help identify your top workflows, pinpoint your highest-ROI AI opportunities, and hand you a prioritised roadmap you can act on straight away. You leave knowing exactly where to start and why."
     button:
       label: "Find out more"
       link: "/#contact"

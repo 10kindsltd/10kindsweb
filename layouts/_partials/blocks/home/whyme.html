@@ -57,7 +57,7 @@
           {{ end }}
         </div>
       {{ end }}
-      {{ with $w.summary }}
+      {{ with $w.summary|markdownify }}
         <p class="mb-4">{{ . }}</p>
       {{ end }}
       {{ with $w.footer }}

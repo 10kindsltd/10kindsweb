@@ -31,15 +31,16 @@
           </ul>
         {{ end }}
       </div>
-      <div>
-        {{ with resources.Get "images/aws-cert-102.png" }}
+      <div class="m-auto xl:m-0">
+        {{ with resources.Get "images/aws-cert.png" }}
+          {{ $img := .Resize "100x" }}
           <a href="https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url" target="_blank" rel="noopener noreferrer">
-            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="AWS Certified Generative AI Professional" />
+            <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="AWS Certified Generative AI Professional" />
           </a>
         {{ end }}
       </div>
       <div>
-        <h2 class="mb-2 text-center text-lg font-bold xl:text-start">About us</h2>
+        <h2 class="mb-2 text-center text-lg font-bold xl:text-start">About</h2>
         <ul class="flex flex-col gap-1 text-sm">
           {{ range .Site.Menus.footer }}
             <li class="text-center xl:text-start">
