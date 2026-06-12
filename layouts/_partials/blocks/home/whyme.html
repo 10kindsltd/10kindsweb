@@ -17,13 +17,13 @@
       {{ if $w.sides }}
         <div class="mb-8 grid gap-6 xl:grid-cols-2">
           {{ range $w.sides }}
+            {{ $side := . }}
             <div class="bg-tertiary rounded-2xl px-6 py-8">
               <div class="mb-3 flex items-center justify-between gap-4">
                 {{ with .heading }}
                   <h3 class="text-primary font-semibold">{{ . }}</h3>
                 {{ end }}
                 {{ if .image }}
-                  {{ $side := . }}
                   {{ with resources.Get $side.image }}
                     {{ $isSVG := eq .MediaType.SubType "svg" }}
                     {{ $size := index $sizeMap $side.image }}
@@ -47,7 +47,11 @@
                 {{ end }}
               </div>
               {{ with .text }}
-                <div class="prose prose-sm">{{ . | markdownify }}</div>
+                {{ $html := . | markdownify }}
+                {{ if $side.text_links_new_window }}
+                  {{ $html = $html | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` }}
+                {{ end }}
+                <div class="prose prose-sm">{{ $html | safeHTML }}</div>
               {{ end }}
             </div>
           {{ end }}

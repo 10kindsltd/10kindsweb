@@ -1,6 +1,6 @@
 <footer class="bg-tertiary/25 py-16">
   <div class="container mx-auto px-4">
-    <div class="mb-8 flex flex-col gap-8 xl:flex-row xl:justify-between">
+    <div class="mb-8 flex flex-col gap-8 xl:flex-row">
       <div class="flex flex-col items-center gap-4 xl:items-start xl:max-w-xs">
         <a class="flex items-center" href="{{ site.BaseURL }}">
           <span class="text-xl xl:text-3xl" style="font-family: 'Comfortaa', sans-serif; font-weight: 700; color: #f2af0d;">{{ site.Title }}</span>
@@ -29,6 +29,13 @@
               </li>
             {{ end }}
           </ul>
+        {{ end }}
+      </div>
+      <div>
+        {{ with resources.Get "images/aws-cert-102.png" }}
+          <a href="https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url" target="_blank" rel="noopener noreferrer">
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="AWS Certified Generative AI Professional" />
+          </a>
         {{ end }}
       </div>
       <div>
