@@ -9,7 +9,8 @@
     {{ if .cards }}
       <div class="grid gap-12 xl:grid-cols-3">
         {{ range .cards }}
-          <div class="relative bg-tertiary rounded-4xl px-6 py-12 xl:px-12 xl:py-16 flex flex-col items-center justify-center hover:opacity-80 duration-300">
+          <div class="relative bg-tertiary rounded-4xl px-6 pt-6 pb-12 xl:px-12 xl:pb-16 xl:pt-8 flex flex-col items-center justify-start hover:opacity-80 duration-300">
+            {{ with .supertitle }}<p class="text-primary mb-4 text-center text-sm font-medium uppercase tracking-wider">{{ . }}</p>{{ end }}
             {{ with .image }}{{ partial "utilities/image" (dict "src" .) }}{{ end }}
             {{ with .title }}<h2 class="mb-4 text-center text-2xl font-semibold">{{ . }}</h2>{{ end }}
             {{ with .text }}<p class="mb-8 text-center">{{ . }}</p>{{ end }}
