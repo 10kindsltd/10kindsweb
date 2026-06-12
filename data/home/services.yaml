@@ -7,7 +7,7 @@ cards:
   - image: "images/telephone.png"
     supertitle: "Free, 30 minutes"
     title: "AI Clarity Call"
-    text: "Not sure where AI fits in your business? In a focused 30 minutes I get to know your business and give you an honest, jargon-free read on where AI could make a real difference. No obligation, no sales pitch."
+    text: "Not sure where AI fits in your business? In a focused 30 minutes I get to know your business and give you a clear assessment of where AI could make a real difference."
     button:
       label: "Book a call"
       link: "/#contact"
@@ -15,7 +15,7 @@ cards:
   - image: "images/services-web-development.png"
     supertitle: "About a day"
     title: "AI Discovery"
-    text: "A focused strategic audit of your business. I help identify your top workflows, pinpoint your highest-ROI AI opportunities, and hand you a prioritised roadmap you can act on straight away. You leave knowing exactly where to start and why."
+    text: "A focused strategic audit of your business to identify your highest-ROI AI opportunities. You get a prioritised roadmap so you know exactly where to start and why."
     button:
       label: "Find out more"
       link: "/#contact"
@@ -23,7 +23,7 @@ cards:
   - image: "images/handshake.png"
     supertitle: "On-going"
     title: "On-going AI Partnership"
-    text: "Senior AI expertise, on tap. Whether you want an advisor to guide decisions and sense-check vendors, or an embedded fractional AI leader accountable for delivery, I work at the level your business is ready for. "
+    text: "Senior AI expertise, on tap. Whether you want an advisor to guide decisions and sense-check vendors, or a fractional AI leader, I work at the level your business is ready for. "
     button:
       label: "Get in touch"
       link: "/#contact"
