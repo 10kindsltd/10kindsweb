@@ -1,0 +1,13 @@
+{{ $title := .Title }}
+{{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
+{{ $description := .Site.Params.description }}
+{{ with .Description }}{{ $description = . }}{{ end }}
+{{ $url := .Permalink }}
+{{ $type := "website" }}
+{{ if .IsPage }}{{ $type = "article" }}{{ end }}
+
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta property="og:type" content="{{ $type }}" />
+<meta property="og:url" content="{{ $url }}" />
+<meta property="og:site_name" content="{{ .Site.Title }}" />

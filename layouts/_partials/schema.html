@@ -1,0 +1,11 @@
+{{ $description := .Site.Params.description }}
+{{ with .Description }}{{ $description = . }}{{ end }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": {{ .Site.Title | jsonify }},
+  "description": {{ $description | jsonify }},
+  "url": {{ .Site.BaseURL | jsonify }}
+}
+</script>
