@@ -44,7 +44,7 @@ problem:
   callout: "Wherever your team is shuffling documents by hand is an opportunity for a workflow to do the heavy lifting"
   
 tldr_quote: 
-  quote: I help brokerages decide where AI pays and where it doesn't, then lead the work to make it happen — strategy first, then build or buy.
+  quote: I help brokerages decide where AI pays and where it doesn't, then lead the work to make it happen — strategy first, then build or buy and on-going leadership.
   source: Alan Bates | Founder, 10 Kinds
 
 # --- CAPABILITIES: what AI is good for ---
@@ -129,5 +129,5 @@ faq:
 # --- CONTACT: soft close + form ---
 contact:
   heading: "Tell me how you work today"
-  body: "No pitch. I'd genuinely like to understand how the document work lands on your desk right now. Fifteen minutes — and if AI isn't the answer, I'll say so."
+  body: "No pitch. I'd genuinely like to understand how the document work lands on your desk right now. Fifteen minutes — and if I can't add value, I'll say so."
 ---
