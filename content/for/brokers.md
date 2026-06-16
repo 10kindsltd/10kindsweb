@@ -105,6 +105,8 @@ faq:
       a: "Whatever you're ready for — occasional advice, sense-checking vendors, or acting as your fractional AI lead. It's pitched at the level that suits your firm, can evolve as you grow and priced accordingly."      
     - q: "Who do you work with?"
       a: "Established SME brokerages — roughly 5 to 50 staff, without an in-house dev team."
+    - q: "Is our data safe?"
+      a: "Yes. Anything I build runs on infrastructure scoped to your firm, sees only the documents you point it at, and never feeds public AI models."
 
 # --- CONTACT: soft close + form ---
 contact:
