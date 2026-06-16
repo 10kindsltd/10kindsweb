@@ -68,26 +68,7 @@
           </div>
         {{ end }}
       </div>
-    </section>
-  {{ end }}
-
-  {{/* ---------- HOW IT WORKS ---------- */}}
-  {{ with .Params.how_it_works }}
-    <section id="how-it-works" class="bg-tertiary/25 py-16">
-      <div class="container mx-auto px-4">
-        {{ with .heading }}<h2 class="mb-12 text-center text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
-        {{ with .steps }}
-          <div class="grid gap-8 xl:grid-cols-3">
-            {{ range $i, $s := . }}
-              <div class="flex flex-col items-start gap-3">
-                <span class="bg-primary flex h-10 w-10 items-center justify-center rounded-full font-bold text-white">{{ add $i 1 }}</span>
-                {{ with $s.heading }}<h3 class="text-2xl font-semibold">{{ . }}</h3>{{ end }}
-                {{ with $s.body }}<p>{{ . | markdownify }}</p>{{ end }}
-              </div>
-            {{ end }}
-          </div>
-        {{ end }}
-      </div>
+      <p class="text-lg bg-yellow-200 mt-6 py-1 px-2 mx-auto max-w-3xl text-center">{{ .callout }}</p>
     </section>
   {{ end }}
 

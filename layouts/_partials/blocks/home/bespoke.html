@@ -1,12 +1,16 @@
-<section class="bg-gray-900 py-16">
+<section class="bg-primary/10 py-16">
   <div class="container mx-auto px-4">
     <div class="flex flex-col items-start gap-6 xl:flex-row xl:items-center xl:justify-between">
       <div class="max-w-2xl">
         {{ with .title }}
-          <h2 class="mb-3 text-2xl font-bold text-white xl:text-3xl">{{ . }}</h2>
+          <h2 class="mb-3 text-2xl font-bold  xl:text-3xl">{{ . }}</h2>
         {{ end }}
         {{ with .text }}
-          <p class="text-gray-400">{{ . }}</p>
+          {{ range (split . "\n") }}
+            {{ if . }}
+              <p class="mb-3">{{ . | markdownify }}</p>
+            {{ end }}
+          {{ end }}
         {{ end }}
       </div>
       {{ with .button }}

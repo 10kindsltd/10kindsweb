@@ -18,31 +18,21 @@ hero:
 
 # --- PROBLEM: name their problem in their words ---
 problem:
-  heading: "Renewal season, by hand"
-  intro: "When a commercial risk goes to the open market, the quotes don't come back tidy. They come back as a stack of PDFs — each insurer with its own layout, its own wording, and its own way of burying the bit that matters."
+  heading: "That's just one workflow. Your firm is full of them."
+  intro: "The demo handles a single job — but brokerages run on documents, and most have the same quiet time-sinks: staff pulling detail out of PDFs, checking it, chasing what's missing, and rekeying it somewhere else. Sound familiar?"
   points:
-    - heading: "Five insurers, five formats"
-      body: "Limits, excesses, exclusions and subjectivities sit in a different place on every schedule. There's no apples-to-apples until someone builds one by hand."
-    - heading: "Compared against the clock"
-      body: "Renewal deadlines don't move. The comparison gets done late, fast and tired — exactly when something gets missed."
-    - heading: "The cheapest quote can be the worst"
-      body: "A lower premium often hides a flood exclusion, a shorter indemnity period or an unmet subjectivity. Miss it, and it's your E&O exposure — not the insurer's."
-
-# --- HOW IT WORKS: what the demo above is doing ---
-how_it_works:
-  heading: "What the demo does"
-  steps:
-    - heading: "Reads"
-      body: "Ingests every quote document, whatever the format — clean PDF, scan or email."
-    - heading: "Normalises"
-      body: "Maps each insurer's wording onto the same fields, so five different schedules become one clean side-by-side."
-    - heading: "Flags"
-      body: "Highlights where cover, limits or conditions differ from the rest, so nothing hides in the fine print."
-
+    - heading: "Policy checking"
+      body: "Insurer documents come back, and someone checks them line by line against what was agreed — catching the errors before the client does."
+    - heading: "Claims paperwork"
+      body: "Claims packs land as a jumble of forms, invoices and reports. Someone extracts the detail, spots what's missing, and chases it."
+    - heading: "Renewal prep & submissions"
+      body: "Current cover, claims history and client details pulled together into a submission the market will actually quote on — re-keyed from documents you already hold."
+  callout: "Wherever your team is shuffling documents by hand is an opportunity for a workflow to do the heavy lifting"
+  
 # --- HONESTY: the "where you don't need me" trust block. Keep this. ---
 honesty:
   heading: "Where you don't need me"
-  body: "For quote comparison on its own, there are already good off-the-shelf tools. If that's all you need, I can help you choose a vendor. I earn my keep helping you identify the highest-ROI AI opportunities specific to how your firm works and providing whatever leadership you need."
+  body: "For quote comparison on its own, there are already good off-the-shelf tools. If that's all you need, I can help you choose a vendor. I earn my keep helping you identify the highest-ROI AI opportunities for your firm and providing whatever leadership you need."
 
 # --- WHY ME: two scannable cards (cols 1–2 on lg) + headshot (col 3). ---
 why_me:
@@ -75,7 +65,7 @@ services:
     - name: "AI Discovery"
       price: "From £1,250 · about a day"
       image: "images/services-web-development.png"
-      body: "A focused audit of your document and back-office workflows to find the highest-ROI opportunities. You leave with a prioritised roadmap — what to do, what to buy, what to skip, and why."
+      body: "A focused audit of your document and back-office workflows to find the highest-ROI opportunities. You get a prioritised roadmap so you know exactly where to start and why."
       button: { label: "Find out more", href: "#contact" }
     - name: "Ongoing AI Partnership"
       image: "images/handshake.png"

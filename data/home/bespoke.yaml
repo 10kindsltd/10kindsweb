@@ -1,7 +1,10 @@
 enable: true
 
 title: "Need something built?"
-text: "I can assess your options, help you choose the right supplier, and keep a technical eye on delivery — so you get what you paid for, built the way it should be. Want to test an idea first? I can create a working prototype before you commit to the full build.  Scoped and priced separately."
+text: |
+  I can assess your options, help you choose the right supplier, and keep a technical eye on delivery — so you get what you paid for, built the way it should be. 
+  
+  Want to test an idea first? I can create a working prototype before you commit to the full build.  Scoped and priced separately.
 button:
   label: "Let's talk"
   link: "/#contact"
