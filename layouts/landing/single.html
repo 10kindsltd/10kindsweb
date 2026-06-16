@@ -1,0 +1,188 @@
+{{ define "main" }}
+
+  {{/* ---------- HERO (video demo) ---------- */}}
+  {{ with .Params.hero }}
+    <section id="hero" class="hero py-8 lg:py-16">
+      <div class="container mx-auto grid items-center gap-12 px-4 lg:grid-cols-2 lg:gap-16">
+        <div class="flex flex-col justify-center gap-6 lg:gap-8">
+          {{ with .eyebrow }}
+            <p class="text-primary text-center text-sm font-medium tracking-wider uppercase lg:text-start">{{ . }}</p>
+          {{ end }}
+          {{ with .headline }}
+            <h1 class="title text-primary text-center text-4xl font-bold lg:text-start lg:text-6xl">{{ . | markdownify }}</h1>
+          {{ end }}
+          {{ with .subhead }}
+            <p class="text-center text-lg lg:text-start">{{ . | markdownify }}</p>
+          {{ end }}
+          {{ with .button_primary }}
+            <div class="flex justify-center lg:justify-start">
+              {{ partial "components/button/primary" . }}
+            </div>
+          {{ end }}
+        </div>
+
+        <div class="flex flex-col items-start gap-3">
+          {{ with .video_url }}
+            <div class="aspect-video w-full overflow-hidden rounded-4xl bg-black">
+              <iframe
+                class="h-full w-full"
+                src="{{ . }}"
+                title="Demo video"
+                loading="lazy"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          {{ end }}
+          {{ with .caption }}
+            <p class="text-sm text-gray-500">{{ . | markdownify }}</p>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* ---------- PROBLEM ---------- */}}
+  {{ with .Params.problem }}
+    <section id="problem" class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="mx-auto max-w-3xl text-center">
+          {{ with .heading }}<h2 class="mb-6 text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
+          {{ with .intro }}<p class="mb-12 text-lg">{{ . | markdownify }}</p>{{ end }}
+        </div>
+        {{ with .points }}
+          <div class="grid gap-6 xl:grid-cols-3">
+            {{ range . }}
+              <div class="bg-tertiary rounded-2xl px-6 py-8">
+                {{ with .heading }}<h3 class="text-primary mb-3 font-semibold">{{ . }}</h3>{{ end }}
+                {{ with .body }}<p>{{ . | markdownify }}</p>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* ---------- HOW IT WORKS ---------- */}}
+  {{ with .Params.how_it_works }}
+    <section id="how-it-works" class="bg-tertiary/25 py-16">
+      <div class="container mx-auto px-4">
+        {{ with .heading }}<h2 class="mb-12 text-center text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
+        {{ with .steps }}
+          <div class="grid gap-8 xl:grid-cols-3">
+            {{ range $i, $s := . }}
+              <div class="flex flex-col items-start gap-3">
+                <span class="bg-primary flex h-10 w-10 items-center justify-center rounded-full font-bold text-white">{{ add $i 1 }}</span>
+                {{ with $s.heading }}<h3 class="text-2xl font-semibold">{{ . }}</h3>{{ end }}
+                {{ with $s.body }}<p>{{ . | markdownify }}</p>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* ---------- WHY ME (cards in cols 1–2 on lg, headshot in col 3) ---------- */}}
+  {{ with .Params.why_me }}
+    <section id="why-me" class="py-16">
+      <div class="container mx-auto px-4">
+        {{ with .heading }}<h2 class="mb-6 text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
+        {{ with .intro }}<p class="mb-8 text-lg">{{ . | markdownify }}</p>{{ end }}
+        <div class="grid gap-6 lg:grid-cols-3 lg:items-start">
+          <div class="lg:col-span-2">
+            <div class="grid gap-6 sm:grid-cols-2">
+              {{ range .sides }}
+                <div class="bg-tertiary rounded-2xl px-6 py-8">
+                  <div class="mb-4 flex items-center justify-between gap-4">
+                    {{ with .heading }}<h3 class="text-primary font-semibold">{{ . }}</h3>{{ end }}
+                    {{ with .image }}{{ with resources.Get . }}<img src="{{ .RelPermalink }}" alt="" class="h-10 w-auto object-contain" />{{ end }}{{ end }}
+                  </div>
+                  {{ with .text }}<div class="prose prose-sm">{{ . | markdownify }}</div>{{ end }}
+                </div>
+              {{ end }}
+            </div>
+            {{ with .summary }}<p class="mt-6 text-lg">{{ . | markdownify }}</p>{{ end }}
+            {{ with $.Params.honesty }}
+              <div class="bg-tertiary mt-6 rounded-2xl px-6 py-8">
+                {{ with .heading }}<h3 class="text-2xl text-primary mb-3 font-semibold">{{ . }}</h3>{{ end }}
+                {{ with .body }}<p>{{ . | markdownify }}</p>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+          {{ with .image }}
+            <div class="flex flex-col items-start gap-3">
+              {{ partial "utilities/image" (dict "src" . "class" "max-w-full object-cover object-center rounded-2xl") }}
+              {{ with $.Params.why_me.consultant_name }}
+                <div class="flex w-full items-center justify-between">
+                  <p class="text-lg">{{ . }}</p>
+                  {{ with site.Params.social.linkedin }}
+                    <a class="justify-center underline" href="{{ . }}" target="_blank" rel="noopener noreferrer">View Linkedin</a>
+                  {{ end }}
+                </div>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* ---------- SERVICES (offer ladder) ---------- */}}
+  {{ with .Params.services }}
+    <section id="services" class="bg-tertiary/25 py-16">
+      <div class="container mx-auto px-4">
+        {{ with .heading }}<h2 class="mb-12 text-center text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
+        {{ with .tiers }}
+          <div class="grid gap-8 xl:grid-cols-3">
+            {{ range . }}
+              <div class="relative flex flex-col rounded-4xl px-8 py-10 duration-300 hover:opacity-90 {{ if .featured }}bg-primary text-white{{ else }}bg-white border border-gray-200{{ end }}">
+                {{ with .name }}<h3 class="text-2xl font-semibold">{{ . }}</h3>{{ end }}
+                {{ with .price }}<p class="mt-2 mb-6 font-medium opacity-80">{{ . }}</p>{{ end }}
+                {{ with .body }}<p class="mb-8 grow">{{ . | markdownify }}</p>{{ end }}
+                {{ with .button }}
+                  <a href="{{ .href }}" class="flex items-center justify-center gap-2 rounded border border-current px-8 py-2 duration-500 after:absolute after:inset-0 after:content-['']">
+                    {{ .label }}
+                    {{ partial "icons/arrow-right" }}
+                  </a>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* ---------- FAQ ---------- */}}
+  {{ with .Params.faq }}
+    <section id="faq" class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="mx-auto max-w-3xl">
+          {{ with .heading }}<h2 class="mb-10 text-center text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
+          {{ with .items }}
+            <div class="flex flex-col gap-4">
+              {{ range . }}
+                <details class="bg-tertiary group rounded-2xl px-6 py-5">
+                  <summary class="flex cursor-pointer items-center justify-between font-semibold">
+                    {{ .q }}
+                    <span class="text-primary text-xl transition-transform group-open:rotate-45">+</span>
+                  </summary>
+                  {{ with .a }}<p class="mt-4">{{ . | markdownify }}</p>{{ end }}
+                </details>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* ---------- CONTACT (reuse home contact form) ---------- */}}
+  {{ with .Params.contact }}
+    {{ partial "blocks/home/contact.html" (dict "title" .heading "text" .body) }}
+  {{ end }}
+
+{{ end }}

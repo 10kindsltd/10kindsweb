@@ -1,11 +1,10 @@
-# Broker landing page — content only.
-# Sections are listed top-to-bottom in the order they should render on the page.
+---
+# Broker landing page — content lives in front matter, rendered by layouts/landing/single.html
+type: landing
+title: "AI document tools for commercial insurance brokers"
+description: "Automated first-pass on the quotes, claims packs and schedules that still land as PDFs. AI extracts and flags; you decide."
 
-meta:
-  title: "AI document tools for commercial insurance brokers"
-  description: "Automated first-pass on the quotes, claims packs and schedules that still land as PDFs. AI extracts and flags; you decide."
-
-# --- HERO: their pain + your promise + main button ---
+# --- HERO: their pain + your promise + main button + video demo ---
 hero:
   eyebrow: "For UK commercial insurance brokers"
   headline: "Your renewal quotes come back in five formats. Compare them in seconds."
@@ -42,14 +41,20 @@ honesty:
   heading: "Where you don't need me"
   body: "For quote comparison on its own, there are already good off-the-shelf tools. If that's all you need, I can help you choose a vendor. I earn my keep on the document work that's specific to how your firm runs — the reconciliations, the claims packs, the back-office grind that no product covers because it's specific to you."
 
-# --- WHY ME: your credibility, framed to serve them ---
+# --- WHY ME: two scannable cards (cols 1–2 on lg) + headshot (col 3). ---
 why_me:
   heading: "Why work with me"
-  body: "Most people who advise on AI can talk business or build — rarely both. I do both: I can sit with your principals and talk cost, risk and priorities, and I can build the pipeline and tell you straight whether a vendor's claims hold up. Everything I build keeps a person in the loop — the AI does the first pass, your team makes the decision. One person, accountable to you, working with firms across the UK."
-  proof:
-    - "AWS Certified Generative AI Professional"
-    - "Postgraduate in Business Administration"
-    - "Human-in-the-loop by design — AI extracts, you decide"
+  intro: "Most people who advise on AI can talk business or build — rarely both. I do both."
+  image: "images/headshot.jpg"
+  consultant_name: "Alan Bates, Certified AI Consultant"
+  sides:
+    - heading: "Business judgement"
+      image: "images/uol-logo.svg"
+      text: "I sit with your principals and talk cost, risk and priorities — not jargon. **Postgraduate in Business Administration.**"
+    - heading: "Technical build"
+      image: "images/aws-cert.png"
+      text: "I build the pipeline and tell you straight whether a vendor's claims hold up. **AWS Certified Generative AI Professional.**"
+  summary: "Everything I build keeps a person in the loop — the AI does the first pass, your team makes the decision. One person, accountable to you, working with firms across the UK."
 
 # --- SERVICES: the three-tier offer ladder. Set the Discovery price yourself. ---
 services:
@@ -73,7 +78,7 @@ services:
 
 # --- FAQ: quietly handles the four objections brokers won't say out loud ---
 faq:
-  heading: "Questions brokers ask"
+  heading: "Questions"
   items:
     - q: "Where does our data go?"
       a: "It stays under your control. I build on AWS infrastructure scoped to your firm, and the system only ever sees the documents you point it at. Nothing is used to train public models."
@@ -88,7 +93,4 @@ faq:
 contact:
   heading: "Tell me how you do it today"
   body: "No pitch. I'd genuinely like to understand how renewals and document work land on your desk right now. Fifteen minutes — and if AI isn't the answer, I'll say so."
-  form:
-    fields: ["name", "email", "message"]
-    note: "Please include your phone number if you'd like me to call you."
-    button: { label: "Send", href: "#contact" }
+---
