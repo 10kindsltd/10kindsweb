@@ -29,6 +29,22 @@ problem:
       body: "Current cover, claims history and client details pulled together into a submission the market will actually quote on — re-keyed from documents you already hold."
   callout: "Wherever your team is shuffling documents by hand is an opportunity for a workflow to do the heavy lifting"
   
+# --- CAPABILITIES: what AI is good for ---
+capabilities:
+  heading: "What is AI actually good for?"
+  intro: "You've seen one use already — pulling data out of documents. That's one side of it. Here's where else it tends to add value in a brokerage:"
+  points:
+    - heading: "Making decisions, not just admin"
+      body: "Sort inbound claims and enquiries by urgency, flag the renewals that need a human, route each case to the right desk — before anyone's opened them."
+    - heading: "Answers from your company knowledge"
+      body: "Ask plain questions of your wordings, procedures and past cases — 'is escape of water covered here?' — and get a straight answer with its source, instead of digging through PDFs."
+    - heading: "Spotting what's hidden in your book"
+      body: "Surface the patterns you'd never catch by eye: clients who look underinsured, accounts likely to leave at renewal, cross-sell gaps across the book."
+    - heading: "First drafts in seconds"
+      body: "Renewal reports, client letters, market submissions — drafted from the data you already hold, ready to check and send rather than write from scratch."
+  callout: "I can help you work out how best to apply AI in your company"
+
+
 # --- HONESTY: the "where you don't need me" trust block. Keep this. ---
 honesty:
   heading: "Where you don't need me"

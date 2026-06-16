@@ -72,6 +72,29 @@
     </section>
   {{ end }}
 
+  {{/* ---------- CAPABILITIES ---------- */}}
+  {{ with .Params.capabilities }}
+    <section id="capabilities" class="bg-tertiary/25 py-16">
+      <div class="container mx-auto px-4">
+        <div class="mx-auto max-w-3xl text-center">
+          {{ with .heading }}<h2 class="mb-6 text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
+          {{ with .intro }}<p class="mb-12 text-lg">{{ . | markdownify }}</p>{{ end }}
+        </div>
+        {{ with .points }}
+          <div class="grid gap-6 sm:grid-cols-2">
+            {{ range . }}
+              <div class="rounded-2xl bg-white px-6 py-8">
+                {{ with .heading }}<h3 class="text-primary mb-3 font-semibold">{{ . }}</h3>{{ end }}
+                {{ with .body }}<p>{{ . | markdownify }}</p>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+      <p class="text-lg bg-yellow-200 mt-6 py-1 px-2 mx-auto max-w-2xl text-center">{{ .callout }}</p>
+    </section>
+  {{ end }}
+
   {{/* ---------- WHY ME (cards in cols 1–2 on lg, headshot in col 3) ---------- */}}
   {{ with .Params.why_me }}
     <section id="why-me" class="py-16">
