@@ -139,9 +139,9 @@
         <div class="grid gap-6 lg:grid-cols-3 lg:items-start">
           {{ with .image }}
             <div class="lg:order-2 flex flex-col items-start gap-3">
-              {{ partial "utilities/image" (dict "src" . "class" "max-w-full object-cover object-center rounded-2xl") }}
+              {{ partial "utilities/image" (dict "src" . "class" "mx-auto max-w-full sm:max-w-1/2 lg:max-w-full object-cover object-center rounded-2xl") }}
               {{ with $.Params.why_me.consultant_name }}
-                <div class="flex w-full items-center justify-between">
+                <div class="flex w-full sm:w-1/2 lg:w-full mx-auto items-center justify-between">
                   <p class="text-lg">{{ . }}</p>
                   {{ with site.Params.social.linkedin }}
                     <a class="justify-center underline" href="{{ . }}" target="_blank" rel="noopener noreferrer">View Linkedin</a>
