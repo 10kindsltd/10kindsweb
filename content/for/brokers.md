@@ -14,7 +14,7 @@ hero:
     This is just one idea. Get in touch and we'll find where AI would actually help your firm.
   button_primary: { label: "Book a free call", href: "#contact" }
   video_url: "https://youtube.com/embed/REPLACE_WITH_VIDEO_ID"
-  caption: "One sample workflow: three insurer quotes for the same risk, in three different formats, pulled into one comparison with the gaps flagged — the cheapest quietly drops flood cover, halves the business-interruption period and hides a survey condition. (Sample data.)"
+  caption: "Three sample insurer quotes for the same risk, in different formats, pulled into one comparison with the gaps flagged — the cheapest quietly drops flood cover, halves the business-interruption period and hides a survey condition."
 
 # --- PROBLEM: name their problem in their words ---
 problem:
