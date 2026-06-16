@@ -76,14 +76,14 @@ services:
 faq:
   heading: "Questions"
   items:
-    - q: "Is this a product you're selling?"
-      a: "No. The demo above is one idea. The work is figuring out what's actually worth building for your firm — and anything I build is built for you, not sold off a shelf."
-    - q: "Where does our data go?"
-      a: "It stays under your control. Anything I build is scoped to your firm and only ever sees the documents you point it at. Nothing is used to train public models."
-    - q: "We already use Acturis / eTrade."
-      a: "Those are great for packaged, eTraded risks — and for those you don't need me. This is for the open-market and non-standard work those platforms don't structure: the quotes, claims packs and schedules that still arrive as PDFs."
+    - q: "What do you actually do?"
+      a: "I help brokerages work out where AI is worth using, then make it happen — setting the strategy, steering what gets built, and sense-checking any vendors you're considering."
+    - q: "How can you help us?"
+      a: "I find the document-heavy, time-draining jobs across your firm, tell you which are worth automating, and lead the work to do it — so you get the upside without betting on hype."
+    - q: "Do I need to know anything about AI?"
+      a: "No. That's the point of bringing me in — I'm the AI expertise, so you don't have to hire it in-house."
     - q: "Who do you work with?"
-      a: "The best fit are established SME brokerages - maybe 5 to 50 staff - without an in-house dev team."
+      a: "Established SME brokerages — roughly 5 to 50 staff, without an in-house dev team."
 
 # --- CONTACT: soft close + form ---
 contact:
