@@ -32,7 +32,7 @@ problem:
 # --- CAPABILITIES: what AI is good for ---
 capabilities:
   heading: "What is AI actually good for?"
-  intro: "You've seen one use already — pulling data out of documents. That's one side of it. Here's where else it tends to add value in a brokerage:"
+  intro: "Apart from pulling data out of documents, here's where else it can work well in a brokerage:"
   points:
     - heading: "Making decisions, not just admin"
       body: "Sort inbound claims and enquiries by urgency, flag the renewals that need a human, route each case to the right desk — before anyone's opened them."
@@ -48,12 +48,12 @@ capabilities:
 # --- HONESTY: the "where you don't need me" trust block. Keep this. ---
 honesty:
   heading: "Where you don't need me"
-  body: "For quote comparison on its own, there are already good off-the-shelf tools. If that's all you need, I can help you choose a vendor. I earn my keep helping you identify the highest-ROI AI opportunities for your firm and providing whatever leadership you need."
+  body: "Where there are already good off-the-shelf tools I can help you choose a vendor. I earn my keep helping you identify the highest-ROI AI opportunities for your firm and providing whatever leadership you need."
 
 # --- WHY ME: two scannable cards (cols 1–2 on lg) + headshot (col 3). ---
 why_me:
   heading: "Why work with me"
-  intro: "Most people who advise on AI can talk business or build — rarely both. "
+  intro: "Most AI consultants only talk business or build — rarely both. I do."
   image: "images/headshot.jpg"
   consultant_name: "Alan Bates, Certified AI Consultant"
   sides:
