@@ -90,7 +90,9 @@
           </div>
         {{ end }}
       </div>
-      <p class="text-lg bg-yellow-200 mt-6 py-1 px-2 mx-auto max-w-3xl text-center">{{ .callout }}</p>
+      <p class="text-lg bg-yellow-200 mt-6 py-1 px-2 mx-auto max-w-3xl text-center">{{ .callout }}.
+        <a href="#contact" class="underline inline-flex items-center gap-1">Let's talk {{ partial "icons/arrow-right" }}</a>
+      </p>
     </section>
   {{ end }}
 
@@ -113,7 +115,9 @@
           </div>
         {{ end }}
       </div>
-      <p class="text-lg bg-yellow-200 mt-6 py-1 px-2 mx-auto max-w-2xl text-center">{{ .callout }}</p>
+      <p class="text-lg bg-yellow-200 mt-6 py-1 px-2 mx-auto max-w-3xl text-center">{{ .callout }}
+        <a href="#contact" class="underline inline-flex items-center gap-1">Get in touch {{ partial "icons/arrow-right" }}</a>
+      </p>
     </section>
   {{ end }}
 

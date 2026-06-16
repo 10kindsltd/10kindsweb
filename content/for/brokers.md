@@ -56,7 +56,7 @@ capabilities:
       body: "Sort inbound claims and enquiries by urgency, flag the renewals that need a human, route each case to the right desk — before anyone's opened them."
     - heading: "First drafts in seconds"
       body: "Renewal reports, client letters, market submissions — drafted from the data you already hold, ready to check and send rather than write from scratch."
-  callout: "I can help you work out how best to apply AI in your company"
+  callout: "I can help you work out how best to apply AI in your company."
 
 
 # --- HONESTY: the "where you don't need me" trust block. Keep this. ---
