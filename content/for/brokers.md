@@ -6,7 +6,7 @@ description: "A quick demo of one workflow — and a straight conversation about
 
 # --- HERO: their pain + the demo as ONE idea + call to discuss the rest ---
 hero:
-  eyebrow: "For UK commercial insurance brokers"
+  eyebrow: "For commercial insurance brokers"
   headline: "How many hours a week do your brokers lose to paperwork?"
   subhead: |
     Here's a quick demo of something your firm probably does daily — comparing open-market quotes. I can build you a workflow to help you compare them in seconds. 
@@ -19,7 +19,7 @@ hero:
 # --- PROBLEM: name their problem in their words ---
 problem:
   heading: "That's just one workflow. Your firm is full of them."
-  intro: "The demo above handles a single job — but brokerages run on documents, and most have the same quiet time-sinks: staff sifting through PDFs, chasing what's missing, and rekeying it somewhere else. Sound familiar?"
+  intro: "The demo above handles a single job — but brokerages run on documents, and most have the same time-sinks: staff sifting through PDFs, chasing what's missing, and rekeying it somewhere else. Sound familiar?"
   points:
     - heading: "Policy checking"
       body: "Insurer documents come back, and someone checks them line by line against what was agreed — catching the errors before the client does."
@@ -49,7 +49,7 @@ why_me:
       image_link: "https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url"
       text_links_new_window: true
       text: "[AWS Certified Generative AI Professional](https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url). I can build workflows or evaluate vendors, telling you whether their claims hold up."
-  summary: "One person who understands your business and can build — so you get straight answers on what's worth doing, what isn't, and what to ignore. Accountable to you, working with firms across the UK."
+  summary: "One person who understands your business and can build — so you get straight answers on what's worth doing, what isn't, and what to ignore. Accountable to you, working with firms across the UK and beyond."
 
 # --- SERVICES: the three-tier offer ladder. Set the Discovery price yourself. ---
 services:
