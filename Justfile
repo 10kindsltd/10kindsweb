@@ -16,4 +16,4 @@ invalidate-cache:
         --paths "/*"
 
 # Republish the site and invalidate the Cloudfront cache
-publish-and-refresh: publish invalidate-cache
+deploy: publish invalidate-cache

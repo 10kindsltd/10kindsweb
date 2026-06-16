@@ -9,7 +9,7 @@
             <p class="text-primary text-center text-sm font-medium tracking-wider uppercase lg:text-start">{{ . }}</p>
           {{ end }}
           {{ with .headline }}
-            <h1 class="title text-primary text-center text-4xl font-extrabold lg:text-start lg:text-6xl">{{ . | markdownify }}</h1>
+            <h1 class="title text-primary text-center text-4xl font-extrabold lg:text-start lg:text-6xl xl:text-7xl">{{ . | markdownify }}</h1>
           {{ end }}
           {{ with .subhead }}
             <div>
@@ -127,7 +127,7 @@
     </section>
   {{ end }}
 
-  {{/* ---------- SERVICES (reuse home cards; middle is auto-highlighted) ---------- */}}
+  {{/* ---------- SERVICES ---------- */}}
   {{ with .Params.services }}
     {{ $cards := slice }}
     {{ range .tiers }}
@@ -168,7 +168,7 @@
 
   {{ with .Site.Data.home.bespoke }}{{ if .enable }}{{ partial "blocks/home/bespoke.html" . }}{{ end }}{{ end }}
 
-  {{/* ---------- CONTACT (reuse home contact form) ---------- */}}
+  {{/* ---------- CONTACT ---------- */}}
   {{ with .Params.contact }}
     {{ partial "blocks/home/contact.html" (dict "title" .heading "text" .body) }}
   {{ end }}

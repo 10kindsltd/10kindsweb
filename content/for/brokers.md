@@ -19,7 +19,7 @@ hero:
 # --- PROBLEM: name their problem in their words ---
 problem:
   heading: "That's just one workflow. Your firm is full of them."
-  intro: "The demo handles a single job — but brokerages run on documents, and most have the same quiet time-sinks: staff pulling detail out of PDFs, checking it, chasing what's missing, and rekeying it somewhere else. Sound familiar?"
+  intro: "The demo above handles a single job — but brokerages run on documents, and most have the same quiet time-sinks: staff sifting through PDFs, chasing what's missing, and rekeying it somewhere else. Sound familiar?"
   points:
     - heading: "Policy checking"
       body: "Insurer documents come back, and someone checks them line by line against what was agreed — catching the errors before the client does."
