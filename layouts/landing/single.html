@@ -137,7 +137,20 @@
         {{ with .heading }}<h2 class="mb-6 text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
         {{ with .intro }}<p class="mb-8 text-lg">{{ . | markdownify }}</p>{{ end }}
         <div class="grid gap-6 lg:grid-cols-3 lg:items-start">
-          <div class="lg:col-span-2">
+          {{ with .image }}
+            <div class="lg:order-2 flex flex-col items-start gap-3">
+              {{ partial "utilities/image" (dict "src" . "class" "max-w-full object-cover object-center rounded-2xl") }}
+              {{ with $.Params.why_me.consultant_name }}
+                <div class="flex w-full items-center justify-between">
+                  <p class="text-lg">{{ . }}</p>
+                  {{ with site.Params.social.linkedin }}
+                    <a class="justify-center underline" href="{{ . }}" target="_blank" rel="noopener noreferrer">View Linkedin</a>
+                  {{ end }}
+                </div>
+              {{ end }}
+            </div>
+          {{ end }}
+          <div class="lg:order-1 lg:col-span-2">
             <div class="grid gap-6 sm:grid-cols-2">
               {{ range .sides }}
                 {{ $side := . }}
@@ -161,25 +174,12 @@
             </div>
             {{ with .summary }}<p class="mt-6 text-lg">{{ . | markdownify }}</p>{{ end }}
             {{ with $.Params.honesty }}
-              <div class="border border-4 border-tertiary my-6 rounded-2xl px-6 py-8">
+              <div class="border border-4 border-tertiary mt-6 rounded-2xl px-6 py-8">
                 {{ with .heading }}<h3 class="text-2xl text-primary mb-3 font-semibold">{{ . }}</h3>{{ end }}
                 {{ with .body }}<p>{{ . | markdownify }}</p>{{ end }}
               </div>
             {{ end }}
           </div>
-          {{ with .image }}
-            <div class="flex flex-col items-start gap-3">
-              {{ partial "utilities/image" (dict "src" . "class" "max-w-full object-cover object-center rounded-2xl") }}
-              {{ with $.Params.why_me.consultant_name }}
-                <div class="flex w-full items-center justify-between">
-                  <p class="text-lg">{{ . }}</p>
-                  {{ with site.Params.social.linkedin }}
-                    <a class="justify-center underline" href="{{ . }}" target="_blank" rel="noopener noreferrer">View Linkedin</a>
-                  {{ end }}
-                </div>
-              {{ end }}
-            </div>
-          {{ end }}
         </div>
       </div>
     </section>

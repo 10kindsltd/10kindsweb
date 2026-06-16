@@ -116,6 +116,8 @@
       "lg:hidden",
       "lg:items-start",
       "lg:justify-start",
+      "lg:order-1",
+      "lg:order-2",
       "lg:py-16",
       "lg:text-6xl",
       "lg:text-8xl",
