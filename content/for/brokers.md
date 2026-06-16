@@ -1,17 +1,20 @@
 ---
 # Broker landing page — content lives in front matter, rendered by layouts/landing/single.html
 type: landing
-title: "AI document tools for commercial insurance brokers"
-description: "Automated first-pass on the quotes, claims packs and schedules that still land as PDFs. AI extracts and flags; you decide."
+title: "Your brokers waste hours rekeying documents. Stop them."
+description: "A quick demo of one workflow — and a straight conversation about where AI could actually take work off your desk."
 
-# --- HERO: their pain + your promise + main button + video demo ---
+# --- HERO: their pain + the demo as ONE idea + call to discuss the rest ---
 hero:
   eyebrow: "For UK commercial insurance brokers"
-  headline: "Your renewal quotes come back in five formats. Compare them in seconds."
-  subhead: "I build AI that does the first pass on your documents — and where it shouldn't, I tell you."
-  button_primary: { label: "Tell me how you handle renewals today", href: "#contact" }
+  headline: "How many hours a week do your brokers lose to paperwork?"
+  subhead: |
+    Here's a quick demo of something your firm probably does daily — comparing open-market quotes. I can build you a workflow to help you compare them in seconds. 
+    
+    This is just one idea. Get in touch and we'll find where AI would actually help your firm.
+  button_primary: { label: "Book a free call", href: "#contact" }
   video_url: "https://youtube.com/embed/REPLACE_WITH_VIDEO_ID"
-  caption: "Three insurer quotes for the same risk, in three different formats, pulled into one comparison automatically — with the gaps flagged. The cheapest quote here quietly drops flood cover, halves the business-interruption period and hides a survey condition. The tool surfaces it. You still decide."
+  caption: "One sample workflow: three insurer quotes for the same risk, in three different formats, pulled into one comparison with the gaps flagged — the cheapest quietly drops flood cover, halves the business-interruption period and hides a survey condition. (Sample data.)"
 
 # --- PROBLEM: name their problem in their words ---
 problem:
@@ -25,36 +28,38 @@ problem:
     - heading: "The cheapest quote can be the worst"
       body: "A lower premium often hides a flood exclusion, a shorter indemnity period or an unmet subjectivity. Miss it, and it's your E&O exposure — not the insurer's."
 
-# --- HOW IT WORKS: three steps ---
+# --- HOW IT WORKS: what the demo above is doing ---
 how_it_works:
-  heading: "What it does"
+  heading: "What the demo does"
   steps:
     - heading: "Reads"
       body: "Ingests every quote document, whatever the format — clean PDF, scan or email."
     - heading: "Normalises"
-      body: "Maps each insurer's wording onto the same fields, so you get one clean side-by-side instead of five different schedules."
+      body: "Maps each insurer's wording onto the same fields, so five different schedules become one clean side-by-side."
     - heading: "Flags"
-      body: "Highlights where cover, limits or conditions differ from the rest, so nothing hides in the fine print. The judgement stays yours."
+      body: "Highlights where cover, limits or conditions differ from the rest, so nothing hides in the fine print."
 
 # --- HONESTY: the "where you don't need me" trust block. Keep this. ---
 honesty:
   heading: "Where you don't need me"
-  body: "For quote comparison on its own, there are already good off-the-shelf tools. If that's all you need, I can help you choose a vendor. I earn my keep on the document work that's specific to how your firm runs — the reconciliations, the claims packs, the back-office grind that no product covers because it's specific to you."
+  body: "For quote comparison on its own, there are already good off-the-shelf tools. If that's all you need, I can help you choose a vendor. I earn my keep helping you identify the highest-ROI AI opportunities specific to how your firm works and providing whatever leadership you need."
 
 # --- WHY ME: two scannable cards (cols 1–2 on lg) + headshot (col 3). ---
 why_me:
   heading: "Why work with me"
-  intro: "Most people who advise on AI can talk business or build — rarely both. I do both."
+  intro: "Most people who advise on AI can talk business or build — rarely both. "
   image: "images/headshot.jpg"
   consultant_name: "Alan Bates, Certified AI Consultant"
   sides:
     - heading: "Business judgement"
       image: "images/uol-logo.svg"
-      text: "I sit with your principals and talk cost, risk and priorities — not jargon. **Postgraduate in Business Administration.**"
+      text: "**Postgraduate in Business Administration.** I sit with your principals and talk cost, risk and priorities — not jargon. "
     - heading: "Technical build"
       image: "images/aws-cert.png"
-      text: "I build the pipeline and tell you straight whether a vendor's claims hold up. **AWS Certified Generative AI Professional.**"
-  summary: "Everything I build keeps a person in the loop — the AI does the first pass, your team makes the decision. One person, accountable to you, working with firms across the UK."
+      image_link: "https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url"
+      text_links_new_window: true
+      text: "[AWS Certified Generative AI Professional](https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url). I can build workflows or evaluate vendors, telling you whether their claims hold up."
+  summary: "One person who understands your business and can build — so you get straight answers on what's worth doing, what isn't, and what to ignore. Accountable to you, working with firms across the UK."
 
 # --- SERVICES: the three-tier offer ladder. Set the Discovery price yourself. ---
 services:
@@ -77,12 +82,14 @@ services:
       body: "Senior AI judgement on tap — guiding decisions, sense-checking vendors, or acting as your fractional AI lead. Pitched at whatever level your firm is ready for."
       button: { label: "Get in touch", href: "#contact" }
 
-# --- FAQ: quietly handles the four objections brokers won't say out loud ---
+# --- FAQ: quietly handles the objections brokers won't say out loud ---
 faq:
   heading: "Questions"
   items:
+    - q: "Is this a product you're selling?"
+      a: "No. The demo above is one idea. The work is figuring out what's actually worth building for your firm — and anything I build is built for you, not sold off a shelf."
     - q: "Where does our data go?"
-      a: "It stays under your control. I build on AWS infrastructure scoped to your firm, and the system only ever sees the documents you point it at. Nothing is used to train public models."
+      a: "It stays under your control. Anything I build is scoped to your firm and only ever sees the documents you point it at. Nothing is used to train public models."
     - q: "We already use Acturis / eTrade."
       a: "Those are great for packaged, eTraded risks — and for those you don't need me. This is for the open-market and non-standard work those platforms don't structure: the quotes, claims packs and schedules that still arrive as PDFs."
     - q: "We're a small brokerage — is this overkill?"
@@ -91,5 +98,5 @@ faq:
 # --- CONTACT: soft close + form ---
 contact:
   heading: "Tell me how you work today"
-  body: "No pitch. I'd genuinely like to understand how renewals and document work land on your desk right now. Fifteen minutes — and if AI isn't the answer, I'll say so."
+  body: "No pitch. I'd genuinely like to understand how the document work lands on your desk right now. Fifteen minutes — and if AI isn't the answer, I'll say so."
 ---

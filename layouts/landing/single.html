@@ -9,10 +9,16 @@
             <p class="text-primary text-center text-sm font-medium tracking-wider uppercase lg:text-start">{{ . }}</p>
           {{ end }}
           {{ with .headline }}
-            <h1 class="title text-primary text-center text-4xl font-bold lg:text-start lg:text-6xl">{{ . | markdownify }}</h1>
+            <h1 class="title text-primary text-center text-4xl font-extrabold lg:text-start lg:text-6xl">{{ . | markdownify }}</h1>
           {{ end }}
           {{ with .subhead }}
-            <p class="text-center text-lg lg:text-start">{{ . | markdownify }}</p>
+            <div>
+              {{ range (split . "\n") }}
+                {{ if . }}
+                  <p class="mb-4 text-center text-lg lg:text-start">{{ . | markdownify }}</p>
+                {{ end }}
+              {{ end }}
+            </div>
           {{ end }}
           {{ with .button_primary }}
             <div class="flex justify-center lg:justify-start">
@@ -95,12 +101,22 @@
           <div class="lg:col-span-2">
             <div class="grid gap-6 sm:grid-cols-2">
               {{ range .sides }}
+                {{ $side := . }}
                 <div class="bg-tertiary rounded-2xl px-6 py-8">
                   <div class="mb-4 flex items-center justify-between gap-4">
                     {{ with .heading }}<h3 class="text-primary font-semibold">{{ . }}</h3>{{ end }}
-                    {{ with .image }}{{ with resources.Get . }}<img src="{{ .RelPermalink }}" alt="" class="h-10 w-auto object-contain" />{{ end }}{{ end }}
+                    {{ with .image }}{{ with resources.Get . }}
+                      {{ $img := printf "<img src=\"%s\" alt=\"\" class=\"h-10 w-auto object-contain\">" .RelPermalink }}
+                      {{ if $side.image_link }}
+                        <a href="{{ $side.image_link }}"{{ if $side.text_links_new_window }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ $img | safeHTML }}</a>
+                      {{ else }}{{ $img | safeHTML }}{{ end }}
+                    {{ end }}{{ end }}
                   </div>
-                  {{ with .text }}<div class="prose prose-sm">{{ . | markdownify }}</div>{{ end }}
+                  {{ with .text }}
+                    {{ $html := . | markdownify }}
+                    {{ if $side.text_links_new_window }}{{ $html = $html | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` }}{{ end }}
+                    <div class="prose prose-sm">{{ $html | safeHTML }}</div>
+                  {{ end }}
                 </div>
               {{ end }}
             </div>
