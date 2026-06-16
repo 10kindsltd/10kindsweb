@@ -82,8 +82,8 @@ faq:
       a: "It stays under your control. Anything I build is scoped to your firm and only ever sees the documents you point it at. Nothing is used to train public models."
     - q: "We already use Acturis / eTrade."
       a: "Those are great for packaged, eTraded risks — and for those you don't need me. This is for the open-market and non-standard work those platforms don't structure: the quotes, claims packs and schedules that still arrive as PDFs."
-    - q: "We're a small brokerage — is this overkill?"
-      a: "It's built to be accessible, not enterprise-priced. Start with one workflow and a fixed-price piece of work, at a scale and cost that suits a firm your size."
+    - q: "Who do you work with?"
+      a: "The best fit are established SME brokerages - maybe 5 to 50 staff - without an in-house dev team."
 
 # --- CONTACT: soft close + form ---
 contact:
