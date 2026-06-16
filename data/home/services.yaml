@@ -13,7 +13,7 @@ cards:
       link: "/#contact"
 
   - image: "images/services-web-development.png"
-    price: "From £1,250 · about a day"
+    price_suffix: "about a day"   # actual price in config/_default/params.yaml
     title: "AI Discovery"
     text: "A focused strategic audit of your business to identify your highest-ROI AI opportunities. You get a prioritised roadmap so you know exactly where to start and why."
     button:

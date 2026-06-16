@@ -15,7 +15,9 @@
             {{ with .image }}{{ partial "utilities/image" (dict "src" .) }}{{ end }}
             {{ with .title }}<h2 class="my-4 text-center text-2xl font-semibold">{{ . }}</h2>{{ end }}
             {{ with .text }}<p class="mb-4 text-center">{{ . }}</p>{{ end }}
-            {{ with .price }}<p class="text-primary mb-4 text-center font-semibold">{{ . }}</p>{{ end }}
+            {{ $price := .price }}
+            {{ with .price_suffix }}{{ $price = printf "%s · %s" site.Params.pricing.discovery . }}{{ end }}
+            {{ with $price }}<p class="text-primary mb-4 text-center font-semibold">{{ . }}</p>{{ end }}
             {{ with .button }}
               <a href="{{ .link }}" class="border-primary text-primary hover:bg-primary hover:text-white flex items-center gap-2 rounded border mt-4 px-8 py-2 duration-500 after:absolute after:inset-0 after:content-['']">
                 {{ .label }}

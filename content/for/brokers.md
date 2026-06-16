@@ -98,7 +98,7 @@ services:
       body: "Not sure where AI fits? In 30 focused minutes I learn how your firm works and give you a straight read on where AI could actually help — and where it couldn't."
       button: { label: "Book a call", href: "#contact" }
     - name: "AI Discovery"
-      price: "From £1,250 · about a day"
+      price_suffix: "about a day"     # actual price in config/_default/params.yaml
       image: "images/services-web-development.png"
       body: "A focused audit of your document and back-office workflows to find the highest-ROI opportunities. You get a prioritised roadmap so you know exactly where to start and why."
       button: { label: "Find out more", href: "#contact" }
