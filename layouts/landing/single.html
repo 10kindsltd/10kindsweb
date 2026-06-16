@@ -96,6 +96,15 @@
     </section>
   {{ end }}
 
+  {{ with .Params.tldr_quote }}
+    <section id="tldr" class="pb-16 px-4 max-w-xl mx-auto">
+      <div class="text-4xl mb-6 border-l-4 border-primary pl-6">
+        {{ .quote }}
+      </div>
+      <p class="italic">{{ .source }}</p>
+    </section>
+  {{ end }}
+
   {{/* ---------- CAPABILITIES ---------- */}}
   {{ with .Params.capabilities }}
     <section id="capabilities" class="bg-tertiary/25 py-16">

@@ -43,6 +43,10 @@ problem:
       body: "Current cover, claims history and client details pulled together into a submission the market will actually quote on — re-keyed from documents you already hold."
   callout: "Wherever your team is shuffling documents by hand is an opportunity for a workflow to do the heavy lifting"
   
+tldr_quote: 
+  quote: I help brokerages put AI to work where it actually pays — automating document-heavy workflows, surfacing what's hidden in the book, and making the firm's knowledge available to everyone.
+  source: Alan Bates | Founder, 10 Kinds
+
 # --- CAPABILITIES: what AI is good for ---
 capabilities:
   heading: "How can AI help insurance brokers?"
