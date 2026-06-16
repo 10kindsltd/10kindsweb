@@ -11,7 +11,8 @@ hero:
   headline: "Your renewal quotes come back in five formats. Compare them in seconds."
   subhead: "I build AI that does the first pass on your documents — and where it shouldn't, I tell you."
   button_primary: { label: "Tell me how you handle renewals today", href: "#contact" }
-  button_secondary: { label: "Watch the 2-minute demo", href: "#demo" }
+  video_url: "https://youtube.com/embed/REPLACE_WITH_VIDEO_ID"
+  caption: "Three insurer quotes for the same risk, in three different formats, pulled into one comparison automatically — with the gaps flagged. The cheapest quote here quietly drops flood cover, halves the business-interruption period and hides a survey condition. The tool surfaces it. You still decide."
 
 # --- PROBLEM: name their problem in their words ---
 problem:
@@ -24,12 +25,6 @@ problem:
       body: "Renewal deadlines don't move. The comparison gets done late, fast and tired — exactly when something gets missed."
     - heading: "The cheapest quote can be the worst"
       body: "A lower premium often hides a flood exclusion, a shorter indemnity period or an unmet subjectivity. Miss it, and it's your E&O exposure — not the insurer's."
-
-# --- DEMO: embed the recorded screencast. Replace the URL. ---
-demo:
-  heading: "See it in actino"
-  video_url: "https://youtube.com/embed/REPLACE_WITH_VIDEO_ID"
-  caption: "Three insurer quotes for the same risk, in three different formats, pulled into one comparison automatically — with the gaps flagged. The cheapest quote here quietly drops flood cover, halves the business-interruption period and hides a survey condition. The tool surfaces it. You still decide."
 
 # --- HOW IT WORKS: three steps ---
 how_it_works:
