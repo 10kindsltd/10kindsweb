@@ -55,7 +55,7 @@
       <div class="container mx-auto px-4">
         {{ with .heading }}<h2 class="mb-12 text-center text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
         {{ with .stats }}
-          <div class="grid gap-8 text-center sm:grid-cols-2 xl:grid-cols-4">
+          <div class="grid gap-8 text-center sm:grid-cols-2 md:grid-cols-3">
             {{ range . }}
               <div class="flex flex-col items-center gap-2">
                 {{ with .figure }}<p class="text-primary text-4xl font-extrabold xl:text-5xl">{{ . }}</p>{{ end }}
@@ -65,7 +65,7 @@
           </div>
         {{ end }}
         {{ with .source.text }}
-          <p class="mt-10 text-center text-sm text-gray-500">{{ . | markdownify }}</p>
+          <p class="md-links mt-10 text-center text-sm text-gray-500">{{ . | markdownify }}</p>
         {{ end }}
       </div>
     </section>

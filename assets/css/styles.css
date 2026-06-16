@@ -2,6 +2,7 @@
 @plugin "@tailwindcss/typography";
 
 @import './shared/_pagination.css';
+@import './shared/_links.css';
 
 @import './home/_hero.css';
 

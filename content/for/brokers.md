@@ -18,10 +18,8 @@ hero:
 
 # --- PROOF: indicative industry results. ---
 stats_proof:
-  heading: "Your potential savings"
+  heading: "Potential efficiencies"
   stats:
-    - figure: "34 min → 9 sec"
-      label: "Insurance claim & complaint case-handling time"
     - figure: "10×"
       label: "Documents handled per person"
     - figure: "99%"
