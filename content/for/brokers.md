@@ -44,7 +44,7 @@ problem:
   callout: "Wherever your team is shuffling documents by hand is an opportunity for a workflow to do the heavy lifting"
   
 tldr_quote: 
-  quote: I help brokerages put AI to work where it actually pays — automating document-heavy workflows, surfacing what's hidden in the book, and making the firm's knowledge available to everyone.
+  quote: I help brokerages decide where AI pays and where it doesn't, then lead the work to make it happen — strategy first, then build or buy.
   source: Alan Bates | Founder, 10 Kinds
 
 # --- CAPABILITIES: what AI is good for ---
