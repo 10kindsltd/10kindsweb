@@ -16,6 +16,22 @@ hero:
   video_url: "https://youtube.com/embed/REPLACE_WITH_VIDEO_ID"
   caption: "Three sample insurer quotes for the same risk, in different formats, pulled into one comparison with the gaps flagged — the cheapest quietly drops flood cover, halves the business-interruption period and hides a survey condition."
 
+# --- PROOF: indicative industry results. ---
+stats_proof:
+  heading: "Your potential savings"
+  stats:
+    - figure: "34 min → 9 sec"
+      label: "Insurance claim & complaint case-handling time"
+    - figure: "10×"
+      label: "Documents handled per person"
+    - figure: "99%"
+      label: "Document routing accuracy"
+    - figure: "80%+"
+      label: "Straight-through processing of unstructured mail & email"
+  source:
+    text: "Source: [Deloitte AI-powered Input Management for Financial Services and Insurance Whitepaper](https://www.deloitte.com/ce/en/issues/generative-ai/ai-for-financial-services-and-insurance-whitepaper.html)"
+    url: "https://www.deloitte.com/ce/en/issues/generative-ai/ai-for-financial-services-and-insurance-whitepaper.html"
+
 # --- PROBLEM: name their problem in their words ---
 problem:
   heading: "That's just one workflow. Your firm is full of them."

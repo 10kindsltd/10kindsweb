@@ -49,6 +49,28 @@
     </section>
   {{ end }}
 
+  {{/* ---------- STATS PROOF ---------- */}}
+  {{ with .Params.stats_proof }}
+    <section id="stats" class="bg-tertiary/25 py-16">
+      <div class="container mx-auto px-4">
+        {{ with .heading }}<h2 class="mb-12 text-center text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
+        {{ with .stats }}
+          <div class="grid gap-8 text-center sm:grid-cols-2 xl:grid-cols-4">
+            {{ range . }}
+              <div class="flex flex-col items-center gap-2">
+                {{ with .figure }}<p class="text-primary text-4xl font-extrabold xl:text-5xl">{{ . }}</p>{{ end }}
+                {{ with .label }}<p class="text-gray-500">{{ . | markdownify }}</p>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+        {{ with .source.text }}
+          <p class="mt-10 text-center text-sm text-gray-500">{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
   {{/* ---------- PROBLEM ---------- */}}
   {{ with .Params.problem }}
     <section id="problem" class="py-16">
