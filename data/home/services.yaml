@@ -5,7 +5,7 @@ text: "I meet you where you are and help you build towards your goals. From a no
 
 cards:
   - image: "images/telephone.png"
-    supertitle: "Free, 30 minutes"
+    price: "Free, 30 minutes"
     title: "AI Clarity Call"
     text: "Not sure where AI fits in your business? In a focused 30 minutes I get to know your business and give you a clear assessment of where AI could make a real difference."
     button:
@@ -13,7 +13,7 @@ cards:
       link: "/#contact"
 
   - image: "images/services-web-development.png"
-    supertitle: "About a day"
+    price: "From £1,250 · about a day"
     title: "AI Discovery"
     text: "A focused strategic audit of your business to identify your highest-ROI AI opportunities. You get a prioritised roadmap so you know exactly where to start and why."
     button:
@@ -21,7 +21,7 @@ cards:
       link: "/#contact"
 
   - image: "images/handshake.png"
-    supertitle: "On-going"
+#    supertitle: "On-going"
     title: "On-going AI Partnership"
     text: "Senior AI expertise, on tap. Whether you want an advisor to guide decisions and sense-check vendors, or a fractional AI leader, I work at the level your business is ready for. "
     button:

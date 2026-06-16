@@ -130,30 +130,19 @@
     </section>
   {{ end }}
 
-  {{/* ---------- SERVICES (offer ladder) ---------- */}}
+  {{/* ---------- SERVICES (reuse home cards; middle is auto-highlighted) ---------- */}}
   {{ with .Params.services }}
-    <section id="services" class="bg-tertiary/25 py-16">
-      <div class="container mx-auto px-4">
-        {{ with .heading }}<h2 class="mb-12 text-center text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
-        {{ with .tiers }}
-          <div class="grid gap-8 xl:grid-cols-3">
-            {{ range . }}
-              <div class="relative flex flex-col rounded-4xl px-8 py-10 duration-300 hover:opacity-90 {{ if .featured }}bg-primary text-white{{ else }}bg-white border border-gray-200{{ end }}">
-                {{ with .name }}<h3 class="text-2xl font-semibold">{{ . }}</h3>{{ end }}
-                {{ with .price }}<p class="mt-2 mb-6 font-medium opacity-80">{{ . }}</p>{{ end }}
-                {{ with .body }}<p class="mb-8 grow">{{ . | markdownify }}</p>{{ end }}
-                {{ with .button }}
-                  <a href="{{ .href }}" class="flex items-center justify-center gap-2 rounded border border-current px-8 py-2 duration-500 after:absolute after:inset-0 after:content-['']">
-                    {{ .label }}
-                    {{ partial "icons/arrow-right" }}
-                  </a>
-                {{ end }}
-              </div>
-            {{ end }}
-          </div>
-        {{ end }}
-      </div>
-    </section>
+    {{ $cards := slice }}
+    {{ range .tiers }}
+      {{ $cards = $cards | append (dict
+        "title" .name
+        "image" .image
+        "text" .body
+        "price" .price
+        "button" (dict "label" .button.label "link" .button.href)
+      ) }}
+    {{ end }}
+    {{ partial "blocks/home/services.html" (dict "title" .heading "text" .text "cards" $cards) }}
   {{ end }}
 
   {{/* ---------- FAQ ---------- */}}
@@ -165,7 +154,7 @@
           {{ with .items }}
             <div class="flex flex-col gap-4">
               {{ range . }}
-                <details class="bg-tertiary group rounded-2xl px-6 py-5">
+                <details class="border border-gray-500 group rounded-2xl px-6 py-5">
                   <summary class="flex cursor-pointer items-center justify-between font-semibold">
                     {{ .q }}
                     <span class="text-primary text-xl transition-transform group-open:rotate-45">+</span>

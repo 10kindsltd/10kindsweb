@@ -59,22 +59,23 @@ why_me:
 # --- SERVICES: the three-tier offer ladder. Set the Discovery price yourself. ---
 services:
   heading: "How we can work together"
+  text: "I meet you where you are and help you build towards your goals. From a no-obligation first conversation to embedded strategic leadership – whatever suits you."
+  
   tiers:
     - name: "AI Clarity Call"
       price: "Free · 30 minutes"
+      image: "images/telephone.png"
       body: "Not sure where AI fits? In 30 focused minutes I learn how your firm works and give you a straight read on where AI could actually help — and where it couldn't."
       button: { label: "Book a call", href: "#contact" }
-      featured: false
     - name: "AI Discovery"
       price: "From £1,250 · about a day"
+      image: "images/services-web-development.png"
       body: "A focused audit of your document and back-office workflows to find the highest-ROI opportunities. You leave with a prioritised roadmap — what to do, what to buy, what to skip, and why."
       button: { label: "Find out more", href: "#contact" }
-      featured: true
     - name: "Ongoing AI Partnership"
-      price: "Ongoing"
+      image: "images/handshake.png"
       body: "Senior AI judgement on tap — guiding decisions, sense-checking vendors, or acting as your fractional AI lead. Pitched at whatever level your firm is ready for."
       button: { label: "Get in touch", href: "#contact" }
-      featured: false
 
 # --- FAQ: quietly handles the four objections brokers won't say out loud ---
 faq:
@@ -84,13 +85,11 @@ faq:
       a: "It stays under your control. I build on AWS infrastructure scoped to your firm, and the system only ever sees the documents you point it at. Nothing is used to train public models."
     - q: "We already use Acturis / eTrade."
       a: "Those are great for packaged, eTraded risks — and for those you don't need me. This is for the open-market and non-standard work those platforms don't structure: the quotes, claims packs and schedules that still arrive as PDFs."
-    - q: "Is the AI making underwriting decisions?"
-      a: "No. The AI does the first pass — it extracts and flags. Your team verifies and decides."
     - q: "We're a small brokerage — is this overkill?"
       a: "It's built to be accessible, not enterprise-priced. Start with one workflow and a fixed-price piece of work, at a scale and cost that suits a firm your size."
 
 # --- CONTACT: soft close + form ---
 contact:
-  heading: "Tell me how you do it today"
+  heading: "Tell me how you work today"
   body: "No pitch. I'd genuinely like to understand how renewals and document work land on your desk right now. Fifteen minutes — and if AI isn't the answer, I'll say so."
 ---
