@@ -71,7 +71,7 @@ honesty:
 # --- WHY ME: two scannable cards (cols 1–2 on lg) + headshot (col 3). ---
 why_me:
   heading: "Why work with me"
-  intro: "Most AI consultants only talk business or build — rarely both. I do."
+  intro: "Unlike most AI consultants, I talk both business and tech (in plain English)."
   image: "images/headshot.jpg"
   consultant_name: "Alan Bates, Certified AI Consultant"
   sides:
@@ -83,7 +83,8 @@ why_me:
       image_link: "https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url"
       text_links_new_window: true
       text: "[AWS Certified Generative AI Professional](https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url). I can build workflows or evaluate vendors, telling you whether their claims hold up."
-  summary: "One person who understands your business and can build — so you get straight answers on what's worth doing, what isn't, and what to ignore. Accountable to you, working with firms across the UK and beyond."
+  summary: |
+    <span class="bg-yellow-200 md:bg-transparent">One person who understands your business and can build — so you get straight answers on what's worth doing, what isn't, and what to ignore.</span> Accountable to you, working with firms across the UK and beyond.
 
 # --- SERVICES: the three-tier offer ladder. Set the Discovery price yourself. ---
 services:

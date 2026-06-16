@@ -2,6 +2,11 @@ baseURL: "/"
 title: "10kinds"
 summaryLength: 20
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 # services:
 #   googleAnalytics:
 #     id: G-MEASUREMENT_ID
