@@ -179,7 +179,13 @@
                     {{ .q }}
                     <span class="text-primary text-xl transition-transform group-open:rotate-45">+</span>
                   </summary>
-                  {{ with .a }}<p class="mt-4">{{ . | markdownify }}</p>{{ end }}
+                  {{ with .a }}
+                    {{ range (split . "\n") }}
+                      {{ if . }}
+                        <p class="mt-4">{{ . | markdownify }}</p>
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
                 </details>
               {{ end }}
             </div>

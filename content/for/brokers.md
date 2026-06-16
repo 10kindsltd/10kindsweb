@@ -31,15 +31,15 @@ problem:
   
 # --- CAPABILITIES: what AI is good for ---
 capabilities:
-  heading: "What is AI actually good for?"
-  intro: "Apart from pulling data out of documents, here's where else it can work well in a brokerage:"
+  heading: "How can AI help insurance brokers?"
+  intro: "Apart from pulling data out of documents, here's where else it can work well:"
   points:
-    - heading: "Making decisions, not just admin"
-      body: "Sort inbound claims and enquiries by urgency, flag the renewals that need a human, route each case to the right desk — before anyone's opened them."
-    - heading: "Answers from your company knowledge"
-      body: "Ask plain questions of your wordings, procedures and past cases — 'is escape of water covered here?' — and get a straight answer with its source, instead of digging through PDFs."
+    - heading: "Answers from everything your firm knows"
+      body: "Put a question to your whole knowledge base at once — 'which insurers will write a client with a late-notified claim?', 'what's our process when a client underdeclares?' — and get a cited answer drawn from your procedures, market knowledge and past cases. The stuff that currently lives in a few people's heads, available to everyone."
     - heading: "Spotting what's hidden in your book"
       body: "Surface the patterns you'd never catch by eye: clients who look underinsured, accounts likely to leave at renewal, cross-sell gaps across the book."
+    - heading: "Making decisions, not just admin"
+      body: "Sort inbound claims and enquiries by urgency, flag the renewals that need a human, route each case to the right desk — before anyone's opened them."
     - heading: "First drafts in seconds"
       body: "Renewal reports, client letters, market submissions — drafted from the data you already hold, ready to check and send rather than write from scratch."
   callout: "I can help you work out how best to apply AI in your company"
@@ -93,11 +93,16 @@ faq:
   heading: "Questions"
   items:
     - q: "What do you actually do?"
-      a: "I help brokerages work out where AI is worth using, then make it happen — setting the strategy, steering what gets built, and sense-checking any vendors you're considering."
+      a: |
+        I help brokerages work out where AI is worth using, then make it happen — setting the strategy, steering what gets built, and sense-checking any vendors you're considering.
+        
+        So I can help you **both strategically** and **with implementation**, either hands-on or finding vendors, keeping tabs on developers, etc.
     - q: "How can you help us?"
-      a: "I find the document-heavy, time-draining jobs across your firm, tell you which are worth automating, and lead the work to do it — so you get the upside without betting on hype."
+      a: "I find the high-ROI places AI fits, then create a strategy to take the grind off your staff so they spend time on clients and judgement, not rekeying — helping each team punch above its weight."        
     - q: "Do I need to know anything about AI?"
-      a: "No. That's the point of bringing me in — I'm the AI expertise, so you don't have to hire it in-house."
+      a: "No. That's the point of bringing me in — I'm the AI expertise, so you don't have to hire it in-house."     
+    - q: "What does the ongoing partnership involve?"
+      a: "Whatever you're ready for — occasional advice, sense-checking vendors, or acting as your fractional AI lead. It's pitched at the level that suits your firm, can evolve as you grow and priced accordingly."      
     - q: "Who do you work with?"
       a: "Established SME brokerages — roughly 5 to 50 staff, without an in-house dev team."
 
