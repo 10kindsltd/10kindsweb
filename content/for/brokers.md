@@ -1,8 +1,16 @@
 ---
 # Broker landing page — content lives in front matter, rendered by layouts/landing/single.html
 type: landing
-title: "Your brokers waste hours rekeying documents. Stop them."
-description: "A quick demo of one workflow — and a straight conversation about where AI could actually take work off your desk."
+title: "AI Consultant for Insurance Brokers"
+description: "Cut the document grind in your brokerage. See where AI can save your team hours on renewals, submissions and policy checking — and get a straight plan for what's worth doing. Book a free call."
+
+# --- NAV: override the site-wide header so visitors stay on this page (logo still links home) ---
+nav:
+  - { name: "Why me", url: "#why-me" }
+  - { name: "Services", url: "#services" }
+  - { name: "FAQ", url: "#faq" }
+nav_buttons:
+  - { name: "Book a free call", url: "#contact" }
 
 # --- HERO: their pain + the demo as ONE idea + call to discuss the rest ---
 hero:

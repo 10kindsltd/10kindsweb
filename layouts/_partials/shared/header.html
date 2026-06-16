@@ -31,17 +31,25 @@
           {{ partial "heroicons/x-mark" }}
         </button>
       </div>
+      {{ $main := slice }}
+      {{ range site.Menus.main }}{{ $main = $main | append (dict "name" .Name "url" .URL) }}{{ end }}
+      {{ with .Params.nav }}{{ $main = . }}{{ end }}
+
+      {{ $buttons := slice }}
+      {{ range site.Menus.buttons }}{{ $buttons = $buttons | append (dict "name" .Name "url" .URL) }}{{ end }}
+      {{ with .Params.nav_buttons }}{{ $buttons = . }}{{ end }}
+
       <ul class="flex flex-col gap-8 xl:flex-row">
-        {{ range site.Menus.main }}
+        {{ range $main }}
           <li class="text-center">
-            <a class="text-primary" href="{{ .URL }}">{{ .Name }}</a>
+            <a class="text-primary" href="{{ .url }}">{{ .name }}</a>
           </li>
         {{ end }}
       </ul>
       <ul class="flex flex-col gap-8 xl:flex-row">
-        {{ range .Site.Menus.buttons }}
+        {{ range $buttons }}
           <li class="text-center">
-            {{ partial "components/button/primary" (dict "label" .Name "href" .URL ) }}
+            {{ partial "components/button/primary" (dict "label" .name "href" .url) }}
           </li>
         {{ end }}
       </ul>
