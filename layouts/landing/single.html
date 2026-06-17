@@ -97,11 +97,29 @@
   {{ end }}
 
   {{ with .Params.tldr_quote }}
-    <section id="tldr" class="pb-16 px-4 max-w-xl mx-auto">
-      <div class="text-4xl mb-6 border-l-4 border-primary pl-6">
-        {{ .quote }}
+    <section id="tldr" class="pb-16 px-4 max-w-2xl mx-auto">
+      <div class="flex flex-col items-center gap-6 sm:flex-row sm:items-center sm:gap-8">
+        {{ with .image }}
+          {{ with resources.Get . }}
+            {{ $img := .Resize "172x" }}
+            <div class="flex-shrink-0">
+              {{ with $.Params.tldr_quote.image_link }}
+                <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
+                  <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="">
+                </a>
+              {{ else }}
+                <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="">
+              {{ end }}
+            </div>
+          {{ end }}
+        {{ end }}
+        <div>
+          <div class="text-4xl mb-6 border-l-4 border-primary pl-6">
+            {{ .quote }}
+          </div>
+          <p class="italic">{{ .source }}</p>
+        </div>
       </div>
-      <p class="italic">{{ .source }}</p>
     </section>
   {{ end }}
 

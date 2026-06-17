@@ -54,6 +54,8 @@ problem:
 tldr_quote: 
   quote: I help brokerages decide where AI pays and where it doesn't, then lead the work to make it happen — strategy first, then build or buy and on-going leadership.
   source: Alan Bates | Founder, 10 Kinds
+  image: "images/aws-cert-large.png"
+  image_link: "https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url"
 
 # --- CAPABILITIES: what AI is good for ---
 capabilities:
