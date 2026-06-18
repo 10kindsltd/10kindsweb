@@ -47,9 +47,6 @@
         {{ partial "utilities/image" (dict "src" .image "class" "max-w-full mt-8 object-cover object-center rounded-4xl") }}
         <div class="flex w-full items-center justify-between">
           <p class="text-lg">{{ .consultant_name }}</p>
-          {{ with site.Params.social.linkedin }}
-            <a href="{{ . }}" class="flex items-center underline" target="_blank" rel="noopener noreferrer">View Linkedin</a>
-          {{ end }}
         </div>
       </div>
     </div>
@@ -57,9 +54,6 @@
       {{ partial "utilities/image" (dict "src" .image "class" "max-w-full object-cover object-center rounded-4xl") }}
       <div class="flex w-full items-center justify-between">
         <p class="text-lg">{{ .consultant_name }}</p>
-        {{ with site.Params.social.linkedin }}
-          <a class="justify-center underline" href="{{ . }}" target="_blank" rel="noopener noreferrer">View Linkedin</a>
-        {{ end }}
       </div>
     </div>
   </div>
