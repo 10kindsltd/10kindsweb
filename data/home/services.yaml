@@ -1,29 +1,58 @@
 enable: true
 
-title: "How we help"
-text: "From initial AI curiosity to active operational ownership, we guide your business step-by-step, entirely at your own pace."
+title: "Four ways to work together"
+text: "From initial AI curiosity to active operational ownership, we guide your business step-by-step at your own pace."
 
 cards:
-  - image: "images/telephone.png"
-    price: "Free, 30 minutes"
-    title: "AI Clarity Call"
-    text: "Not sure where AI fits in your business? In a focused 30 minutes I get to know your business and give you a clear assessment of where AI could make a real difference."
+  - badge: "1: Understand"
+    title: "AI Education & Alignment"
+    explanation: "Demystifying AI for your leadership and teams so everyone understands what is actually possible, what's hype, and where the real opportunities lie."
+    price: "From £1,500"
+    duration: "Half-day or full-day sessions"
+    deliverables:
+      - "Custom interactive workshop tailored to your specific industry and workflows"
+      - "Frameworks for identifying and scoring AI use cases"
+      - "A curated resource guide and session recording for ongoing team reference"
     button:
-      label: "Book a call"
-      link: "/#contact"
+      label: "Book a session"
+      link: "https://calendly.com/alan-10kinds/30min"
 
-  - image: "images/services-web-development.png"
-    price_suffix: "about a day"   # actual price in config/_default/params.yaml
-    title: "AI Discovery"
-    text: "A focused strategic audit of your business to identify your highest-ROI AI opportunities. You get a prioritised roadmap so you know exactly where to start and why."
+  - badge: "2: Advise"
+    title: "Fractional AI Advisory"
+    explanation: "Ongoing strategic guidance, vendor sense-checking, and leadership support to keep your AI initiatives on track without the cost of a full-time hire."
+    price: "From £1,500 / month"
+    duration: "Flexible retainer"
+    featured: true
+    deliverables:
+      - "Dedicated strategic advisory hours and async support (Slack/Teams)"
+      - "Objective reviews of third-party vendors, software proposals, and architecture decisions"
+      - "Regular roadmap updates to align your AI adoption with evolving technology"
     button:
-      label: "Find out more"
-      link: "/#contact"
+      label: "Start a retainer"
+      link: "https://calendly.com/alan-10kinds/30min"
 
-  - image: "images/handshake.png"
-#    supertitle: "On-going"
-    title: "On-going AI Partnership"
-    text: "Senior AI expertise, on tap. Whether you want an advisor to guide decisions and sense-check vendors, or a fractional AI leader, I work at the level your business is ready for. "
+  - badge: "3: Explore"
+    title: "Rapid AI Prototyping"
+    explanation: "Test your highest-impact AI ideas quickly and cost-effectively to prove business value and user adoption before investing in full development."
+    price: "From £3,500 / day"
+#    duration: "2 to 3 weeks"
+    deliverables:
+      - "A working, interactive prototype built with secure, mock, or live data"
+      - "Technical feasibility and data readiness assessment"
+      - "Clear production cost estimate and implementation roadmap"
     button:
-      label: "Get in touch"
-      link: "/#contact"
+      label: "Discuss a prototype"
+      link: "https://calendly.com/alan-10kinds/30min"
+
+  - badge: "4: Build"
+    title: "Custom AI Build"
+    explanation: "Developing, securing, and integrating production-ready AI tools directly into your existing systems and business workflows."
+    price: "Project-scoped"
+#    duration: "Project-dependent"
+    deliverables:
+      - "Fully integrated, production-ready AI solution customized to your data"
+      - "Built-in security guardrails to protect proprietary company and client data"
+      - "Handover documentation, technical support, and team training sessions"
+    button:
+      label: "Discuss a project"
+      link: "https://calendly.com/alan-10kinds/30min"
