@@ -1,0 +1,26 @@
+<section id="faq" class="py-16">
+  <div class="container mx-auto px-4">
+    <div class="mx-auto max-w-3xl">
+      {{ with .heading }}<h2 class="mb-10 text-center text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
+      {{ with .items }}
+        <div class="flex flex-col gap-4">
+          {{ range . }}
+            <details class="border border-gray-500 group rounded-2xl px-6 py-5">
+              <summary class="flex cursor-pointer items-center justify-between font-semibold">
+                {{ .q }}
+                <span class="text-primary text-xl transition-transform group-open:rotate-45">+</span>
+              </summary>
+              {{ with .a }}
+                {{ range (split . "\n") }}
+                  {{ if . }}
+                    <p class="mt-4">{{ . | markdownify }}</p>
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            </details>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

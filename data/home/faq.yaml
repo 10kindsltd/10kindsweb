@@ -1,0 +1,25 @@
+enable: true
+
+heading: "Questions"
+
+items:
+  - q: "What does 10 Kinds actually do?"
+    a: |
+      We help you work out where AI is genuinely worth using, then make it happen — from setting the strategy to building and deploying working tools.
+
+      That means hands-on implementation, steering third-party developers, evaluating vendors, or providing ongoing strategic leadership — whatever you actually need.
+
+  - q: "How do I know if AI is right for my business?"
+    a: "That's exactly what the free 30-minute call is for. Alan will give you a straight read on where AI could realistically add value for your business — and where it probably won't. No obligation, no pitch."
+
+  - q: "Do I need to know anything about AI?"
+    a: "No. We provide the AI expertise, so you don't have to develop it in-house or take vendor claims at face value."
+
+  - q: "Where do most businesses start?"
+    a: "Usually with the AI Education & Alignment session - a half or full day that gets your leadership aligned on what's possible, what's hype, and where the real opportunities are. From there, you might move into an Advisory retainer, a prototype sprint, or straight into a build."
+
+  - q: "Can you build things, or is it just advice?"
+    a: "Both. We can run a full prototype sprint or custom build, work alongside your existing developers, or brief and oversee an external supplier. The right approach depends on what you're building and what capability you already have."
+
+  - q: "Is our data safe?"
+    a: "Yes. Anything we build or specify runs on infrastructure scoped to your business, sees only the data it's pointed at, and never feeds public AI models. Data governance is part of the conversation from day one."
