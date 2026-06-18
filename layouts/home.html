@@ -9,7 +9,7 @@
 
   {{ with .Site.Data.home.portfolio }}{{ if .enable }}{{ partial "blocks/home/portfolio.html" . }}{{ end }}{{ end }}
 
-  {{ with .Site.Data.home.services }}{{ if .enable }}{{ partial "blocks/home/services.html" . }}{{ end }}{{ end }}
+  {{ with .Site.Data.services }}{{ if .enable }}{{ partial "blocks/home/services.html" . }}{{ end }}{{ end }}
 
   {{ with .Site.Data.home.testimonials }}{{ if .enable }}{{ partial "blocks/home/testimonials.html" . }}{{ end }}{{ end }}
 

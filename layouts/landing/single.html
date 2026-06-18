@@ -204,19 +204,8 @@
   {{ end }}
 
   {{/* ---------- SERVICES ---------- */}}
-  {{ with .Params.services }}
-    {{ $cards := slice }}
-    {{ range .tiers }}
-      {{ $cards = $cards | append (dict
-        "title" .name
-        "image" .image
-        "text" .body
-        "price" .price
-        "price_suffix" .price_suffix
-        "button" (dict "label" .button.label "link" .button.href)
-      ) }}
-    {{ end }}
-    {{ partial "blocks/home/services.html" (dict "title" .heading "text" .text "cards" $cards) }}
+  {{ with .Site.Data.services }}
+    {{ if .enable }}{{ partial "blocks/home/services.html" . }}{{ end }}
   {{ end }}
 
   {{/* ---------- FAQ ---------- */}}

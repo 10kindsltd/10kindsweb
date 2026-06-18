@@ -87,7 +87,7 @@ why_me:
   sides:
     - heading: "Business judgement"
       image: "images/uol-logo.svg"
-      text: "**Postgraduate in Business Administration.** I sit with your principals and talk cost, risk and priorities — not jargon. "
+      text: "**Postgraduate Diploma in Business Administration.** I sit with your principals and talk cost, risk and priorities — not jargon. "
     - heading: "Technical build"
       image: "images/aws-cert.png"
       image_link: "https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url"
@@ -95,27 +95,6 @@ why_me:
       text: "[AWS Certified Generative AI Professional](https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url). I can build workflows or evaluate vendors, telling you whether their claims hold up."
   summary: |
     <span class="bg-yellow-200 md:bg-transparent">One person who understands your business and can build — so you get straight answers on what's worth doing, what isn't, and what to ignore.</span> Accountable to you, working with firms across the UK and beyond.
-
-# --- SERVICES: the three-tier offer ladder. Set the Discovery price yourself. ---
-services:
-  heading: "How we can work together"
-  text: "I meet you where you are and help you build towards your goals. From a no-obligation first conversation to embedded strategic leadership – whatever suits you."
-  
-  tiers:
-    - name: "AI Clarity Call"
-      price: "Free · 30 minutes"
-      image: "images/telephone.png"
-      body: "Not sure where AI fits? In 30 focused minutes I learn how your firm works and give you a straight read on where AI could actually help — and where it couldn't."
-      button: { label: "Book a call", href: "#contact" }
-    - name: "AI Discovery"
-      price_suffix: "about a day"     # actual price in config/_default/params.yaml
-      image: "images/services-web-development.png"
-      body: "A focused audit of your document and back-office workflows to find the highest-ROI opportunities. You get a prioritised roadmap so you know exactly where to start and why."
-      button: { label: "Find out more", href: "#contact" }
-    - name: "Ongoing AI Partnership"
-      image: "images/handshake.png"
-      body: "Senior AI judgement on tap — guiding decisions, sense-checking vendors, or acting as your fractional AI lead. Pitched at whatever level your firm is ready for."
-      button: { label: "Get in touch", href: "#contact" }
 
 # --- FAQ: quietly handles the objections brokers won't say out loud ---
 faq:
