@@ -2,7 +2,7 @@
   <div class="container mx-auto grid gap-16 px-4 lg:grid-cols-2">
     <div class="flex flex-col justify-center gap-8 lg:gap-12">
       {{ with .title }}
-        <h1 class="text-primary title text-center text-6xl font-bold lg:text-start lg:text-8xl">
+        <h1 class="text-primary title text-center text-6xl font-extrabold lg:text-start lg:text-8xl">
           {{ . | markdownify }}
         </h1>
       {{ end }}
@@ -10,9 +10,17 @@
       {{ with .text }}
         {{ range (split . "\n") }}
           {{ if . }}
-            <p class="text-center lg:text-start text-lg mb-4">{{ . | markdownify }}</p>
+            <p class="text-center lg:text-start text-xl mb-4">{{ . | markdownify }}</p>
           {{ end }}
         {{ end }}
+      {{ end }}
+
+      {{ if .quote }}
+        <blockquote class="text-center lg:text-start text-lg font-semibold italic border-l-4 border-primary pl-4 mb-4">{{ .quote | markdownify }}</blockquote>
+      {{ end }}
+
+      {{ if .footer }}
+        <p class="text-center lg:text-start text text-sm text-gray-500">{{ .footer | markdownify }}</p>
       {{ end }}
       </div>
       {{ if .buttons }}

@@ -1,10 +1,11 @@
 enable: true
 
-title: "AI can help grow your business*. Here's how"
+title: "Discover your AI competitive advantage"
 text: |
-  \* (or not, in which case I'll tell you)
-  Most AI advice is either hype from people who can't build, or jargon from people who can't see the business case. 
-  **I do both**: the **commercial case** and the **technical reality** — so you get a clear plan that actually works.
+  Your strategic partner for AI discovery and adoption, without the overhead of an in-house department.
+quote: |
+  "10 Kinds is a lean, high-impact AI consultancy providing the strategic clarity and technical execution needed to establish your first AI capabilities"
+footer: Led by Alan Bates, AWS Certified AI Professional & AI Founder
 
 buttons:
   - label: "Book a free AI Clarity Call"
