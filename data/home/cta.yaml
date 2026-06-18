@@ -1,7 +1,7 @@
-enable: false
+enable: true
 
 title: "Ready to see how AI fits into your business?"
 #image: "images/hero-image.png"
 button:
-  label: "Book your free AI Clarity Call"
-  link: "/contact/"
+  label: "Book a free call"
+  link: ":calendly"

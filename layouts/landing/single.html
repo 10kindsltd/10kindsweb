@@ -245,9 +245,4 @@
 
   {{ with .Site.Data.home.bespoke }}{{ if .enable }}{{ partial "blocks/home/bespoke.html" . }}{{ end }}{{ end }}
 
-  {{/* ---------- CONTACT ---------- */}}
-  {{ with .Params.contact }}
-    {{ partial "blocks/home/contact.html" (dict "title" .heading "text" .body) }}
-  {{ end }}
-
 {{ end }}

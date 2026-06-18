@@ -10,7 +10,7 @@ nav:
   - { name: "Services", url: "#services" }
   - { name: "FAQ", url: "#faq" }
 nav_buttons:
-  - { name: "Book a free call", url: "#contact" }
+  - { name: "Book a free call", url: ":calendly" }
 
 # --- HERO: their pain + the demo as ONE idea + call to discuss the rest ---
 hero:
@@ -20,7 +20,7 @@ hero:
     Here's a quick demo of something your firm probably does daily — comparing open-market quotes. I'm an independent AI consultant and can build you a workflow to help you compare them in seconds. 
     
     This is just one idea. Get in touch and we'll find where AI would actually help your firm.
-  button_primary: { label: "Book a free call", href: "#contact" }
+  button_primary: { label: "Book a free call", href: ":calendly" }
   video_url: "https://youtube.com/embed/ffnXQSgaMME"
   caption: "Three sample insurer quotes for the same risk, in different formats, pulled into one comparison with the gaps flagged — the cheapest quietly drops flood cover, halves the business-interruption period and hides a survey condition."
 
@@ -81,7 +81,7 @@ honesty:
 # --- WHY ME: two scannable cards (cols 1–2 on lg) + headshot (col 3). ---
 why_me:
   heading: "Why work with me"
-  intro: "Unlike most AI consultants, I talk both business and tech (in plain English)."
+  intro: "Fluent in both business and tech (in plain English)."
   image: "images/headshot.jpg"
   consultant_name: "Alan Bates, Certified AI Consultant"
   sides:
