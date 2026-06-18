@@ -16,3 +16,6 @@ cards:
     text: "Without clear guardrails, staff using public AI tools risk exposing proprietary company & client data."
   - heading: "Adoption risks"
     text: "Skipping strategy and rapid prototyping leads to expensive software that your team rejects."
+
+callout: "Let's discuss how we can support your transition."
+callout_link: "Book a free call"

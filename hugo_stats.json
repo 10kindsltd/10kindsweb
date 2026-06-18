@@ -156,6 +156,7 @@
       "md:order-2",
       "md:text-6xl",
       "min-h-screen",
+      "ml-1",
       "mt-0.5",
       "mt-10",
       "mt-4",

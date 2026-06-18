@@ -13,7 +13,7 @@
 
   {{ with .Site.Data.home.testimonials }}{{ if .enable }}{{ partial "blocks/home/testimonials.html" . }}{{ end }}{{ end }}
 
-  {{ with .Site.Data.home.founder_profile }}{{ if .enable }}{{ partial "blocks/home/founder-profile.html" (dict "whyme" . "creds" $.Site.Data.home.credentials) }}{{ end }}{{ end }}
+  {{ with .Site.Data.founder_profile }}{{ if .enable }}{{ partial "blocks/home/founder-profile.html" (dict "whyme" . "creds" $.Site.Data.home.credentials) }}{{ end }}{{ end }}
 
   {{ with .Site.Data.home.bespoke }}{{ if .enable }}{{ partial "blocks/home/bespoke.html" . }}{{ end }}{{ end }}
 

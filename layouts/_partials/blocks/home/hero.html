@@ -26,8 +26,7 @@
       {{ if .buttons }}
         <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-8">
           {{ range $i, $e := .buttons }}
-            {{ $link := .link }}
-            {{ if eq $link ":calendly" }}{{ $link = site.Params.calendly }}{{ end }}
+            {{ $link := partial "utilities/resolve-link" .link }}
             {{ if (eq $i 0) }}
               <a class="bg-primary hover:bg-primary/90 rounded-lg px-8 py-3 text-white duration-500" href="{{ $link }}">
                 {{ .label }}

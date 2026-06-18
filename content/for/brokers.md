@@ -54,8 +54,7 @@ problem:
 tldr_quote: 
   quote: I help brokerages decide where AI pays and where it doesn't, then lead the work to make it happen — strategy first, then build or buy and on-going leadership.
   source: Alan Bates | Founder, 10 Kinds
-  image: "images/aws-cert-large.png"
-  image_link: "https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url"
+  image: "images/headshot.jpg"
 
 # --- CAPABILITIES: what AI is good for ---
 capabilities:
@@ -77,24 +76,6 @@ capabilities:
 honesty:
   heading: "Where you don't need me"
   body: "Where there are already good off-the-shelf tools I can help you choose a vendor. I earn my keep helping you identify the highest-ROI AI opportunities for your firm and providing whatever leadership you need."
-
-# --- WHY ME: two scannable cards (cols 1–2 on lg) + headshot (col 3). ---
-why_me:
-  heading: "Why work with me"
-  intro: "Fluent in both business and tech (in plain English)."
-  image: "images/headshot.jpg"
-  consultant_name: "Alan Bates, Certified AI Consultant"
-  sides:
-    - heading: "Business judgement"
-      image: "images/uol-logo.svg"
-      text: "**Postgraduate Diploma in Business Administration.** I sit with your principals and talk cost, risk and priorities — not jargon. "
-    - heading: "Technical build"
-      image: "images/aws-cert.png"
-      image_link: "https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url"
-      text_links_new_window: true
-      text: "[AWS Certified Generative AI Professional](https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url). I can build workflows or evaluate vendors, telling you whether their claims hold up."
-  summary: |
-    <span class="bg-yellow-200 md:bg-transparent">One person who understands your business and can build — so you get straight answers on what's worth doing, what isn't, and what to ignore.</span> Accountable to you, working with firms across the UK and beyond.
 
 # --- FAQ: quietly handles the objections brokers won't say out loud ---
 faq:

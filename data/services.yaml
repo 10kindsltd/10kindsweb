@@ -28,7 +28,7 @@ cards:
       - "Objective reviews of third-party vendors, software proposals, and architecture decisions"
       - "Regular roadmap updates to align your AI adoption with evolving technology"
     button:
-      label: "Start a retainer"
+      label: "Discuss a retainer"
       link: ":calendly"
 
   - badge: "3: Explore"

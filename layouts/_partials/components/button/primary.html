@@ -1,5 +1,4 @@
-{{ $href := .href }}
-{{ if eq $href ":calendly" }}{{ $href = site.Params.calendly }}{{ end }}
+{{ $href := partial "utilities/resolve-link" .href }}
 {{ if .inverted }}
 <a class="bg-white hover:bg-white/90 text-primary rounded-lg px-8 py-3 font-medium duration-500" href="{{ $href }}">
   {{ .label }}
