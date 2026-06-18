@@ -1,21 +1,21 @@
 enable: true
 
 title: "Take Control of AI Today to Prepare Your Business for Tomorrow"
-text: "AI is reshaping every industry. Businesses that establish an early advantage will be hardest to displace."
+text: "The market shift is inevitable. To secure the long-term advantages of AI tomorrow, businesses must actively manage the security and operational risks of today."
 
 cards:
   - heading: "Competitors"
     text: "Competitors leveraging AI will move faster, outpace your execution, and win market share."
   - heading: "Client expectations"
     text: "Clients increasingly expect AI-enhanced service, faster turnaround times, and smarter business outputs."
-  - heading: "Cost savings"
-    text: "Targeted automation lowers your operational costs and directly protects your bottom-line margins."
-  - heading: "Unique advantages"
-    text: "Harnessing your unique data and workflows builds a secure, proprietary competitive advantage."
   - heading: "Data risks"
     text: "Without clear guardrails, staff using public AI tools risk exposing proprietary company & client data."
   - heading: "Adoption risks"
     text: "Skipping strategy and rapid prototyping leads to expensive software that your team rejects."
+  - heading: "Cost savings"
+    text: "Targeted automation lowers your operational costs and directly protects your bottom-line margins."
+  - heading: "Unique advantages"
+    text: "Harnessing your unique data and workflows builds a secure, proprietary competitive advantage."
 
 callout: "Let's discuss how we can support your transition."
 callout_link: "Book a free call"
