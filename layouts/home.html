@@ -1,6 +1,8 @@
 {{ define "main" }}
   {{ with .Site.Data.home.hero }}{{ if .enable }}{{ partial "blocks/home/hero.html" . }}{{ end }}{{ end }}
 
+  {{ with .Site.Data.home.gap }}{{ if .enable }}{{ partial "blocks/home/gap.html" . }}{{ end }}{{ end }}
+
   {{ with .Site.Data.home.credentials }}{{ if .enable }}{{ partial "blocks/home/credentials.html" . }}{{ end }}{{ end }}
 
   {{ with .Site.Data.home.whyme }}{{ if .enable }}{{ partial "blocks/home/whyme.html" (dict "whyme" . "creds" $.Site.Data.home.credentials) }}{{ end }}{{ end }}
