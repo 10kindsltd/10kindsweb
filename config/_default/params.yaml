@@ -12,6 +12,11 @@ favicons:
 
 calendly: "https://calendly.com/alan-10kinds"
 
+colors:
+  primary: "#7b43a5"
+  secondary: "#ac4ead"
+  tertiary: "#cbe2f2"
+
 #social:
 #  linkedin: "https://www.linkedin.com/in/al-bates-uk/"
 #  instagram: "#"
