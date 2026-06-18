@@ -17,7 +17,7 @@ main:
 
 buttons:
   - name: "Book a free call"
-    url: "/#contact"
+    url: "https://calendly.com/alan-10kinds/30min"
     weight: 6
 
 footer:

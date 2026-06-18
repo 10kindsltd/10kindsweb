@@ -27,7 +27,7 @@
         <div class="flex flex-col items-center gap-4 lg:flex-row lg:gap-8">
           {{ range $i, $e := .buttons }}
             {{ if (eq $i 0) }}
-              <a class="bg-primary hover:bg-primary/90 rounded px-8 py-2 text-white duration-500" href="{{ .link }}">
+              <a class="bg-primary hover:bg-primary/90 rounded-lg px-8 py-3 text-white duration-500" href="{{ .link }}">
                 {{ .label }}
               </a>
             {{ else }}

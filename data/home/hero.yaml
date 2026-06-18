@@ -8,8 +8,8 @@ quote: |
 footer: Led by Alan Bates, AWS Certified AI Professional & AI Founder
 
 buttons:
-  - label: "Book a free AI Clarity Call"
-    link: "/#contact"
+  - label: "Book a free 30-min call"
+    link: "https://calendly.com/alan-10kinds/30min"
 
 image: "images/headshot.jpg"
 consultant_name: "Alan Bates, Certified AI Consultant"
