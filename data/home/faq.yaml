@@ -23,3 +23,6 @@ items:
 
   - q: "Is our data safe?"
     a: "Yes. Anything we build or specify runs on infrastructure scoped to your business, sees only the data it's pointed at, and never feeds public AI models. Data governance is part of the conversation from day one."
+
+  - q: "How do we get started?"
+    a: "Book a free 30-minute call. We'll get to know your business, give you a straight read on where AI fits, and agree what the right next step looks like — whether that's a workshop, a retainer, or something else entirely."
