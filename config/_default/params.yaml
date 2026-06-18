@@ -1,5 +1,5 @@
 title: "10kinds"
-description: "AI consultancy for businesses that don't know where to start"
+description: "Making sense of AI"
 images:
   - "images/hero-image.png"
 
@@ -12,8 +12,8 @@ favicons:
 
 calendly: "https://calendly.com/alan-10kinds"
 
-social:
-  linkedin: "https://www.linkedin.com/in/al-bates-uk/"
+#social:
+#  linkedin: "https://www.linkedin.com/in/al-bates-uk/"
 #  instagram: "#"
 #  facebook: "#"
 #  twitter: "#"
@@ -29,7 +29,7 @@ social:
 pricing:
   discovery: "From £1,250"
 
-copyright: "© 2026 10 Kinds of People Ltd All Rights Reserved"
+copyright: "© 2026 10 Kinds of People Ltd. All Rights Reserved"
 
 legal:
   company_name: "10 Kinds of People Ltd"

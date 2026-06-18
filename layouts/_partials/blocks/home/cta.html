@@ -1,7 +1,10 @@
-<section class="py-16">
+<section class="bg-gradient-to-b from-primary to-secondary py-16">
   <div class="container mx-auto px-4">
     {{ with .title }}
-      <h1 class="max-w-4xl m-auto mb-8 text-center text-6xl font-bold">{{ . }}</h1>
+      <h1 class="max-w-4xl m-auto mb-6 text-center text-6xl font-extrabold text-white">{{ . }}</h1>
+    {{ end }}
+    {{ with .text }}
+      <p class="max-w-2xl mx-auto mb-8 text-center text-white/80 text-lg">{{ . | markdownify }}</p>
     {{ end }}
     {{ with .image }}
       <div class="mb-8 flex items-center justify-center">
@@ -9,8 +12,9 @@
       </div>
     {{ end }}
     {{ with .button }}
-      <div class="flex items-center justify-center">
-        {{ partial "components/button/primary" (dict "label" .label "href" .link) }}
+      <div class="flex flex-col items-center gap-3">
+        {{ partial "components/button/primary" (dict "label" .label "href" .link "inverted" true) }}
+        {{ with $.subtext }}<p class="text-white/60 text-sm">{{ . }}</p>{{ end }}
       </div>
     {{ end }}
   </div>

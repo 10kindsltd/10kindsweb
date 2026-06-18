@@ -1,7 +1,9 @@
 enable: true
 
-title: "Ready to see how AI fits into your business?"
+title: "Start your AI Journey Now"
+text: "Half an hour to cut through the noise and find your first real AI opportunity."
 #image: "images/hero-image.png"
 button:
   label: "Book a free call"
   link: ":calendly"
+subtext: "No commitment. No sales pitch."
