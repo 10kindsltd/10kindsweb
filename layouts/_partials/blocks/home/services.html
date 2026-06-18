@@ -4,7 +4,7 @@
       <h1 class="mb-8 text-center text-4xl xl:text-5xl font-bold">{{ . }}</h1>
     {{ end }}
     {{ with .text }}
-      <p class="text-lg mx-auto mb-16 text-center xl:max-w-[50%]">{{ . }}</p>
+      <p class="text-lg mx-auto mb-16 text-center xl:max-w-3xl">{{ . }}</p>
     {{ end }}
     {{ if .cards }}
       {{ $mid := div (len .cards) 2 }}
