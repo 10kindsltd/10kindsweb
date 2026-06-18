@@ -15,7 +15,7 @@ cards:
       - "A curated resource guide and session recording for ongoing team reference"
     button:
       label: "Book a session"
-      link: "https://calendly.com/alan-10kinds/30min"
+      link: ":calendly"
 
   - badge: "2: Advise"
     title: "Fractional AI Advisory"
@@ -29,7 +29,7 @@ cards:
       - "Regular roadmap updates to align your AI adoption with evolving technology"
     button:
       label: "Start a retainer"
-      link: "https://calendly.com/alan-10kinds/30min"
+      link: ":calendly"
 
   - badge: "3: Explore"
     title: "Rapid AI Prototyping"
@@ -42,7 +42,7 @@ cards:
       - "Clear production cost estimate and implementation roadmap"
     button:
       label: "Discuss a prototype"
-      link: "https://calendly.com/alan-10kinds/30min"
+      link: ":calendly"
 
   - badge: "4: Build"
     title: "Custom AI Build"
@@ -55,4 +55,4 @@ cards:
       - "Handover documentation, technical support, and team training sessions"
     button:
       label: "Discuss a project"
-      link: "https://calendly.com/alan-10kinds/30min"
+      link: ":calendly"
