@@ -40,6 +40,8 @@
     ],
     "classes": [
       "-translate-y-full",
+      "[&_a]:font-semibold",
+      "[&_a]:underline",
       "__h_video",
       "absolute",
       "after:absolute",

@@ -14,7 +14,7 @@
               {{ range . }}
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="text-primary mt-0.5 shrink-0">{{ partial "icons/arrow-right" }}</span>
-                  <span>{{ . }}</span>
+                  <span class="[&_a]:underline [&_a]:font-semibold">{{ . | markdownify | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` | safeHTML }}</span>
                 </li>
               {{ end }}
             </ul>

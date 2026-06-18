@@ -5,7 +5,7 @@ subtitle: Founder, 10 Kinds
 headshot: "images/headshot.jpg"
 
 credentials:
-  - "AWS Certified Generative AI Professional"
+  - "[AWS Certified Generative AI Professional](https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url)"
   - "Postgraduate Diploma in Business Administration"
   - "AI Founder & Practitioner"
   - "Based in the UK, working globally"
@@ -21,10 +21,11 @@ sides:
   - heading: "Business expertise"
     image: "images/uol-logo.svg"
     text: |
-      **Postgraduate diploma in Business Administration**. I can sit in your board meeting and talk ROI, priorities, and translate tech gobblydegook into actual English.
+      "**Postgraduate diploma in Business Administration**. I can sit in your board meeting and talk ROI, priorities, and translate tech gobblydegook into actual English."
   - heading: "Technical chops"
     image: "images/aws-cert.png"
     image_link: "https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url"
     image_link_new_window: true
     text_links_new_window: true
-    text: "[AWS Certified Generative AI Professional](https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url). I can build prototypes to test ideas, brief and manage developers, and tell you whether a vendor is talking sense, technically and commercially."
+    text: |
+      "[AWS Certified Generative AI Professional](https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url). I can build prototypes to test ideas, brief and manage developers, and tell you whether a vendor is talking sense, technically and commercially."

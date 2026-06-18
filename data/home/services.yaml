@@ -34,7 +34,7 @@ cards:
   - badge: "3: Explore"
     title: "Rapid AI Prototyping"
     explanation: "Test your highest-impact AI ideas quickly and cost-effectively to prove business value and user adoption before investing in full development."
-    price: "From £3,500 / day"
+    price: "From £1,500 / day"
 #    duration: "2 to 3 weeks"
     deliverables:
       - "A working, interactive prototype built with secure, mock, or live data"
