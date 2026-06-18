@@ -1,71 +1,102 @@
-<section id="why-me" class="py-16 bg-tertiary/25 border-t border-t-primary">
+<section id="founder-profile" class="py-16 bg-tertiary/25 border-t border-t-primary">
   <div class="container mx-auto px-4">
-    <div class="mx-auto max-w-3xl">
-      {{- $w := .whyme }}
-      {{- $sizeMap := dict }}
-      {{- range .creds.items }}
-        {{- if and .image .size }}
-          {{- $sizeMap = merge $sizeMap (dict .image .size) }}
-        {{- end }}
-      {{- end }}
-      {{ with $w.title }}
-        <h2 class="text-4xl font-bold xl:text-5xl">{{ . }}</h2>
-      {{ end }}
-      {{ with $w.subtitle }}
-        <h2 class="mb-6 font-semibold text-gray-400">{{ . }}</h2>
-      {{ end }}
-      {{ with $w.intro }}
-        <p class="mb-8 text-lg">{{ . }}</p>
-      {{ end }}
-      {{ if $w.sides }}
-        <div class="mb-8 grid gap-6 xl:grid-cols-2">
-          {{ range $w.sides }}
-            {{ $side := . }}
-            <div class="bg-tertiary rounded-2xl px-6 py-8">
-              <div class="mb-3 flex items-center justify-between gap-4">
-                {{ with .heading }}
-                  <h3 class="text-primary font-semibold">{{ . }}</h3>
-                {{ end }}
-                {{ if .image }}
-                  {{ with resources.Get $side.image }}
-                    {{ $isSVG := eq .MediaType.SubType "svg" }}
-                    {{ $size := index $sizeMap $side.image }}
-                    {{ $imgHTML := "" }}
-                    {{ if and $size (not $isSVG) }}
-                      {{ $resized := .Resize (printf "%dx" $size) }}
-                      {{ $imgHTML = printf "<img src=\"%s\" width=\"%d\" height=\"%d\" alt=\"\">" $resized.RelPermalink $resized.Width $resized.Height }}
-                    {{ else if $size }}
-                      {{ $imgHTML = printf "<img src=\"%s\" width=\"%d\" alt=\"\">" .RelPermalink $size }}
-                    {{ else }}
-                      {{ $imgHTML = printf "<img src=\"%s\" alt=\"\">" .RelPermalink }}
-                    {{ end }}
-                    {{ if $side.image_link }}
-                      {{ $target := "" }}
-                      {{ if $side.image_link_new_window }}{{ $target = " target=\"_blank\" rel=\"noopener noreferrer\"" }}{{ end }}
-                      <a href="{{ $side.image_link }}"{{ $target | safeHTMLAttr }}>{{ $imgHTML | safeHTML }}</a>
-                    {{ else }}
-                      {{ $imgHTML | safeHTML }}
-                    {{ end }}
-                  {{ end }}
-                {{ end }}
-              </div>
-              {{ with .text }}
-                {{ $html := . | markdownify }}
-                {{ if $side.text_links_new_window }}
-                  {{ $html = $html | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` }}
-                {{ end }}
-                <div class="prose prose-sm">{{ $html | safeHTML }}</div>
+    {{- $w := .whyme }}
+    <div class="grid gap-12 lg:grid-cols-3">
+
+      {{/* Left col — headshot + credentials */}}
+      <div class="flex flex-col items-center lg:items-end gap-6 order-2 lg:order-1">
+        <div class="flex flex-col gap-4 w-full max-w-xs">
+          {{ with $w.headshot }}
+            {{ partial "utilities/image" (dict "src" . "class" "w-full rounded-3xl object-cover object-center") }}
+          {{ end }}
+          {{ with $w.credentials }}
+            <ul class="flex flex-col gap-2">
+              {{ range . }}
+                <li class="flex items-start gap-2 text-sm text-gray-600">
+                  <span class="text-primary mt-0.5 shrink-0">{{ partial "icons/arrow-right" }}</span>
+                  <span>{{ . }}</span>
+                </li>
               {{ end }}
-            </div>
+            </ul>
           {{ end }}
         </div>
-      {{ end }}
-      {{ with $w.summary|markdownify }}
-        <p class="mb-4">{{ . }}</p>
-      {{ end }}
-      {{ with $w.footer }}
-        <p class="text-gray-500">{{ .|markdownify }}</p>
-      {{ end }}
+      </div>
+
+      {{/* Right col — bio content (spans 2 cols) */}}
+      <div class="lg:col-span-2 order-1 lg:order-2">
+        {{ with $w.title }}
+          <h2 class="text-4xl font-bold xl:text-5xl">{{ . }}</h2>
+        {{ end }}
+        {{ with $w.subtitle }}
+          <p class="mb-6 font-semibold text-gray-400">{{ . }}</p>
+        {{ end }}
+        {{ with $w.intro }}
+          <p class="mb-8 text-lg">{{ . }}</p>
+        {{ end }}
+        {{ if $w.sides }}
+          {{- $sizeMap := dict }}
+          {{- range $.creds.items }}
+            {{- if and .image .size }}
+              {{- $sizeMap = merge $sizeMap (dict .image .size) }}
+            {{- end }}
+          {{- end }}
+          <div class="mb-8 grid gap-6 xl:grid-cols-2">
+            {{ range $w.sides }}
+              {{ $side := . }}
+              <div class="bg-tertiary rounded-2xl px-6 py-8">
+                <div class="mb-3 flex items-center justify-between gap-4">
+                  {{ with .heading }}
+                    <h3 class="text-primary font-semibold">{{ . }}</h3>
+                  {{ end }}
+                  {{ if .image }}
+                    {{ with resources.Get $side.image }}
+                      {{ $isSVG := eq .MediaType.SubType "svg" }}
+                      {{ $size := index $sizeMap $side.image }}
+                      {{ $imgHTML := "" }}
+                      {{ if and $size (not $isSVG) }}
+                        {{ $resized := .Resize (printf "%dx" $size) }}
+                        {{ $imgHTML = printf "<img src=\"%s\" width=\"%d\" height=\"%d\" alt=\"\">" $resized.RelPermalink $resized.Width $resized.Height }}
+                      {{ else if $size }}
+                        {{ $imgHTML = printf "<img src=\"%s\" width=\"%d\" alt=\"\">" .RelPermalink $size }}
+                      {{ else }}
+                        {{ $imgHTML = printf "<img src=\"%s\" alt=\"\">" .RelPermalink }}
+                      {{ end }}
+                      {{ if $side.image_link }}
+                        {{ $target := "" }}
+                        {{ if $side.image_link_new_window }}{{ $target = " target=\"_blank\" rel=\"noopener noreferrer\"" }}{{ end }}
+                        <a href="{{ $side.image_link }}"{{ $target | safeHTMLAttr }}>{{ $imgHTML | safeHTML }}</a>
+                      {{ else }}
+                        {{ $imgHTML | safeHTML }}
+                      {{ end }}
+                    {{ end }}
+                  {{ end }}
+                </div>
+                {{ with .text }}
+                  {{ $html := . | markdownify }}
+                  {{ if $side.text_links_new_window }}
+                    {{ $html = $html | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` }}
+                  {{ end }}
+                  <div class="prose prose-sm">{{ $html | safeHTML }}</div>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+        {{ with $w.summary | markdownify }}
+          <p class="mb-4">{{ . }}</p>
+        {{ end }}
+        {{ with $w.footer }}
+          <p class="text-gray-500">{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
+
     </div>
+    {{ with site.Params.social.linkedin }}
+      <div class="mt-10 text-center">
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer" class="bg-primary hover:bg-primary/90 rounded-lg px-6 py-2.5 text-white text-sm duration-500 inline-block">
+          Connect on LinkedIn
+        </a>
+      </div>
+    {{ end }}
   </div>
 </section>

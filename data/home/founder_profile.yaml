@@ -2,6 +2,13 @@ enable: true
 
 title: "Alan Bates"
 subtitle: Founder, 10 Kinds
+headshot: "images/headshot.jpg"
+
+credentials:
+  - "AWS Certified Generative AI Professional"
+  - "Postgraduate in Business Administration"
+  - "AI Founder & Practitioner"
+  - "Based in the UK, working globally"
 
 intro: "Most consultants only speak business or tech. I speak both."
 
