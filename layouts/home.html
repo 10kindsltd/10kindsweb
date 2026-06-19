@@ -1,6 +1,8 @@
 {{ define "main" }}
   {{ with .Site.Data.home.hero }}{{ if .enable }}{{ partial "blocks/home/hero.html" . }}{{ end }}{{ end }}
 
+  {{ with .Site.Data.home.what_we_do }}{{ if .enable }}{{ partial "blocks/home/what-we-do.html" . }}{{ end }}{{ end }}
+
   {{ with .Site.Data.home.gap }}{{ if .enable }}{{ partial "blocks/home/gap.html" . }}{{ end }}{{ end }}
 
   {{ with .Site.Data.home.credentials }}{{ if .enable }}{{ partial "blocks/home/credentials.html" . }}{{ end }}{{ end }}

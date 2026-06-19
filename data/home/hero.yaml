@@ -10,5 +10,7 @@ footer: -- Alan Bates, AWS Certified AI Professional & AI Founder
 buttons:
   - label: "Book a free 30-min call"
     link: ":calendly"
+  - label: "Our services"
+    link: "#services"
 
 image: "images/hero.jpg"

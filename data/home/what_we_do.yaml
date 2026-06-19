@@ -1,0 +1,20 @@
+enable: true
+
+title: "How we help"
+text: "From getting your leadership aligned on what's possible, through identifying the right opportunities, to building and deploying working tools — we can help at every stage."
+
+items:
+  - heading: "Map your highest-value workflows"
+    body: "Most AI wins hide in plain sight: **repetitive document tasks**, **approval chains** and **data re-entry** that cost your team hours every week. We find them, rank them by ROI, and tell you what to tackle first."
+
+  - heading: "Automate decisions, not just admin"
+    body: "AI can **route inbound requests**, **flag exceptions** and **prioritise queues** — so your best people spend time on judgement, not triage."
+
+  - heading: "Unlock what your organisation already knows"
+    body: "**Retrieval AI (RAG)** lets your team ask questions of your documents, policies and past cases in plain English and get cited answers instantly. The expertise locked in files and people's heads, made searchable and queryable."
+
+  - heading: "Build agents that act"
+    body: "Beyond answering questions: **AI agents** take multi-step actions autonomously — gathering data, drafting outputs, triggering downstream workflows — without human hand-holding at each step."
+
+  - heading: "Align your leadership on opportunities"
+    body: "Before starting, your team needs a **shared, grounded view** of what AI can and can't do. We run workshops to bring you up-to-speed and build the consensus to move fast."
