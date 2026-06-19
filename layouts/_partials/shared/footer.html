@@ -1,67 +1,39 @@
 <footer class="bg-tertiary/25 py-16">
   <div class="container mx-auto px-4">
-    <div class="mb-8 flex flex-col gap-8 xl:flex-row">
-      <div class="flex flex-col items-center gap-4 xl:items-start xl:max-w-xs">
-        <a class="flex items-center" href="{{ site.BaseURL }}">
+    <div class="mb-8 flex flex-col gap-8 xl:flex-row xl:justify-between">
+
+      {{/* Col 1: brand */}}
+      <div class="flex flex-col items-center xl:items-start">
+        <a href="{{ site.BaseURL }}">
           <span class="text-xl xl:text-3xl" style="font-family: 'Comfortaa', sans-serif; font-weight: 700; color: #f2af0d;">{{ site.Title }}</span>
         </a>
         <p class="text-center text-sm xl:text-start">{{ site.Params.tagline }}</p>
-        {{ with .Site.Params.social }}
-          <ul class="flex gap-4">
-            {{ with .linkedin }}
-              <li class="flex size-8 items-center justify-center rounded-full">
-                <a class="" href="{{ . }}" aria-label="LinkedIn" target="_blank">{{ partial "icons/linkedin.html" }}</a>
-              </li>
-            {{ end }}
-            {{ with .instagram }}
-              <li class="bg-primary/10 text-primary flex size-8 items-center justify-center rounded-full">
-                <a class="" href="{{ . }}" aria-label="Instagram">{{ partial "icons/instagram.html" }}</a>
-              </li>
-            {{ end }}
-            {{ with .facebook }}
-              <li class="bg-primary/10 text-primary flex size-8 items-center justify-center rounded-full">
-                <a class="" href="{{ . }}" aria-label="Facebook">{{ partial "icons/facebook.html" }}</a>
-              </li>
-            {{ end }}
-            {{ with .twitter }}
-              <li class="bg-primary/10 text-primary flex size-8 items-center justify-center rounded-full">
-                <a class="" href="{{ . }}" aria-label="Twitter">{{ partial "icons/twitter.html" }}</a>
-              </li>
-            {{ end }}
-          </ul>
-        {{ end }}
       </div>
-      <div class="m-auto xl:m-0">
-        {{ with resources.Get "images/aws-cert.png" }}
-          {{ $img := .Resize "100x" }}
+
+      {{/* Col 2: cert */}}
+      {{ with resources.Get "images/aws-cert.png" }}
+        {{ $img := .Resize "100x" }}
+        <div class="m-auto xl:m-0">
           <a href="https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url" target="_blank" rel="noopener noreferrer">
             <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="AWS Certified Generative AI Professional" />
           </a>
-        {{ end }}
-      </div>
+        </div>
+      {{ end }}
+
+      {{/* Col 2: site nav */}}
+      {{ with .Site.Menus.footer }}
       <div>
         <h2 class="mb-2 text-center text-lg font-bold xl:text-start">Site</h2>
         <ul class="flex flex-col gap-1 text-sm">
-          {{ range .Site.Menus.footer }}
-            <li class="text-center xl:text-start">
-              <a class="" href="{{ .URL }}">{{ .Name }}</a>
-            </li>
-          {{ end }}
-        </ul>
-      </div>
-      {{ with .Site.Params.location }}
-      <div>
-        <h2 class="mb-2 text-center text-lg font-bold xl:text-start">Location</h2>
-        <ul class="flex flex-col gap-3 text-sm">
           {{ range . }}
-            <li class="flex flex-col items-center gap-4 xl:flex-row">
-              <span class="text-primary">{{ partial "icons/geo-alt.html" }}</span>
-              <span class="text-center xl:text-start">{{ . }}</span>
+            <li class="text-center xl:text-start">
+              <a href="{{ .URL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         </ul>
       </div>
       {{ end }}
+
     </div>
     <div class="text-center text-sm text-gray-500">
       <p>

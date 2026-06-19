@@ -240,6 +240,7 @@
       "xl:grid-cols-3",
       "xl:hidden",
       "xl:items-start",
+      "xl:justify-between",
       "xl:m-0",
       "xl:max-w-3xl",
       "xl:max-w-4xl",
