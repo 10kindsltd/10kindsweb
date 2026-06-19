@@ -3,7 +3,7 @@
   <head>
     <!-- Title -->
     {{ if .IsHome }}
-      <title>{{ .Site.Params.description }} | {{ .Site.Title }}</title>
+      <title>{{ .Site.Params.title_seo }} | {{ .Site.Title }}</title>
     {{ else if (eq .Title .Site.Title ) }}
       <title>{{ .Site.Title }}</title>
     {{ else }}
