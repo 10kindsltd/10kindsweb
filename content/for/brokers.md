@@ -6,9 +6,9 @@ description: "Cut the document grind in your brokerage. See where AI can save yo
 
 # --- NAV: override the site-wide header so visitors stay on this page (logo still links home) ---
 nav:
-  - { name: "Why me", url: "#why-me" }
   - { name: "Services", url: "#services" }
   - { name: "FAQ", url: "#faq" }
+  - { name: "About", url: "#founder-profile" }
 nav_buttons:
   - { name: "Book a free call", url: ":calendly" }
 
