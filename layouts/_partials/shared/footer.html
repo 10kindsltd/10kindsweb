@@ -40,7 +40,7 @@
         {{ end }}
       </div>
       <div>
-        <h2 class="mb-2 text-center text-lg font-bold xl:text-start">About</h2>
+        <h2 class="mb-2 text-center text-lg font-bold xl:text-start">Site</h2>
         <ul class="flex flex-col gap-1 text-sm">
           {{ range .Site.Menus.footer }}
             <li class="text-center xl:text-start">
@@ -62,23 +62,16 @@
         </ul>
       </div>
       {{ end }}
-      {{ with .Site.Params.contact }}
-      <div>
-        <h2 class="mb-2 text-center text-lg font-bold xl:text-start">Contact Us</h2>
-        <ul class="flex flex-col gap-1 text-sm">
-          {{ range . }}
-            <li class="text-center xl:text-start">{{ . }}</li>
-          {{ end }}
-        </ul>
-      </div>
-      {{ end }}
     </div>
-    <div class="text-center text-sm">
-      <div class="">
-        {{ with .Site.Params.copyright }}
-          <p class="">{{ . }}</p>
-        {{ end }}
-      </div>
+    <div class="text-center text-sm text-gray-500">
+      <p>
+        {{- with .Site.Params.copyright }}{{ . }} | {{ end -}}
+        {{- $legal := slice -}}
+        {{- range .Site.Menus.legal -}}
+          {{- $legal = $legal | append (printf `<a href="%s" class="hover:underline">%s</a>` .URL .Name) -}}
+        {{- end -}}
+        {{ delimit $legal " | " | safeHTML }}
+      </p>
     </div>
   </div>
 </footer>

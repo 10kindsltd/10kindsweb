@@ -28,19 +28,26 @@ footer:
   - name: "Home"
     url: "/"
     weight: 1
+  - name: "Services"
+    url: "/#services"
+    weight: 2
+  - name: "About"
+    url: "/#founder-profile"
+    weight: 3
+  - name: "Book a call"
+    url: "https://calendly.com/alan-10kinds"
+    weight: 4
 
-  - name: "Contact"
-    url: "/#contact"
+legal:
+  - name: "Terms & Conditions"
+    url: "/legals/terms-and-conditions/"
+    weight: 1
+
+  - name: "Privacy Policy"
+    url: "/legals/privacy-policy/"
     weight: 2
 
 #  - name: "Blog"
 #    url: "/blog"
 #    weight: 3
 
-  - name: "Terms & Conditions"
-    url: "/legals/terms-and-conditions/"
-    weight: 4
-
-  - name: "Privacy Policy"
-    url: "/legals/privacy-policy/"
-    weight: 5
