@@ -19,6 +19,8 @@
     {{ with .Description }}{{ $description = . }}{{ end }}
     <meta name="description" content="{{ $description }}" />
 
+    <link rel="canonical" href="{{ .Permalink }}" />
+
     <!-- SEO -->
     {{ partial "google_analytics.html" . }}
     {{ partial "opengraph.html" . }}

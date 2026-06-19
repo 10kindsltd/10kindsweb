@@ -1,0 +1,10 @@
+{{ $description := .Site.Params.description }}
+{{ with .Description }}{{ $description = . }}{{ end }}
+{{ $title := .Title }}
+{{ if .IsHome }}{{ $title = .Site.Params.title_seo }}{{ end }}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="{{ $title }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+{{ with .Site.Params.images }}
+<meta name="twitter:image" content="{{ index . 0 | absURL }}" />
+{{ end }}
