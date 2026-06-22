@@ -6,7 +6,7 @@ images:
 #  - "images/hero-image.png"   # todo - create a proper branded card, 1200×630 with your name, "AI Consultant" and brand colours
 
 #logo: "arrow-up.png"
-gaVerificationCode: "c3pXpj514-8y850kTy1RlMmfGqqyLu4MTTQwqybbrC0"
+googleSearchVerificationCode: "c3pXpj514-8y850kTy1RlMmfGqqyLu4MTTQwqybbrC0"
 
 favicons:
   themeColor: "#FFFFFF"

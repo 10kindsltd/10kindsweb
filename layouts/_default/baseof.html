@@ -19,8 +19,8 @@
     {{ with .Description }}{{ $description = . }}{{ end }}
     <meta name="description" content="{{ $description }}" />
 
-    {{ if .Site.Params.gaVerificationCode }}
-    <meta name="google-site-verification" content="{{ .Site.Params.gaVerificationCode }}" />
+    {{ if .Site.Params.googleSearchVerificationCode }}
+    <meta name="google-site-verification" content="{{ .Site.Params.googleSearchVerificationCode }}" />
     {{ end }}
 
     <link rel="canonical" href="{{ .Permalink }}" />
