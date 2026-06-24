@@ -20,7 +20,7 @@
       {{ end }}
 
       {{ if .footer }}
-        <p class="text-center lg:text-start text text-sm text-gray-500">{{ .footer | markdownify }}</p>
+        <p class="text-center lg:text-start text text-sm text-gray-500 [&_a]:underline [&_a]:font-semibold">{{ .footer | markdownify | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` | safeHTML }}</p>
       {{ end }}
       </div>
       {{ if .buttons }}
