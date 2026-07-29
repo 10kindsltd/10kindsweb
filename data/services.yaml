@@ -1,71 +1,116 @@
 enable: true
 
-title: "Five ways of working together"
-text: "From a first read on where you stand to running the management system permanently, at your own pace."
+title: "How we work together"
+text: "Most people start with governance to get things in order. Then we can help with opportunities we discover along the way."
 
-cards:
-  - badge: "1: Assess"
-    title: "AI Governance Gap Assessment"
-    explanation: "A structured assessment of your AI use against ISO/IEC 42001, covering the policies, ownership and evidence behind it as well as the technology."
-    price: "From £6,000"
-    duration: "~5 days"
-    featured: true
-    deliverables:
-      - "Prioritised remediation plan mapped to the standard"
-      - "Scored risk register with a named owner per area"
-      - "A one-page summary you can take straight to the board"
-    button:
-      label: "Discuss an assessment"
-      link: ":calendly"
+groups:
+  - title: "Get Control"
+    text: "Know where AI is being used, agree the rules, and be ready to prove it."
+    cards:
+      - badge: "1: Discover"
+        title: "AI Discovery"
+        explanation: "Where AI is already being used across your business, where it should be, and whether your organisation can actually adopt it."
+        price: "£5,000"
+        duration: "2 weeks"
+        deliverables:
+          - "A map of AI use across the business, including what nobody officially approved"
+          - "A ranked shortlist of where AI would actually pay"
+          - "Risk register covering data, suppliers and regulatory exposure"
+          - "A straight go/no-go on what to do next"
+        button:
+          label: "Discuss discovery"
+          link: ":calendly"
 
-  - badge: "2: Build"
-    title: "AIMS Implementation"
-    explanation: "We build the management system, run it, and get you ready for third-party audit, working with your engineering team so they actually use it, rather than handing over a template pack to quietly ignore."
-    price: "From £25,000"
-    duration: "~4 months, elapsed"
-    deliverables:
-      - "A working management system, built with your team rather than handed to them"
-      - "Policies, register and evidence people actually maintain"
-      - "Handover to an accredited certification body when you're ready"
-    button:
-      label: "Discuss implementation"
-      link: ":calendly"
+      - badge: "2: Agree"
+        title: "AI Policy & Sign-off"
+        explanation: "The rules your organisation actually runs by, agreed by the people who have to enforce them."
+        price: "£3,500"
+        duration: "4 to 6 weeks"
+        deliverables:
+          - "Acceptable use policy: what's approved, what's off-limits"
+          - "Which decisions need a human, and at which point"
+          - "A named owner for every area of AI risk"
+          - "Facilitated leadership session ending in sign-off"
+          - "Board-ready policy document"
+        button:
+          label: "Discuss policy"
+          link: ":calendly"
 
-  - badge: "3: Deliver"
-    title: "Custom AI Build"
-    explanation: "Findings from an assessment often turn out to be engineering work, not policy work. We build it directly, whether that's a fix an assessment flagged or a standalone AI workflow you want built and shipped."
-    price: "Project-scoped"
-    duration: "Scoped per project"
-    deliverables:
-      - "Evaluation harnesses, logging, guardrails or access controls scoped from your findings"
-      - "Or a standalone AI-enabled workflow, built and shipped end to end"
-      - "Priced and scoped as its own project, separate from any assessment"
-    button:
-      label: "Discuss a build"
-      link: ":calendly"
+      - badge: "3: Prove"
+        title: "Compliance Readiness"
+        explanation: "Ready to answer a customer's due-diligence questionnaire, a regulator, or an auditor, in writing."
+        price: "£12,000"
+        duration: "4 to 6 weeks"
+        featured: true
+        note: "Bundle with AI Policy & Sign-off for £14,995"
+        deliverables:
+          - "AI risk audit and regulatory exposure mapping"
+          - "Controls mapped to ISO/IEC 42001"
+          - "EU AI Act risk classification where it applies, and a clear answer where it doesn't"
+          - "UK GDPR and ICO alignment"
+          - "Audit trail and evidence design"
+          - "Certification-ready documentation"
+        button:
+          label: "Discuss readiness"
+          link: ":calendly"
 
-  - badge: "4: Train"
-    title: "Training"
-    explanation: "ISO 42001 requires evidence of competence and awareness, so your team needs this regardless. Delivered by someone who builds AI products, not someone reciting a deck."
-    price: "From £2,500"
-    duration: "Half-day to full-day"
-    deliverables:
-      - "AI literacy and compliance training for staff, up to 15 people"
-      - "Building auditable AI: an engineering workshop for your technical team"
-      - "A board and leadership session on what they're signing off and why"
-    button:
-      label: "Discuss training"
-      link: ":calendly"
+      - badge: "4: Train"
+        title: "Training"
+        explanation: "Your team needs this regardless, and ISO 42001 requires evidence of it. Delivered by someone who builds AI products, not someone reciting a deck."
+        price: "From £2,500"
+        duration: "1 day"
+        deliverables:
+          - "Team day, up to 10 people, hands-on with your real work"
+          - "Corporate day, up to 20 people, with pre-scoping and an adoption plan"
+          - "Leadership day: what you're signing off, what to ask, where the exposure sits"
+        button:
+          label: "Discuss training"
+          link: ":calendly"
 
-  - badge: "5: Sustain"
-    title: "Governance Retainer"
-    explanation: "ISO 42001 requires internal audit, management review and continual improvement, permanently. Most consultants build the system and leave. We stay on as the standing line to the person who built it."
-    price: "From £2,000 / month"
-    duration: "Ongoing, scoped in days"
-    deliverables:
-      - "Annual internal audit and management review support"
-      - "Surveillance audit preparation"
-      - "A fixed monthly allowance of days, not unlimited free support"
-    button:
-      label: "Discuss a retainer"
-      link: ":calendly"
+  - title: "Get Building"
+    text: "Once the fix is clear, we build it and ship it."
+    cards:
+      - badge: "5: Build"
+        title: "90-Day Build"
+        explanation: "Pick the most expensive manual process you've got. We build something that does it, in production, in 90 days."
+        price: "From £15,000"
+        duration: "90 days"
+        deliverables:
+          - "A working system in real use, not a demo"
+          - "Built against one costly bottleneck, chosen on evidence"
+          - "Measured before-and-after so you can see what it saved"
+          - "Handover and team training included"
+        button:
+          label: "Discuss a build"
+          link: ":calendly"
+
+      - badge: "6: Embed"
+        title: "Embedded AI Systems"
+        explanation: "AI built into how your organisation actually works, not bolted on beside it."
+        price: "Project-scoped"
+        duration: "6 to 12 months"
+        deliverables:
+          - "Systems that know your business context, data and terminology"
+          - "Role-specific tools for the teams that need them"
+          - "Automated workflows running on a schedule, not on someone remembering"
+          - "A knowledge base that stays current as you do"
+        button:
+          label: "Discuss a system"
+          link: ":calendly"
+
+  - title: "Keep Going"
+    text: "A standing line to the person who built it, not a subscription that runs itself."
+    cards:
+      - badge: "7: Sustain"
+        title: "Advisory Retainer"
+        explanation: "Most consultants build it and leave. We stay on as the standing line to the person who built it."
+        price: "From £2,000 / month"
+        duration: "Ongoing"
+        deliverables:
+          - "Ongoing advisory and vendor sense-checking"
+          - "Quarterly board-level review"
+          - "Internal capability building so your team leads the next one"
+          - "A fixed monthly allowance of days"
+        button:
+          label: "Discuss a retainer"
+          link: ":calendly"

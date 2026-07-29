@@ -1,7 +1,7 @@
 enable: true
 
 title: "How we help"
-text: "From finding where AI is actually being used, to a management system that survives an audit, to staying in the room once it's built."
+text: "Governance is usually the first question. Finding where AI is being used, proving it's controlled, then building what the business actually needs."
 
 items:
   - heading: "Find where AI is actually being used"
@@ -16,5 +16,8 @@ items:
   - heading: "Manage the risk your suppliers bring in"
     body: "Most organisations don't build AI, they buy it. We assess the **third-party and vendor risk** that comes with every AI-enabled tool you've added, the exposure that never shows up in your own audit."
 
-  - heading: "Keep the system running"
-    body: "A management system needs **internal audit, management review and fresh evidence every year**. We stay on as the governance retainer that keeps it live, rather than handing over a folder that goes stale."
+  - heading: "Build valuable workflows and tools"
+    body: "Governance shows you where the cost and the risk are sitting. Then someone has to build the fix. We **design, build and ship** it ourselves, whether that's a workflow, an agent, or a system embedded in how your teams already work."
+
+  - heading: "Keep it running"
+    body: "A management system needs **internal audit, management review and fresh evidence every year**, and anything we build needs to keep earning its place. We stay on as the retainer that keeps both live, rather than handing over a folder that goes stale."
