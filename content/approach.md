@@ -1,13 +1,13 @@
 ---
 title: "How we work"
 type: "approach"
-description: "Five stages, from finding the AI already running in your business to building the systems that pay for themselves. Fixed prices, fixed timescales."
+description: "Better margins, fewer stalled deals, and staff who can actually use AI. Fixed price per stage, first answers in around a fortnight, and we build what we recommend."
 
 hero:
   eyebrow: "How we work"
-  title: "Your staff are already using AI. Nobody has the full picture."
-  text: "AI is in your business whether you approved it or not: in browser tabs, in tools bought on a company card, in features your vendors switched on without asking. Sooner or later a customer, a regulator or your own board asks how it's controlled, and the answer has to be better than a shrug."
-  text2: "We map what's actually there, put rules around it that people follow, get you to the point where you can prove it, and then build the systems that make the whole thing worth doing."
+  title: "Instilling Confidence & Capability"
+  subtitle: "Gain higher trust, fewer stalled deals, and staff winning with AI"
+  text: "Most consultants hand you a strategy deck and leave. We help you make it a success."
 
 problem:
   heading: "Most people find us at one of these three moments"
@@ -25,7 +25,7 @@ process:
   stages:
     - number: "01"
       title: "Find out where you stand"
-      duration: "2 weeks"
+      duration: "Typically 2 weeks"
       pain: "Ask a leadership team how many AI tools are in use and you'll get a number like three. The real answer is usually north of twenty, and nobody owns the list."
       body: "We go looking for every place AI has got into the business, including the tools nobody put through procurement. You get a map of what's actually running, ranked by what's worth acting on, and a straight recommendation on what to do next."
       deliverables:
@@ -35,7 +35,7 @@ process:
 
     - number: "02"
       title: "Agree the rules"
-      duration: "4 to 6 weeks"
+      duration: "Typically 4 to 6 weeks"
       pain: "Staff who aren't sure what's allowed do one of two things. They freeze, and you get none of the upside. Or they go underground, and you get all of the risk."
       body: "A policy nobody has read is a document, not a control. We write the rules, then run the session that gets your leadership to actually commit to them, so your staff know what's approved and where a human has to stay in the loop."
       deliverables:
@@ -45,7 +45,7 @@ process:
 
     - number: "03"
       title: "Get to where you can prove it"
-      duration: "4 to 6 weeks"
+      duration: "Typically 4 to 6 weeks"
       pain: "The questionnaire always arrives at the worst possible moment, with a deal behind it. \"We're working on it\" has never unstuck one."
       body: "This is the stage that unsticks deals. We map your controls against ISO/IEC 42001, work out which parts of the EU AI Act and UK GDPR actually apply to you, and build the evidence trail so the next questionnaire is a filing exercise rather than a fire drill."
       deliverables:
@@ -54,10 +54,10 @@ process:
         - "Certification-ready documentation"
 
     - number: "04"
-      title: "Build the thing that pays"
-      duration: "90 days"
-      pain: "Every business has a list of things AI could fix. Almost none of them have shipped one, because the demo impressed everybody and then nothing reached production."
-      body: "By now we know where your money is going. We pick the most expensive manual process in the business and build something that does it instead, running in production with the before-and-after measured."
+      title: "Build what pays for itself"
+      duration: "Typically 90 days"
+      pain: "Every business has a list of things AI could fix. But a fancy demo that never ships achieves nothing."
+      body: "By now we know where your money is going. We help you pick the most promising processes in the business to automate, with the before-and-after measured."
       deliverables:
         - "A working system in real use"
         - "Measured before and after"
@@ -83,7 +83,7 @@ boundaries:
 
 closing:
   heading: "Start the diagnosis"
-  text: "Book a call and we'll tell you which of the five stages you actually need, or take the free twelve-question check first and find out where your gaps are."
+  text: "Book a call and we'll tell you which of the five stages you actually need, or take the free twelve-question check first and find your gaps."
   button:
     label: "Book a free call"
     link: ":calendly"

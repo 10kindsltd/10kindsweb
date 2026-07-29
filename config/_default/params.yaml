@@ -17,8 +17,9 @@ calendly: "https://calendly.com/alan-10kinds"
 
 colors:
   primary: "#7b43a5"
-  secondary: "#ac4ead"
+  secondary: "#eb0bc1"   # accent — currently only used on /approach/
   tertiary: "#cbe2f2"
+  quaternary: "#ac4ead"  # was secondary; gradients and hero emphasis
 
 social:
   linkedin: "https://www.linkedin.com/in/al-bates-uk/"

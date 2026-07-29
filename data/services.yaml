@@ -11,7 +11,7 @@ groups:
         title: "AI Discovery"
         explanation: "Where AI is already being used across your business, where it should be, and whether your organisation can actually adopt it."
         price: "£5,000"
-        duration: "2 weeks"
+        duration: "Typically 2 weeks"
         deliverables:
           - "A map of AI use across the business, including what nobody officially approved"
           - "A ranked shortlist of where AI would actually pay"
@@ -25,7 +25,7 @@ groups:
         title: "AI Policy & Sign-off"
         explanation: "The rules your organisation actually runs by, agreed by the people who have to enforce them."
         price: "£3,500"
-        duration: "4 to 6 weeks"
+        duration: "Typically 4 to 6 weeks"
         deliverables:
           - "Acceptable use policy: what's approved, what's off-limits"
           - "Which decisions need a human, and at which point"
@@ -40,7 +40,7 @@ groups:
         title: "Compliance Readiness"
         explanation: "Ready to answer a customer's due-diligence questionnaire, a regulator, or an auditor, in writing."
         price: "£12,000"
-        duration: "4 to 6 weeks"
+        duration: "Typically 4 to 6 weeks"
         featured: true
         note: "Bundle with AI Policy & Sign-off for £14,995"
         deliverables:
@@ -58,7 +58,7 @@ groups:
         title: "Training"
         explanation: "Your team needs this regardless, and ISO 42001 requires evidence of it. Delivered by someone who builds AI products, not someone reciting a deck."
         price: "From £2,500"
-        duration: "1 day"
+        duration: "Typically 1 day"
         deliverables:
           - "Team day, up to 10 people, hands-on with your real work"
           - "Corporate day, up to 20 people, with pre-scoping and an adoption plan"
@@ -72,9 +72,9 @@ groups:
     cards:
       - badge: "5: Build"
         title: "90-Day Build"
-        explanation: "Pick the most expensive manual process you've got. We build something that does it, in production, in 90 days."
+        explanation: "Pick the most expensive manual process you've got. We build software that runs it instead, live in production, typically inside 90 days."
         price: "From £15,000"
-        duration: "90 days"
+        duration: "Typically 90 days"
         deliverables:
           - "A working system in real use, not a demo"
           - "Built against one costly bottleneck, chosen on evidence"
@@ -88,7 +88,7 @@ groups:
         title: "Embedded AI Systems"
         explanation: "AI built into how your organisation actually works, not bolted on beside it."
         price: "Project-scoped"
-        duration: "6 to 12 months"
+        duration: "Typically 6 to 12 months"
         deliverables:
           - "Systems that know your business context, data and terminology"
           - "Role-specific tools for the teams that need them"

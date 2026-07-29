@@ -6,7 +6,7 @@ author = "10 Kinds"
 tags = ["governance", "ISO 42001", "EU AI Act"]
 +++
 
-ISO/IEC 42001 is the international standard for an AI management system, and it's increasingly the thing people reach for by default when "AI governance" comes up.
+ISO/IEC 42001 is the international standard for an AI management system, and it's increasingly what people reach for by default when "AI governance" comes up.
 
 It's the right answer for some UK businesses and an expensive detour for others. Here's how to tell which one you are before spending anything on it.
 
