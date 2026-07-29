@@ -16,7 +16,7 @@ items:
     a: "Yes. Most AI governance risk sits in tools you've bought in rather than ones you've built: an unmanaged register of AI use, a policy nobody's read, or a vendor whose own controls you haven't checked. That's exactly the ground we cover."
 
   - q: "Is this just data protection with an AI label on it?"
-    a: "There's real overlap. UK GDPR already covers a lot of what 'AI governance' means in practice. We're clear about where your existing data protection work already answers the question, and where AI adds a genuinely new one."
+    a: "There's real overlap. UK GDPR already covers a lot of what 'AI governance' means in practice. We're clear about where your existing data protection work already answers the question, and where AI adds a distinct one."
 
   - q: "Do we need to be ISO 42001 certified?"
     a: "Not necessarily. Certification only pays off if you're regularly asked to prove it, most often because a customer's procurement team demands it. We'll give you a straight read on whether it's worth pursuing or whether a lighter governance setup covers your actual risk."

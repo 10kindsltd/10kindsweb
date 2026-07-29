@@ -1,0 +1,136 @@
+{{ define "main" }}
+
+  {{/* ---------- HERO: restate the pain for a cold visitor ---------- */}}
+  {{ with .Params.hero }}
+    <section class="py-16 lg:py-24">
+      <div class="container mx-auto px-4">
+        <div class="mx-auto max-w-3xl text-center">
+          {{ with .eyebrow }}
+            <p class="text-primary mb-4 text-sm font-semibold tracking-wider uppercase">{{ . }}</p>
+          {{ end }}
+          {{ with .title }}
+            <h1 class="text-primary mb-6 text-4xl font-extrabold xl:text-5xl">{{ . }}</h1>
+          {{ end }}
+          {{ with .text }}
+            <p class="mb-4 text-lg text-gray-600">{{ . | markdownify }}</p>
+          {{ end }}
+          {{ with .text2 }}
+            <p class="text-lg text-gray-600">{{ . | markdownify }}</p>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* ---------- PROBLEM: why a cold visitor is here ---------- */}}
+  {{ with .Params.problem }}
+    <section class="bg-tertiary/25 py-16">
+      <div class="container mx-auto px-4">
+        {{ with .heading }}
+          <h2 class="mx-auto mb-10 max-w-3xl text-center text-3xl font-bold xl:text-4xl">{{ . }}</h2>
+        {{ end }}
+        {{ with .cards }}
+          <div class="grid gap-6 md:grid-cols-3">
+            {{ range . }}
+              <div class="rounded-2xl bg-white px-6 py-8">
+                {{ with .heading }}<h3 class="text-primary mb-3 text-lg font-semibold">{{ . }}</h3>{{ end }}
+                {{ with .text }}<p class="text-gray-600">{{ . }}</p>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* ---------- PROCESS: the stages ---------- */}}
+  {{ with .Params.process }}
+    <section class="py-16">
+      <div class="container mx-auto px-4">
+        <div class="mx-auto mb-12 max-w-3xl text-center">
+          {{ with .heading }}<h2 class="mb-3 text-3xl font-bold xl:text-4xl">{{ . }}</h2>{{ end }}
+          {{ with .intro }}<p class="text-lg text-gray-600 [&_a]:underline [&_a]:font-semibold">{{ . | markdownify }}</p>{{ end }}
+        </div>
+        {{ with .stages }}
+          <div class="mx-auto flex max-w-4xl flex-col gap-6">
+            {{ range . }}
+              <div class="border-primary/20 flex flex-col gap-6 rounded-2xl border bg-white px-6 py-8 md:flex-row md:px-10">
+                <div class="shrink-0 md:w-24">
+                  <span class="text-primary/25 text-5xl font-extrabold">{{ .number }}</span>
+                </div>
+                <div class="grow">
+                  <div class="mb-3 flex flex-wrap items-center gap-3">
+                    {{ with .title }}<h3 class="text-xl font-semibold">{{ . }}</h3>{{ end }}
+                    {{ with .duration }}
+                      <span class="bg-primary/10 text-primary rounded-full px-3 py-1 text-xs font-semibold tracking-wider uppercase">{{ . }}</span>
+                    {{ end }}
+                  </div>
+                  {{ with .body }}<p class="mb-4 text-gray-600">{{ . }}</p>{{ end }}
+                  {{ with .deliverables }}
+                    <ul class="flex flex-col gap-2">
+                      {{ range . }}
+                        <li class="flex items-start gap-2 text-sm">
+                          <span class="text-primary mt-1 shrink-0">{{ partial "icons/arrow-right" }}</span>
+                          <span>{{ . }}</span>
+                        </li>
+                      {{ end }}
+                    </ul>
+                  {{ end }}
+                </div>
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* ---------- BOUNDARIES ---------- */}}
+  {{ with .Params.boundaries }}
+    <section class="bg-tertiary/25 py-16">
+      <div class="container mx-auto px-4">
+        {{ with .heading }}
+          <h2 class="mx-auto mb-10 max-w-3xl text-center text-3xl font-bold xl:text-4xl">{{ . }}</h2>
+        {{ end }}
+        {{ with .cards }}
+          <div class="mx-auto grid max-w-4xl gap-6 md:grid-cols-2">
+            {{ range . }}
+              <div class="rounded-2xl bg-white px-6 py-8">
+                {{ with .heading }}<h3 class="text-primary mb-3 text-lg font-semibold">{{ . }}</h3>{{ end }}
+                {{ with .text }}<p class="text-gray-600">{{ . }}</p>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* ---------- CLOSING CTA ---------- */}}
+  {{ with .Params.closing }}
+    <section class="from-primary to-secondary bg-gradient-to-b py-16">
+      <div class="container mx-auto px-4">
+        <div class="mx-auto max-w-2xl text-center">
+          {{ with .heading }}<h2 class="mb-4 text-6xl font-bold text-white">{{ . }}</h2>{{ end }}
+          {{ with .text }}<p class="mb-8 text-white/80">{{ . }}</p>{{ end }}
+          <div class="flex flex-col items-center justify-center gap-4 sm:flex-row">
+            {{ with .button }}
+              {{ $link := partial "utilities/resolve-link" .link }}
+              <a href="{{ $link }}" class="text-primary rounded-lg bg-white px-8 py-3 font-semibold duration-500 hover:bg-white/90">
+                {{ .label }}
+              </a>
+            {{ end }}
+            {{ with .secondary }}
+              {{ $link := partial "utilities/resolve-link" .link }}
+              <a href="{{ $link }}" class="flex items-center gap-2 rounded-lg border border-white px-8 py-3 text-white duration-500 hover:bg-white/10">
+                {{ .label }}
+                {{ partial "icons/arrow-right" }}
+              </a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+{{ end }}

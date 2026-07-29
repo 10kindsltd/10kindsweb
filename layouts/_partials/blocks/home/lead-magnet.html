@@ -1,0 +1,58 @@
+<section id="checklist" class="py-16">
+  <div class="container mx-auto px-4">
+    <div class="border-primary/25 bg-tertiary/25 mx-auto max-w-5xl rounded-4xl border px-6 py-10 lg:px-12 lg:py-12">
+      <div class="grid items-center gap-10 md:grid-cols-5">
+
+        {{/* Cover image */}}
+        <div class="order-1 flex justify-center md:col-span-2">
+          {{ with .image }}
+            {{ with resources.Get . }}
+              {{ $img := .Resize "340x" }}
+              <img
+                src="{{ $img.RelPermalink }}"
+                width="{{ $img.Width }}"
+                height="{{ $img.Height }}"
+                alt="The AI Readiness Checklist, page one"
+                class="border-primary/20 w-full max-w-[220px] rounded-lg border shadow-xl md:max-w-[260px]"
+              />
+            {{ end }}
+          {{ end }}
+        </div>
+
+        {{/* Copy */}}
+        <div class="order-2 md:col-span-3">
+          {{ with .eyebrow }}
+            <p class="text-primary mb-3 text-sm font-semibold tracking-wider uppercase">{{ . }}</p>
+          {{ end }}
+          {{ with .title }}
+            <h2 class="mb-4 text-3xl font-bold xl:text-4xl">{{ . }}</h2>
+          {{ end }}
+          {{ with .text }}
+            <p class="mb-6 text-gray-600">{{ . }}</p>
+          {{ end }}
+          {{ with .points }}
+            <ul class="mb-8 flex flex-col gap-2">
+              {{ range . }}
+                <li class="flex items-start gap-2 text-sm">
+                  <span class="text-primary mt-1 shrink-0">{{ partial "icons/arrow-right" }}</span>
+                  <span>{{ . }}</span>
+                </li>
+              {{ end }}
+            </ul>
+          {{ end }}
+          {{ with .button }}
+            {{ $link := partial "utilities/resolve-link" .link }}
+            <div class="flex flex-col items-start gap-2">
+              <a href="{{ $link }}" class="bg-primary hover:bg-primary/90 flex items-center gap-2 rounded-lg px-8 py-3 text-white duration-500">
+                {{ .label }}
+                {{ partial "icons/arrow-right" }}
+              </a>
+              {{ with $.subtext }}<p class="text-sm text-gray-400">{{ . }}</p>{{ end }}
+            </div>
+          {{ end }}
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

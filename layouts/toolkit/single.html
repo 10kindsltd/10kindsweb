@@ -1,0 +1,113 @@
+{{ define "main" }}
+
+  {{/* ---------- HERO: pain on the left, capture form on the right ---------- */}}
+  <section class="py-12 lg:py-16">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto grid max-w-6xl items-start gap-10 lg:grid-cols-2 lg:gap-16">
+
+        {{/* Left: the question and why it stings */}}
+        <div class="lg:pt-6">
+          {{ with .Params.hero }}
+            {{ with .eyebrow }}
+              <p class="text-primary mb-4 text-sm font-semibold tracking-wider uppercase">{{ . }}</p>
+            {{ end }}
+            {{ with .title }}
+              <h1 class="text-primary mb-6 text-3xl font-extrabold lg:text-4xl xl:text-5xl">{{ . }}</h1>
+            {{ end }}
+            {{ with .text }}
+              <p class="mb-4 text-lg text-gray-600">{{ . }}</p>
+            {{ end }}
+            {{ with .text2 }}
+              <p class="text-lg text-gray-600">{{ . }}</p>
+            {{ end }}
+          {{ end }}
+        </div>
+
+        {{/* Right: the form, above the fold */}}
+        <div class="border-primary/25 bg-tertiary/25 rounded-4xl border px-6 py-8 lg:px-8 lg:py-10">
+          {{ partial "blocks/toolkit-form.html" (dict
+            "uid" "top"
+            "heading" (default "Get the free checklist" .Params.form.heading_short)
+            "text" (default "" .Params.form.text)
+            "button" .Params.form.button
+            "disclaimer" .Params.form.disclaimer)
+          }}
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  {{/* ---------- STAKES ---------- */}}
+  {{ with .Params.stakes }}
+    <section class="bg-tertiary/25 py-16">
+      <div class="container mx-auto px-4">
+        {{ with .heading }}
+          <h2 class="mx-auto mb-10 max-w-3xl text-center text-3xl font-bold xl:text-4xl">{{ . }}</h2>
+        {{ end }}
+        {{ with .cards }}
+          <div class="grid gap-6 md:grid-cols-3">
+            {{ range . }}
+              <div class="rounded-2xl bg-white px-6 py-8">
+                {{ with .heading }}<h3 class="text-primary mb-3 text-lg font-semibold">{{ . }}</h3>{{ end }}
+                {{ with .text }}<p class="text-gray-600">{{ . }}</p>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* ---------- WHAT'S INSIDE + repeat form ---------- */}}
+  <section id="get-it" class="py-16">
+    <div class="container mx-auto px-4">
+      <div class="mx-auto grid max-w-5xl items-start gap-12 md:grid-cols-2">
+        <div>
+          {{ with .Params.inside }}
+            {{ with .heading }}<h2 class="mb-6 text-3xl font-bold xl:text-4xl">{{ . }}</h2>{{ end }}
+            {{ with .points }}
+              <ul class="flex flex-col gap-3">
+                {{ range . }}
+                  <li class="flex items-start gap-2">
+                    <span class="text-primary mt-1 shrink-0">{{ partial "icons/arrow-right" }}</span>
+                    <span class="text-gray-600">{{ . }}</span>
+                  </li>
+                {{ end }}
+              </ul>
+            {{ end }}
+          {{ end }}
+
+          {{ with .Params.inside.image }}
+            {{ with resources.Get . }}
+              {{ $img := .Resize "240x" }}
+              <div class="mt-8 hidden lg:block">
+                <img
+                  src="{{ $img.RelPermalink }}"
+                  width="{{ $img.Width }}"
+                  height="{{ $img.Height }}"
+                  alt="The AI Readiness Checklist, page one"
+                  class="border-primary/20 w-full max-w-[170px] rounded-lg border shadow-lg mx-auto"
+                />
+              </div>
+            {{ end }}
+          {{ end }}
+        </div>
+
+        <div class="border-primary/25 bg-tertiary/25 rounded-4xl border px-6 py-8 lg:px-8 lg:py-10">
+          {{ with .Params.form }}
+            {{ partial "blocks/toolkit-form.html" (dict
+              "uid" "bottom"
+              "heading" .heading
+              "text" .text
+              "button" .button
+              "disclaimer" .disclaimer)
+            }}
+          {{ end }}
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+{{ end }}

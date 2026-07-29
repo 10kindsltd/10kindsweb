@@ -18,8 +18,15 @@
               {{ end }}
             </div>
             <div class="p-6">
+              {{ with .Date }}
+                <p class="mb-2 text-xs text-gray-400">{{ .Format "2 January 2006" }}</p>
+              {{ end }}
               <h5 class="text-primary mb-2 text-xl font-semibold">{{ .Title }}</h5>
-              <p class="">{{ .Summary | plainify }}</p>
+              {{ $excerpt := .Description | default (.Summary | plainify) }}
+              <p class="text-sm text-gray-600">{{ $excerpt | plainify | truncate 140 }}</p>
+              <span class="text-primary mt-3 inline-flex items-center gap-1 text-sm font-semibold">
+                Read more {{ partial "icons/arrow-right" }}
+              </span>
             </div>
           </a>
         {{ end }}

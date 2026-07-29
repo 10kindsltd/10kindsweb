@@ -1,0 +1,69 @@
+{{/*
+  Lead-capture form for the AI Readiness Checklist.
+  Rendered more than once per page, so every element id is suffixed with .uid.
+
+  Params: uid (required, unique per instance), heading, text, button, disclaimer
+
+  TODO before this goes live: replace the form action below with a real
+  Formtorch endpoint. Create a NEW form in your Formtorch account so checklist
+  downloads are tracked separately from general contact messages: don't reuse
+  the contact form's ID.
+*/}}
+{{ $uid := .uid }}
+<div>
+  {{ if or .heading .text }}
+    <div class="mb-6 text-center">
+      {{ with .heading }}<h2 class="mb-2 text-2xl font-bold">{{ . }}</h2>{{ end }}
+      {{ with .text }}<p class="text-sm text-gray-600">{{ . }}</p>{{ end }}
+    </div>
+  {{ end }}
+
+  <form id="toolkit_form_{{ $uid }}" action="https://formtorch.com/f/REPLACE_WITH_TOOLKIT_FORM_ID" method="POST" class="flex flex-col gap-4">
+    <input type="hidden" name="_redirect" value="/toolkit-thank-you">
+
+    <div class="flex flex-col gap-1.5">
+      <label for="name_{{ $uid }}" class="text-sm font-semibold">Name</label>
+      <input
+        type="text"
+        id="name_{{ $uid }}"
+        name="sender_name"
+        placeholder="Your name"
+        required
+        class="rounded border border-gray-300 bg-white px-4 py-2.5 focus:border-gray-500 focus:outline-none"
+      />
+    </div>
+
+    <div class="flex flex-col gap-1.5">
+      <label for="email_{{ $uid }}" class="text-sm font-semibold">Work email</label>
+      <input
+        type="email"
+        id="email_{{ $uid }}"
+        name="sender_email"
+        placeholder="you@company.com"
+        required
+        class="rounded border border-gray-300 bg-white px-4 py-2.5 focus:border-gray-500 focus:outline-none"
+      />
+    </div>
+
+    <div class="flex flex-col gap-1.5">
+      <label for="company_{{ $uid }}" class="text-sm font-semibold">Company</label>
+      <input
+        type="text"
+        id="company_{{ $uid }}"
+        name="company_name"
+        placeholder="Your company"
+        required
+        class="rounded border border-gray-300 bg-white px-4 py-2.5 focus:border-gray-500 focus:outline-none"
+      />
+    </div>
+
+    <button type="submit" class="bg-primary hover:bg-primary/90 mt-2 flex items-center justify-center gap-2 rounded-lg px-8 py-3 font-semibold text-white duration-500">
+      {{ .button | default "Get the checklist" }}
+      {{ partial "icons/arrow-right" }}
+    </button>
+
+    {{ with .disclaimer }}
+      <p class="text-center text-xs text-gray-400">{{ . }}</p>
+    {{ end }}
+  </form>
+</div>

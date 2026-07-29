@@ -1,0 +1,17 @@
+enable: true
+
+eyebrow: "Free download"
+title: "Start by finding out where you actually stand"
+text: "Twelve questions every leadership team should be able to answer about the AI already running in their business. It's the same check we run at the start of a paid engagement, and it takes about ten minutes."
+
+image: "images/readiness-checklist-cover.png"
+
+points:
+  - "Twelve questions across visibility, policy, suppliers, regulation and evidence"
+  - "Plain English, written for a leadership team rather than a compliance department"
+  - "A scoring note telling you what your answers actually mean"
+
+button:
+  label: "Get the free checklist"
+  link: "/toolkit/"
+subtext: ""

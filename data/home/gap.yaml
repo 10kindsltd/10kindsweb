@@ -1,6 +1,6 @@
 enable: true
 
-title: "The governance gap doesn't stay hidden"
+title: "You can't afford to ignore governance"
 text: "It surfaces the moment someone outside your organisation asks how your AI is actually controlled, and by then it's too late to build the answer from scratch."
 
 cards:
@@ -13,9 +13,17 @@ cards:
   - heading: "Regulatory exposure"
     text: "The EU AI Act and UK GDPR both bind AI use today, whether or not anyone in the business has read them."
   - heading: "Board accountability"
-    text: "Someone has to be able to tell the board what AI risk the organisation is carrying, and most can't yet."
+    text: "Someone has to be able to tell the board what AI risk the organisation is carrying - can you?"
   - heading: "Commercial trust"
     text: "The organisations that can prove control win the deal, pass the audit, and get asked fewer questions next time."
+
+outcome:
+  heading: "...but once you're in control"
+  points:
+    - "A due-diligence questionnaire arrives and you answer it the same week, not the same quarter"
+    - "Your board can confidently state your AI exposure"
+    - "You know every AI tool in use across the business, and what each vendor does with your data"
+    - "You know which regulations apply to you, and can show it in writing"
 
 callout: "Let's get you covered."
 callout_link: "Book a free call"
