@@ -26,6 +26,7 @@ process:
     - number: "01"
       title: "Find out where you stand"
       duration: "2 weeks"
+      pain: "Ask a leadership team how many AI tools are in use and you'll get a number like three. The real answer is usually north of twenty, and nobody owns the list."
       body: "We go looking for every place AI has got into the business, including the tools nobody put through procurement. You get a map of what's actually running, ranked by what's worth acting on, and a straight recommendation on what to do next."
       deliverables:
         - "A map of AI use across the business"
@@ -35,6 +36,7 @@ process:
     - number: "02"
       title: "Agree the rules"
       duration: "4 to 6 weeks"
+      pain: "Staff who aren't sure what's allowed do one of two things. They freeze, and you get none of the upside. Or they go underground, and you get all of the risk."
       body: "A policy nobody has read is a document, not a control. We write the rules, then run the session that gets your leadership to actually commit to them, so your staff know what's approved and where a human has to stay in the loop."
       deliverables:
         - "Acceptable use policy people can follow"
@@ -44,6 +46,7 @@ process:
     - number: "03"
       title: "Get to where you can prove it"
       duration: "4 to 6 weeks"
+      pain: "The questionnaire always arrives at the worst possible moment, with a deal behind it. \"We're working on it\" has never unstuck one."
       body: "This is the stage that unsticks deals. We map your controls against ISO/IEC 42001, work out which parts of the EU AI Act and UK GDPR actually apply to you, and build the evidence trail so the next questionnaire is a filing exercise rather than a fire drill."
       deliverables:
         - "Controls mapped to ISO/IEC 42001"
@@ -53,6 +56,7 @@ process:
     - number: "04"
       title: "Build the thing that pays"
       duration: "90 days"
+      pain: "Every business has a list of things AI could fix. Almost none of them have shipped one, because the demo impressed everybody and then nothing reached production."
       body: "By now we know where your money is going. We pick the most expensive manual process in the business and build something that does it instead, running in production with the before-and-after measured."
       deliverables:
         - "A working system in real use"
@@ -62,6 +66,7 @@ process:
     - number: "05"
       title: "Keep it running"
       duration: "Ongoing"
+      pain: "Management systems rot. A year after the audit the register is stale, nobody's run a review, and the next surveillance visit becomes a scramble."
       body: "Management systems need an audit cycle and fresh evidence every year, and anything we build needs upkeep. We stay on as a fixed monthly allowance of days rather than handing over a folder that goes stale."
       deliverables:
         - "Internal audit and management review"

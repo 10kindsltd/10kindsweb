@@ -52,31 +52,61 @@
           {{ with .intro }}<p class="text-lg text-gray-600 [&_a]:underline [&_a]:font-semibold">{{ . | markdownify }}</p>{{ end }}
         </div>
         {{ with .stages }}
-          <div class="mx-auto flex max-w-4xl flex-col gap-6">
-            {{ range . }}
-              <div class="border-primary/20 flex flex-col gap-6 rounded-2xl border bg-white px-6 py-8 md:flex-row md:px-10">
-                <div class="shrink-0 md:w-24">
-                  <span class="text-primary/25 text-5xl font-extrabold">{{ .number }}</span>
+          <div class="relative mx-auto max-w-5xl">
+
+            {{/* Connecting line: left rail on mobile, centre rail from md up */}}
+            <div class="bg-primary/20 absolute top-4 bottom-4 left-5 w-0.5 md:left-1/2 md:-translate-x-1/2" aria-hidden="true"></div>
+
+            {{ range $i, $stage := . }}
+              {{ $onLeft := eq (mod $i 2) 0 }}
+              <div class="relative mb-8 pl-16 last:mb-0 md:pl-0">
+
+                {{/* Numbered node sitting on the line */}}
+                <div class="bg-primary absolute top-2 left-0 z-10 flex h-10 w-10 items-center justify-center rounded-full font-bold text-white shadow-md md:top-6 md:left-1/2 md:-translate-x-1/2">
+                  {{ $stage.number }}
                 </div>
-                <div class="grow">
-                  <div class="mb-3 flex flex-wrap items-center gap-3">
-                    {{ with .title }}<h3 class="text-xl font-semibold">{{ . }}</h3>{{ end }}
-                    {{ with .duration }}
-                      <span class="bg-primary/10 text-primary rounded-full px-3 py-1 text-xs font-semibold tracking-wider uppercase">{{ . }}</span>
-                    {{ end }}
-                  </div>
-                  {{ with .body }}<p class="mb-4 text-gray-600">{{ . }}</p>{{ end }}
-                  {{ with .deliverables }}
-                    <ul class="flex flex-col gap-2">
-                      {{ range . }}
-                        <li class="flex items-start gap-2 text-sm">
-                          <span class="text-primary mt-1 shrink-0">{{ partial "icons/arrow-right" }}</span>
-                          <span>{{ . }}</span>
-                        </li>
-                      {{ end }}
-                    </ul>
+
+                {{/* Pain on one side of the line, the fix on the other */}}
+                <div class="md:grid md:grid-cols-2 md:items-center md:gap-16">
+
+                  {{/* The pain, pulled out beside the line */}}
+                  {{ with $stage.pain }}
+                    <p
+                      class="border-secondary mb-4 border-l-4 pl-4 text-lg text-gray-500 italic md:row-start-1 md:mb-0
+                      {{ if $onLeft }}md:col-start-2{{ else }}md:col-start-1 md:border-l-0 md:border-r-4 md:pl-0 md:pr-4 md:text-right{{ end }}"
+                    >
+                      {{ . }}
+                    </p>
                   {{ end }}
+
+                  {{/* The fix */}}
+                  <div class="md:row-start-1 {{ if $onLeft }}md:col-start-1{{ else }}md:col-start-2{{ end }}">
+                    <div class="border-primary/20 rounded-2xl border bg-white px-6 py-6 shadow-sm lg:px-8">
+
+                      <div class="mb-4 flex flex-wrap items-center gap-3">
+                        {{ with $stage.title }}<h3 class="text-xl font-semibold">{{ . }}</h3>{{ end }}
+                        {{ with $stage.duration }}
+                          <span class="bg-primary/10 text-primary rounded-full px-3 py-1 text-xs font-semibold tracking-wider uppercase">{{ . }}</span>
+                        {{ end }}
+                      </div>
+
+                      {{ with $stage.body }}<p class="mb-4 text-gray-600">{{ . }}</p>{{ end }}
+
+                      {{ with $stage.deliverables }}
+                        <ul class="flex flex-col gap-2 border-t border-gray-100 pt-4">
+                          {{ range . }}
+                            <li class="flex items-start gap-2 text-sm">
+                              <span class="text-primary mt-1 shrink-0">{{ partial "icons/arrow-right" }}</span>
+                              <span>{{ . }}</span>
+                            </li>
+                          {{ end }}
+                        </ul>
+                      {{ end }}
+
+                    </div>
+                  </div>
                 </div>
+
               </div>
             {{ end }}
           </div>
