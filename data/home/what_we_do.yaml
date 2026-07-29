@@ -11,13 +11,13 @@ items:
     body: "An **acceptable use policy** nobody's read is a folder, not a control. We write the policy, run the workshop that gets leadership to actually sign off on it, and make sure staff know what's allowed, what needs a human, and who owns the call."
 
   - heading: "Get ready for the questions you'll be asked"
-    body: "A customer's due-diligence questionnaire, a regulator and an auditor all ask the same underlying thing: **can you show this is controlled?** We run the **ISO/IEC 42001 gap assessment** and **EU AI Act triage** that means the answer is yes, in writing."
+    body: "A customer's due-diligence questionnaire, a regulator and an auditor all ask the same underlying thing: **can you show this is controlled?** We run the **ISO/IEC 42001 gap assessment** and **EU AI Act triage** that means the answer is yes."
 
   - heading: "Manage the risk your suppliers bring in"
     body: "Most organisations don't build AI, they buy it. We assess the **third-party and vendor risk** that comes with every AI-enabled tool you've added, the exposure that never shows up in your own audit."
 
   - heading: "Build valuable workflows and tools"
-    body: "Governance shows you where the cost and the risk are sitting. Then someone has to build the fix. We **design, build and ship** it ourselves, whether that's a workflow, an agent, or a system embedded in how your teams already work."
+    body: "Most of the highest-value AI work isn't a governance finding at all, it's a slow manual process nobody's got round to fixing. We **design, build and ship** it ourselves: a workflow, an agent, or a system embedded in how your teams already work."
 
   - heading: "Keep it running"
-    body: "A management system needs **internal audit, management review and fresh evidence every year**, and anything we build needs to keep earning its place. We stay on as the retainer that keeps both live, rather than handing over a folder that goes stale."
+    body: "A management system needs **internal audit, management review and fresh evidence every year**, and anything we build needs upkeep too. We stay on as the retainer that keeps both live, rather than handing over a folder that goes stale."
