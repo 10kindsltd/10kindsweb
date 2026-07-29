@@ -1,20 +1,20 @@
 enable: true
 
 title: "How we help"
-text: "From getting your leadership aligned on what's possible, through identifying the right opportunities, to building and deploying working tools — we can help at every stage."
+text: "From finding where AI is actually being used, to a management system that survives an audit, to staying in the room once it's built."
 
 items:
-  - heading: "Map your highest-value workflows"
-    body: "Most AI wins hide in plain sight: **repetitive document tasks**, **approval chains** and **data re-entry** that cost your team hours every week. We find them, rank them by ROI, and tell you what to tackle first."
+  - heading: "Find where AI is actually being used"
+    body: "Sanctioned tools are the tip of it. We run a **use-case inventory** across your business, including the **shadow AI** nobody officially approved, so you have one accurate register instead of a guess."
 
-  - heading: "Automate decisions, not just admin"
-    body: "AI can **route inbound requests**, **flag exceptions** and **prioritise queues** — so your best people spend time on judgement, not triage."
+  - heading: "Turn policy into something people follow"
+    body: "An **acceptable use policy** nobody's read is a folder, not a control. We write the policy, run the workshop that gets leadership to actually sign off on it, and make sure staff know what's allowed, what needs a human, and who owns the call."
 
-  - heading: "Unlock what your organisation already knows"
-    body: "**Retrieval AI (RAG)** lets your team ask questions of your documents, policies and past cases in plain English and get cited answers instantly. The expertise locked in files and people's heads, made searchable and queryable."
+  - heading: "Get ready for the questions you'll be asked"
+    body: "A customer's due-diligence questionnaire, a regulator and an auditor all ask the same underlying thing: **can you show this is controlled?** We run the **ISO/IEC 42001 gap assessment** and **EU AI Act triage** that means the answer is yes, in writing."
 
-  - heading: "Build agents that act"
-    body: "Beyond answering questions: **AI agents** take multi-step actions autonomously — gathering data, drafting outputs, triggering downstream workflows — without human hand-holding at each step."
+  - heading: "Manage the risk your suppliers bring in"
+    body: "Most organisations don't build AI, they buy it. We assess the **third-party and vendor risk** that comes with every AI-enabled tool you've added, the exposure that never shows up in your own audit."
 
-  - heading: "Align your leadership on opportunities"
-    body: "Before starting, your team needs a **shared, grounded view** of what AI can and can't do. We run workshops to bring you up-to-speed and build the consensus to move fast."
+  - heading: "Keep the system running"
+    body: "A management system needs **internal audit, management review and fresh evidence every year**. We stay on as the governance retainer that keeps it live, rather than handing over a folder that goes stale."

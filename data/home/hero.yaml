@@ -1,11 +1,13 @@
 enable: true
 
-title: "Make AI your competitive advantage"
+title: "Your org uses AI. You just don't know how."
 text: |
-  Your strategic partner for AI discovery and adoption, without the overhead of an in-house department.
+  Your staff are already pasting client data into ChatGPT and 10 other tools nobody signed off. <mark class="bg-yellow-200 rounded px-1">You can't govern what you can't see</mark>.
+
+  We find where AI is actually being used across your business, put governance around it your team will actually follow, and get you ready for the moment a customer, regulator or auditor asks how it's controlled.
 quote: |
-  "10 Kinds is a lean, high-impact AI consultancy providing the strategic clarity and technical execution needed to adopt AI where it matters most"
-footer: -- Alan Bates, AWS Certified AI Professional & [Founder of Bazam.ai](https://bazam.ai)
+  "AI governance for organisations that use or sell AI, run by a team that builds the products these questionnaires are written for"
+footer: -- Alan Bates, Founder, 10 Kinds & [Bazam.ai](https://bazam.ai)
 
 buttons:
   - label: "Book a free 30-min call"

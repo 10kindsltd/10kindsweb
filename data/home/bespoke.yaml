@@ -1,10 +1,10 @@
 enable: false
 
-title: "Need something built?"
+title: "Found a gap that needs building?"
 text: |
-  I can assess your options, help you choose the right supplier, and keep a technical eye on delivery — so you get what you paid for, built the way it should be. 
-  
-  Want to test an idea first? I can create a working prototype before you commit to the full build.  Scoped and priced separately.
+  Gap assessments often surface findings that are engineering work: an evaluation harness, better logging, guardrails, access controls.
+
+  We can scope and build these directly, priced separately from the governance work, or hand them to your own team, whichever keeps the assessment honest.
 button:
   label: "Let's talk"
   link: "/#contact"

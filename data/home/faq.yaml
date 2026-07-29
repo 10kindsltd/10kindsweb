@@ -5,24 +5,24 @@ heading: "Questions"
 items:
   - q: "What does 10 Kinds actually do?"
     a: |
-      We help you work out where AI is genuinely worth using, then make it happen — from setting the strategy to building and deploying working tools.
+      We help you find where AI is actually being used in your organisation, put governance around it, and get you ready to answer the questions a customer, regulator or auditor will ask about it.
 
-      That means hands-on implementation, steering third-party developers, evaluating vendors, or providing ongoing strategic leadership — whatever you actually need.
+      That covers everything from a single questionnaire to a full ISO/IEC 42001 management system and the ongoing audit cycle that keeps it current.
 
-  - q: "How do I know if AI is right for my business?"
-    a: "That's exactly what the free 30-minute call is for. Alan will give you a straight read on where AI could realistically add value for your business — and where it probably won't. No obligation, no pitch."
+  - q: "We were sent a customer due-diligence questionnaire about our AI. Can you help?"
+    a: "That's the most common way people find us. Forward it over and we'll map every question to the evidence that answers it, tell you what you can already prove, and what closing the rest takes. No obligation."
 
-  - q: "Do I need to know anything about AI?"
-    a: "No. We provide the AI expertise, so you don't have to develop it in-house or take vendor claims at face value."
+  - q: "We don't build AI ourselves, we just use tools like ChatGPT or Copilot. Does this still apply?"
+    a: "Yes. Most AI governance risk sits in tools you've bought in rather than ones you've built: an unmanaged register of AI use, a policy nobody's read, or a vendor whose own controls you haven't checked. That's exactly the ground we cover."
 
-  - q: "Where do most businesses start?"
-    a: "Usually with the AI Education & Alignment session - a half or full day that gets your leadership aligned on what's possible, what's hype, and where the real opportunities are. From there, you might move into an Advisory retainer, a prototype sprint, or straight into a build."
+  - q: "Is this just data protection with an AI label on it?"
+    a: "There's real overlap. UK GDPR already covers a lot of what 'AI governance' means in practice. We're clear about where your existing data protection work already answers the question, and where AI adds a genuinely new one."
 
-  - q: "Can you build things, or is it just advice?"
-    a: "Both. We can run a full prototype sprint or custom build, work alongside your existing developers, or brief and oversee an external supplier. The right approach depends on what you're building and what capability you already have."
+  - q: "Do we need to be ISO 42001 certified?"
+    a: "Not necessarily. Certification only pays off if you're regularly asked to prove it, most often because a customer's procurement team demands it. We'll give you a straight read on whether it's worth pursuing or whether a lighter governance setup covers your actual risk."
 
-  - q: "Is our data safe?"
-    a: "Yes. Anything we build or specify runs on infrastructure scoped to your business, sees only the data it's pointed at, and never feeds public AI models. Data governance is part of the conversation from day one."
+  - q: "How long does an implementation take?"
+    a: "A full management system build runs 20 to 28 consultant days spread across four to six months. The elapsed time is your team doing the work between sessions, not idle calendar. A gap assessment alone is a matter of days."
 
   - q: "How do we get started?"
-    a: "Book a free 30-minute call. We'll get to know your business, give you a straight read on where AI fits, and agree what the right next step looks like — whether that's a workshop, a retainer, or something else entirely."
+    a: "Book a free 30-minute call, or send over a questionnaire if that's what's brought you here. We'll give you a straight read on where you stand and what the right next step looks like."

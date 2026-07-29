@@ -15,24 +15,11 @@ credentials:
   - "Based in the UK, working globally"
 
 quote: |
-  "I can talk ROI, priorities, and risk while translating between tech-speak and actual English"
+  "Governance advice from someone who builds AI products, not someone who's only ever advised on them. I can talk risk and controls, and translate between compliance-speak, tech-speak and actual English"
 
 bio: |
-  Alan Bates is the founder of 10 Kinds, an AI consultancy helping businesses move from AI curiosity to practical implementation. He's spent **over 20 years working hands-on in technology**, including multiple years at household names in media, telecoms and finance. 
-  
-  Alan is the **founder of [Bazam.ai](https://bazam.ai)**, an automated content marketing platform. He also holds a **Postgraduate Diploma in Business Administration**, giving him formal grounding on the commercial side as well as the technical.
-  
-  His fluency in both business and tech means he can see what's technically possible and what's commercially worth doing, then translate between the two. He works with leadership teams to identify where AI can realistically add value, test those ideas through rapid prototyping, and move from one-off experiments to embedding AI throughout their organisation.
+  Alan Bates is the founder of 10 Kinds, an AI governance and assurance consultancy helping organisations get control of the AI they use or sell. He's spent **over 20 years working hands-on in technology**, including multiple years at household names in media, telecoms and finance.
 
-sides:
-  - heading: "Business expertise"
-    image: "images/uol-logo.svg"
-    text: |
-      "**Postgraduate diploma in Business Administration**. I can sit in your board meeting and talk ROI, priorities, and translate tech-speak into actual English."
-  - heading: "Technical chops"
-    image: "images/aws-cert.png"
-    image_link: "https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url"
-    image_link_new_window: true
-    text_links_new_window: true
-    text: |
-      "[AWS Certified Generative AI Professional](https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url). I can build prototypes to test ideas, brief and manage developers, and tell you whether a vendor is talking sense, technically and commercially."
+  Alan is also the **founder of [Bazam.ai](https://bazam.ai)**, an automated content marketing platform sold B2B. He also holds a **Postgraduate Diploma in Business Administration**, giving him formal grounding on the commercial side as well as the technical.
+
+  Building and shipping AI products himself is what shapes which controls he recommends: the ones that actually survive contact with an engineering team, rather than the ones that just read well in a policy document. He works with leadership and engineering teams to find where AI risk actually sits, build a management system people will keep using, and get organisations ready for the moment someone asks them to prove it.
