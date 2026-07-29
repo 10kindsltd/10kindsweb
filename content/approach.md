@@ -6,7 +6,7 @@ description: "Better margins, fewer stalled deals, and staff who can actually us
 hero:
   eyebrow: "How we work"
   title: "Instilling Confidence & Capability"
-  subtitle: "Gain higher trust, fewer stalled deals, and staff winning with AI"
+  subtitle: "Increase trust, close deals faster, and enable more staff wins"
   text: "Most consultants hand you a strategy deck and leave. We help you make it a success."
 
 problem:

@@ -1,5 +1,5 @@
 ---
-title: "The AI Readiness Checklist"
+title: "Free AI Readiness Checklist"
 type: "toolkit"
 description: "Twelve questions every leadership team should be able to answer about the AI already running in their business. Free, takes about ten minutes."
 
@@ -7,7 +7,7 @@ hero:
   eyebrow: "Free download"
   title: "Can you answer these twelve questions about your AI use?"
   text: "Most leadership teams can't, and they find out at the worst possible moment: halfway through a customer's due-diligence questionnaire, with a deal sitting behind the answer."
-  text2: "This is the twelve-question check we run at the start of a paid engagement. It takes about ten minutes and tells you which gaps are real."
+  text2: "It covers similar ground to a paid discovery engagement, condensed into twelve questions you can work through yourself in about ten minutes."
 
 stakes:
   heading: "Why you need to be able to answer them"
@@ -29,8 +29,8 @@ inside:
     - "Two pages, straight to the point, yours to keep and circulate internally"
 
 form:
-  heading: "Get your checklist now"
-  heading_short: "Get the free checklist"
+  heading: "Get your free AI Readiness Checklist"
+  heading_short: "Get your free AI Readiness Checklist"
   text: ""
   button: "Get the checklist"
   disclaimer: "We'll only use these details to follow up about your AI readiness, and you can tell us to stop at any time."
