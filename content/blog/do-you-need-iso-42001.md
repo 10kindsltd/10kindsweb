@@ -1,5 +1,5 @@
 +++
-title = "Do you actually need ISO 42001?"
+title = "Do you really need ISO 42001?"
 date = "2026-07-29"
 description = "ISO/IEC 42001 has real value for some UK businesses and is the wrong answer for others. Here's how to tell which one you are before you spend anything on it."
 author = "10 Kinds"
@@ -10,7 +10,7 @@ ISO/IEC 42001 is the international standard for an AI management system, and it'
 
 It's the right answer for some UK businesses and an expensive detour for others. Here's how to tell which one you are before spending anything on it.
 
-## What certification actually buys you
+## What certification buys you
 
 Certification to ISO 42001 is a structural answer to one specific question: can you prove, to an independent accredited body, that you have a management system governing how AI is developed, deployed and monitored.
 
@@ -28,7 +28,7 @@ The clearest signal is an external trigger with a date attached:
 - A deal is stalled behind the answer
 - Your sales team is starting to hit the same wall repeatedly
 
-If you're a software company that's added AI to a product you sell to enterprise customers, this is the situation you're most likely to be in. Certification, or at least demonstrable readiness for it, has a direct commercial payoff here: it answers the question that's actually being asked.
+If you're a software company that's added AI to a product you sell to enterprise customers, this is the situation you're most likely to be in. Certification, or at least demonstrable readiness for it, has a direct commercial payoff here, helping you answer any due-diligence questionnaires.
 
 ## When it's the wrong call, for now
 
@@ -38,7 +38,7 @@ The management system requirements are real ongoing costs rather than a one-off 
 
 Taking that on before there's a reason to is the expensive version of governance. A lighter internal policy and a clear owner for AI risk covers most of the actual exposure for a business that isn't being asked to prove anything to anyone.
 
-## What actually binds you regardless
+## What binds you regardless
 
 Two things apply whether or not you certify to anything.
 
@@ -50,7 +50,7 @@ Most UK SMEs are out of scope of the high-risk provisions entirely. It's worth c
 
 ## The practical order
 
-1. Map where AI is actually being used in your business, and who's accountable for it
+1. Map where AI is being used in your business, and who's accountable for it
 2. Write down the policy you're already more or less following
 3. Only then ask whether a customer, regulator or your own board is going to need you to prove any of it externally
 
@@ -58,4 +58,4 @@ If the answer to that third one is yes, ISO 42001 is a sound, structured way to 
 
 ---
 
-*We're 10 Kinds, a UK AI consultancy. We map where AI is actually being used in a business, put governance around it, get you to the point where you can prove it to a customer or a regulator, and then build the systems that make it pay. For a straight read on whether ISO 42001 is worth it for you, [book a free call](https://calendly.com/alan-10kinds/30min), or take the free [AI Readiness Checklist](/resources/ai-readiness-checklist/) first.*
+*We're 10 Kinds, a UK AI consultancy. We map where AI is being used in a business, put governance around it, get you to the point where you can prove it to a customer or a regulator, and then build the systems that make it pay. For a straight read on whether ISO 42001 is worth it for you, [book a free call](https://calendly.com/alan-10kinds/30min), or take the free [AI Readiness Checklist](/resources/ai-readiness-checklist/) first.*

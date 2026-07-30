@@ -34,17 +34,17 @@ The better move is a direct one: answer what you can from real evidence, say pla
 
 Most procurement processes have room for that if you're upfront early. They have very little room for it if you stop responding and it turns out to have been avoidable.
 
-## What the questions are actually testing
+## What the questions are testing
 
 Underneath the specific wording, most AI due-diligence questionnaires are checking for the same handful of things:
 
-- Do you know what AI is actually in use across your business, including tools that weren't formally approved?
+- Do you know what AI is in use across your business, including tools that weren't formally approved?
 - Is there a human in the loop for decisions that affect the customer, and is that documented rather than assumed?
 - What happens to the customer's data once it touches an AI system, and does any of it leave your control?
 - If something goes wrong, is there a known process, or does it get handled ad hoc?
 - Who is accountable for AI risk internally, by name, not by department?
 
-If you can answer those five in plain language, you can answer most of what's actually in the questionnaire, whatever words it uses to ask.
+If you can answer those five in plain language, you can answer most of what's in the questionnaire, whatever words it uses to ask.
 
 ## Where this leads
 
@@ -56,4 +56,4 @@ If this is the first time you've been asked, treat it as the moment to build the
 
 ---
 
-*We're 10 Kinds, a UK AI consultancy. We map where AI is actually being used in a business, put governance around it, get you to the point where you can prove it to a customer or a regulator, and then build the systems that make it pay. If you want a second pair of eyes on a specific questionnaire, [book a free call](https://calendly.com/alan-10kinds/30min), or take the free [AI Readiness Checklist](/resources/ai-readiness-checklist/) to find the gaps before the next one arrives.*
+*We're 10 Kinds, a UK AI consultancy. We map where AI is being used in a business, put governance around it, get you to the point where you can prove it to a customer or a regulator, and then build the systems that make it pay. If you want a second pair of eyes on a specific questionnaire, [book a free call](https://calendly.com/alan-10kinds/30min), or take the free [AI Readiness Checklist](/resources/ai-readiness-checklist/) to find the gaps before the next one arrives.*

@@ -1,7 +1,7 @@
 ---
 title: "Our approach"
 type: "approach"
-description: "Better margins, fewer stalled deals, and staff who can actually use AI. Fixed price per stage, first answers in around a fortnight, and we build what we recommend."
+description: "Increase trust, close deals faster, and enable more staff wins. Most consultants hand you a strategy deck and leave, we help you make it a success."
 
 hero:
   eyebrow: "Our approach"
@@ -37,7 +37,7 @@ process:
       title: "Agree the rules"
       duration: "Typically 4 to 6 weeks"
       pain: "Staff who aren't sure what's allowed do one of two things. They freeze, and you get none of the upside. Or they go underground, and you get all of the risk."
-      body: "A policy nobody has read is a document, not a control. We write the rules, then run the session that gets your leadership to actually commit to them, so your staff know what's approved and where a human has to stay in the loop."
+      body: "A policy nobody has read is a document, not a control. We write the rules, then run the session that gets your leadership to commit to them, so your staff know what's approved and where a human has to stay in the loop."
       deliverables:
         - "Acceptable use policy people can follow"
         - "A named owner for each area of AI risk"
@@ -47,7 +47,7 @@ process:
       title: "Get to where you can prove it"
       duration: "Typically 4 to 6 weeks"
       pain: "The questionnaire always arrives at the worst possible moment, with a deal behind it. \"We're working on it\" has never unstuck one."
-      body: "This is the stage that unsticks deals. We map your controls against ISO/IEC 42001, work out which parts of the EU AI Act and UK GDPR actually apply to you, and build the evidence trail so the next questionnaire is a filing exercise rather than a fire drill."
+      body: "This is the stage that unsticks deals. We map your controls against ISO/IEC 42001, work out which parts of the EU AI Act and UK GDPR apply to you, and build the evidence trail so the next questionnaire is a filing exercise rather than a fire drill."
       deliverables:
         - "Controls mapped to ISO/IEC 42001"
         - "EU AI Act and UK GDPR position, in writing"
@@ -83,7 +83,7 @@ boundaries:
 
 closing:
   heading: "Start your transformation"
-  text: "Book a call and we'll tell you which of the five stages you actually need, or take the free twelve-question check first and find your gaps."
+  text: "Book a call and we'll tell you which of the five stages you need, or take the free twelve-question check first and find your gaps."
   button:
     label: "Book a free call"
     link: ":calendly"

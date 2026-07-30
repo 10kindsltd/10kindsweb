@@ -1,14 +1,14 @@
 enable: true
 
 title: "How we help"
-text: "Governance is usually just the first step. We help you discover where AI is being used, create governance around it, then build what your business actually needs."
+text: "Governance is usually just the first step. We help you discover where AI is being used, create governance around it, then build what your business needs."
 
 items:
-  - heading: "Find where AI is actually being used"
+  - heading: "Find where AI is being used"
     body: "Sanctioned tools are the tip of it. We run a **use-case inventory** across your business, including the **shadow AI** nobody officially approved, so you have one accurate register instead of a guess."
 
   - heading: "Turn policy into something people follow"
-    body: "An **acceptable use policy** nobody's read is a folder, not a control. We write the policy, run the workshop that gets leadership to actually sign off on it, and make sure staff know what's allowed, what needs a human, and who owns the call."
+    body: "An **acceptable use policy** nobody's read is a folder, not a control. We write the policy, run the workshop that gets leadership to sign off on it, and make sure staff know what's allowed, what needs a human, and who owns the call."
 
   - heading: "Get ready for the questions you'll be asked"
     body: "A customer's due-diligence questionnaire, a regulator and an auditor all ask the same underlying thing: **can you show this is controlled?** We run the **ISO/IEC 42001 gap assessment** and **EU AI Act triage** that means the answer is yes."

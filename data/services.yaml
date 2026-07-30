@@ -9,12 +9,12 @@ groups:
     cards:
       - badge: "1: Discover"
         title: "AI Discovery"
-        explanation: "Where AI is already being used across your business, where it should be, and whether your organisation can actually adopt it."
+        explanation: "Where AI is already being used across your business, where it should be, and whether your organisation can adopt it."
         price: "From £5,000"
         duration: "Typically 2 weeks"
         deliverables:
           - "A map of AI use across the business, including what nobody officially approved"
-          - "A ranked shortlist of where AI would actually pay"
+          - "A ranked shortlist of where AI would pay"
           - "Risk register covering data, suppliers and regulatory exposure"
           - "A straight go/no-go on what to do next"
         button:
@@ -23,7 +23,7 @@ groups:
 
       - badge: "2: Agree"
         title: "AI Policy & Sign-off"
-        explanation: "The rules your organisation actually runs by, agreed by the people who have to enforce them."
+        explanation: "The rules your organisation runs by, agreed by the people who have to enforce them."
         price: "From £3,500"
         duration: "Typically 1-2 weeks"
         deliverables:
@@ -85,7 +85,7 @@ groups:
 
       - badge: "6: Build"
         title: "Custom Builds"
-        explanation: "AI built into how your organisation actually works, not bolted on beside it."
+        explanation: "AI built into how your organisation works, not bolted on beside it."
         price: "Project-scoped"
         duration: "Weeks/months"
         deliverables:

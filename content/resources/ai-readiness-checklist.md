@@ -25,7 +25,7 @@ inside:
   points:
     - "Twelve questions across six areas: visibility, policy and ownership, third parties, regulation, evidence, and readiness"
     - "Written in plain English, for a leadership team rather than a compliance department"
-    - "A scoring note at the end telling you what your answers actually mean"
+    - "A scoring note at the end telling you what your answers mean"
     - "Two pages, straight to the point, yours to keep and circulate internally"
 
 form:
