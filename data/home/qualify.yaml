@@ -18,17 +18,16 @@ point_groups:
       - "Staff use **ChatGPT, Copilot** or another AI tool, with or without a policy covering it"
       - "Your board has asked **what AI the business is running**, and what happens if it goes wrong"
 
-note_heading: "Don't build AI yourself? This still needs action"
-note_text: "Most AI governance risk sits in tools you've bought in, not ones you've built: an unmanaged register of use, a policy nobody's read, a vendor whose controls you've never checked."
+note_heading: "Even if you answered no, you still have work to do"
+note_text: "[UK GDPR](#gap) already binds how you use AI whenever personal data is involved. And most of that exposure sits in tools you bought rather than built: an unmanaged register of use, a policy nobody's read, a vendor whose controls you've never checked."
 
 stats:
   - label: "Potential fines"
     figure: "€15m / 3% turnover"
     text: |
-      for breaching the EU AI Act's transparency rules, law since 2 August 2026. <mark class="bg-yellow-200 rounded px-1">Don't panic</mark> - see [what the Act covers below](#regulation).
+      for breaching the EU AI Act's transparency rules, law since 2 August 2026. But most internal AI use [triggers none of them](#regulation).
     source_text: "EU AI Act, Article 99"
     source_url: "https://artificialintelligenceact.eu/article/99/"
-    warn: true
 
   - figure: "71%"
     label: "Shadow AI usage"
