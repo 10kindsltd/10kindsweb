@@ -11,7 +11,7 @@ points:
   - "AI touches client data, personal data, or anything commercially sensitive"
   - "A customer, insurer or regulator has ever sent you a security or AI questionnaire"
 
-note_heading: "Don't build AI yourself? That's no excuse"
+note_heading: "Don't build AI yourself? You're not exempt"
 note_text: "Most AI governance risk sits in tools you've bought in, not ones you've built: an unmanaged register of use, a policy nobody's read, a vendor whose controls you've never checked."
 
 stats:

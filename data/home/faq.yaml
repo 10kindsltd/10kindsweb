@@ -10,7 +10,7 @@ items:
       Then we build. Most organisations come to us with the governance question because that's what's in front of them, but the same work shows you exactly where AI would save real money, and we design, build and ship those systems ourselves.
 
   - q: "We were sent a customer due-diligence questionnaire about our AI. Can you help?"
-    a: "That's the most common way people find us. Forward it over and we'll map every question to the evidence that answers it, tell you what you can already prove, and what closing the rest takes. No obligation."
+    a: "That's the most common way people find us. Book a free call and bring it with you: we can discuss it, and what it would take to close the gaps."
 
   - q: "We don't build AI ourselves, we just use tools like ChatGPT or Copilot. Does this still apply?"
     a: "Yes. Most AI governance risk sits in tools you've bought in rather than ones you've built: an unmanaged register of AI use, a policy nobody's read, or a vendor whose own controls you haven't checked. That's exactly the ground we cover."
@@ -25,4 +25,4 @@ items:
     a: "Both, and the building is the point. We design, build and ship AI systems ourselves rather than handing you a specification and wishing you luck. Governance work is usually how organisations find us, but it's what it leads to that changes how the business runs."
 
   - q: "How do we get started?"
-    a: "Book a free 30-minute call, or send over a questionnaire if that's what's brought you here. We'll give you a straight read on where you stand and what the right next step looks like."
+    a: "Book a free 30-minute call. If a questionnaire's what brought you here, bring it along and we can discuss it. We'll give you a straight read on where you stand and what the right next step looks like."
