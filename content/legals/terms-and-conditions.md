@@ -1,6 +1,6 @@
 ---
 title: "Terms and Conditions"
-last_updated: "12 June 2026"
+last_updated: "30 July 2026"
 ---
 
 *Last updated: {{< last-updated >}}*
@@ -26,6 +26,14 @@ This website may contain links to other websites operated by third parties. We d
 ## Privacy and Cookies
 
 Use of this website is also governed by our [Privacy Policy](/legals/privacy-policy/) and [Cookie Policy](/legals/cookie-policy/), which are incorporated into these terms and conditions by this reference.
+
+## Accuracy of Information
+
+Content on this website, including service descriptions, pricing and availability, is provided for general information only and is updated periodically. It does not constitute an offer capable of acceptance, and no part of this website forms part of any contract between you and {{< company-name >}}. Any engagement with us is governed exclusively by the terms of a separate signed agreement or statement of work, which takes precedence over anything stated on this website in the event of a conflict.
+
+## No Professional Advice
+
+Blog posts, guides, checklists and other resources on this website, including any downloadable materials, are provided for general informational purposes only and do not constitute legal, regulatory, financial or other professional advice. They should not be relied on as a substitute for advice tailored to your specific circumstances. Laws, regulations and standards referenced on this website, including but not limited to the EU AI Act, UK GDPR and ISO/IEC 42001, may change, and we do not guarantee that any content remains current at the time you read it. No advisor-client relationship is created by your use of this website or any of its content. If you need advice on a specific matter, contact us to discuss a formal engagement.
 
 ## Availability and Disclaimers
 
