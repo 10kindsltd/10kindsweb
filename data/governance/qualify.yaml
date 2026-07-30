@@ -19,13 +19,13 @@ point_groups:
       - "Your board has asked **what AI the business is running**, and what happens if it goes wrong"
 
 note_heading: "Even if you answered no, you still have work to do"
-note_text: "UK GDPR [already binds how you use AI](/governance/#gap) the moment personal data is involved, and it almost always is. Someone pasting a customer email into ChatGPT is a processing decision nobody approved, in a tool nobody checked."
+note_text: "UK GDPR [already binds how you use AI](#gap) the moment personal data is involved, and it almost always is. Someone pasting a customer email into ChatGPT is a processing decision nobody approved, in a tool nobody checked."
 
 stats:
   - label: "Potential fines"
     figure: "€15m / 3% turnover"
     text: |
-      for breaching the EU AI Act's transparency rules, law since 2 August 2026. But most internal AI use [triggers none of them](/governance/#regulation).
+      for breaching the EU AI Act's transparency rules, law since 2 August 2026. But most internal AI use [triggers none of them](#regulation).
     source_text: "EU AI Act, Article 99"
     source_url: "https://artificialintelligenceact.eu/article/99/"
 
@@ -38,6 +38,6 @@ stats:
 #  - figure: "4"
 #    label: "New duties"
 #    text: |
-#      The EU AI Act's transparency rules apply from <mark class="bg-yellow-200 rounded px-1">2 August 2026</mark> and create four specific duties, all about telling people when they're seeing or speaking to AI. [We've set out what they do and don't cover below](/governance/#regulation).
+#      The EU AI Act's transparency rules apply from <mark class="bg-yellow-200 rounded px-1">2 August 2026</mark> and create four specific duties, all about telling people when they're seeing or speaking to AI. [We've set out what they do and don't cover below](#regulation).
 #    source_text: "EU AI Act, Article 50"
 #    source_url: "https://artificialintelligenceact.eu/transparency-rules-article-50/"

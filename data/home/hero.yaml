@@ -1,11 +1,11 @@
 enable: true
 
-eyebrow: "For organisations that want to harness AI"
-title: "Your org uses AI. You just don't know how."
+eyebrow: "For UK organisations that want to accelerate AI use"
+title: "Get AI under control. Then make it pay."
 text: |
-  Your staff are already pasting client data into ChatGPT/Claude and 10 other tools nobody signed off. You can't govern what you can't see, and <mark class="bg-yellow-200 rounded px-1">the next customer questionnaire will ask you to describe it in writing</mark>.
+  Two problems, and most organisations have both. <mark class="bg-yellow-200 rounded px-1">You can't prove what AI is running or where the data goes</mark>, and the work that would pay to automate is still being done by hand.
 
-  We find where AI is being used across your business and put governance around it your team can follow. Then we build what comes next.
+  We fix the first so you can answer a customer, an auditor or your board. Then we build the second.
 quote: |
   "We get your AI use under control, then build the systems that make it pay. Run by a team that ships AI products, not just talks about them"
 footer: -- Alan Bates, Founder, 10 Kinds & [Bazam.ai](https://bazam.ai)
@@ -13,7 +13,7 @@ footer: -- Alan Bates, Founder, 10 Kinds & [Bazam.ai](https://bazam.ai)
 buttons:
   - label: "Book a free 30-min call"
     link: ":calendly"
-  - label: "Our services"
-    link: "/services/"
+  - label: "What we do"
+    link: "#doors"
 
 image: "images/hero.jpg"

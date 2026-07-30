@@ -1,25 +1,22 @@
+{{/* The homepage is a router, not a governance page. See strategy/Site Architecture.md */}}
 {{ define "main" }}
-  {{ with .Site.Data.home.hero }}{{ if .enable }}{{ partial "blocks/home/hero.html" . }}{{ end }}{{ end }}
+  {{ with site.Data.home.hero }}{{ if .enable }}{{ partial "blocks/home/hero.html" . }}{{ end }}{{ end }}
 
-  {{ with .Site.Data.home.qualify }}{{ if .enable }}{{ partial "blocks/home/qualify.html" . }}{{ end }}{{ end }}
+  {{ with site.Data.home.doors }}{{ if .enable }}{{ partial "blocks/home/doors.html" . }}{{ end }}{{ end }}
 
-  {{ with .Site.Data.home.doors }}{{ if .enable }}{{ partial "blocks/home/doors.html" . }}{{ end }}{{ end }}
+  {{ with site.Data.home.brands }}{{ if .enable }}{{ partial "blocks/home/brands.html" . }}{{ end }}{{ end }}
 
-  {{ with .Site.Data.home.questionnaire }}{{ if .enable }}{{ partial "blocks/home/questionnaire.html" . }}{{ end }}{{ end }}
+  {{ with site.Data.home.portfolio }}{{ if .enable }}{{ partial "blocks/home/portfolio.html" . }}{{ end }}{{ end }}
 
-  {{ with .Site.Data.home.brands }}{{ if .enable }}{{ partial "blocks/home/brands.html" . }}{{ end }}{{ end }}
+  {{ with site.Data.home.lead_magnet }}{{ if .enable }}{{ partial "blocks/home/lead-magnet.html" . }}{{ end }}{{ end }}
 
-  {{ with .Site.Data.home.portfolio }}{{ if .enable }}{{ partial "blocks/home/portfolio.html" . }}{{ end }}{{ end }}
+  {{ with site.Data.home.testimonials }}{{ if .enable }}{{ partial "blocks/home/testimonials.html" . }}{{ end }}{{ end }}
 
-  {{ with .Site.Data.home.lead_magnet }}{{ if .enable }}{{ partial "blocks/home/lead-magnet.html" . }}{{ end }}{{ end }}
-
-  {{ with .Site.Data.home.testimonials }}{{ if .enable }}{{ partial "blocks/home/testimonials.html" . }}{{ end }}{{ end }}
-
-  {{ with .Site.Data.founder_profile }}{{ if .enable }}{{ partial "blocks/home/founder-profile.html" (dict "whyme" . "creds" $.Site.Data.home.credentials) }}{{ end }}{{ end }}
+  {{ with site.Data.founder_profile }}{{ if .enable }}{{ partial "blocks/home/founder-profile.html" (dict "whyme" . "creds" site.Data.home.credentials) }}{{ end }}{{ end }}
 
   {{ partial "blocks/faq-for.html" (dict "page" "home") }}
 
-  {{ with .Site.Data.cta }}{{ if .enable }}{{ partial "blocks/home/cta.html" . }}{{ end }}{{ end }}
+  {{ with site.Data.cta }}{{ if .enable }}{{ partial "blocks/home/cta.html" . }}{{ end }}{{ end }}
 
-  {{ with .Site.Data.home.contact }}{{ if .enable }}{{ partial "blocks/home/contact.html" . }}{{ end }}{{ end }}
+  {{ with site.Data.home.contact }}{{ if .enable }}{{ partial "blocks/home/contact.html" . }}{{ end }}{{ end }}
 {{ end }}

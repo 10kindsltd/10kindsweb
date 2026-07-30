@@ -2,6 +2,9 @@
 
   {{ with .Params.hero }}{{ partial "blocks/page/hero.html" . }}{{ end }}
 
+  {{/* Why a cold visitor is here, in three cards rather than a stuffed hero */}}
+  {{ with .Params.problem }}{{ partial "blocks/page/problem.html" . }}{{ end }}
+
   {{ with .Params.what_we_do }}{{ partial "blocks/home/what-we-do.html" . }}{{ end }}
 
   {{ with .Params.proof }}

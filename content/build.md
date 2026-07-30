@@ -5,15 +5,24 @@ description: "Every business has slow, manual, document-shaped work everyone has
 
 hero:
   eyebrow: "AI development"
-  title: "The money is in the work nobody got round to fixing"
-  subtitle: "We design, build and ship the systems ourselves, rather than handing you a specification and wishing you luck."
-  text: "Every organisation has the same list. Renewal packs rekeyed by hand from documents you already hold. Reports assembled from six systems by someone who knows where everything lives. Questions whose answers sit in three people's heads and nowhere else."
-  text2: "None of it shows up as a problem, because your team absorbed it as normal years ago. It is usually where the largest, dullest, most reliable savings are."
+  title: "The money is in automating your 'normal'"
+  subtitle: "The manual tasks you live with are normally the quickest wins"
+  text: "We help you discover possibilities, prototype in a day or two, build what works, then keep it running. See what's possible before you commit."
   buttons:
     - label: "Book a free call"
       link: ":calendly"
     - label: "See what it costs"
       link: "#services"
+
+problem:
+  heading: "Three places the value usually hides"
+  cards:
+    - heading: "The same data, keyed in twice"
+      text: "A document arrives, someone types its contents into a system, and someone else rebuilds the same figures for a report a week later. Nobody fixes it because everyone is too busy doing it."
+    - heading: "The answer lives in one person's head"
+      text: "Every organisation has someone everybody asks. When they're on holiday the work slows down, and when they leave it stops entirely."
+    - heading: "The demo that never shipped"
+      text: "Something impressive got built for a presentation, then never had an owner, a budget, or a route into how anyone works day to day."
 
 what_we_do:
   title: "Where AI pays for itself"
@@ -38,11 +47,11 @@ what_we_do:
     - heading: "Keeping it alive"
       body: "Anything built needs upkeep as your business changes and the models move underneath it. We stay on as **the standing line to the people who built it**, rather than disappearing at handover."
 
-  closing: "We start with one day of prototyping against simulated data, so you find out what's possible before scoping anything larger."
+  closing: "Prices for all three steps are below. You can stop after any of them."
 
 proof:
   heading: "Advice from people who ship"
-  text: "10 Kinds is run by the founder of [Bazam.ai](https://bazam.ai), an automated content marketing platform sold B2B. Running AI in production teaches you things a deck can't: which problems are worth pointing a model at, which are cheaper to solve with ordinary software, and which impressive demos fall apart the moment they meet real data. You get that read before the money goes anywhere, not after."
+  text: "10 Kinds is [run by the founder](/about) of [Bazam.ai](https://bazam.ai), an automated content marketing platform sold B2B. Running AI in production teaches you things a deck can't: which problems are worth pointing a model at, which are cheaper to solve with ordinary software, and which impressive demos fall apart the moment they meet real data. You get that read before the money goes anywhere, not after."
 
 services:
   title: "Build engagements"

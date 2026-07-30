@@ -1,0 +1,19 @@
+{{/* Three horizontal cards naming why a cold visitor is here.
+     Shared by /approach/ and /build/. See strategy/Site Architecture.md */}}
+<section class="bg-tertiary/25 py-16">
+  <div class="container mx-auto px-4">
+    {{ with .heading }}
+      <h2 class="mx-auto mb-10 max-w-3xl text-center text-3xl font-bold xl:text-4xl">{{ . }}</h2>
+    {{ end }}
+    {{ with .cards }}
+      <div class="grid gap-6 md:grid-cols-3">
+        {{ range . }}
+          <div class="rounded-2xl bg-white px-6 py-8">
+            {{ with .heading }}<h3 class="text-primary mb-3 text-lg font-semibold">{{ . }}</h3>{{ end }}
+            {{ with .text }}<p class="text-gray-600">{{ . }}</p>{{ end }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>

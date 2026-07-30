@@ -1,19 +1,27 @@
+{{/* The full governance argument, in order. Each block's opening sentence refers
+     to the one above it, so do not reorder without reading them together.
+     See strategy/Site Architecture.md */}}
 {{ define "main" }}
 
-  {{ with .Params.hero }}{{ partial "blocks/page/hero.html" . }}{{ end }}
+  {{/* 1. Restate the pain for someone who arrived cold */}}
+  {{ with .Params.hero }}{{ partial "blocks/home/hero.html" . }}{{ end }}
 
-  {{/* The pressure: why a cold visitor is here */}}
-  {{ with site.Data.governance.gap }}{{ if .enable }}{{ partial "blocks/home/gap.html" . }}{{ end }}{{ end }}
+  {{/* 2. Does this apply to you? Ends on the fine figure, which the next block answers */}}
+  {{ with site.Data.governance.qualify }}{{ if .enable }}{{ partial "blocks/home/qualify.html" . }}{{ end }}{{ end }}
 
-  {{/* What a due-diligence questionnaire asks */}}
-  {{ with site.Data.home.questionnaire }}{{ if .enable }}{{ partial "blocks/home/questionnaire.html" . }}{{ end }}{{ end }}
-
-  {{/* The regulation, explained plainly */}}
+  {{/* 3. What the law really requires. Narrower than the fine figure suggests */}}
   {{ with site.Data.governance.regulation }}{{ if .enable }}{{ partial "blocks/home/regulation.html" . }}{{ end }}{{ end }}
 
+  {{/* 4. Where the pressure really comes from, now the Act has been shown to be narrow */}}
+  {{ with site.Data.governance.gap }}{{ if .enable }}{{ partial "blocks/home/gap.html" . }}{{ end }}{{ end }}
+
+  {{/* 5. The five questions you will be asked */}}
+  {{ with site.Data.governance.questionnaire }}{{ if .enable }}{{ partial "blocks/home/questionnaire.html" . }}{{ end }}{{ end }}
+
+  {{/* 6. How we fix it */}}
   {{ with .Params.what_we_do }}{{ partial "blocks/home/what-we-do.html" . }}{{ end }}
 
-  {{/* Governance engagements only: the first services group, plus the commitments */}}
+  {{/* 7. What it costs: the governance group only */}}
   {{ with site.Data.services }}
     {{ if .enable }}
       {{ partial "blocks/home/services.html" (dict

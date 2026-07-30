@@ -19,7 +19,7 @@ cards:
     heading: "AI that pays for itself"
     text: "The slow, manual, document-shaped work your team has absorbed as normal. We find the parts worth automating, then design, build and ship them."
     points:
-      - "One day of prototyping against your real data"
+      - "A working prototype in a day, on simulated data"
       - "Custom builds embedded in how your teams already work"
       - "Workflows that run on a schedule rather than on someone remembering"
       - "Built by people who ship AI products for a living"

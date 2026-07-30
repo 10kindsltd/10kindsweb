@@ -4,16 +4,21 @@ type: "governance"
 description: "A customer's questionnaire or a board question is what usually brings people here. We find where AI is used across your business, put controls around it, and build the evidence so you can answer in writing. Fixed price, named deliverables."
 
 hero:
-  eyebrow: "AI governance"
-  title: "AI governance is a sales asset"
-  subtitle: "The organisations that can prove control close the deal, pass the audit, and get asked fewer questions next time."
-  text: "Most people reach us the week a customer's procurement team sends an AI due-diligence questionnaire, or the week someone on the board asks what AI the business is running and what happens if it goes wrong. Both need the same thing, and it isn't a policy document nobody has read."
-  text2: "We find every place AI has got into your organisation, put controls around it your team can follow, and build the evidence trail so the next time someone asks, answering is a filing exercise."
+  eyebrow: "For Organisations that want to govern AI use"
+  title: "Your org uses AI. You just don't know how."
+  text: |
+    Your staff are already using ChatGPT, Copilot and a dozen tools nobody signed off. <mark class="bg-yellow-200 rounded px-1">Nobody can say what's running, or what happens to the client data going into them.</mark>
+
+    Then a customer's procurement team sends a due-diligence questionnaire, and the deal waits behind it until you can answer in writing.
+  quote: |
+    "The organisations that can prove control close the deal, pass the audit, and get asked fewer questions next time"
+  footer: -- Alan Bates, Founder, 10 Kinds
   buttons:
     - label: "Book a free call"
       link: ":calendly"
     - label: "See what it costs"
       link: "#services"
+  image: "images/hero.jpg"
 
 what_we_do:
   title: "What the work involves"

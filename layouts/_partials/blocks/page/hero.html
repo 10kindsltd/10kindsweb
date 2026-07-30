@@ -1,4 +1,6 @@
-{{/* Shared page hero. Every page opens by restating the pain for a cold visitor. */}}
+{{/* Shared page hero. Every page opens by restating the pain for a cold visitor.
+     Used by /approach/, /governance/, /build/, /services/ and /about/ so the
+     type scale and colours stay identical across all of them. */}}
 <section class="py-16 lg:py-24">
   <div class="container mx-auto px-4">
     <div class="mx-auto text-center">
@@ -6,18 +8,30 @@
         <p class="text-primary mb-4 text-sm font-semibold tracking-wider uppercase">{{ . }}</p>
       {{ end }}
       {{ with .title }}
-        <h1 class="text-primary mx-auto mb-6 max-w-5xl text-4xl font-extrabold xl:text-6xl">{{ . }}</h1>
+        <h1 class="max-w-6xl mx-auto text-primary mb-6 text-4xl font-extrabold xl:text-6xl">{{ . }}</h1>
       {{ end }}
       {{ with .subtitle }}
-        <p class="mx-auto mb-8 max-w-3xl text-xl font-semibold xl:text-2xl">{{ . | markdownify }}</p>
+        <h2 class="max-w-4xl mx-auto text-secondary mb-6 text-4xl font-extrabold xl:text-4xl">{{ . }}</h2>
       {{ end }}
       {{ with .text }}
-        <p class="mx-auto mb-4 max-w-3xl text-lg text-gray-600">{{ . | markdownify }}</p>
+        <p class="max-w-xl mx-auto mb-4 text-lg text-gray-600">{{ . | markdownify }}</p>
       {{ end }}
       {{ with .text2 }}
-        <p class="mx-auto max-w-3xl text-lg text-gray-600">{{ . | markdownify }}</p>
+        <p class="text-lg text-gray-600">{{ . | markdownify }}</p>
       {{ end }}
     </div>
+
+    {{/* Optional value drivers */}}
+    {{ with .points }}
+      <div class="mx-auto mt-12 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        {{ range . }}
+          <div class="border-primary/20 rounded-2xl border bg-white px-5 py-6 text-center">
+            {{ with .label }}<p class="text-primary mb-2 text-2xl font-extrabold">{{ . }}</p>{{ end }}
+            {{ with .text }}<p class="text-sm text-gray-600">{{ . }}</p>{{ end }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
 
     {{ with .buttons }}
       <div class="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

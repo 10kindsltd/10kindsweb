@@ -1,62 +1,10 @@
 {{ define "main" }}
 
   {{/* ---------- HERO: restate the pain for a cold visitor ---------- */}}
-  {{ with .Params.hero }}
-    <section class="py-16 lg:py-24">
-      <div class="container mx-auto px-4">
-        <div class="mx-auto text-center">
-          {{ with .eyebrow }}
-            <p class="text-primary mb-4 text-sm font-semibold tracking-wider uppercase">{{ . }}</p>
-          {{ end }}
-          {{ with .title }}
-            <h1 class="max-w-6xl mx-auto text-primary mb-6 text-4xl font-extrabold xl:text-6xl">{{ . }}</h1>
-          {{ end }}
-          {{ with .subtitle }}
-            <h2 class="max-w-4xl mx-auto text-secondary mb-6 text-4xl font-extrabold xl:text-4xl">{{ . }}</h2>
-          {{ end }}
-          {{ with .text }}
-            <p class="max-w-xl mx-auto mb-4 text-lg text-gray-600">{{ . | markdownify }}</p>
-          {{ end }}
-          {{ with .text2 }}
-            <p class="text-lg text-gray-600">{{ . | markdownify }}</p>
-          {{ end }}
-        </div>
-
-        {{/* Value drivers: speed, risk, effort, proof */}}
-        {{ with .points }}
-          <div class="mx-auto mt-12 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {{ range . }}
-              <div class="border-primary/20 rounded-2xl border bg-white px-5 py-6 text-center">
-                {{ with .label }}<p class="text-primary mb-2 text-2xl font-extrabold">{{ . }}</p>{{ end }}
-                {{ with .text }}<p class="text-sm text-gray-600">{{ . }}</p>{{ end }}
-              </div>
-            {{ end }}
-          </div>
-        {{ end }}
-      </div>
-    </section>
-  {{ end }}
+  {{ with .Params.hero }}{{ partial "blocks/page/hero.html" . }}{{ end }}
 
   {{/* ---------- PROBLEM: why a cold visitor is here ---------- */}}
-  {{ with .Params.problem }}
-    <section class="bg-tertiary/25 py-16">
-      <div class="container mx-auto px-4">
-        {{ with .heading }}
-          <h2 class="mx-auto mb-10 max-w-3xl text-center text-3xl font-bold xl:text-4xl">{{ . }}</h2>
-        {{ end }}
-        {{ with .cards }}
-          <div class="grid gap-6 md:grid-cols-3">
-            {{ range . }}
-              <div class="rounded-2xl bg-white px-6 py-8">
-                {{ with .heading }}<h3 class="text-primary mb-3 text-lg font-semibold">{{ . }}</h3>{{ end }}
-                {{ with .text }}<p class="text-gray-600">{{ . }}</p>{{ end }}
-              </div>
-            {{ end }}
-          </div>
-        {{ end }}
-      </div>
-    </section>
-  {{ end }}
+  {{ with .Params.problem }}{{ partial "blocks/page/problem.html" . }}{{ end }}
 
   {{/* ---------- PROCESS: the stages ---------- */}}
   {{ with .Params.process }}
