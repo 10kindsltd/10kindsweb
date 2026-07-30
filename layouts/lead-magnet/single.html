@@ -25,12 +25,14 @@
 
         {{/* Right: the form, above the fold */}}
         <div class="border-primary/25 bg-tertiary/25 rounded-4xl border px-6 py-8 lg:px-8 lg:py-10">
-          {{ partial "blocks/toolkit-form.html" (dict
+          {{ partial "blocks/lead-magnet-form.html" (dict
             "uid" "top"
             "heading" (default "Get the free checklist" .Params.form.heading_short)
             "text" (default "" .Params.form.text)
             "button" .Params.form.button
-            "disclaimer" .Params.form.disclaimer)
+            "disclaimer" .Params.form.disclaimer
+            "action" .Params.form.action
+            "redirect" .Params.form.redirect)
           }}
         </div>
 
@@ -96,12 +98,14 @@
 
         <div class="border-primary/25 bg-tertiary/25 rounded-4xl border px-6 py-8 lg:px-8 lg:py-10">
           {{ with .Params.form }}
-            {{ partial "blocks/toolkit-form.html" (dict
+            {{ partial "blocks/lead-magnet-form.html" (dict
               "uid" "bottom"
               "heading" .heading
               "text" .text
               "button" .button
-              "disclaimer" .disclaimer)
+              "disclaimer" .disclaimer
+              "action" .action
+              "redirect" .redirect)
             }}
           {{ end }}
         </div>

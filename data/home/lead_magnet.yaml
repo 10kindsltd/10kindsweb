@@ -13,5 +13,5 @@ points:
 
 button:
   label: "Get the free checklist"
-  link: "/toolkit/"
+  link: "/resources/ai-readiness-checklist/"
 subtext: ""

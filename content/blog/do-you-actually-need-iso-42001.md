@@ -58,4 +58,4 @@ If the answer to that third one is yes, ISO 42001 is a sound, structured way to 
 
 ---
 
-*We're 10 Kinds, a UK AI consultancy. We map where AI is actually being used in a business, put governance around it, get you to the point where you can prove it to a customer or a regulator, and then build the systems that make it pay. For a straight read on whether ISO 42001 is worth it for you, [book a free call](https://calendly.com/alan-10kinds/30min), or take the free [AI Readiness Checklist](/toolkit/) first.*
+*We're 10 Kinds, a UK AI consultancy. We map where AI is actually being used in a business, put governance around it, get you to the point where you can prove it to a customer or a regulator, and then build the systems that make it pay. For a straight read on whether ISO 42001 is worth it for you, [book a free call](https://calendly.com/alan-10kinds/30min), or take the free [AI Readiness Checklist](/resources/ai-readiness-checklist/) first.*

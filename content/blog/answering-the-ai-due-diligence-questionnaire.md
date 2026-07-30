@@ -56,4 +56,4 @@ If this is the first time you've been asked, treat it as the moment to build the
 
 ---
 
-*We're 10 Kinds, a UK AI consultancy. We map where AI is actually being used in a business, put governance around it, get you to the point where you can prove it to a customer or a regulator, and then build the systems that make it pay. If you want a second pair of eyes on a specific questionnaire, [book a free call](https://calendly.com/alan-10kinds/30min), or take the free [AI Readiness Checklist](/toolkit/) to find the gaps before the next one arrives.*
+*We're 10 Kinds, a UK AI consultancy. We map where AI is actually being used in a business, put governance around it, get you to the point where you can prove it to a customer or a regulator, and then build the systems that make it pay. If you want a second pair of eyes on a specific questionnaire, [book a free call](https://calendly.com/alan-10kinds/30min), or take the free [AI Readiness Checklist](/resources/ai-readiness-checklist/) to find the gaps before the next one arrives.*

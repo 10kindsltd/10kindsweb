@@ -1,13 +1,14 @@
 {{/*
-  Lead-capture form for the AI Readiness Checklist.
+  Lead-capture form, shared across lead-magnet pages.
   Rendered more than once per page, so every element id is suffixed with .uid.
 
-  Params: uid (required, unique per instance), heading, text, button, disclaimer
+  Params: uid (required, unique per instance), heading, text, button, disclaimer,
+  action (Formtorch endpoint), redirect (thank-you page path)
 
-  TODO before this goes live: replace the form action below with a real
-  Formtorch endpoint. Create a NEW form in your Formtorch account so checklist
-  downloads are tracked separately from general contact messages: don't reuse
-  the contact form's ID.
+  TODO before a lead magnet goes live: set its own action/redirect in the
+  page's front matter (form.action, form.redirect), pointing at a NEW form in
+  Formtorch so downloads are tracked separately per lead magnet: don't reuse
+  another lead magnet's or the contact form's ID.
 */}}
 {{ $uid := .uid }}
 <div>
@@ -18,8 +19,8 @@
     </div>
   {{ end }}
 
-  <form id="toolkit_form_{{ $uid }}" action="https://formtorch.com/f/REPLACE_WITH_TOOLKIT_FORM_ID" method="POST" class="flex flex-col gap-4">
-    <input type="hidden" name="_redirect" value="/toolkit-thank-you">
+  <form id="lead_magnet_form_{{ $uid }}" action="{{ .action }}" method="POST" class="flex flex-col gap-4">
+    <input type="hidden" name="_redirect" value="{{ .redirect }}">
 
     <div class="flex flex-col gap-1.5">
       <label for="name_{{ $uid }}" class="text-sm font-semibold">Name</label>

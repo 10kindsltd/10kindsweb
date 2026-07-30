@@ -16,7 +16,7 @@ main:
     weight: 4
 
   - name: "Free AI Readiness Checklist"
-    url: "/toolkit/"
+    url: "/resources/ai-readiness-checklist/"
     weight: 5
 
 #  - name: "Blog"
@@ -49,7 +49,7 @@ footer:
     url: "/#founder-profile"
     weight: 5
   - name: "Free AI Readiness Checklist"
-    url: "/toolkit/"
+    url: "/resources/ai-readiness-checklist/"
     weight: 6
   - name: "Book a call"
     url: "https://calendly.com/alan-10kinds"

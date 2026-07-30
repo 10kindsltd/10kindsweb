@@ -1,6 +1,6 @@
 ---
 title: "Free AI Readiness Checklist"
-type: "toolkit"
+type: "lead-magnet"
 description: "Twelve questions every leadership team should be able to answer about the AI already running in their business. Free, takes about ten minutes."
 
 hero:
@@ -34,4 +34,6 @@ form:
   text: ""
   button: "Get the checklist"
   disclaimer: "We'll only use these details to follow up about your AI readiness, and you can tell us to stop at any time."
+  action: "https://formtorch.com/f/REPLACE_WITH_TOOLKIT_FORM_ID"
+  redirect: "/resources/ai-readiness-checklist-thank-you/"
 ---

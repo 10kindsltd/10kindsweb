@@ -1,10 +1,10 @@
 ---
-title: "How we work"
+title: "Our approach"
 type: "approach"
 description: "Better margins, fewer stalled deals, and staff who can actually use AI. Fixed price per stage, first answers in around a fortnight, and we build what we recommend."
 
 hero:
-  eyebrow: "How we work"
+  eyebrow: "Our approach"
   title: "Instilling Confidence & Capability"
   subtitle: "Increase trust, close deals faster, and enable more staff wins"
   text: "Most consultants hand you a strategy deck and leave. We help you make it a success."
@@ -21,7 +21,7 @@ problem:
 
 process:
   heading: "Five stages"
-  intro: "Each one is a fixed price with a fixed scope, [listed in full here](/#services). Stop after any of them."
+  intro: "Each one is a fixed price with a fixed scope tailored to you, [listed in full here](/#services). Stop after any of them."
   stages:
     - number: "01"
       title: "Find out where you stand"
@@ -82,12 +82,12 @@ boundaries:
       text: "ISO/IEC 42001, the EU AI Act and UK GDPR/ICO guidance. We leave out NIST's AI RMF because it's US-focused and adds little to a UK engagement. A longer framework list isn't a better one."
 
 closing:
-  heading: "Start the diagnosis"
+  heading: "Start your transformation"
   text: "Book a call and we'll tell you which of the five stages you actually need, or take the free twelve-question check first and find your gaps."
   button:
     label: "Book a free call"
     link: ":calendly"
   secondary:
     label: "Get the free checklist"
-    link: "/toolkit/"
+    link: "/resources/ai-readiness-checklist/"
 ---
