@@ -1,7 +1,7 @@
 enable: true
 
 title: "How we help"
-text: "Governance is usually the first question. Finding where AI is being used, proving it's controlled, then building what your business actually needs."
+text: "Governance is usually just the first step. We help you discover where AI is being used, create governance around it, then build what your business actually needs."
 
 items:
   - heading: "Find where AI is actually being used"
