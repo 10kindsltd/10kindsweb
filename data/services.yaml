@@ -11,7 +11,7 @@ groups:
         title: "AI Discovery"
         explanation: "Where AI is already being used across your business, where it should be, and whether your organisation can adopt it."
         price: "From £5,000"
-        duration: "Typically 2 weeks"
+        duration: "Typically 1-2 weeks"
         deliverables:
           - "A map of AI use across the business, including what nobody officially approved"
           - "A ranked shortlist of where AI would pay"
@@ -97,7 +97,7 @@ groups:
           label: "Discuss a build"
           link: ":calendly"
 
-  - title: "Keep Going"
+  - title: "Get On-Going Support"
     text: "A standing line to the person who built it, not a subscription that runs itself."
     cards:
       - badge: "7: Sustain"
