@@ -2,23 +2,30 @@ enable: true
 
 heading: "Does AI governance apply to you?"
 text: |
-  <mark class="bg-yellow-200 rounded px-1">You don't need to build AI yourself for this to be your problem.</mark>
+  Two reasons it might, and most organisations have both. Some AI use carries legal duties. The rest gets asked about anyway.
 
-points:
-  - "You have **any customers, users or business in the EU**, even without an EU office"
-  - "Staff use ChatGPT, Copilot or another AI tool, with or without a policy covering it"
-  - "You sell software or services to enterprise or regulated customers"
-  - "AI touches client data, personal data, or anything commercially sensitive"
-  - "A customer, insurer or regulator has ever sent you a security or AI questionnaire"
+point_groups:
+  - label: "You may have legal duties"
+    points:
+      - "You **place AI-enabled products or services in the EU market**, or your AI outputs are used there"
+      - "Your AI **speaks to customers**, or generates content you publish under your name"
+      - "AI touches **client data, personal data**, or anything commercially sensitive"
 
-note_heading: "Don't build AI yourself? You're not exempt"
+  - label: "Either way, someone will ask"
+    points:
+      - "A customer, insurer or regulator has ever sent you a **security or AI questionnaire**"
+      - "You sell software or services to **enterprise or regulated customers**"
+      - "Staff use **ChatGPT, Copilot** or another AI tool, with or without a policy covering it"
+      - "Your board has asked **what AI the business is running**, and what happens if it goes wrong"
+
+note_heading: "Don't build AI yourself? This still needs action"
 note_text: "Most AI governance risk sits in tools you've bought in, not ones you've built: an unmanaged register of use, a policy nobody's read, a vendor whose controls you've never checked."
 
 stats:
-  - label: "Potential fine"
-    figure: "€15m"
+  - label: "Potential fines"
+    figure: "€15m / 3% turnover"
     text: |
-      or 3% of global turnover: the **maximum penalty for breaching the EU AI Act's transparency rules**, binding law <mark class="bg-yellow-200 rounded px-1">since 2 August 2026</mark>.
+      for breaching the EU AI Act's transparency rules, law since 2 August 2026. <mark class="bg-yellow-200 rounded px-1">Don't panic</mark> - see [what the Act covers below](#regulation).
     source_text: "EU AI Act, Article 99"
     source_url: "https://artificialintelligenceact.eu/article/99/"
     warn: true
@@ -28,3 +35,10 @@ stats:
     text: "of UK employees have used AI tools at work without approval, and 51% do so every week."
     source_text: "Microsoft/Censuswide, October 2025"
     source_url: "https://ukstories.microsoft.com/features/rise-in-shadow-ai-tools-raising-security-concerns-for-uk/"
+
+#  - figure: "4"
+#    label: "New duties"
+#    text: |
+#      The EU AI Act's transparency rules apply from <mark class="bg-yellow-200 rounded px-1">2 August 2026</mark> and create four specific duties, all about telling people when they're seeing or speaking to AI. [We've set out what they do and don't cover below](#regulation).
+#    source_text: "EU AI Act, Article 50"
+#    source_url: "https://artificialintelligenceact.eu/transparency-rules-article-50/"

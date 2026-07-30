@@ -17,7 +17,7 @@ hero:
   eyebrow: "For commercial insurance brokers"
   headline: "How many hours a week do your brokers lose to paperwork?"
   subhead: |
-    Here's a quick demo of something your firm probably does daily — comparing open-market quotes. We can build you a workflow to compare them in seconds.
+    Here's a quick demo of something your firm probably does daily: comparing open-market quotes. We can build you a workflow to compare them in seconds.
 
     This is just one idea. Get in touch and we'll find where AI would help your firm.
   button_primary: { label: "Book a free call", href: ":calendly" }

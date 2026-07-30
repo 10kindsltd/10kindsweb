@@ -36,6 +36,17 @@
 
     </div>
     <div class="text-center text-sm text-gray-500">
+      {{ with .Site.Params.legal }}
+        <p class="mb-2">
+          {{- $reg := slice -}}
+          {{- with .company_name }}{{ $reg = $reg | append . }}{{ end -}}
+          {{- if and .company_number .company_country }}{{ $reg = $reg | append (printf "Registered in %s, company no. %s" .company_country .company_number) }}{{ end -}}
+          {{- with .vat_number }}{{ $reg = $reg | append (printf "VAT %s" .) }}{{ end -}}
+          {{- with .ico_number }}{{ $reg = $reg | append (printf "ICO reg. %s" .) }}{{ end -}}
+          {{- with .pi_insurance }}{{ $reg = $reg | append . }}{{ end -}}
+          {{ delimit $reg " | " }}
+        </p>
+      {{ end }}
       <p>
         {{- with .Site.Params.copyright }}{{ . }} | {{ end -}}
         {{- $legal := slice -}}
@@ -43,6 +54,10 @@
           {{- $legal = $legal | append (printf `<a href="%s" class="hover:underline">%s</a>` .URL .Name) -}}
         {{- end -}}
         {{ delimit $legal " | " | safeHTML }}
+      </p>
+      <p class="mt-2 text-xs text-gray-400">
+        Nothing on this site constitutes legal, regulatory or professional advice. See our
+        <a href="/legals/terms-and-conditions/" class="hover:underline">Terms &amp; Conditions</a> for details.
       </p>
     </div>
   </div>

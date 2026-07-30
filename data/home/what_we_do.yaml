@@ -12,7 +12,7 @@ items:
     body: "An **acceptable use policy** nobody's read is a folder, not a control. We write the policy, run the workshop that gets leadership to sign off on it, and make sure staff know what's allowed, what needs a human, and who owns the call."
 
   - heading: "Get ready for the questions you'll be asked"
-    body: "A customer's due-diligence questionnaire, a regulator and an auditor all ask the same underlying thing: **can you show this is controlled?** We run our **ISO/IEC 42001 gap assessment** and **EU AI Act triage** so you can prove it."
+    body: "A customer's due-diligence questionnaire, a regulator and an auditor all ask the same underlying thing: **can you show this is controlled?** We run our **ISO/IEC 42001 gap assessment** and build the **inventory, records and oversight controls** that answer it, whichever way your regulatory classification goes."
 
   - heading: "Manage the risk your suppliers bring in"
     body: "Most organisations don't build AI, they buy it. We assess the **third-party and vendor risk** that comes with every AI-enabled tool you've added, the exposure that never shows up in your own audit."

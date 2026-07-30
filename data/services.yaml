@@ -1,7 +1,19 @@
 enable: true
 
 title: "How we work together"
-text: "Most people start with governance to get things in order. Then we can help with opportunities we discover along the way."
+text: "Most people start with governance to get things in order. Then we can help with opportunities we discover along the way. Every engagement is a fixed price against a written scope, the deliverables are named up front, and you can stop after any of them."
+
+assurances:
+  heading: "Our commitments"
+  items:
+    - heading: "Fixed scope, fixed price"
+      text: "Each engagement is quoted at a fixed price against a scope agreed in writing before we start. No day-rate creep, and no surprise on the invoice."
+    - heading: "Named deliverables"
+      text: "You get the documents listed on each engagement, by name, at the end of it. If one turns out to be wrong for your situation we swap it rather than pad the pile."
+    - heading: "We build the machinery, not the legal opinion"
+      text: "Your regulatory classification is a question for a solicitor. We build the inventory, risk process, documentation and oversight controls you need whichever way that answer goes."
+    - heading: "We don't certify anyone"
+      text: "Certification decisions rest with an accredited certification body, and no consultancy can both advise and certify. We build the management system and get you ready for that audit."
 
 groups:
   - title: "Get In Control"
@@ -17,6 +29,7 @@ groups:
           - "A ranked shortlist of where AI would pay"
           - "Risk register covering data, suppliers and regulatory exposure"
           - "A straight go/no-go on what to do next"
+        featured: true
         button:
           label: "Discuss discovery"
           link: ":calendly"
@@ -36,25 +49,39 @@ groups:
           label: "Discuss policy"
           link: ":calendly"
 
-      - badge: "3: Prove"
-        title: "Compliance Readiness"
-        explanation: "Ready to answer a customer's due-diligence questionnaire, a regulator, or an auditor, in writing."
-        price: "From £12,000"
-        duration: "A few weeks"
-        featured: true
+      - badge: "3: Assess"
+        title: "Gap Assessment"
+        explanation: "Two weeks and a fixed fee to find out how far you actually are from being able to prove it. This is where most people start."
+        price: "From £4,500"
+        duration: "Typically 2 weeks"
         note: ""
         deliverables:
-          - "AI risk audit and regulatory exposure mapping"
-          - "Controls mapped to ISO/IEC 42001"
-          - "EU AI Act risk classification where it applies, and a clear answer where it doesn't"
-          - "UK GDPR and ICO alignment"
+          - "Your existing controls mapped against ISO/IEC 42001, clause by clause"
+          - "A written gap list, ranked by what a customer or auditor asks about first"
+          - "An AI inventory covering the tools nobody put through procurement"
+          - "The regulatory questions worth putting to a solicitor, and the ones already settled"
+          - "A remediation plan with the work costed, so the next decision is yours"
+        button:
+          label: "Discuss an assessment"
+          link: ":calendly"
+
+      - badge: "4: Close"
+        title: "Compliance Readiness"
+        explanation: "The remediation itself, scoped against the gaps we found rather than guessed at before we started."
+        price: "Quoted from your gap assessment"
+        duration: "A few weeks"
+        deliverables:
+          - "AI inventory and risk process built and populated, not just specified"
+          - "Controls and documentation mapped to ISO/IEC 42001"
+          - "AI Act-aligned controls and documentation, built to support your classification once it's confirmed"
+          - "Human oversight and incident handling you can point an auditor at"
           - "Audit trail and evidence design"
           - "Certification-ready documentation"
         button:
           label: "Discuss readiness"
           link: ":calendly"
 
-      - badge: "4: Train"
+      - badge: "5: Train"
         title: "Training"
         explanation: "Your team needs this regardless, and ISO 42001 requires evidence of it. Delivered by someone who builds AI products, not someone reciting a deck."
         price: "From £2,500"
@@ -70,7 +97,7 @@ groups:
   - title: "Get Building"
     text: "Once the fix is clear, we build it and ship it."
     cards:
-      - badge: "5: Prototype"
+      - badge: "6: Prototype"
         title: "1-Day Prototyping"
         explanation: "One day to find out what's possible with your data and your workflows, before you scope anything bigger."
         price: "From £3,500 / day"
@@ -83,7 +110,7 @@ groups:
           label: "Discuss prototyping"
           link: ":calendly"
 
-      - badge: "6: Build"
+      - badge: "7: Build"
         title: "Custom Builds"
         explanation: "AI built into how your organisation works, not bolted on beside it."
         price: "Project-scoped"
@@ -100,7 +127,7 @@ groups:
   - title: "Get On-Going Support"
     text: "A standing line to the person who built it, not a subscription that runs itself."
     cards:
-      - badge: "7: Sustain"
+      - badge: "8: Sustain"
         title: "Advisory Retainer"
         explanation: "Most consultants build it and leave. We stay on as the standing line to the person who built it."
         price: "£1,500 / month"

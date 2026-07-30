@@ -44,7 +44,7 @@ Two things apply whether or not you certify to anything.
 
 **UK GDPR**, as amended by the Data (Use and Access) Act 2025, already covers a large part of what "AI governance" means in practice for most UK organisations: lawful basis, data minimisation, automated decision-making. Most AI governance conversations turn out to be a data protection conversation wearing an AI hat.
 
-**The EU AI Act**, whose timeline has shifted more than once. The Digital Omnibus deferred the Annex III high-risk obligations to December 2027, while Article 50's transparency obligations are still due to apply from August 2026.
+**The EU AI Act**, whose timeline has shifted more than once. The Digital Omnibus deferred the Annex III high-risk obligations to 2 December 2027, while Article 50's transparency obligations apply from 2 August 2026. Article 50 is narrower than the headlines imply: it covers telling people they're interacting with an AI, marking AI-generated content, notifying people exposed to emotion recognition, and labelling deepfakes. Systems already on the market get until 2 December 2026 for the machine-readable marking requirement in Article 50(2).
 
 Most UK SMEs are out of scope of the high-risk provisions entirely. It's worth checking which parts apply to you rather than assuming the loudest headline about the Act is the relevant one.
 

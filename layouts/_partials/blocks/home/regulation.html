@@ -1,0 +1,81 @@
+<section id="regulation" class="bg-gradient-to-b from-primary to-quaternary py-16">
+  <div class="container mx-auto px-4">
+    <div class="mx-auto max-w-4xl">
+      <div class="text-center">
+        {{ with .heading }}
+          <h2 class="mb-4 text-4xl font-bold text-white xl:text-5xl">{{ . }}</h2>
+        {{ end }}
+        {{ with .text }}
+          <p class="mx-auto mb-10 max-w-2xl text-lg text-white/80">{{ . | markdownify }}</p>
+        {{ end }}
+      </div>
+
+      {{ if or .date .covered }}
+        <div class="border-white/25 bg-white/10 rounded-2xl border px-8 py-8">
+          {{ with .date }}
+            <p class="text-center text-4xl font-extrabold text-white xl:text-5xl">{{ . }}</p>
+          {{ end }}
+          {{ with .date_label }}
+            <p class="mt-2 text-center text-white/80">{{ . }}</p>
+          {{ end }}
+
+          {{ with .covered_heading }}
+            <h3 class="mt-8 mb-4 text-center text-sm font-semibold tracking-wider text-white/70 uppercase">{{ . }}</h3>
+          {{ end }}
+          {{ with .covered }}
+            <div class="grid gap-4 sm:grid-cols-2">
+              {{ range . }}
+                <div class="border-white/15 bg-white/10 rounded-xl border px-5 py-4">
+                  {{ with .heading }}<h4 class="mb-1 font-bold text-white">{{ . }}</h4>{{ end }}
+                  {{ with .text }}<p class="text-sm text-white/80 [&_strong]:text-white">{{ . | markdownify }}</p>{{ end }}
+                </div>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+
+      {{ with .note_heading }}
+        <div class="mt-6 rounded-2xl bg-white px-8 py-7">
+          <h3 class="text-primary mb-2 text-xl font-bold">{{ . }}</h3>
+          {{ with $.note_text }}<p class="text-gray-700">{{ . | markdownify }}</p>{{ end }}
+        </div>
+      {{ end }}
+
+      {{ with .stance_heading }}
+        <div class="border-white/25 mt-6 rounded-2xl border-2 px-8 py-7">
+          <h3 class="mb-3 text-2xl font-bold text-white">{{ . }}</h3>
+          {{ with $.stance_text }}
+            <div class="flex flex-col gap-3 text-white/85 [&_strong]:text-white">{{ . | markdownify }}</div>
+          {{ end }}
+        </div>
+      {{ end }}
+
+      {{ with .footnotes }}
+        <ul class="mx-auto mt-6 flex max-w-3xl flex-col gap-2">
+          {{ range . }}
+            <li class="flex items-start gap-2 text-sm text-white/70">
+              <span class="shrink-0">&dagger;</span>
+              <span class="[&_strong]:text-white">{{ . | markdownify }}</span>
+            </li>
+          {{ end }}
+        </ul>
+      {{ end }}
+
+      {{ if .source_text }}
+        <p class="mt-6 text-center text-sm text-white/60">
+          Source:
+          {{ if .source_url }}
+            <a href="{{ .source_url }}" target="_blank" rel="noopener noreferrer" class="underline">{{ .source_text }}</a>
+          {{ else }}
+            {{ .source_text }}
+          {{ end }}
+        </p>
+      {{ end }}
+
+      <div class="mt-10 flex justify-center">
+        {{ partial "components/button/primary.html" (dict "href" ":calendly" "label" (default "Book a free call" .button_label) "inverted" true) }}
+      </div>
+    </div>
+  </div>
+</section>

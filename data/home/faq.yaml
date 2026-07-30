@@ -13,7 +13,16 @@ items:
     a: "That's the most common way people find us. Book a free call and bring it with you: we can discuss it, and what it would take to close the gaps."
 
   - q: "We don't build AI ourselves, we just use tools like ChatGPT or Copilot. Does this still apply?"
-    a: "Yes. Most AI governance risk sits in tools you've bought in rather than ones you've built: an unmanaged register of AI use, a policy nobody's read, or a vendor whose own controls you haven't checked. That's exactly the ground we cover."
+    a: |
+      Yes, though usually not because of the EU AI Act. Article 50's transparency duties mostly bind the people who build and supply AI systems, and drafting documents internally with Copilot triggers none of them.
+
+      What reaches you is UK GDPR, your customers' due-diligence questionnaires, and the risk sitting in tools you've bought in: an unmanaged register of AI use, a policy nobody's read, a vendor whose own controls you haven't checked. That's the ground we cover.
+
+  - q: "Will you tell us whether we're a high-risk provider under the EU AI Act?"
+    a: |
+      No. Your legal classification is a question for a solicitor, and you should want that answer in writing from one rather than from a consultancy.
+
+      What we do is build the machinery it depends on: the AI inventory, the risk process, the documentation and the human oversight controls. That work is useful whichever way the classification goes, and a customer's questionnaire asks for it either way. We'll also hand you the specific questions worth putting to a lawyer, so the legal spend is short and targeted.
 
   - q: "Is this just data protection with an AI label on it?"
     a: "There's real overlap. UK GDPR already covers a lot of what 'AI governance' means in practice. We're clear about where your existing data protection work already answers the question, and where AI adds a distinct one."

@@ -1,7 +1,7 @@
 enable: true
 
-title: "Even if the EU AI Act doesn't apply to you..."
-text: "UK GDPR already covers a lot of the same ground, and most of this pressure never came from Brussels in the first place. It comes from your own customers, your own board, and your own suppliers."
+title: "Most of this pressure never came from Brussels"
+text: "The EU AI Act is narrower than the coverage suggests, and plenty of organisations sit outside most of it. The pressure arrives anyway, from your own customers, your own board and your own suppliers. UK GDPR already covers much of the same ground."
 
 cards:
   - heading: "The stalled deal"
@@ -18,12 +18,12 @@ cards:
     text: "The organisations that can prove control win the deal, pass the audit, and get asked fewer questions next time."
 
 outcome:
-  heading: "...once you're in control"
+  heading: "We can help you get in control so..."
   points:
     - "A due-diligence questionnaire arrives and you answer it the same week, not the same quarter"
     - "Your board can confidently state your AI exposure"
     - "You know every AI tool in use across the business, and what each vendor does with your data"
-    - "You know which regulations apply to you, and can show it in writing"
+    - "The controls, records and oversight are in place and evidenced, whichever way your regulatory classification goes"
 
-callout: "Let's get you covered."
+callout: "Let's talk and start your journey."
 callout_link: "Book a free call"

@@ -45,12 +45,12 @@ process:
 
     - number: "03"
       title: "Get to where you can prove it"
-      duration: "Typically 4 to 6 weeks"
+      duration: "Two weeks to assess, then 4 to 6 weeks to close the gaps"
       pain: "The questionnaire always arrives at the worst possible moment, with a deal behind it. \"We're working on it\" has never unstuck one."
-      body: "This is the stage that unsticks deals. We map your controls against ISO/IEC 42001, work out which parts of the EU AI Act and UK GDPR apply to you, and build the evidence trail so the next questionnaire is a filing exercise rather than a fire drill."
+      body: "This is the stage that unsticks deals, and it runs in two parts so you're not writing a large cheque before anyone knows the scale. A fixed-fee gap assessment maps your controls against ISO/IEC 42001 and tells you how far off you are. Then, if you want it, we close the gaps and build the evidence trail, quoted against what the assessment found rather than guessed at beforehand."
       deliverables:
-        - "Controls mapped to ISO/IEC 42001"
-        - "EU AI Act and UK GDPR position, in writing"
+        - "Controls mapped to ISO/IEC 42001, with a costed remediation plan"
+        - "AI inventory, risk process and oversight controls, built and populated"
         - "Certification-ready documentation"
 
     - number: "04"
@@ -74,8 +74,10 @@ process:
         - "A fixed monthly allowance of days"
 
 boundaries:
-  heading: "Two things we're clear about upfront"
+  heading: "Three things we're clear about upfront"
   cards:
+    - heading: "We don't give legal opinions"
+      text: "Your regulatory classification is a question for a solicitor, and you should want it in writing from one. We build the inventory, risk process, documentation and oversight controls that hold up whichever way the answer goes, and hand you the short list of questions worth paying a lawyer to settle."
     - heading: "We don't certify anyone"
       text: "Certification is done by an accredited certification body, and no consultancy can both advise and certify. We build the management system and get you ready for that audit. "
     - heading: "We only use frameworks that apply to you"

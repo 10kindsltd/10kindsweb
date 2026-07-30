@@ -1,0 +1,32 @@
+enable: true
+
+heading: "What the EU AI Act really requires"
+text: "The transparency rules in Article 50 apply from **2 August 2026**. They're narrower than most of the coverage suggests, so here's the plain version of what they require and who they bind (this isn't legal advice)."
+
+date: "2 August 2026"
+date_label: "Article 50 transparency obligations apply from this date"
+
+covered_heading: "The four transparency duties"
+covered:
+  - heading: "AI you talk to"
+    text: "**Providers** of AI systems that interact directly with people have to build them so those people know they're dealing with an AI, unless that's already obvious."
+  - heading: "AI-generated content"
+    text: "**Providers** of systems that generate synthetic audio, image, video or text have to mark the output in a machine-readable format so it can be detected as artificially generated."
+  - heading: "Emotion recognition"
+    text: "**Deployers** of emotion recognition or biometric categorisation systems have to tell the people exposed to them that the system is running."
+  - heading: "Deepfakes and public-interest text"
+    text: "**Deployers** have to disclose deepfakes, and label AI-generated text published to inform the public on matters of public interest."
+
+note_heading: "What Article 50 doesn't reach"
+note_text: "Using Copilot or ChatGPT internally to draft documents triggers none of the four. Article 50 governs what you tell people when they're seeing or speaking to AI. The obligations that do reach internal use come from UK GDPR, and from the customers whose due-diligence questionnaires ask harder questions than Article 50 does."
+
+stance_heading: "So what do we do about it?"
+stance_text: |
+  We don't tell you your legal classification. That's a question for a solicitor, and you'd be right to want it in writing from one.
+
+  What we build is the machinery underneath: the AI inventory, the risk process, the documentation and the human oversight controls that **Article 17 would require of you if you turn out to be in scope**, and that a customer's questionnaire asks for either way. When the legal answer arrives, you're not starting from zero. With the high-risk obligations now deferred to 2 December 2027, there's runway to build it properly rather than in a panic.
+
+source_text: "European Commission guidelines on Article 50, adopted 20 July 2026"
+source_url: "https://digital-strategy.ec.europa.eu/en/policies/guidelines-transparency-ai-generated-content"
+
+button_label: "Talk it through on a free call"
