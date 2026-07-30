@@ -7,7 +7,7 @@ main:
     url: "/#services"
     weight: 2
 
-  - name: "Approach"
+  - name: "Our Approach"
     url: "/approach/"
     weight: 3
 
@@ -39,7 +39,7 @@ footer:
   - name: "Services"
     url: "/#services"
     weight: 2
-  - name: "Approach"
+  - name: "Our Approach"
     url: "/approach/"
     weight: 3
   - name: "Blog"
