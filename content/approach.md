@@ -55,7 +55,7 @@ process:
 
     - number: "04"
       title: "Build what pays for itself"
-      engagements: ["1-Day Prototyping", "Custom Builds"]
+      engagements: ["Prototyping", "Custom Builds"]
       pain: "Every business has a list of things AI could fix. But a fancy demo that never ships achieves nothing."
       body: "By now we know where your money is going. We prototype the most promising process in a day on simulated data, then build and ship whatever proves worth building, with the before-and-after measured."
       deliverables:

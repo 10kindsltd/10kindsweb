@@ -1,7 +1,7 @@
 enable: true
 
 title: "How we work together"
-text: "Most people start with governance to get things in order. Then we can help with opportunities we discover along the way. Every engagement is a fixed price against a written scope, the deliverables are named up front, and you can stop after any of them."
+text: "Two tracks that run independently. Take one engagement, work through a track, or mix them. Every engagement is a fixed price against a written scope, with the deliverables named up front."
 
 assurances:
   heading: "Our commitments"
@@ -10,14 +10,36 @@ assurances:
       text: "Each engagement is quoted at a fixed price against a scope agreed in writing before we start. No day-rate creep, and no surprise on the invoice."
     - heading: "Named deliverables"
       text: "You get the documents listed on each engagement at the end of it, so you can put them straight in front of a customer, an auditor or your board."
-    - heading: "Stop after any stage"
-      text: "The engagements run in an order but they aren't a bundle. Plenty of organisations do the first two, find they're covered, and stop there."
+    - heading: "Start anywhere, stop anywhere"
+      text: "Nothing here is a bundle or a prerequisite. Come for training, a prototype or a retainer on its own if that's what you need, and stop whenever you're done."
     - heading: "Confidential from the first call"
       text: "Everything you tell us stays between us, on the free call as much as in a paid engagement, and we'll sign your NDA beforehand if you'd rather have it in writing."
 
+# `key` is the stable identifier pages filter on. Renaming `title` is safe;
+# renaming `key` will silently empty a page, so grep layouts/ first.
 groups:
-  - title: "Get In Control"
-    text: "Know where AI is being used, agree the rules, and be ready to prove it."
+  - key: "orientate"
+    title: "Orientate"
+    text: "For leadership teams working out whether AI is a fit at all, and what it could realistically do here."
+    cards:
+      - badge: "Explore"
+        title: "AI Possibilities Session"
+        explanation: "Half a day with your leadership team on what AI can and can't do for an organisation like yours, before you commit to anything."
+        price: "From £1,500"
+        duration: "Half a day"
+        deliverables:
+          - "A plain-English tour of what current AI does well, and where it still falls over"
+          - "Worked examples relevant to your sector rather than generic demos"
+          - "A first pass at where AI might pay in your business, and where it wouldn't"
+          - "A written summary you can take to the board"
+          - "No obligation to do anything afterwards"
+        button:
+          label: "Discuss a session"
+          link: ":calendly"
+
+  - key: "govern"
+    title: "Govern"
+    text: "For when someone has asked you to prove AI is controlled. Join at whichever point matches where you already are."
     cards:
       - badge: "Discover"
         title: "AI Discovery"
@@ -94,15 +116,17 @@ groups:
           label: "Discuss training"
           link: ":calendly"
 
-  - title: "Get Building"
-    text: "Once the fix is clear, we build it and ship it."
+  - key: "build"
+    title: "Build"
+    text: "Automate a process, build a tool, ship a system. This track stands on its own, with no governance engagement needed first."
     cards:
       - badge: "Prototype"
-        title: "1-Day Prototyping"
-        explanation: "One day to find out what's possible with your data and your workflows, before you scope anything bigger."
-        price: "From £3,500 / day"
-        duration: "One day"
+        title: "Prototyping"
+        explanation: "Find out what's possible with your data and your workflows, before you scope anything bigger"
+        price: "£3,500 / day"
+        duration: "Typically a 1-2 days"
         deliverables:
+          - "Booked by the day, usually one or two"
           - "A focused, one-off build session, not an ongoing engagement"
           - "Covers context, connections, automations and agents"
           - "Run as a team session or one-to-one, your call"
@@ -124,8 +148,9 @@ groups:
           label: "Discuss a build"
           link: ":calendly"
 
-  - title: "Get On-Going Support"
-    text: "A standing line to the person who built it, not a subscription that runs itself."
+  - key: "support"
+    title: "Support"
+    text: "Keeps either track alive afterwards, and available on its own."
     cards:
       - badge: "Sustain"
         title: "Advisory Retainer"

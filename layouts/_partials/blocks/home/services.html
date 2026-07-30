@@ -1,3 +1,8 @@
+{{/* An empty group list means a page is filtering data/services.yaml by a key
+     that no longer exists. Fail the build rather than render an empty price list. */}}
+{{ if not .groups }}
+  {{ errorf "blocks/home/services.html received no groups. Check the `key` a page filters on against data/services.yaml." }}
+{{ end }}
 <section id="services" class="py-16">
   <div class="container mx-auto px-4">
     {{ with .title }}
@@ -17,23 +22,18 @@
     {{ end }}
     {{ if eq $defaultKey "" }}{{ $defaultKey = "0-0" }}{{ end }}
 
-    {{/* Card numbers run in sequence across whichever groups are rendered, so a
-         page showing a subset of the groups still starts its numbering at 1. */}}
-    {{ $offsets := slice }}
-    {{ $running := 0 }}
-    {{ range .groups }}
-      {{ $offsets = $offsets | append $running }}
-      {{ $running = add $running (len .cards) }}
-    {{ end }}
+    {{/* Numbering restarts per group. The groups are separate tracks, not one
+         sequence, so a continuous 1..n would imply you must start at the top. */}}
 
     {{/* ---------- MOBILE: accordion, one <details> per card ---------- */}}
     <div class="mx-auto flex max-w-2xl flex-col gap-8 lg:hidden">
       {{ range $gi, $group := .groups }}
         <div>
-          {{ with $group.title }}<p class="text-primary mb-2 text-xs font-semibold tracking-wider uppercase">{{ . }}</p>{{ end }}
+          {{ with $group.title }}<p class="text-primary mb-1 text-xs font-semibold tracking-wider uppercase">{{ . }}</p>{{ end }}
+          {{ with $group.text }}<p class="mb-3 text-sm text-gray-500">{{ . }}</p>{{ end }}
           <div class="flex flex-col gap-3">
             {{ range $ci, $card := $group.cards }}
-              {{ $num := add (index $offsets $gi) (add $ci 1) }}
+              {{ $num := add $ci 1 }}
               <details class="group rounded-2xl border border-gray-200 px-5 py-4"{{ if $card.featured }} open{{ end }}>
                 <summary class="flex cursor-pointer list-none items-start justify-between gap-3">
                   <span class="flex items-start gap-3">
@@ -84,11 +84,12 @@
       <nav class="flex flex-col gap-6 lg:w-2/5">
         {{ range $gi, $group := .groups }}
           <div>
-            {{ with $group.title }}<p class="text-primary mb-2 text-xs font-semibold tracking-wider uppercase">{{ . }}</p>{{ end }}
+            {{ with $group.title }}<p class="text-primary mb-1 text-xs font-semibold tracking-wider uppercase">{{ . }}</p>{{ end }}
+            {{ with $group.text }}<p class="mb-3 text-sm text-gray-500">{{ . }}</p>{{ end }}
             <ul class="flex flex-col gap-1">
               {{ range $ci, $card := $group.cards }}
                 {{ $key := printf "%d-%d" $gi $ci }}
-                {{ $num := add (index $offsets $gi) (add $ci 1) }}
+                {{ $num := add $ci 1 }}
                 <li>
                   <button
                     type="button"

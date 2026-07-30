@@ -4,18 +4,24 @@ type: "build"
 description: "Every business has slow, manual, document-shaped work everyone has stopped noticing. We find the parts worth automating, then design, build and ship them. Prototyping from £3,500."
 
 hero:
-  eyebrow: "AI development"
-  title: "The money is in automating your 'normal'"
-  subtitle: "The manual tasks you live with are normally the quickest wins"
-  text: "We help you discover possibilities, prototype in a day or two, build what works, then keep it running. See what's possible before you commit."
+  eyebrow: "Custom AI development projects"
+  title: "The money is hiding in your ‘normal’"
+  text: |
+    <mark class="bg-yellow-200 rounded px-1">The manual tasks you live with are normally the quickest wins.</mark>
+
+    We help you discover possibilities, prototype in a day or two, build what works, then keep it running. See what's possible before you commit.
+  quote: |
+    "We design, build and ship the systems ourselves, rather than handing you a specification and wishing you luck"
+  footer: -- Alan Bates, Founder, 10 Kinds
   buttons:
     - label: "Book a free call"
       link: ":calendly"
     - label: "See what it costs"
       link: "#services"
+  image: "images/hero.jpg"
 
 problem:
-  heading: "Three places the value usually hides"
+  heading: "Three places to look for quick wins"
   cards:
     - heading: "The same data, keyed in twice"
       text: "A document arrives, someone types its contents into a system, and someone else rebuilds the same figures for a report a week later. Nobody fixes it because everyone is too busy doing it."

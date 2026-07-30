@@ -3,8 +3,12 @@
 <section class="bg-tertiary/25 py-16">
   <div class="container mx-auto px-4">
     {{ with .heading }}
-      <h2 class="mx-auto mb-10 max-w-3xl text-center text-3xl font-bold xl:text-4xl">{{ . }}</h2>
+      <h2 class="mx-auto mb-4 max-w-3xl text-center text-3xl font-bold xl:text-4xl">{{ . }}</h2>
     {{ end }}
+    {{ with .text }}
+      <p class="mx-auto mb-10 max-w-3xl text-center text-lg text-gray-600">{{ . | markdownify }}</p>
+    {{ end }}
+    {{ if not .text }}<div class="mb-10"></div>{{ end }}
     {{ with .cards }}
       <div class="grid gap-6 md:grid-cols-3">
         {{ range . }}

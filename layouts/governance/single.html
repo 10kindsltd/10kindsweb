@@ -30,7 +30,7 @@
       {{ partial "blocks/home/services.html" (dict
         "title" (default .title $.Params.services.title)
         "text" (default .text $.Params.services.text)
-        "groups" (slice (index .groups 0))
+        "groups" (where .groups "key" "govern")
         "assurances" .assurances)
       }}
     {{ end }}

@@ -2,6 +2,9 @@
 
   {{ with .Params.hero }}{{ partial "blocks/page/hero.html" . }}{{ end }}
 
+  {{/* Which track to enter, and why we usually suggest governance first */}}
+  {{ with .Params.start }}{{ partial "blocks/page/problem.html" . }}{{ end }}
+
   {{/* The hero already carries the framing, so the block renders without its own heading */}}
   {{ with site.Data.services }}
     {{ if .enable }}

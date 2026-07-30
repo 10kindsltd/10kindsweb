@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-  {{ with .Params.hero }}{{ partial "blocks/page/hero.html" . }}{{ end }}
+  {{ with .Params.hero }}{{ partial "blocks/home/hero.html" . }}{{ end }}
 
   {{/* Why a cold visitor is here, in three cards rather than a stuffed hero */}}
   {{ with .Params.problem }}{{ partial "blocks/page/problem.html" . }}{{ end }}
@@ -26,7 +26,7 @@
       {{ partial "blocks/home/services.html" (dict
         "title" (default .title $.Params.services.title)
         "text" (default .text $.Params.services.text)
-        "groups" (slice (index .groups 1) (index .groups 2))
+        "groups" (where .groups "key" "in" (slice "orientate" "build" "support"))
         "assurances" .assurances)
       }}
     {{ end }}
