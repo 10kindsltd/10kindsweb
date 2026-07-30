@@ -1,7 +1,7 @@
 enable: true
 
-heading: "The deadline that's already passed"
-text: "The EU AI Act's transparency rules are binding law now, and breaches risk large fines and reputational damage"
+heading: "The deadline has already passed"
+text: "The EU AI Act's transparency rules are **binding law now**. Breaches risk large fines and reputational damage"
 
 date: "2 August 2026"
 date_label: "EU AI Act transparency obligations took effect"

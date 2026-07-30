@@ -11,8 +11,6 @@
 
   {{ with .Site.Data.home.what_we_do }}{{ if .enable }}{{ partial "blocks/home/what-we-do.html" . }}{{ end }}{{ end }}
 
-  {{ with .Site.Data.home.lead_magnet }}{{ if .enable }}{{ partial "blocks/home/lead-magnet.html" . }}{{ end }}{{ end }}
-
   {{ with .Site.Data.home.credentials }}{{ if .enable }}{{ partial "blocks/home/credentials.html" . }}{{ end }}{{ end }}
 
   {{ with .Site.Data.home.brands }}{{ if .enable }}{{ partial "blocks/home/brands.html" . }}{{ end }}{{ end }}
@@ -20,6 +18,8 @@
   {{ with .Site.Data.home.portfolio }}{{ if .enable }}{{ partial "blocks/home/portfolio.html" . }}{{ end }}{{ end }}
 
   {{ with .Site.Data.services }}{{ if .enable }}{{ partial "blocks/home/services.html" . }}{{ end }}{{ end }}
+
+  {{ with .Site.Data.home.lead_magnet }}{{ if .enable }}{{ partial "blocks/home/lead-magnet.html" . }}{{ end }}{{ end }}
 
   {{ with .Site.Data.home.testimonials }}{{ if .enable }}{{ partial "blocks/home/testimonials.html" . }}{{ end }}{{ end }}
 

@@ -1,7 +1,8 @@
 enable: true
 
-title: "How we help"
-text: "Governance is usually just the first step. We help you discover where AI is being used, create governance around it, then build what your business needs."
+title: "We can help"
+text: |
+  Compliance comes down to three things: <mark class="bg-yellow-200 rounded px-1">know where AI is being used, govern it properly, and be ready to prove it</mark>. Here's how we get you there, and what we build once you are.
 
 items:
   - heading: "Find where AI is being used"
@@ -21,3 +22,5 @@ items:
 
   - heading: "Keep it running"
     body: "A management system needs **internal audit, management review and fresh evidence every year**, and anything we build needs upkeep too. We stay on as the retainer that keeps both live, rather than handing over a folder that goes stale."
+
+closing: "Governance is just the first step. Once we understand your business, we can build the tools and workflows to make AI pay"

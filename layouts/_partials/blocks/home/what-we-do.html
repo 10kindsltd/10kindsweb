@@ -4,7 +4,7 @@
       <h2 class="mb-8 text-center text-4xl xl:text-5xl font-bold">{{ . }}</h2>
     {{ end }}
     {{ with .text }}
-      <p class="text-lg mx-auto mb-12 text-center xl:max-w-3xl">{{ . }}</p>
+      <p class="text-lg mx-auto mb-12 text-center xl:max-w-3xl">{{ . | markdownify }}</p>
     {{ end }}
     <div class="max-w-3xl mx-auto divide-y divide-gray-100">
       {{ range $i, $item := .items }}
@@ -17,6 +17,9 @@
         </div>
       {{ end }}
     </div>
+    {{ with .closing }}
+      <p class="border-primary/20 mx-auto mt-12 max-w-3xl border-t pt-10 text-center text-2xl font-bold xl:text-2xl">{{ . }}</p>
+    {{ end }}
     <div class="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-6">
       {{ partial "components/button/primary.html" (dict "href" ":calendly" "label" "Book a free call") }}
       <a href="#services" class="font-medium text-primary hover:underline">Our services</a>

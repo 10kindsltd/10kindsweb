@@ -1,7 +1,7 @@
 enable: true
 
-title: "You can't afford to ignore governance"
-text: "It surfaces the moment someone outside your organisation asks how your AI is controlled, and by then it's too late to build the answer from scratch."
+title: "Even if the EU AI Act doesn't apply to you..."
+text: "UK GDPR already covers a lot of the same ground, and most of this pressure never came from Brussels in the first place. It comes from your own customers, your own board, and your own suppliers."
 
 cards:
   - heading: "The stalled deal"
@@ -11,7 +11,7 @@ cards:
   - heading: "Vendor risk"
     text: "Every AI-enabled tool you've brought in carries the vendor's governance gaps as well as your own."
   - heading: "Regulatory exposure"
-    text: "The EU AI Act and UK GDPR both bind AI use today, whether or not anyone in the business has read them."
+    text: "UK GDPR already binds how you use AI, with or without the EU AI Act in play. The ICO doesn't need Brussels to enforce it."
   - heading: "Board accountability"
     text: "Someone has to be able to tell the board what AI risk the organisation is carrying - can you?"
   - heading: "Commercial trust"
