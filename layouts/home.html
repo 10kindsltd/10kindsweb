@@ -1,7 +1,13 @@
 {{ define "main" }}
   {{ with .Site.Data.home.hero }}{{ if .enable }}{{ partial "blocks/home/hero.html" . }}{{ end }}{{ end }}
 
+  {{ with .Site.Data.home.qualify }}{{ if .enable }}{{ partial "blocks/home/qualify.html" . }}{{ end }}{{ end }}
+
   {{ with .Site.Data.home.gap }}{{ if .enable }}{{ partial "blocks/home/gap.html" . }}{{ end }}{{ end }}
+
+  {{ with .Site.Data.home.deadline }}{{ if .enable }}{{ partial "blocks/home/deadline.html" . }}{{ end }}{{ end }}
+
+  {{ with .Site.Data.home.questionnaire }}{{ if .enable }}{{ partial "blocks/home/questionnaire.html" . }}{{ end }}{{ end }}
 
   {{ with .Site.Data.home.lead_magnet }}{{ if .enable }}{{ partial "blocks/home/lead-magnet.html" . }}{{ end }}{{ end }}
 

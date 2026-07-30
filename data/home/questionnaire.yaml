@@ -1,0 +1,17 @@
+enable: true
+
+heading: "What a due-diligence questionnaire asks"
+text: "These are the five questions almost every AI due-diligence questionnaire is built around, whatever words it uses to ask them."
+
+questions:
+  - "Do you know what AI is in use across your business, including tools nobody signed off?"
+  - "Is there a human in the loop for decisions that affect the customer, and is that documented rather than assumed?"
+  - "What happens to the customer's data once it touches an AI system, and does any of it leave your control?"
+  - "If something goes wrong, is there a known process, or does it get handled ad hoc?"
+  - "Who is accountable for AI risk internally, by name, not by department?"
+
+callout: "Answer those five with confidence and you can answer most of what's in a typical questionnaire."
+
+button:
+  label: "Get the free checklist"
+  link: "#checklist"

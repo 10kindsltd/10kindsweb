@@ -3,7 +3,7 @@ enable: true
 eyebrow: "For organisations that use or sell AI"
 title: "Your org uses AI. You just don't know how."
 text: |
-  Your staff are already pasting client data into ChatGPT and 10 other tools nobody signed off. <mark class="bg-yellow-200 rounded px-1">You can't govern what you can't see</mark>.
+  Your staff are already pasting client data into ChatGPT/Claude and 10 other tools nobody signed off. <mark class="bg-yellow-200 rounded px-1">You can't govern what you can't see</mark>.
 
   We find where AI is being used across your business and put governance around it your team can follow. Then we build what comes next.
 quote: |
