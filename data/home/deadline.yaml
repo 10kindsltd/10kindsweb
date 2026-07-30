@@ -6,7 +6,7 @@ text: "The EU AI Act's transparency rules are **binding law now**. Breaches risk
 date: "2 August 2026"
 date_label: "EU AI Act transparency obligations took effect"
 detail: "Since this date, providers have had to disclose when someone is interacting with an AI system, and deployers have had to flag deepfakes and AI-generated content. It applies regardless of how low-risk your AI use feels."
-fine: "Fines for breaches run up to €15 million or 3% of global annual turnover, whichever is greater."
+fine: "Fines for breaches run up to €15 million or 3% of global annual turnover"
 
 source_text: "EU AI Act, Article 50"
 source_url: "https://artificialintelligenceact.eu/transparency-rules-article-50/"
