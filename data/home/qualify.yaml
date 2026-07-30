@@ -19,7 +19,7 @@ point_groups:
       - "Your board has asked **what AI the business is running**, and what happens if it goes wrong"
 
 note_heading: "Even if you answered no, you still have work to do"
-note_text: "[UK GDPR](#gap) already binds how you use AI whenever personal data is involved. And most of that exposure sits in tools you bought rather than built: an unmanaged register of use, a policy nobody's read, a vendor whose controls you've never checked."
+note_text: "UK GDPR [already binds how you use AI](#gap) the moment personal data is involved, and it almost always is. Someone pasting a customer email into ChatGPT is a processing decision nobody approved, in a tool nobody checked."
 
 stats:
   - label: "Potential fines"

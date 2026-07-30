@@ -1,7 +1,7 @@
 enable: true
 
-title: "Most of this pressure never came from Brussels"
-text: "The EU AI Act is narrower than the coverage suggests, and plenty of organisations sit outside most of it. The pressure arrives anyway, from your own customers, your own board and your own suppliers. UK GDPR already covers much of the same ground."
+title: "The UK GDPR still applies to AI use"
+text: "And questions will be asked by your customers and suppliers. Each one comes down to the same two questions: what AI is running here, and what happens to the data once it gets there."
 
 cards:
   - heading: "The stalled deal"
@@ -12,10 +12,6 @@ cards:
     text: "Every AI-enabled tool you've brought in carries the vendor's governance gaps as well as your own."
   - heading: "Regulatory exposure"
     text: "UK GDPR already binds how you use AI, with or without the EU AI Act in play. The ICO doesn't need Brussels to enforce it."
-  - heading: "Board accountability"
-    text: "Someone has to be able to tell the board what AI risk the organisation is carrying - can you?"
-  - heading: "Commercial trust"
-    text: "The organisations that can prove control win the deal, pass the audit, and get asked fewer questions next time."
 
 outcome:
   heading: "We can help you get in control so..."

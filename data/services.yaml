@@ -9,7 +9,7 @@ assurances:
     - heading: "Fixed scope, fixed price"
       text: "Each engagement is quoted at a fixed price against a scope agreed in writing before we start. No day-rate creep, and no surprise on the invoice."
     - heading: "Named deliverables"
-      text: "You get the documents listed on each engagement, by name, at the end of it. If one turns out to be wrong for your situation we swap it rather than pad the pile."
+      text: "You get the documents listed on each engagement at the end of it, so you can put them straight in front of a customer, an auditor or your board."
     - heading: "We build the machinery, not the legal opinion"
       text: "Your regulatory classification is a question for a solicitor. We build the inventory, risk process, documentation and oversight controls you need whichever way that answer goes."
     - heading: "We don't certify anyone"
@@ -51,7 +51,7 @@ groups:
 
       - badge: "3: Assess"
         title: "Gap Assessment"
-        explanation: "Two weeks and a fixed fee to find out how far you actually are from being able to prove it. This is where most people start."
+        explanation: "Two weeks and a fixed fee to find out how far you actually are from being able to prove it."
         price: "From £4,500"
         duration: "Typically 2 weeks"
         note: ""

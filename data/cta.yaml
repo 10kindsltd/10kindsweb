@@ -1,9 +1,9 @@
 enable: true
 
 title: "Start taking control of AI"
-text: "Half an hour to see how your AI governance holds up, and what's worth fixing first."
+text: "Half an hour to see how your AI governance holds up. Bring a customer questionnaire if that's what brought you here."
 #image: "images/hero-image.png"
 button:
   label: "Book a free call"
   link: ":calendly"
-subtext: "No commitment. No sales pitch."
+subtext: "You'll leave with a clear position on where you stand and what to fix first, whether or not you hire us."
