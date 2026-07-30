@@ -4,7 +4,7 @@ title: "How we work together"
 text: "Most people start with governance to get things in order. Then we can help with opportunities we discover along the way."
 
 groups:
-  - title: "Get Control"
+  - title: "Get In Control"
     text: "Know where AI is being used, agree the rules, and be ready to prove it."
     cards:
       - badge: "1: Discover"
@@ -70,32 +70,31 @@ groups:
   - title: "Get Building"
     text: "Once the fix is clear, we build it and ship it."
     cards:
-      - badge: "5: Build"
-        title: "90-Day Build"
-        explanation: "Pick the most expensive manual process you've got. We build software that runs it instead, live in production, typically inside 90 days."
-        price: "From £15,000"
-        duration: "90 days"
+      - badge: "5: Prototype"
+        title: "1-Day Prototyping"
+        explanation: "One day to find out what's possible with your data and your workflows, before you scope anything bigger."
+        price: "From £3,500 / day"
+        duration: "One day"
         deliverables:
-          - "A working system in real use, not a demo"
-          - "Built against one costly bottleneck, chosen on evidence"
-          - "Measured before-and-after so you can see what it saved"
-          - "Handover and team training included"
+          - "A focused, one-off build session, not an ongoing engagement"
+          - "Covers context, connections, automations and agents"
+          - "Run as a team session or one-to-one, your call"
         button:
-          label: "Discuss a build"
+          label: "Discuss prototyping"
           link: ":calendly"
 
-      - badge: "6: Embed"
-        title: "Embedded AI Systems"
+      - badge: "6: Build"
+        title: "Custom Builds"
         explanation: "AI built into how your organisation actually works, not bolted on beside it."
         price: "Project-scoped"
-        duration: "Several months"
+        duration: "Weeks/months"
         deliverables:
           - "Systems that know your business context, data and terminology"
           - "Role-specific tools for the teams that need them"
           - "Automated workflows running on a schedule, not on someone remembering"
           - "A knowledge base that stays current as you do"
         button:
-          label: "Discuss a system"
+          label: "Discuss a build"
           link: ":calendly"
 
   - title: "Keep Going"
