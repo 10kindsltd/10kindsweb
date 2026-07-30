@@ -7,9 +7,9 @@ cards:
   - heading: "The stalled deal"
     text: "A customer's procurement team sends an AI due-diligence questionnaire, and the deal sits behind it until you can answer it in writing."
   - heading: "Shadow AI"
-    text: "Staff pasting client data into consumer AI tools, with no register of what's being used or where the data goes."
+    text: "Staff pasting corporate & client data into consumer AI tools, with no register of what's being used or where the data goes."
   - heading: "Vendor risk"
-    text: "Every AI-enabled tool you've bought in carries the vendor's governance gaps as well as your own."
+    text: "Every AI-enabled tool you've brought in carries the vendor's governance gaps as well as your own."
   - heading: "Regulatory exposure"
     text: "The EU AI Act and UK GDPR both bind AI use today, whether or not anyone in the business has read them."
   - heading: "Board accountability"
@@ -18,7 +18,7 @@ cards:
     text: "The organisations that can prove control win the deal, pass the audit, and get asked fewer questions next time."
 
 outcome:
-  heading: "...but once you're in control"
+  heading: "...once you're in control"
   points:
     - "A due-diligence questionnaire arrives and you answer it the same week, not the same quarter"
     - "Your board can confidently state your AI exposure"

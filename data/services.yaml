@@ -103,12 +103,13 @@ groups:
       - badge: "7: Sustain"
         title: "Advisory Retainer"
         explanation: "Most consultants build it and leave. We stay on as the standing line to the person who built it."
-        price: "From £1,500 / month"
-        duration: "Ongoing, 1 day per month"
+        price: "£1,500 / month"
+        duration: "Ongoing"
         deliverables:
-          - "Ongoing advisory and vendor sense-checking"
-          - "Quarterly board-level review"
-          - "Internal capability building so your team leads the next one"
+          - "Monthly strategy session"
+          - "Updates on relevant AI advances and opportunities"
+          - "Advice on AI tooling and vendor sense-checking"
+          - "Quarterly AI capability benchmarking"
         button:
           label: "Discuss a retainer"
           link: ":calendly"
