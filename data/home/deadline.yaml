@@ -5,7 +5,7 @@ text: "This isn't a future risk you can plan around later. The EU AI Act's trans
 
 date: "2 August 2026"
 date_label: "EU AI Act transparency obligations take effect"
-detail: "From this date, providers must disclose when someone is interacting with an AI system, and deployers must flag deepfakes and AI-generated content. It applies regardless of how low-risk your AI use feels, and unlike the high-risk rules pushed back to December 2027, this deadline wasn't delayed."
+detail: "From this date, providers must disclose when someone is interacting with an AI system, and deployers must flag deepfakes and AI-generated content. It applies regardless of how low-risk your AI use feels."
 fine: "Fines for breaches run up to €15 million or 3% of global annual turnover, whichever is greater."
 
 source_text: "EU AI Act, Article 50"

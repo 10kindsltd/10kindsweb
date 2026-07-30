@@ -3,15 +3,15 @@
 
   {{ with .Site.Data.home.qualify }}{{ if .enable }}{{ partial "blocks/home/qualify.html" . }}{{ end }}{{ end }}
 
-  {{ with .Site.Data.home.gap }}{{ if .enable }}{{ partial "blocks/home/gap.html" . }}{{ end }}{{ end }}
-
   {{ with .Site.Data.home.deadline }}{{ if .enable }}{{ partial "blocks/home/deadline.html" . }}{{ end }}{{ end }}
+
+  {{ with .Site.Data.home.gap }}{{ if .enable }}{{ partial "blocks/home/gap.html" . }}{{ end }}{{ end }}
 
   {{ with .Site.Data.home.questionnaire }}{{ if .enable }}{{ partial "blocks/home/questionnaire.html" . }}{{ end }}{{ end }}
 
-  {{ with .Site.Data.home.lead_magnet }}{{ if .enable }}{{ partial "blocks/home/lead-magnet.html" . }}{{ end }}{{ end }}
-
   {{ with .Site.Data.home.what_we_do }}{{ if .enable }}{{ partial "blocks/home/what-we-do.html" . }}{{ end }}{{ end }}
+
+  {{ with .Site.Data.home.lead_magnet }}{{ if .enable }}{{ partial "blocks/home/lead-magnet.html" . }}{{ end }}{{ end }}
 
   {{ with .Site.Data.home.credentials }}{{ if .enable }}{{ partial "blocks/home/credentials.html" . }}{{ end }}{{ end }}
 

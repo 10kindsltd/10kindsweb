@@ -2,16 +2,16 @@
   <div class="container mx-auto px-4">
     <div class="mx-auto max-w-5xl">
       {{ with .heading }}
-        <h2 class="mb-4 text-center text-secondary text-5xl font-bold xl:text-6xl">{{ . }}</h2>
+        <h2 class="mb-4 text-center text-5xl font-bold xl:text-6xl">{{ . }}</h2>
       {{ end }}
       {{ with .text }}
-        <p class="text-lg mx-auto mb-10 text-center">{{ . | markdownify }}</p>
+        <p class="text-xl mx-auto mb-10 text-center">{{ . | markdownify }}</p>
       {{ end }}
 
       <div class="grid gap-10 md:grid-cols-2 md:items-start">
 
         {{/* Checklist */}}
-        <div>
+        <div class="order-2 md:order-1">
           {{ with .points }}
             <ul class="flex flex-col gap-4">
               {{ range . }}
@@ -27,30 +27,39 @@
 
           {{ with .note_heading }}
             <div class="border-primary/25 bg-tertiary/25 mt-8 rounded-2xl border px-6 py-5">
-              <h3 class="text-primary mb-1 font-semibold">{{ . }}</h3>
-              {{ with $.note_text }}<p class="text-sm text-gray-600">{{ . }}</p>{{ end }}
+              <h3 class="text-primary mb-2 font-bold text-xl">{{ . }}</h3>
+              {{ with $.note_text }}<p class="text-gray-600">{{ . }}</p>{{ end }}
             </div>
           {{ end }}
         </div>
 
-        {{/* Stat callout */}}
-        {{ with .stat }}
-          <div class="border-primary/30 bg-white rounded-2xl border px-8 py-8 text-center md:text-left">
-            {{ with .figure }}
-              <p class="text-primary text-6xl font-extrabold xl:text-7xl">{{ . }}</p>
-            {{ end }}
-            {{ with .text }}
-              <p class="mt-2 text-lg text-gray-700">{{ . }}</p>
-            {{ end }}
-            {{ if .source_text }}
-              <p class="mt-4 text-sm text-gray-400">
-                Source:
-                {{ if .source_url }}
-                  <a href="{{ .source_url }}" target="_blank" rel="noopener noreferrer" class="underline">{{ .source_text }}</a>
-                {{ else }}
-                  {{ .source_text }}
+        {{/* Stat callouts */}}
+        {{ with .stats }}
+          <div class="order-1 flex flex-col gap-6 md:order-2">
+            {{ range . }}
+              {{ if .warn }}
+                <div class="rounded-2xl border px-8 py-8 text-center md:text-left border-secondary/30 bg-white">
+                  {{ with .label }}<p class="text-secondary text-3xl font-extrabold uppercase tracking-wide xl:text-4xl">{{ . }}</p>{{ end }}
+                  {{ with .figure }}<p class="text-6xl font-extrabold xl:text-7xl text-secondary">{{ . }}</p>{{ end }}
+              {{ else }}
+                <div class="rounded-2xl border px-8 py-8 text-center md:text-left border-primary/30 bg-white">
+                  {{ with .label }}<p class="text-primary text-3xl font-extrabold uppercase tracking-wide xl:text-4xl">{{ . }}</p>{{ end }}
+                  {{ with .figure }}<p class="text-6xl font-extrabold xl:text-7xl text-primary">{{ . }}</p>{{ end }}
+              {{ end }}
+                {{ with .text }}
+                  <p class="mt-2 text-lg text-gray-700">{{ . | markdownify }}</p>
                 {{ end }}
-              </p>
+                {{ if .source_text }}
+                  <p class="mt-4 text-sm text-gray-400">
+                    Source:
+                    {{ if .source_url }}
+                      <a href="{{ .source_url }}" target="_blank" rel="noopener noreferrer" class="underline">{{ .source_text }}</a>
+                    {{ else }}
+                      {{ .source_text }}
+                    {{ end }}
+                  </p>
+                {{ end }}
+              </div>
             {{ end }}
           </div>
         {{ end }}
