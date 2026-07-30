@@ -64,3 +64,7 @@ legal:
     url: "/legals/privacy-policy/"
     weight: 2
 
+  - name: "Cookie Policy"
+    url: "/legals/cookie-policy/"
+    weight: 3
+

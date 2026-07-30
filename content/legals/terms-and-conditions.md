@@ -35,6 +35,10 @@ Content on this website, including service descriptions, pricing and availabilit
 
 Blog posts, guides, checklists and other resources on this website, including any downloadable materials, are provided for general informational purposes only and do not constitute legal, regulatory, financial or other professional advice. They should not be relied on as a substitute for advice tailored to your specific circumstances. Laws, regulations and standards referenced on this website, including but not limited to the EU AI Act, UK GDPR and ISO/IEC 42001, may change, and we do not guarantee that any content remains current at the time you read it. No advisor-client relationship is created by your use of this website or any of its content. If you need advice on a specific matter, contact us to discuss a formal engagement.
 
+## No Guarantee of Results
+
+Any outcomes, savings, efficiencies, timescales or other results described on this website are illustrative and are not a promise, projection or guarantee of the results you will achieve. Where we cite figures, statistics or research produced by third parties, we do so for general illustration only: we do not verify or endorse them, and they should not be read as an indication of what your organisation would achieve. Results from any engagement depend on factors specific to your business, many of which are outside our control.
+
 ## Availability and Disclaimers
 
 Any online facilities, tools, services or information that {{< company-name >}} makes available through this website is provided "as is" and on an "as available" basis. We give no warranty that the service will be free of defects and/or faults. To the maximum extent permitted by the law, we provide no warranties (express or implied) of fitness for a particular purpose, accuracy of information, compatibility and satisfactory quality.

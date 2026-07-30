@@ -21,7 +21,7 @@ hero:
 
     This is just one idea. Get in touch and we'll find where AI would help your firm.
   button_primary: { label: "Book a free call", href: ":calendly" }
-  video_url: "https://youtube.com/embed/ffnXQSgaMME"
+  video_url: "https://www.youtube-nocookie.com/embed/ffnXQSgaMME"
   caption: "Three sample insurer quotes for the same risk, in different formats, pulled into one comparison with the gaps flagged: the cheapest drops flood cover, halves the business-interruption period and hides a survey condition."
 
 # --- PROOF: indicative industry results. ---

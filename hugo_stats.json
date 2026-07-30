@@ -336,6 +336,7 @@
       "z-10"
     ],
     "ids": [
+      "accuracy-of-information",
       "availability-and-disclaimers",
       "body",
       "capabilities",
@@ -351,6 +352,7 @@
       "dont-guess-and-dont-stall",
       "email_bottom",
       "email_top",
+      "embedded-content",
       "faq",
       "founder-profile",
       "gap",
@@ -371,6 +373,8 @@
       "name_bottom",
       "name_top",
       "navbarContent",
+      "no-guarantee-of-results",
+      "no-professional-advice",
       "privacy-and-cookies",
       "problem",
       "prohibited-use",
