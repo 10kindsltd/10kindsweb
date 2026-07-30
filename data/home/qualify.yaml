@@ -7,6 +7,7 @@ text: |
 points:
   - "Staff use ChatGPT, Copilot or another AI tool, with or without a policy covering it"
   - "You sell software or services to enterprise or regulated customers"
+  - "You have any customers, users or business in the EU, even without an EU office"
   - "AI touches client data, personal data, or anything commercially sensitive"
   - "A customer, insurer or regulator has ever sent you a security or AI questionnaire"
 
@@ -17,7 +18,7 @@ stats:
   - label: "Potential fine"
     figure: "€15m"
     text: |
-      or 3% of global turnover, whichever is greater: the **maximum penalty for breaching the EU AI Act's transparency rules**, in force <mark class="bg-yellow-200 rounded px-1">from 2 August 2026</mark>.
+      or 3% of global turnover, whichever is greater: the **maximum penalty for breaching the EU AI Act's transparency rules**, binding law <mark class="bg-yellow-200 rounded px-1">since 2 August 2026</mark>.
     source_text: "EU AI Act, Article 99"
     source_url: "https://artificialintelligenceact.eu/article/99/"
     warn: true
