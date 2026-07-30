@@ -3,21 +3,13 @@
 
   {{ with .Site.Data.home.qualify }}{{ if .enable }}{{ partial "blocks/home/qualify.html" . }}{{ end }}{{ end }}
 
-  {{ with .Site.Data.home.regulation }}{{ if .enable }}{{ partial "blocks/home/regulation.html" . }}{{ end }}{{ end }}
-
-  {{ with .Site.Data.home.gap }}{{ if .enable }}{{ partial "blocks/home/gap.html" . }}{{ end }}{{ end }}
+  {{ with .Site.Data.home.doors }}{{ if .enable }}{{ partial "blocks/home/doors.html" . }}{{ end }}{{ end }}
 
   {{ with .Site.Data.home.questionnaire }}{{ if .enable }}{{ partial "blocks/home/questionnaire.html" . }}{{ end }}{{ end }}
-
-  {{ with .Site.Data.home.what_we_do }}{{ if .enable }}{{ partial "blocks/home/what-we-do.html" . }}{{ end }}{{ end }}
-
-  {{ with .Site.Data.home.credentials }}{{ if .enable }}{{ partial "blocks/home/credentials.html" . }}{{ end }}{{ end }}
 
   {{ with .Site.Data.home.brands }}{{ if .enable }}{{ partial "blocks/home/brands.html" . }}{{ end }}{{ end }}
 
   {{ with .Site.Data.home.portfolio }}{{ if .enable }}{{ partial "blocks/home/portfolio.html" . }}{{ end }}{{ end }}
-
-  {{ with .Site.Data.services }}{{ if .enable }}{{ partial "blocks/home/services.html" . }}{{ end }}{{ end }}
 
   {{ with .Site.Data.home.lead_magnet }}{{ if .enable }}{{ partial "blocks/home/lead-magnet.html" . }}{{ end }}{{ end }}
 
@@ -25,9 +17,7 @@
 
   {{ with .Site.Data.founder_profile }}{{ if .enable }}{{ partial "blocks/home/founder-profile.html" (dict "whyme" . "creds" $.Site.Data.home.credentials) }}{{ end }}{{ end }}
 
-  {{ with .Site.Data.home.bespoke }}{{ if .enable }}{{ partial "blocks/home/bespoke.html" . }}{{ end }}{{ end }}
-
-  {{ with .Site.Data.home.faq }}{{ if .enable }}{{ partial "blocks/faq.html" . }}{{ end }}{{ end }}
+  {{ partial "blocks/faq-for.html" (dict "page" "home") }}
 
   {{ with .Site.Data.cta }}{{ if .enable }}{{ partial "blocks/home/cta.html" . }}{{ end }}{{ end }}
 

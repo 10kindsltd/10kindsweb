@@ -19,7 +19,7 @@ groups:
   - title: "Get In Control"
     text: "Know where AI is being used, agree the rules, and be ready to prove it."
     cards:
-      - badge: "1: Discover"
+      - badge: "Discover"
         title: "AI Discovery"
         explanation: "Where AI is already being used across your business, where it should be, and whether your organisation can adopt it."
         price: "From £5,000"
@@ -34,7 +34,7 @@ groups:
           label: "Discuss discovery"
           link: ":calendly"
 
-      - badge: "2: Agree"
+      - badge: "Agree"
         title: "AI Policy & Sign-off"
         explanation: "The rules your organisation runs by, agreed by the people who have to enforce them."
         price: "From £3,500"
@@ -49,9 +49,9 @@ groups:
           label: "Discuss policy"
           link: ":calendly"
 
-      - badge: "3: Assess"
+      - badge: "Assess"
         title: "Gap Assessment"
-        explanation: "Two weeks and a fixed fee to find out how far you actually are from being able to prove it."
+        explanation: "Two weeks and a fixed fee to find out how far you are from being able to prove it."
         price: "From £4,500"
         duration: "Typically 2 weeks"
         note: ""
@@ -65,7 +65,7 @@ groups:
           label: "Discuss an assessment"
           link: ":calendly"
 
-      - badge: "4: Close"
+      - badge: "Close"
         title: "Compliance Readiness"
         explanation: "The remediation itself, scoped against the gaps we found rather than guessed at before we started."
         price: "Quoted from your gap assessment"
@@ -81,7 +81,7 @@ groups:
           label: "Discuss readiness"
           link: ":calendly"
 
-      - badge: "5: Train"
+      - badge: "Train"
         title: "Training"
         explanation: "Your team needs this regardless, and ISO 42001 requires evidence of it. Delivered by someone who builds AI products, not someone reciting a deck."
         price: "From £2,500"
@@ -97,7 +97,7 @@ groups:
   - title: "Get Building"
     text: "Once the fix is clear, we build it and ship it."
     cards:
-      - badge: "6: Prototype"
+      - badge: "Prototype"
         title: "1-Day Prototyping"
         explanation: "One day to find out what's possible with your data and your workflows, before you scope anything bigger."
         price: "From £3,500 / day"
@@ -110,7 +110,7 @@ groups:
           label: "Discuss prototyping"
           link: ":calendly"
 
-      - badge: "7: Build"
+      - badge: "Build"
         title: "Custom Builds"
         explanation: "AI built into how your organisation works, not bolted on beside it."
         price: "Project-scoped"
@@ -127,7 +127,7 @@ groups:
   - title: "Get On-Going Support"
     text: "A standing line to the person who built it, not a subscription that runs itself."
     cards:
-      - badge: "8: Sustain"
+      - badge: "Sustain"
         title: "Advisory Retainer"
         explanation: "Most consultants build it and leave. We stay on as the standing line to the person who built it."
         price: "£1,500 / month"

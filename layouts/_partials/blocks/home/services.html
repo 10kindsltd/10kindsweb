@@ -17,6 +17,15 @@
     {{ end }}
     {{ if eq $defaultKey "" }}{{ $defaultKey = "0-0" }}{{ end }}
 
+    {{/* Card numbers run in sequence across whichever groups are rendered, so a
+         page showing a subset of the groups still starts its numbering at 1. */}}
+    {{ $offsets := slice }}
+    {{ $running := 0 }}
+    {{ range .groups }}
+      {{ $offsets = $offsets | append $running }}
+      {{ $running = add $running (len .cards) }}
+    {{ end }}
+
     {{/* ---------- MOBILE: accordion, one <details> per card ---------- */}}
     <div class="mx-auto flex max-w-2xl flex-col gap-8 lg:hidden">
       {{ range $gi, $group := .groups }}
@@ -24,7 +33,7 @@
           {{ with $group.title }}<p class="text-primary mb-2 text-xs font-semibold tracking-wider uppercase">{{ . }}</p>{{ end }}
           <div class="flex flex-col gap-3">
             {{ range $ci, $card := $group.cards }}
-              {{ $num := index (split $card.badge ":") 0 }}
+              {{ $num := add (index $offsets $gi) (add $ci 1) }}
               <details class="group rounded-2xl border border-gray-200 px-5 py-4"{{ if $card.featured }} open{{ end }}>
                 <summary class="flex cursor-pointer list-none items-start justify-between gap-3">
                   <span class="flex items-start gap-3">
@@ -79,7 +88,7 @@
             <ul class="flex flex-col gap-1">
               {{ range $ci, $card := $group.cards }}
                 {{ $key := printf "%d-%d" $gi $ci }}
-                {{ $num := index (split $card.badge ":") 0 }}
+                {{ $num := add (index $offsets $gi) (add $ci 1) }}
                 <li>
                   <button
                     type="button"

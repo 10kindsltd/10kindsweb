@@ -1,0 +1,34 @@
+{{ define "main" }}
+
+  {{ with .Params.hero }}{{ partial "blocks/page/hero.html" . }}{{ end }}
+
+  {{/* The pressure: why a cold visitor is here */}}
+  {{ with site.Data.governance.gap }}{{ if .enable }}{{ partial "blocks/home/gap.html" . }}{{ end }}{{ end }}
+
+  {{/* What a due-diligence questionnaire asks */}}
+  {{ with site.Data.home.questionnaire }}{{ if .enable }}{{ partial "blocks/home/questionnaire.html" . }}{{ end }}{{ end }}
+
+  {{/* The regulation, explained plainly */}}
+  {{ with site.Data.governance.regulation }}{{ if .enable }}{{ partial "blocks/home/regulation.html" . }}{{ end }}{{ end }}
+
+  {{ with .Params.what_we_do }}{{ partial "blocks/home/what-we-do.html" . }}{{ end }}
+
+  {{/* Governance engagements only: the first services group, plus the commitments */}}
+  {{ with site.Data.services }}
+    {{ if .enable }}
+      {{ partial "blocks/home/services.html" (dict
+        "title" (default .title $.Params.services.title)
+        "text" (default .text $.Params.services.text)
+        "groups" (slice (index .groups 0))
+        "assurances" .assurances)
+      }}
+    {{ end }}
+  {{ end }}
+
+  {{ with site.Data.home.lead_magnet }}{{ if .enable }}{{ partial "blocks/home/lead-magnet.html" . }}{{ end }}{{ end }}
+
+  {{ partial "blocks/faq-for.html" (dict "page" "governance") }}
+
+  {{ with site.Data.cta }}{{ if .enable }}{{ partial "blocks/home/cta.html" . }}{{ end }}{{ end }}
+
+{{ end }}

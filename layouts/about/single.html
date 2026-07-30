@@ -1,0 +1,33 @@
+{{ define "main" }}
+
+  {{ with .Params.hero }}{{ partial "blocks/page/hero.html" . }}{{ end }}
+
+  {{ with site.Data.founder_profile }}
+    {{ if .enable }}{{ partial "blocks/home/founder-profile.html" (dict "whyme" . "creds" site.Data.home.credentials) }}{{ end }}
+  {{ end }}
+
+  {{ with .Params.boundaries }}
+    <section class="bg-tertiary/25 py-16">
+      <div class="container mx-auto px-4">
+        {{ with .heading }}
+          <h2 class="mx-auto mb-10 max-w-3xl text-center text-3xl font-bold xl:text-4xl">{{ . }}</h2>
+        {{ end }}
+        {{ with .cards }}
+          <div class="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
+            {{ range . }}
+              <div class="rounded-2xl bg-white px-6 py-8">
+                {{ with .heading }}<h3 class="text-primary mb-3 text-lg font-semibold">{{ . }}</h3>{{ end }}
+                {{ with .text }}<p class="text-gray-600">{{ . }}</p>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  {{ partial "blocks/faq-for.html" (dict "page" "about") }}
+
+  {{ with site.Data.cta }}{{ if .enable }}{{ partial "blocks/home/cta.html" . }}{{ end }}{{ end }}
+
+{{ end }}

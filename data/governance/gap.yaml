@@ -1,7 +1,7 @@
 enable: true
 
 title: "The UK GDPR still applies to AI use"
-text: "And questions will be asked by your customers and suppliers. Each one comes down to the same two questions: what AI is running here, and what happens to the data once it gets there."
+text: "And questions will be asked by your customers and suppliers. Each one boils down to: what AI is running here, and what happens to the data once it gets there."
 
 cards:
   - heading: "The stalled deal"

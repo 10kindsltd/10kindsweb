@@ -21,13 +21,13 @@ problem:
 
 process:
   heading: "Five stages"
-  intro: "Each one is a fixed price with a fixed scope tailored to you, [listed in full here](/#services). Stop after any of them."
+  intro: "Each one is a fixed price with a fixed scope tailored to you, [listed in full here](/services/). Stop after any of them."
   stages:
     - number: "01"
       title: "Find out where you stand"
       duration: "Typically 2 weeks"
       pain: "Ask a leadership team how many AI tools are in use and you'll get a number like three. The real answer is usually north of twenty, and nobody owns the list."
-      body: "We go looking for every place AI has got into the business, including the tools nobody put through procurement. You get a map of what's actually running, ranked by what's worth acting on, and a straight recommendation on what to do next."
+      body: "We go looking for every place AI has got into the business, including the tools nobody put through procurement. You get a map of what's running, ranked by what's worth acting on, and a straight recommendation on what to do next."
       deliverables:
         - "A map of AI use across the business"
         - "Ranked shortlist of where AI would pay"

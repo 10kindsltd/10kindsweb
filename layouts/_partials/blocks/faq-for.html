@@ -1,0 +1,8 @@
+{{/* Renders the shared FAQ filtered to one page. Call with (dict "page" "governance"). */}}
+{{ $faq := site.Data.home.faq }}
+{{ if $faq.enable }}
+  {{ $items := where $faq.items "pages" "intersect" (slice .page) }}
+  {{ with $items }}
+    {{ partial "blocks/faq.html" (dict "heading" (default "Questions" $faq.heading) "items" .) }}
+  {{ end }}
+{{ end }}
