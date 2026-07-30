@@ -10,10 +10,10 @@ assurances:
       text: "Each engagement is quoted at a fixed price against a scope agreed in writing before we start. No day-rate creep, and no surprise on the invoice."
     - heading: "Named deliverables"
       text: "You get the documents listed on each engagement at the end of it, so you can put them straight in front of a customer, an auditor or your board."
-    - heading: "We build the machinery, not the legal opinion"
-      text: "Your regulatory classification is a question for a solicitor. We build the inventory, risk process, documentation and oversight controls you need whichever way that answer goes."
-    - heading: "We don't certify anyone"
-      text: "Certification decisions rest with an accredited certification body, and no consultancy can both advise and certify. We build the management system and get you ready for that audit."
+    - heading: "Stop after any stage"
+      text: "The engagements run in an order but they aren't a bundle. Plenty of organisations do the first two, find they're covered, and stop there."
+    - heading: "Confidential from the first call"
+      text: "Everything you tell us stays between us, on the free call as much as in a paid engagement, and we'll sign your NDA beforehand if you'd rather have it in writing."
 
 groups:
   - title: "Get In Control"
@@ -134,6 +134,8 @@ groups:
         duration: "Ongoing"
         deliverables:
           - "Monthly strategy session"
+          - "Internal audit and management review on an annual cycle"
+          - "Surveillance audit preparation"
           - "Updates on relevant AI advances and opportunities"
           - "Advice on AI tooling and vendor sense-checking"
           - "Quarterly AI capability benchmarking"

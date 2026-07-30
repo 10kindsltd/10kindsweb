@@ -1,0 +1,15 @@
+# Scope of practice: what we will not do. Shared by /approach/ and /governance/.
+# Kept separate from data/services.yaml `assurances`, which covers commercial terms.
+enable: true
+
+heading: "Three things we're clear about upfront"
+
+cards:
+  - heading: "We don't give legal opinions"
+    text: "Your regulatory classification is a question for a solicitor, and you should want it in writing from one. We build the inventory, risk process, documentation and oversight controls that hold up whichever way the answer goes, and hand you the short list of questions worth paying a lawyer to settle."
+
+  - heading: "We don't certify anyone"
+    text: "Certification is done by an accredited certification body, and no consultancy can both advise and certify. We build the management system and get you ready for that audit."
+
+  - heading: "We only use frameworks that apply to you"
+    text: "ISO/IEC 42001, the EU AI Act and UK GDPR/ICO guidance. We leave out NIST's AI RMF because it's US-focused and adds little to a UK engagement. A longer framework list isn't a better one."

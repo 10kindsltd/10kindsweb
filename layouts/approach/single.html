@@ -14,6 +14,13 @@
           {{ with .heading }}<h2 class="mb-3 text-3xl font-bold xl:text-4xl">{{ . }}</h2>{{ end }}
           {{ with .intro }}<p class="text-lg text-gray-600 [&_a]:underline">{{ . | markdownify }}</p>{{ end }}
         </div>
+        {{/* Flat list of every engagement, so a stage's timings come from
+             data/services.yaml rather than being restated here. */}}
+        {{ $cards := slice }}
+        {{ range site.Data.services.groups }}
+          {{ range .cards }}{{ $cards = $cards | append . }}{{ end }}
+        {{ end }}
+
         {{ with .stages }}
           <div class="relative mx-auto max-w-5xl">
 
@@ -48,10 +55,20 @@
 
                       <div class="mb-4 flex flex-wrap items-center gap-3">
                         {{ with $stage.title }}<h3 class="text-xl font-semibold">{{ . }}</h3>{{ end }}
-                        {{ with $stage.duration }}
-                          <span class="bg-primary/10 text-primary rounded-full px-3 py-1 text-xs font-semibold tracking-wider uppercase">{{ . }}</span>
-                        {{ end }}
                       </div>
+
+                      {{/* Engagement name and duration, read live from data/services.yaml */}}
+                      {{ with $stage.engagements }}
+                        <div class="mb-4 flex flex-wrap gap-2">
+                          {{ range . }}
+                            {{ range where $cards "title" . }}
+                              <span class="bg-primary/10 text-primary rounded-full px-3 py-1 text-xs font-semibold">
+                                {{ .title }}{{ with .duration }} <span class="text-primary/70 font-normal">· {{ . }}</span>{{ end }}
+                              </span>
+                            {{ end }}
+                          {{ end }}
+                        </div>
+                      {{ end }}
 
                       {{ with $stage.body }}<p class="mb-4 text-gray-600">{{ . }}</p>{{ end }}
 
@@ -79,25 +96,7 @@
   {{ end }}
 
   {{/* ---------- BOUNDARIES ---------- */}}
-  {{ with .Params.boundaries }}
-    <section class="bg-tertiary/25 py-16">
-      <div class="container mx-auto px-4">
-        {{ with .heading }}
-          <h2 class="mx-auto mb-10 max-w-3xl text-center text-3xl font-bold xl:text-4xl">{{ . }}</h2>
-        {{ end }}
-        {{ with .cards }}
-          <div class="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
-            {{ range . }}
-              <div class="rounded-2xl bg-white px-6 py-8">
-                {{ with .heading }}<h3 class="text-primary mb-3 text-lg font-semibold">{{ . }}</h3>{{ end }}
-                {{ with .text }}<p class="text-gray-600">{{ . }}</p>{{ end }}
-              </div>
-            {{ end }}
-          </div>
-        {{ end }}
-      </div>
-    </section>
-  {{ end }}
+  {{ with site.Data.boundaries }}{{ if .enable }}{{ partial "blocks/page/boundaries.html" . }}{{ end }}{{ end }}
 
   {{/* ---------- CLOSING CTA ---------- */}}
   {{ with .Params.closing }}

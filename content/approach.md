@@ -25,7 +25,7 @@ process:
   stages:
     - number: "01"
       title: "Find out where you stand"
-      duration: "Typically 2 weeks"
+      engagements: ["AI Discovery"]
       pain: "Ask a leadership team how many AI tools are in use and you'll get a number like three. The real answer is usually north of twenty, and nobody owns the list."
       body: "We go looking for every place AI has got into the business, including the tools nobody put through procurement. You get a map of what's running, ranked by what's worth acting on, and a straight recommendation on what to do next."
       deliverables:
@@ -35,7 +35,7 @@ process:
 
     - number: "02"
       title: "Agree the rules"
-      duration: "Typically 4 to 6 weeks"
+      engagements: ["AI Policy & Sign-off"]
       pain: "Staff who aren't sure what's allowed do one of two things. They freeze, and you get none of the upside. Or they go underground, and you get all of the risk."
       body: "A policy nobody has read is a document, not a control. We write the rules, then run the session that gets your leadership to commit to them, so your staff know what's approved and where a human has to stay in the loop."
       deliverables:
@@ -45,7 +45,7 @@ process:
 
     - number: "03"
       title: "Get to where you can prove it"
-      duration: "Two weeks to assess, then 4 to 6 weeks to close the gaps"
+      engagements: ["Gap Assessment", "Compliance Readiness"]
       pain: "The questionnaire always arrives at the worst possible moment, with a deal behind it. \"We're working on it\" has never unstuck one."
       body: "This is the stage that unsticks deals, and it runs in two parts so you're not writing a large cheque before anyone knows the scale. A fixed-fee gap assessment maps your controls against ISO/IEC 42001 and tells you how far off you are. Then, if you want it, we close the gaps and build the evidence trail, quoted against what the assessment found rather than guessed at beforehand."
       deliverables:
@@ -55,9 +55,9 @@ process:
 
     - number: "04"
       title: "Build what pays for itself"
-      duration: "Typically 90 days"
+      engagements: ["1-Day Prototyping", "Custom Builds"]
       pain: "Every business has a list of things AI could fix. But a fancy demo that never ships achieves nothing."
-      body: "By now we know where your money is going. We help you pick the most promising processes in the business to automate, with the before-and-after measured."
+      body: "By now we know where your money is going. We prototype the most promising process in a day on simulated data, then build and ship whatever proves worth building, with the before-and-after measured."
       deliverables:
         - "A working system in real use"
         - "Measured before and after"
@@ -65,23 +65,13 @@ process:
 
     - number: "05"
       title: "Keep it running"
-      duration: "Ongoing"
+      engagements: ["Advisory Retainer"]
       pain: "Management systems rot. A year after the audit the register is stale, nobody's run a review, and the next surveillance visit becomes a scramble."
-      body: "Management systems need an audit cycle and fresh evidence every year, and anything we build needs upkeep. We stay on as a fixed monthly allowance of days rather than handing over a folder that goes stale."
+      body: "Management systems need an audit cycle and fresh evidence every year, and anything we build needs upkeep. We stay on as a monthly retainer rather than handing over a folder that goes stale."
       deliverables:
         - "Internal audit and management review"
         - "Surveillance audit preparation"
-        - "A fixed monthly allowance of days"
-
-boundaries:
-  heading: "Three things we're clear about upfront"
-  cards:
-    - heading: "We don't give legal opinions"
-      text: "Your regulatory classification is a question for a solicitor, and you should want it in writing from one. We build the inventory, risk process, documentation and oversight controls that hold up whichever way the answer goes, and hand you the short list of questions worth paying a lawyer to settle."
-    - heading: "We don't certify anyone"
-      text: "Certification is done by an accredited certification body, and no consultancy can both advise and certify. We build the management system and get you ready for that audit. "
-    - heading: "We only use frameworks that apply to you"
-      text: "ISO/IEC 42001, the EU AI Act and UK GDPR/ICO guidance. We leave out NIST's AI RMF because it's US-focused and adds little to a UK engagement. A longer framework list isn't a better one."
+        - "A standing monthly line to the people who built it"
 
 closing:
   heading: "Start your transformation"

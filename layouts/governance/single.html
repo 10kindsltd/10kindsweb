@@ -21,7 +21,10 @@
   {{/* 6. How we fix it */}}
   {{ with .Params.what_we_do }}{{ partial "blocks/home/what-we-do.html" . }}{{ end }}
 
-  {{/* 7. What it costs: the governance group only */}}
+  {{/* 7. What we won't do, before we talk about money */}}
+  {{ with site.Data.boundaries }}{{ if .enable }}{{ partial "blocks/page/boundaries.html" . }}{{ end }}{{ end }}
+
+  {{/* 8. What it costs: the governance group only */}}
   {{ with site.Data.services }}
     {{ if .enable }}
       {{ partial "blocks/home/services.html" (dict
