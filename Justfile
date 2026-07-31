@@ -4,6 +4,11 @@ iam_profile := "10kindsiamcli"
 runserver:
     hugo server -D
 
+# Build the site
+build:
+    -rm -rf public/
+    hugo
+
 # Build and publish the site to S3
 publish:
     hugo --minify --cleanDestinationDir

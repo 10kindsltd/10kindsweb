@@ -8,7 +8,7 @@ cert:
   image: "images/aws-cert.png"
   link: "https://www.credly.com/badges/d5ad1a9b-fc22-4ede-a235-e045d32c0a19/public_url"
   tagline: "AWS's top certification tier"
-  caption: "AWS's **Professional** tier, the top of its certification ladder. AWS lists its AI Practitioner and Machine Learning Engineer Associate certifications as groundwork for it, and expects two years building production systems plus a year implementing generative AI."
+  caption: "AWS's **Professional** tier, the top of its certification ladder. It's the level AWS reserves for people already designing and running generative AI systems in production, not for anyone learning the basics."
 
 credentials:
   - "[Founder, Bazam.ai](https://bazam.ai)"
