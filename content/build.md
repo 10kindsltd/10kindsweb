@@ -9,7 +9,7 @@ hero:
   text: |
     <mark class="bg-yellow-200 rounded px-1">The manual tasks you live with are normally the quickest wins.</mark>
 
-    We help you discover possibilities, prototype in a day or two, build what works, then keep it running. See what's possible before you commit.
+    We help you discover possibilities, prototype in a few days, build what works, then keep it running. See what's possible before you commit.
   quote: |
     "We design, build and ship the systems ourselves, rather than handing you a specification and wishing you luck"
   footer: -- Alan Bates, Founder, 10 Kinds
@@ -57,7 +57,7 @@ what_we_do:
 
 proof:
   heading: "Advice from people who ship"
-  text: "10 Kinds is [run by the founder](/about) of [Bazam.ai](https://bazam.ai), an automated content marketing platform sold B2B. Running AI in production teaches you things a deck can't: which problems are worth pointing a model at, which are cheaper to solve with ordinary software, and which impressive demos fall apart the moment they meet real data. You get that read before the money goes anywhere, not after."
+  text: "10 Kinds is [run by the founder](/about) of [Bazam.ai](https://bazam.ai), an automated content marketing platform sold B2B. Running AI in production teaches you things a deck can't: which problems are worth pointing a model at, which are cheaper to solve with ordinary software, and which impressive demos fall apart the moment they meet real data. You get that advice before the money goes anywhere, not after."
 
 services:
   title: "Build engagements"

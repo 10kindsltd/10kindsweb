@@ -29,8 +29,7 @@
     <div class="mx-auto flex max-w-2xl flex-col gap-8 lg:hidden">
       {{ range $gi, $group := .groups }}
         <div>
-          {{ with $group.title }}<p class="text-primary mb-1 text-xs font-semibold tracking-wider uppercase">{{ . }}</p>{{ end }}
-          {{ with $group.text }}<p class="mb-3 text-sm text-gray-500">{{ . }}</p>{{ end }}
+          {{ with $group.title }}<p class="text-primary mb-4 text-xs font-semibold tracking-wider uppercase">{{ . }}</p>{{ end }}
           <div class="flex flex-col gap-3">
             {{ range $ci, $card := $group.cards }}
               {{ $num := add $ci 1 }}
@@ -43,6 +42,7 @@
                         <span class="font-semibold">{{ $card.title }}</span>
                         {{ if $card.featured }}<span class="bg-primary/10 text-primary rounded-full px-2 py-0.5 text-xs font-medium whitespace-nowrap">Most popular</span>{{ end }}
                       </span>
+                      {{ with $card.question }}<span class="text-primary text-sm font-semibold italic">{{ . }}</span>{{ end }}
                       {{ with $card.explanation }}<span class="text-sm text-gray-600">{{ . }}</span>{{ end }}
                       <span class="mt-1 flex items-baseline gap-2">
                         {{ with $card.price }}<span class="text-primary text-base font-semibold">{{ . }}</span>{{ end }}
@@ -85,7 +85,6 @@
         {{ range $gi, $group := .groups }}
           <div>
             {{ with $group.title }}<p class="text-primary mb-1 text-xs font-semibold tracking-wider uppercase">{{ . }}</p>{{ end }}
-            {{ with $group.text }}<p class="mb-3 text-sm text-gray-500">{{ . }}</p>{{ end }}
             <ul class="flex flex-col gap-1">
               {{ range $ci, $card := $group.cards }}
                 {{ $key := printf "%d-%d" $gi $ci }}
@@ -115,7 +114,10 @@
             {{ $key := printf "%d-%d" $gi $ci }}
             <div class="services-tab-panel bg-tertiary/25 rounded-4xl px-6 py-8 lg:px-10 lg:py-10"{{ if ne $key $defaultKey }} hidden{{ end }} data-panel="{{ $key }}">
               {{ with $group.title }}<p class="text-primary mb-1 text-xs font-semibold tracking-wider uppercase">{{ . }}</p>{{ end }}
-              {{ with $card.title }}<h3 class="mb-3 text-2xl font-semibold">{{ . }}</h3>{{ end }}
+              {{ with $card.title }}<h3 class="mb-2 text-2xl font-semibold">{{ . }}</h3>{{ end }}
+              {{/* The question this engagement answers. The fastest way to tell
+                   neighbouring engagements apart on a scan. */}}
+              {{ with $card.question }}<p class="border-quaternary text-primary mb-4 border-l-4 pl-3 text-lg font-semibold italic">{{ . }}</p>{{ end }}
               {{ with $card.explanation }}<p class="text-gray-600 mb-6 prose">{{ . }}</p>{{ end }}
               {{ with $card.price }}<p class="text-primary mb-1 text-xl font-semibold">{{ . }}</p>{{ end }}
               {{ with $card.duration }}<p class="text-gray-400 text-sm">{{ . }}</p>{{ end }}

@@ -1,17 +1,20 @@
 enable: true
 
 # THE PROMISE. First block below the hero, and the single most important
-# paragraph on the site. What we are, who for, what we do, what they end up
-# with. The pillars are the three phases, named here and expanded further down
-# in phases.yaml. Do not put pain or qualification above this block.
+# paragraph on the site. The pillars are the three phases, named here and
+# expanded further down in phases.yaml.
+#
+# SCANNING RULES FOR EVERY BLOCK ON THIS PAGE: lead with the point, one idea per
+# sentence, no subordinate clause before the verb. Nobody reads. They scan.
+# Do not put pain or qualification above this block.
 # See strategy/Site Architecture.md
 promise: |
-  **10 Kinds is a UK AI consultancy that helps SMEs get control of the AI already running in their business, then turn it into capacity they can count.** We find the tools nobody approved, agree the rules, train your people from the desk to the board, and build the systems that take on the slow work, so the same team does 3-5x more without adding headcount.
+  **10 Kinds is a UK AI consultancy for SMEs.** We get the AI already running in your business under control, teach your people to use it well, and build the systems that automate slow work. Inside 6 to 12 months teams often do 3-5x more, without adding headcount.
 
 pillars:
-  - name: "Discover first"
-    text: "Every place AI has got into the business, including the tools nobody put through procurement, and the manual work costing you most, so nothing after this is decided on a guess."
-  - name: "Build the foundations"
-    text: "Rules signed off, then everyone from the desk to the board taught to work with these tools rather than around them. That is what changes behaviour, and the ISO/IEC 42001 evidence falls out of it."
-  - name: "Then take off"
-    text: "The slow, repetitive work prototyped, built and shipped into how your teams already run, then kept alive on a retainer, so the gains hold instead of fading after handover."
+  - name: "Discover"
+    text: "Find every AI tool in use, including the ones nobody approved, and the manual work costing you most."
+  - name: "Foundations"
+    text: "Rules signed off and everyone trained. This leads to a cultural change that unlocks true value. ISO/IEC 42001 evidence naturally falls out of it."
+  - name: "Takeoff"
+    text: "Automate the work worth automating, ship it, then keep it running so the gains hold."

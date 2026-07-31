@@ -21,7 +21,7 @@ problem:
 
 process:
   heading: "Three phases, six stages"
-  intro: "Discover, then Foundations, then Takeoff, broken into the six stages below. Each stage is a fixed price with a fixed scope tailored to you, [listed in full here](/services/). Stop after any of them."
+  intro: "Discover, then Foundations, then Takeoff, broken into the six stages below. This is the order we recommend, not a queue you have to join at the front. Each stage is a fixed price with a fixed scope tailored to you, [listed in full here](/services/). Start anywhere, stop after any of them."
   stages:
     - number: "01"
       phase: "Discover"
@@ -39,7 +39,7 @@ process:
       title: "Agree the rules"
       engagements: ["AI Policy & Sign-off"]
       pain: "Staff who aren't sure what's allowed do one of two things. They freeze, and you get none of the upside. Or they go underground, and you get all of the risk."
-      body: "A policy nobody has read is a document, not a control. We write the rules, then run the session that gets your leadership to commit to them, so your staff know what's approved and where a human has to stay in the loop."
+      body: "This decides what you permit, internally. We write the rules, then run the session that gets your leadership to commit to them. Staff come out knowing what's approved and where a human has to stay in the loop. What this does not do is prove any of it to an outsider; that's stage 04."
       deliverables:
         - "Acceptable use policy people can follow"
         - "A named owner for each area of AI risk"
@@ -49,20 +49,19 @@ process:
       phase: "Foundations"
       title: "Change how people work"
       engagements: ["Team Training Day", "Corporate Training Day", "Leadership & Board Day"]
-      pain: "Adoption is where this succeeds or dies, and it's the stage everyone underestimates. Nobody reads a policy and comes away better at their job, and a licence on its own changes nothing about how the work gets done."
-      body: "The whole point of the arc is a workforce that works differently at the end of it. We run days pitched at the level of the room until people are confident about where these tools help, where they go wrong, and how to check. The ones who avoid AI get a reason to try it, the ones already using it get better at it, and leadership gets a picture accurate enough to direct the rest. What changes is behaviour; the records exist to evidence it."
+      pain: "Adoption is where this succeeds or dies. Nobody reads a policy and comes away better at their job."
+      body: "The point of the whole arc is a workforce that works differently at the end of it. We run days pitched at the level of the room until people know where these tools help, where they go wrong, and how to check. Cultural change is what unlocks value."
       deliverables:
         - "Days pitched separately at teams, whole departments and the board"
         - "Examples relevant to the work each room does"
         - "Habits that hold once we've gone, rather than tricks that fade"
-        - "Attendance and coverage records for your management system"
 
     - number: "04"
       phase: "Foundations"
-      title: "Get to where you can prove it"
+      title: "Prove you follow them"
       engagements: ["Gap Assessment", "Compliance Readiness"]
-      pain: "The questionnaire always arrives at the worst possible moment, with a deal behind it. \"We're working on it\" has never unstuck one."
-      body: "This is the stage that unsticks deals, and it runs in two parts so you're not writing a large cheque before anyone knows the scale. A fixed-fee gap assessment maps your controls against ISO/IEC 42001 and tells you how far off you are. Then, if you want it, we close the gaps and build the evidence trail, quoted against what the assessment found rather than guessed at beforehand."
+      pain: "A signed policy has never answered a questionnaire. They don't ask what your rules say. They ask you to show the rules are followed."
+      body: "This is what you put in front of an outsider, and it's the stage that unsticks deals. A fixed-fee gap assessment maps your controls against ISO/IEC 42001 and tells you how far off you are. Then we close the gaps and build the evidence trail, quoted against what the assessment found. **If a questionnaire is what brought you here, start at this stage and we'll work backwards.**"
       deliverables:
         - "Controls mapped to ISO/IEC 42001, with a costed remediation plan"
         - "AI inventory, risk process and oversight controls, built and populated"
@@ -73,7 +72,7 @@ process:
       title: "Build what pays for itself"
       engagements: ["Prototyping", "Custom Builds"]
       pain: "Every business has a list of things AI could fix. But a fancy demo that never ships achieves nothing."
-      body: "By now we know where your money is going. We prototype the most promising process in a day on simulated data, then build and ship whatever proves worth building, with the before-and-after measured."
+      body: "By now we know where your money is going. We prototype the most promising process in a few days on simulated data, then build and ship whatever proves worth building, with the before-and-after measured."
       deliverables:
         - "A working system in real use"
         - "Measured before and after"

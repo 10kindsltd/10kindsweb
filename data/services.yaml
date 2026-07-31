@@ -24,6 +24,7 @@ groups:
     cards:
       - badge: "Explore"
         title: "AI Possibilities Session"
+        question: "Is AI even a fit for us?"
         explanation: "Half a day with your leadership team on what AI can and can't do for an organisation like yours, before you commit to anything."
         price: "From £1,500"
         duration: "Half a day"
@@ -43,6 +44,7 @@ groups:
     cards:
       - badge: "Discover"
         title: "AI Discovery"
+        question: "What AI are we running, and where would it pay?"
         explanation: "Where AI is already being used across your business, where it should be, and whether your organisation can adopt it."
         price: "From £5,000"
         duration: "Typically 1-2 weeks"
@@ -58,7 +60,8 @@ groups:
 
       - badge: "Agree"
         title: "AI Policy & Sign-off"
-        explanation: "The rules your organisation runs by, agreed by the people who have to enforce them."
+        question: "What are we allowed to do?"
+        explanation: "What your organisation permits, decided and signed by your leadership. This sets the rules. Proving you follow them is the next engagement."
         price: "From £3,500"
         duration: "Typically 1-2 weeks"
         deliverables:
@@ -73,14 +76,15 @@ groups:
 
       - badge: "Assess"
         title: "Gap Assessment"
-        explanation: "Two weeks and a fixed fee to find out how far you are from being able to prove it."
+        question: "How far off are we from proving it?"
+        explanation: "Where your controls stand against ISO/IEC 42001, clause by clause, and what it would cost to close the distance. Rules on paper are one thing; this tests whether you could evidence them to an auditor."
         price: "From £4,500"
         duration: "Typically 2 weeks"
         note: ""
         deliverables:
           - "Your existing controls mapped against ISO/IEC 42001, clause by clause"
           - "A written gap list, ranked by what a customer or auditor asks about first"
-          - "An AI inventory covering the tools nobody put through procurement"
+          - "Your AI inventory tested against what the standard asks for, or a first one built if you haven't got one"
           - "The regulatory questions worth putting to a solicitor, and the ones already settled"
           - "A remediation plan with the work costed, so the next decision is yours"
         button:
@@ -89,11 +93,12 @@ groups:
 
       - badge: "Close"
         title: "Compliance Readiness"
+        question: "How do we close the gaps?"
         explanation: "The remediation itself, scoped against the gaps we found rather than guessed at before we started."
         price: "Quoted from your gap assessment"
         duration: "A few weeks"
         deliverables:
-          - "AI inventory and risk process built and populated, not just specified"
+          - "The inventory turned into a live register, with an owner and a review cycle"
           - "Controls and documentation mapped to ISO/IEC 42001"
           - "AI Act-aligned controls and documentation, built to support your classification once it's confirmed"
           - "Human oversight and incident handling you can point an auditor at"
@@ -109,6 +114,7 @@ groups:
     cards:
       - badge: "Teams"
         title: "Team Training Day"
+        question: "How do we get one team good at this?"
         explanation: "A working day with one team on where these tools help, where they go wrong, and how to tell."
         price: "£2,500"
         duration: "1 day"
@@ -124,10 +130,11 @@ groups:
 
       - badge: "Organisation"
         title: "Corporate Training Day"
+        question: "How do we get everyone good at this?"
         explanation: "The same day run across departments, pitched by role, with a plan for what happens after everyone goes back to their desk."
         price: "£3,500"
         duration: "1 day"
-        featured: true
+#        featured: true
         deliverables:
           - "Up to 20 people from more than one team"
           - "A short call beforehand so the day is pitched at the right level"
@@ -140,6 +147,7 @@ groups:
 
       - badge: "Leadership"
         title: "Leadership & Board Day"
+        question: "What are we signing off?"
         explanation: "For the people signing off AI use and answering for it afterwards. What you are approving, what to ask, and where the exposure sits."
         price: "£5,000"
         duration: "1 day"
@@ -158,6 +166,7 @@ groups:
     cards:
       - badge: "Prototype"
         title: "Prototyping"
+        question: "What is possible with our setup?"
         explanation: "Find out what's possible with your data and your workflows, before you scope anything bigger"
         price: "£3,500 / day"
         duration: "Typically a 1-2 days"
@@ -172,6 +181,7 @@ groups:
 
       - badge: "Build"
         title: "Custom Builds"
+        question: "Can you build it and ship it?"
         explanation: "AI built into how your organisation works, not bolted on beside it."
         price: "Project-scoped"
         duration: "Weeks/months"
@@ -190,6 +200,7 @@ groups:
     cards:
       - badge: "Sustain"
         title: "Advisory Retainer"
+        question: "Who keeps this alive?"
         explanation: "Most consultants build it and leave. We stay on as the standing line to the person who built it."
         price: "£1,500 / month"
         duration: "Ongoing"

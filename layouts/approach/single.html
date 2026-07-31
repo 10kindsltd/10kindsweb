@@ -74,7 +74,7 @@
                         </div>
                       {{ end }}
 
-                      {{ with $stage.body }}<p class="mb-4 text-gray-600">{{ . }}</p>{{ end }}
+                      {{ with $stage.body }}<p class="mb-4 text-gray-600 [&_strong]:text-primary">{{ . | markdownify }}</p>{{ end }}
 
                       {{ with $stage.deliverables }}
                         <ul class="flex flex-col gap-2 border-t border-gray-100 pt-4">

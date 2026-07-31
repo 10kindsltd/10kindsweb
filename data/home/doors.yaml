@@ -1,12 +1,12 @@
 enable: true
 
 heading: "Three ways in"
-text: "Pick the one matching what's in front of you. Most organisations start with one and come back for the others."
+text: "Pick whichever matches what's in front of you."
 
 cards:
   - eyebrow: "Get in control"
     heading: "AI governance"
-    text: "Find every AI tool in use across the business, agree the rules, and get to where you can answer a customer's due-diligence questionnaire the same week it arrives."
+    text: "Find every AI tool in use. Agree the rules. Get to where you can answer a customer's questionnaire the week it arrives."
     points:
       - "An AI inventory, including the tools nobody approved"
       - "An acceptable use policy your leadership has signed"
@@ -17,24 +17,24 @@ cards:
 
   - eyebrow: "Get your people using it"
     heading: "AI training"
-    text: "Almost everyone was handed a licence and left to work it out. Days pitched at the level of the room, covering what these tools do well, where they break, and how to tell the difference."
+    text: "Most people were handed a licence and left to work it out. Days pitched at the level of the room: what these tools do well, where they break, how to tell."
     points:
-      - "Where AI is reliable, and where it will be fluent and wrong"
+      - "Where AI is reliable, and where it's confidently wrong"
       - "How to check output before it reaches a client"
-      - "Team, whole-organisation and board days, each pitched differently"
+      - "Team, whole-organisation and board days"
       - "Attendance records ISO/IEC 42001 asks you to keep"
     link: "/training/"
     label: "How training works"
 
   - eyebrow: "Get building"
     heading: "AI that pays for itself"
-    text: "The slow, manual, document-shaped work your team has absorbed as normal. We find the parts worth automating, then design, build and ship them."
+    text: "Your team absorbs slow, manual, document-shaped work as normal. We find the parts worth automating, then build and ship them."
     points:
-      - "A working prototype on simulated data, before you commit to a build"
+      - "A working prototype before you commit to a build"
       - "Custom builds embedded in how your teams already work"
-      - "Workflows that run on a schedule rather than on someone remembering"
+      - "Workflows that run on a schedule, not on someone remembering"
       - "Built by people who ship AI products for a living"
     link: "/build/"
     label: "What we build"
 
-footer_text: "Every engagement is a fixed price against a written scope, with the deliverables named up front. [See what everything costs](/services/)."
+footer_text: "Every engagement is a fixed price against a written scope. [See what everything costs](/services/)."
