@@ -4,33 +4,37 @@
  * there is no global anchor style (nav items and buttons are anchors too). So
  * every element that runs `| markdownify` over body copy carries `md-links`,
  * or `md-links-invert` on a dark background. Add the class when you add a new
- * markdownified field, otherwise its links render as plain text. */
-.md-links {
-  a {
-    color: var(--color-primary);
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 1px;
-    transition: text-decoration-thickness 150ms;
-  }
+ * markdownified field, otherwise its links render as plain text.
+ *
+ * `md-links` styles anchors NESTED inside the element. Put `md-link`
+ * (singular) on an <a> you are writing directly in a template. */
 
-  a:hover {
-    text-decoration-thickness: 2px;
-  }
+.md-link,
+.md-links a {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-thickness 150ms;
 }
 
-.md-links-invert {
-  a {
-    color: #fff;
-    font-weight: 600;
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    text-decoration-thickness: 1px;
-    transition: text-decoration-thickness 150ms;
-  }
+.md-link:hover,
+.md-links a:hover {
+  text-decoration-thickness: 2px;
+}
 
-  a:hover {
-    text-decoration-thickness: 2px;
-  }
+.md-link-invert,
+.md-links-invert a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-thickness: 1px;
+  transition: text-decoration-thickness 150ms;
+}
+
+.md-link-invert:hover,
+.md-links-invert a:hover {
+  text-decoration-thickness: 2px;
 }

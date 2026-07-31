@@ -1,11 +1,13 @@
 <section id="hero" class="hero py-8 lg:py-16">
   {{ $certImg := "" }}
   {{ $certLink := "" }}
+  {{ $certTagline := "" }}
   {{ with site.Data.founder_profile.cert }}
     {{ with resources.Get .image }}
       {{ $certImg = .Resize "160x" }}
     {{ end }}
     {{ $certLink = .link }}
+    {{ $certTagline = .tagline }}
   {{ end }}
   <div class="container mx-auto grid gap-16 px-4 lg:grid-cols-2">
     <div class="flex flex-col justify-center gap-8 lg:gap-12">
@@ -66,10 +68,10 @@
           {{ with $certImg }}
             {{ if $certLink }}
               <a href="{{ $certLink }}" target="_blank" rel="noopener noreferrer" class="shrink-0">
-                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="AWS Certified Generative AI Professional">
+                <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="AWS Certified Generative AI Developer - Professional">
               </a>
             {{ else }}
-              <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="AWS Certified Generative AI Professional" class="shrink-0">
+              <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="AWS Certified Generative AI Developer - Professional" class="shrink-0">
             {{ end }}
           {{ end }}
         </div>
@@ -87,10 +89,10 @@
         {{ with $certImg }}
           {{ if $certLink }}
             <a href="{{ $certLink }}" target="_blank" rel="noopener noreferrer" class="shrink-0">
-              <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="AWS Certified Generative AI Professional">
+              <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="AWS Certified Generative AI Developer - Professional">
             </a>
           {{ else }}
-            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="AWS Certified Generative AI Professional" class="shrink-0">
+            <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="AWS Certified Generative AI Developer - Professional" class="shrink-0">
           {{ end }}
         {{ end }}
       </div>

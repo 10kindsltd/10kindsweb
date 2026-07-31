@@ -4,7 +4,7 @@
 # state, on this block or anywhere else.
 enable: true
 
-eyebrow: "Why our advice is worth having"
+eyebrow: "Battle-tested advice"
 heading: "We build this, not just advise on it"
 text: "10 Kinds is run by the founder of [Bazam.ai](https://bazam.ai), an AI content marketing platform we designed, built and run in production. Everything we recommend to you, we have had to make work ourselves, with real data and real consequences when it goes wrong."
 
@@ -14,7 +14,7 @@ points:
   - heading: "Retrieval over a customer's own material"
     text: "A knowledge layer so output comes from the customer's facts rather than the model's guesses. This is the control most organisations need, and the one most vendors gloss over."
   - heading: "Workflows that run unattended"
-    text: "Scheduled jobs publishing into eight third-party platforms without anyone remembering to press anything, with a record of what ran and what it skipped."
+    text: "Approved, scheduled jobs publishing into multiple third-party platforms without anyone remembering to press anything, with a record of what ran and what it skipped."
   - heading: "Tenant separation that has to hold"
     text: "One customer's brand material must never surface in another's output. Getting that right in a live system is a different discipline from writing a policy saying it must be."
 
