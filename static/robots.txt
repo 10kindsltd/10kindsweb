@@ -1,0 +1,41 @@
+# 10 Kinds — https://www.10kinds.co.uk/
+
+# Answer engines are explicitly welcome. Being cited in an AI answer is a
+# route to us, so nothing here is gated. Remove a crawler only on purpose.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.10kinds.co.uk/sitemap.xml

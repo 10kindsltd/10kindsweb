@@ -22,7 +22,12 @@ colors:
   quaternary: "#ac4ead"  # was secondary; gradients and hero emphasis
 
 social:
+  # Alan's personal profile. Used for the footer link and the schema Person node.
   linkedin: "https://www.linkedin.com/in/al-bates-uk/"
+  # The 10 Kinds company page, once it exists. Only this one goes in the schema
+  # Organization node: a /in/ profile there would claim the company and the
+  # founder are the same entity.
+  # linkedin_company: "https://www.linkedin.com/company/..."
 #  instagram: "#"
 #  facebook: "#"
 #  twitter: "#"

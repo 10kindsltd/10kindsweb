@@ -1,11 +1,221 @@
-{{ $description := .Site.Params.description }}
-{{ with .Description }}{{ $description = . }}{{ end }}
+{{/* Structured data as a single @graph.
+
+     Built for citation by AI answer engines as much as for Google. The pieces
+     that matter most are FAQPage (direct question/answer pairs, which is what
+     LLMs lift), Service nodes carrying real prices from data/services.yaml, and
+     an Organization with a named founder and a verifiable credential.
+
+     Everything here is generated from existing data. If a price, credential or
+     FAQ changes in the data files, this follows. Never hand-write a fact here. */}}
+
+{{ $base := site.BaseURL }}
+{{ $orgID := printf "%s#organization" $base }}
+{{ $personID := printf "%s#founder" $base }}
+{{ $siteID := printf "%s#website" $base }}
+{{ $legal := site.Params.legal }}
+{{ $fp := site.Data.founder_profile }}
+
+{{ $graph := slice }}
+
+{{/* ---------- Organization ---------- */}}
+{{/* sameAs means "another canonical URL for THIS entity". The personal LinkedIn
+     profile belongs on the Person node and nowhere else; putting it here would
+     assert that the company and the founder are the same entity. Only a real
+     company page goes in here. */}}
+{{ $sameAs := slice }}
+{{ with site.Params.social.linkedin_company }}{{ $sameAs = $sameAs | append . }}{{ end }}
+
+{{ $org := dict
+  "@type" "ProfessionalService"
+  "@id" $orgID
+  "name" site.Title
+  "url" $base
+  "description" site.Params.description
+  "areaServed" (dict "@type" "Country" "name" "United Kingdom")
+  "knowsAbout" (slice
+    "AI governance"
+    "ISO/IEC 42001"
+    "EU AI Act"
+    "AI due diligence questionnaires"
+    "AI risk management"
+    "AI training for business"
+    "Custom AI development"
+    "AI workflow automation")
+}}
+{{ with $legal.company_name }}{{ $org = merge $org (dict "legalName" .) }}{{ end }}
+{{ with $legal.vat_number }}{{ $org = merge $org (dict "vatID" .) }}{{ end }}
+{{ with $legal.company_number }}
+  {{ $org = merge $org (dict "identifier" (dict
+    "@type" "PropertyValue"
+    "name" "Companies House company number"
+    "value" .)) }}
+{{ end }}
+{{ with $sameAs }}{{ $org = merge $org (dict "sameAs" .) }}{{ end }}
+{{ if $fp }}{{ $org = merge $org (dict "founder" (dict "@id" $personID)) }}{{ end }}
+{{ $graph = $graph | append $org }}
+
+{{/* ---------- Founder, with the certification as a verifiable credential ---------- */}}
+{{ with $fp }}
+  {{ $person := dict
+    "@type" "Person"
+    "@id" $personID
+    "name" .title
+    "worksFor" (dict "@id" $orgID)
+  }}
+  {{ with .subtitle }}{{ $person = merge $person (dict "jobTitle" .) }}{{ end }}
+  {{/* The personal profile, correctly attached to the person */}}
+  {{ with site.Params.social.linkedin }}{{ $person = merge $person (dict "sameAs" (slice .)) }}{{ end }}
+  {{ with .cert }}
+    {{ $person = merge $person (dict "hasCredential" (dict
+      "@type" "EducationalOccupationalCredential"
+      "name" "AWS Certified Generative AI Developer - Professional"
+      "credentialCategory" "certification"
+      "recognizedBy" (dict "@type" "Organization" "name" "Amazon Web Services")
+      "url" .link)) }}
+  {{ end }}
+  {{ $graph = $graph | append $person }}
+{{ end }}
+
+{{/* ---------- WebSite and this page ---------- */}}
+{{ $graph = $graph | append (dict
+  "@type" "WebSite"
+  "@id" $siteID
+  "url" $base
+  "name" site.Title
+  "publisher" (dict "@id" $orgID)) }}
+
+{{ $pageDesc := site.Params.description }}
+{{ with .Description }}{{ $pageDesc = . }}{{ end }}
+{{ $graph = $graph | append (dict
+  "@type" "WebPage"
+  "@id" (printf "%s#webpage" .Permalink)
+  "url" .Permalink
+  "name" (or .Title site.Title)
+  "description" $pageDesc
+  "isPartOf" (dict "@id" $siteID)
+  "about" (dict "@id" $orgID)) }}
+
+{{/* ---------- Services, priced, from data/services.yaml ---------- */}}
+{{/* Emitted on the money page and the door pages, matching what each renders. */}}
+{{ $keys := slice }}
+{{ if eq .RelPermalink "/services/" }}{{ $keys = slice "orientate" "govern" "train" "build" "support" }}{{ end }}
+{{ if eq .RelPermalink "/governance/" }}{{ $keys = slice "govern" }}{{ end }}
+{{ if eq .RelPermalink "/training/" }}{{ $keys = slice "train" }}{{ end }}
+{{ if eq .RelPermalink "/build/" }}{{ $keys = slice "orientate" "build" "support" }}{{ end }}
+
+{{ with $keys }}
+  {{ range where site.Data.services.groups "key" "in" . }}
+    {{ range .cards }}
+      {{ $svc := dict
+        "@type" "Service"
+        "@id" (printf "%s#service-%s" $base (.title | urlize))
+        "name" .title
+        "description" .explanation
+        "serviceType" "AI consultancy"
+        "provider" (dict "@id" $orgID)
+        "areaServed" (dict "@type" "Country" "name" "United Kingdom")
+      }}
+      {{/* Only emit a price when the string actually carries one. "Project-scoped"
+           and "Quoted from your gap assessment" must not become a number. */}}
+      {{ $digits := replaceRE `[^0-9]` "" (replaceRE `/.*$` "" (.price | default "")) }}
+      {{ if $digits }}
+        {{ $offer := dict
+          "@type" "Offer"
+          "priceCurrency" "GBP"
+          "price" $digits
+          "url" (printf "%sservices/" $base)
+        }}
+        {{ if hasPrefix (.price | default "") "From" }}
+          {{ $offer = merge $offer (dict "priceSpecification" (dict
+            "@type" "PriceSpecification"
+            "priceCurrency" "GBP"
+            "minPrice" $digits)) }}
+        {{ end }}
+        {{ $svc = merge $svc (dict "offers" $offer) }}
+      {{ end }}
+      {{ with .deliverables }}
+        {{ $svc = merge $svc (dict "hasOfferCatalog" (dict
+          "@type" "OfferCatalog"
+          "name" "Deliverables"
+          "itemListElement" .)) }}
+      {{ end }}
+      {{ $graph = $graph | append $svc }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* ---------- FAQPage: the highest-value node for answer engines ---------- */}}
+{{/* Same filter as blocks/faq-for.html, so the markup matches what renders. */}}
+{{ $faqKey := "" }}
+{{ if eq .RelPermalink "/" }}{{ $faqKey = "home" }}{{ end }}
+{{ if eq .RelPermalink "/governance/" }}{{ $faqKey = "governance" }}{{ end }}
+{{ if eq .RelPermalink "/training/" }}{{ $faqKey = "training" }}{{ end }}
+{{ if eq .RelPermalink "/build/" }}{{ $faqKey = "build" }}{{ end }}
+{{ if eq .RelPermalink "/services/" }}{{ $faqKey = "services" }}{{ end }}
+{{ if eq .RelPermalink "/about/" }}{{ $faqKey = "about" }}{{ end }}
+
+{{ with $faqKey }}
+  {{ $faq := site.Data.home.faq }}
+  {{ if $faq.enable }}
+    {{ $items := where $faq.items "pages" "intersect" (slice .) }}
+    {{ with $items }}
+      {{ $qs := slice }}
+      {{ range . }}
+        {{ $qs = $qs | append (dict
+          "@type" "Question"
+          "name" .q
+          "acceptedAnswer" (dict
+            "@type" "Answer"
+            "text" (.a | markdownify | plainify | chomp))) }}
+      {{ end }}
+      {{ $graph = $graph | append (dict
+        "@type" "FAQPage"
+        "@id" (printf "%s#faq" $.Permalink)
+        "mainEntity" $qs) }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{/* ---------- Blog posts ---------- */}}
+{{ if eq .Type "blog" }}
+  {{ if not .IsNode }}
+    {{ $post := dict
+      "@type" "BlogPosting"
+      "@id" (printf "%s#article" .Permalink)
+      "headline" .Title
+      "description" $pageDesc
+      "url" .Permalink
+      "datePublished" (.Date.Format "2006-01-02")
+      "dateModified" (.Lastmod.Format "2006-01-02")
+      "author" (dict "@id" $orgID)
+      "publisher" (dict "@id" $orgID)
+      "isPartOf" (dict "@id" $siteID)
+      "mainEntityOfPage" (dict "@id" (printf "%s#webpage" .Permalink))
+    }}
+    {{ with .Params.tags }}{{ $post = merge $post (dict "keywords" .) }}{{ end }}
+    {{ $graph = $graph | append $post }}
+  {{ end }}
+{{ end }}
+
+{{/* ---------- Breadcrumbs ---------- */}}
+{{ if ne .RelPermalink "/" }}
+  {{ $crumbs := slice (dict "@type" "ListItem" "position" 1 "name" "Home" "item" $base) }}
+  {{ with .Parent }}
+    {{ if ne .RelPermalink "/" }}
+      {{ $crumbs = $crumbs | append (dict "@type" "ListItem" "position" 2 "name" .Title "item" .Permalink) }}
+    {{ end }}
+  {{ end }}
+  {{ $crumbs = $crumbs | append (dict
+    "@type" "ListItem"
+    "position" (add (len $crumbs) 1)
+    "name" .Title
+    "item" .Permalink) }}
+  {{ $graph = $graph | append (dict
+    "@type" "BreadcrumbList"
+    "@id" (printf "%s#breadcrumb" .Permalink)
+    "itemListElement" $crumbs) }}
+{{ end }}
+
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": {{ .Site.Title | jsonify }},
-  "description": {{ $description | jsonify }},
-  "url": {{ .Site.BaseURL | jsonify }}
-}
+{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify (dict "indent" "  ") | safeJS }}
 </script>

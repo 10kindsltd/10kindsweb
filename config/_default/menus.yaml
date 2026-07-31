@@ -55,9 +55,9 @@ footer:
   - name: "About"
     url: "/about/"
     weight: 7
-  - name: "Blog"
-    url: "/blog/"
-    weight: 8
+#  - name: "Blog"
+#    url: "/blog/"
+#    weight: 8
   - name: "Free AI Readiness Checklist"
     url: "/resources/ai-readiness-checklist/"
     weight: 9
