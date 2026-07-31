@@ -1,0 +1,31 @@
+enable: true
+
+# The method as three named phases. The six stages behind them live on
+# /approach/, tagged with the same phase names so the vocabulary matches.
+# Foundations carries the cultural work as well as the paperwork: rules,
+# people, evidence. Do not let it collapse back into "we write you a policy".
+# No durations, prices or deliverables here.
+heading: "Discover, Foundations, Takeoff"
+text: "One arc, in that order, because each phase is what makes the next safe to do at speed. Start where you already are, and stop after any of them."
+
+phases:
+  - number: "01"
+    name: "Discover"
+    belief: "You cannot govern or automate what you cannot see."
+    body: "We find every place AI has got into the business, including the tools nobody put through procurement, and the manual work costing you most. We also find out how your people are already working and what they are afraid of getting wrong, because that decides what will stick later. You come out with a map, a ranked view of where AI would pay, and a straight recommendation on what to do next."
+    covers: ["AI Discovery"]
+
+  - number: "02"
+    name: "Foundations"
+    belief: "Nobody ever got better at their job by reading a policy."
+    body: "This is the phase that changes how your organisation works, and the one most consultancies skip because it cannot be handed over as a PDF. Your people learn to work with these tools rather than around them, from the desk to the board, until it becomes how the job gets done here. Habits get embedded, the ones who resist get brought along, and the rules get agreed by the people who have to live with them. The ISO/IEC 42001 evidence comes out of a change that has already happened."
+    covers:
+      ["AI Policy & Sign-off", "Team Training Day", "Leadership & Board Day", "Gap Assessment", "Compliance Readiness"]
+
+  - number: "03"
+    name: "Takeoff"
+    belief: "The people advising you build this for a living."
+    body: "With the rules agreed and your team confident, the work turns to building. We prototype the process most worth fixing, ship whatever proves out, and measure the before and after. Then we stay on so none of it goes stale, because a management system and a live AI system both rot without upkeep."
+    covers: ["Prototyping", "Custom Builds", "Advisory Retainer"]
+
+footer_text: "Every stage is a fixed price against a written scope. [See the six stages in full](/approach/)."

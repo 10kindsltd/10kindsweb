@@ -1,0 +1,50 @@
+{{/* The method as three named phases. The five stages sit behind these on
+     /approach/, tagged with the same names. No durations or prices here.
+     See strategy/Site Architecture.md */}}
+{{ $engagements := slice }}
+{{ range site.Data.services.groups }}
+  {{ range .cards }}{{ $engagements = $engagements | append .title }}{{ end }}
+{{ end }}
+
+<section id="phases" class="bg-tertiary/25 py-16">
+  <div class="container mx-auto px-4">
+    <div class="mx-auto mb-12 max-w-3xl text-center">
+      {{ with .heading }}<h2 class="mb-4 text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
+      {{ with .text }}<p class="text-lg text-gray-600">{{ . | markdownify }}</p>{{ end }}
+    </div>
+
+    {{ with .phases }}
+      <div class="mx-auto grid max-w-6xl items-stretch gap-6 md:grid-cols-3">
+        {{ range . }}
+          <div class="border-primary/20 relative flex flex-col rounded-2xl border bg-white px-6 py-8 shadow-sm lg:px-8">
+            <div class="mb-4 flex items-baseline gap-3">
+              {{ with .number }}<span class="text-primary/25 text-4xl font-extrabold">{{ . }}</span>{{ end }}
+              {{ with .name }}<h3 class="text-2xl font-bold">{{ . }}</h3>{{ end }}
+            </div>
+
+            {{ with .belief }}
+              <p class="border-quaternary mb-4 border-l-4 pl-4 text-lg text-gray-500 italic">{{ . }}</p>
+            {{ end }}
+
+            {{ with .body }}<p class="mb-6 text-gray-600">{{ . }}</p>{{ end }}
+
+            {{ with .covers }}
+              <div class="border-primary/15 mt-auto flex flex-wrap gap-2 border-t pt-5">
+                {{ range . }}
+                  {{ if not (in $engagements .) }}
+                    {{ errorf "blocks/home/phases: %q is not an engagement title in data/services.yaml" . }}
+                  {{ end }}
+                  <span class="bg-primary/10 text-primary rounded-full px-3 py-1 text-xs font-semibold">{{ . }}</span>
+                {{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ with .footer_text }}
+      <p class="mx-auto mt-10 max-w-3xl text-center text-gray-600 [&_a]:font-semibold [&_a]:underline">{{ . | markdownify }}</p>
+    {{ end }}
+  </div>
+</section>

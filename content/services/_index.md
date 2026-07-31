@@ -13,7 +13,7 @@ hero:
 
 start:
   heading: "Where to start"
-  text: "We usually suggest governance before building. The discovery work tells us how your organisation runs and surfaces the automation worth doing, so anything we build afterwards is better aimed. If you arrive with a project already in mind, that's fine too."
+  text: "We usually suggest governance before building. The discovery work tells us how your organisation runs and surfaces the automation worth doing, so anything we build afterwards is better aimed. If you arrive with a project already in mind, that's fine too, and [training](/training/) can be booked on its own at any point."
   cards:
     - heading: "Not sure AI is even a fit"
       text: "Start with a half-day leadership session. What AI does well, where it falls over, and whether any of it applies to how your organisation works. Nothing commits you to more than the half day."

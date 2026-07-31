@@ -5,7 +5,7 @@ description: "Increase trust, close deals faster, and enable more staff wins. Mo
 
 hero:
   eyebrow: "Our approach"
-  title: "Instilling Confidence & Capability"
+  title: "Installing Confidence & Capability"
   subtitle: "Increase trust, close deals faster, and enable more staff wins"
   text: "Most consultants hand you a strategy deck and leave. We help you make it a success."
 
@@ -20,10 +20,11 @@ problem:
       text: "Staff want to use AI properly, but nobody will sign off on what's allowed, so everyone either freezes or does it unofficially."
 
 process:
-  heading: "Five stages"
-  intro: "Each one is a fixed price with a fixed scope tailored to you, [listed in full here](/services/). Stop after any of them."
+  heading: "Three phases, six stages"
+  intro: "Discover, then Foundations, then Takeoff, broken into the six stages below. Each stage is a fixed price with a fixed scope tailored to you, [listed in full here](/services/). Stop after any of them."
   stages:
     - number: "01"
+      phase: "Discover"
       title: "Find out where you stand"
       engagements: ["AI Discovery"]
       pain: "Ask a leadership team how many AI tools are in use and you'll get a number like three. The real answer is usually north of twenty, and nobody owns the list."
@@ -34,6 +35,7 @@ process:
         - "Risk register covering data, suppliers and regulation"
 
     - number: "02"
+      phase: "Foundations"
       title: "Agree the rules"
       engagements: ["AI Policy & Sign-off"]
       pain: "Staff who aren't sure what's allowed do one of two things. They freeze, and you get none of the upside. Or they go underground, and you get all of the risk."
@@ -44,6 +46,19 @@ process:
         - "Board-ready policy document, signed off"
 
     - number: "03"
+      phase: "Foundations"
+      title: "Change how people work"
+      engagements: ["Team Training Day", "Corporate Training Day", "Leadership & Board Day"]
+      pain: "Adoption is where this succeeds or dies, and it's the stage everyone underestimates. Nobody reads a policy and comes away better at their job, and a licence on its own changes nothing about how the work gets done."
+      body: "The whole point of the arc is a workforce that works differently at the end of it. We run days pitched at the level of the room until people are confident about where these tools help, where they go wrong, and how to check. The ones who avoid AI get a reason to try it, the ones already using it get better at it, and leadership gets a picture accurate enough to direct the rest. What changes is behaviour; the records exist to evidence it."
+      deliverables:
+        - "Days pitched separately at teams, whole departments and the board"
+        - "Examples relevant to the work each room does"
+        - "Habits that hold once we've gone, rather than tricks that fade"
+        - "Attendance and coverage records for your management system"
+
+    - number: "04"
+      phase: "Foundations"
       title: "Get to where you can prove it"
       engagements: ["Gap Assessment", "Compliance Readiness"]
       pain: "The questionnaire always arrives at the worst possible moment, with a deal behind it. \"We're working on it\" has never unstuck one."
@@ -53,7 +68,8 @@ process:
         - "AI inventory, risk process and oversight controls, built and populated"
         - "Certification-ready documentation"
 
-    - number: "04"
+    - number: "05"
+      phase: "Takeoff"
       title: "Build what pays for itself"
       engagements: ["Prototyping", "Custom Builds"]
       pain: "Every business has a list of things AI could fix. But a fancy demo that never ships achieves nothing."
@@ -63,7 +79,8 @@ process:
         - "Measured before and after"
         - "Handover and team training"
 
-    - number: "05"
+    - number: "06"
+      phase: "Takeoff"
       title: "Keep it running"
       engagements: ["Advisory Retainer"]
       pain: "Management systems rot. A year after the audit the register is stale, nobody's run a review, and the next surveillance visit becomes a scramble."
@@ -75,7 +92,7 @@ process:
 
 closing:
   heading: "Start your transformation"
-  text: "Book a call and we'll tell you which of the five stages you need, or take the free twelve-question check first and find your gaps."
+  text: "Book a call and we'll tell you which of the six stages you need, or take the free twelve-question check first and find your gaps."
   button:
     label: "Book a free call"
     link: ":calendly"

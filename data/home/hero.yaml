@@ -1,6 +1,6 @@
 enable: true
 
-eyebrow: "For UK organisations that want to accelerate AI use"
+eyebrow: "For UK SMEs that want to accelerate AI use"
 title: "Get AI under control. Then make it pay."
 text: |
   Two problems, and most organisations have both. <mark class="bg-yellow-200 rounded px-1">You can't prove what AI is running or where the data goes</mark>, and the work that would pay to automate is still being done by hand.
@@ -10,10 +10,16 @@ quote: |
   "We get your AI use under control, then build the systems that make it pay. Run by a team that ships AI products, not just talks about them"
 footer: -- Alan Bates, Founder, 10 Kinds & [Bazam.ai](https://bazam.ai)
 
+# Short definitional caption under the certification badge. Kept deliberately
+# terse: the full promise is the first block below the hero, in
+# data/home/promise.yaml, and the two must not restate each other.
+strapline: |
+  A UK AI consultancy working with SMEs on AI governance, training and custom build.
+
 buttons:
   - label: "Book a free 30-min call"
     link: ":calendly"
-  - label: "What we do"
-    link: "#doors"
+  - label: "What you get"
+    link: "#gains"
 
 image: "images/hero.jpg"

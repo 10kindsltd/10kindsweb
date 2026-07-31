@@ -1,7 +1,7 @@
 enable: true
 
-heading: "Two ways we help"
-text: "Most organisations arrive with the first problem and stay for the second."
+heading: "Three ways in"
+text: "Pick the one matching what's in front of you. Most organisations start with one and come back for the others."
 
 cards:
   - eyebrow: "Get in control"
@@ -15,11 +15,22 @@ cards:
     link: "/governance/"
     label: "How governance works"
 
+  - eyebrow: "Get your people using it"
+    heading: "AI training"
+    text: "Almost everyone was handed a licence and left to work it out. Days pitched at the level of the room, covering what these tools do well, where they break, and how to tell the difference."
+    points:
+      - "Where AI is reliable, and where it will be fluent and wrong"
+      - "How to check output before it reaches a client"
+      - "Team, whole-organisation and board days, each pitched differently"
+      - "Attendance records ISO/IEC 42001 asks you to keep"
+    link: "/training/"
+    label: "How training works"
+
   - eyebrow: "Get building"
     heading: "AI that pays for itself"
     text: "The slow, manual, document-shaped work your team has absorbed as normal. We find the parts worth automating, then design, build and ship them."
     points:
-      - "A working prototype in a day, on simulated data"
+      - "A working prototype on simulated data, before you commit to a build"
       - "Custom builds embedded in how your teams already work"
       - "Workflows that run on a schedule rather than on someone remembering"
       - "Built by people who ship AI products for a living"

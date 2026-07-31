@@ -59,6 +59,9 @@
         <div class="flex w-full items-center justify-between">
           <p class="text-lg">{{ .consultant_name }}</p>
         </div>
+        {{ with .strapline }}
+          <p class="border-primary/20 my-3 w-full border-b py-4 text-center text-base text-gray-600">{{ . | markdownify }}</p>
+        {{ end }}
         <div class="flex w-full justify-center">
           {{ with $certImg }}
             {{ if $certLink }}
@@ -77,6 +80,9 @@
       <div class="flex w-full items-center justify-between">
         <p class="text-lg">{{ .consultant_name }}</p>
       </div>
+      {{ with .strapline }}
+        <p class="border-primary/20 my-3 w-full border-b py-4 text-center text-base text-gray-600">{{ . | markdownify }}</p>
+      {{ end }}
       <div class="flex w-full justify-center">
         {{ with $certImg }}
           {{ if $certLink }}

@@ -1,0 +1,21 @@
+enable: true
+
+# The payoff, stated before the method. Outcomes only: no deliverables, no
+# durations, no prices. Those live on /services/ and /approach/.
+heading: "What changes"
+text: "Two things come out of the work. You reach a position you can defend to a customer, an auditor or your board, and the work that was eating your team's week stops being done by hand."
+
+stat:
+  figure: "3-5x"
+  label: "capacity, without adding headcount"
+  note: "The gain we typically see in an SME team once the right processes are automated and people know how to use what they've been given."
+
+pairs:
+  - before: "A questionnaire arrives and sales goes quiet for three weeks."
+    after: "You answer it the week it arrives, from documents you already have."
+  - before: "Nobody can say how many AI tools are in use, or where the data goes."
+    after: "There is a list, it has an owner, and it is current."
+  - before: "AI is something a few enthusiasts do, and everyone else works around."
+    after: "Using it well is how the job gets done, across the team."
+  - before: "The slow, document-shaped work gets absorbed as normal."
+    after: "It runs on a schedule instead of on someone remembering."

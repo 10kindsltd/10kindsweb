@@ -1,0 +1,41 @@
+{{/* Audience C: the organisation whose people have the tools and no idea how to
+     use them. Mirrors layouts/build/single.html. See strategy/Site Architecture.md */}}
+{{ define "main" }}
+
+  {{ with .Params.hero }}{{ partial "blocks/home/hero.html" . }}{{ end }}
+
+  {{/* Why a cold visitor is here, in three cards rather than a stuffed hero */}}
+  {{ with .Params.problem }}{{ partial "blocks/page/problem.html" . }}{{ end }}
+
+  {{ with .Params.what_we_do }}{{ partial "blocks/home/what-we-do.html" . }}{{ end }}
+
+  {{ with .Params.proof }}
+    <section class="bg-tertiary/25 py-16">
+      <div class="container mx-auto px-4">
+        <div class="border-primary/25 mx-auto max-w-3xl rounded-2xl border bg-white px-8 py-10 text-center">
+          {{ with .heading }}<h2 class="text-primary mb-4 text-3xl font-bold">{{ . }}</h2>{{ end }}
+          {{ with .text }}
+            <p class="text-lg text-gray-600 [&_a]:font-semibold [&_a]:underline">{{ . | markdownify }}</p>
+          {{ end }}
+        </div>
+      </div>
+    </section>
+  {{ end }}
+
+  {{/* Training engagements only */}}
+  {{ with site.Data.services }}
+    {{ if .enable }}
+      {{ partial "blocks/home/services.html" (dict
+        "title" (default .title $.Params.services.title)
+        "text" (default .text $.Params.services.text)
+        "groups" (where .groups "key" "train")
+        "assurances" .assurances)
+      }}
+    {{ end }}
+  {{ end }}
+
+  {{ partial "blocks/faq-for.html" (dict "page" "training") }}
+
+  {{ with site.Data.cta }}{{ if .enable }}{{ partial "blocks/home/cta.html" . }}{{ end }}{{ end }}
+
+{{ end }}

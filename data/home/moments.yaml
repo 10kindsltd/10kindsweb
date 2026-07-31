@@ -1,0 +1,20 @@
+enable: false
+
+# NOT USED ON THE HOMEPAGE. Kept because the copy is good and the block may earn
+# a slot lower down later.
+#
+# It was briefly the first block under the hero and that was wrong: a visitor who
+# is not in one of these three rooms reads three paragraphs about somebody else
+# before finding out what we do. The promise goes first. Pain and qualification
+# live on the door pages, which each open by restating their own.
+# See strategy/Site Architecture.md
+heading: "Most people find us at one of these moments"
+text: "Three different rooms, three different problems. Whichever one you're in, the first move is finding out what's already true."
+
+cards:
+  - heading: "Someone has asked you to prove it"
+    text: "A customer's procurement team sent an AI due-diligence questionnaire and the deal is waiting behind it. Or the board wants to know what AI the business is running and who approved it. Either way, nothing you currently have in writing answers the question."
+  - heading: "Nobody was ever taught"
+    text: "You bought the licences, or your staff signed up on their own. Half of them avoid AI rather than risk getting it wrong, and the other half are using it on real client work without anyone having said which tools are approved."
+  - heading: "The work is still done by hand"
+    text: "You already know which process is costing you. It's slow, document-shaped and repetitive, and it's still being done manually because nobody has had the time to fix it."

@@ -54,6 +54,10 @@
                     <div class="border-primary/20 rounded-2xl border bg-white px-6 py-6 shadow-sm lg:px-8">
 
                       <div class="mb-4 flex flex-wrap items-center gap-3">
+                        {{/* Phase name, matching the three named phases on the homepage */}}
+                        {{ with $stage.phase }}
+                          <span class="bg-quaternary/10 text-quaternary rounded-full px-3 py-1 text-xs font-semibold tracking-wider uppercase">{{ . }}</span>
+                        {{ end }}
                         {{ with $stage.title }}<h3 class="text-xl font-semibold">{{ . }}</h3>{{ end }}
                       </div>
 

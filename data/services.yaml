@@ -103,17 +103,53 @@ groups:
           label: "Discuss readiness"
           link: ":calendly"
 
-      - badge: "Train"
-        title: "Training"
-        explanation: "Your team needs this regardless, and ISO 42001 requires evidence of it. Delivered by someone who builds AI products, not someone reciting a deck."
-        price: "From £2,500"
-        duration: "1/2 day - 1 day"
+  - key: "train"
+    title: "Train"
+    text: "For getting your people competent with these tools: what they do well, where they break, and how to check. Stands on its own, and ISO 42001 asks for evidence of it either way."
+    cards:
+      - badge: "Teams"
+        title: "Team Training Day"
+        explanation: "A working day with one team on where these tools help, where they go wrong, and how to tell."
+        price: "£2,500"
+        duration: "1 day"
         deliverables:
-          - "Team day, up to 10 people, hands-on with your real work"
-          - "Corporate day, up to 20 people, with pre-scoping and an adoption plan"
-          - "Leadership day: what you're signing off, what to ask, where the exposure sits"
+          - "Up to 10 people, with examples relevant to the work that team does"
+          - "Where AI is reliable, where it is confidently wrong, and how to tell"
+          - "Prompting and review habits that hold up under deadline pressure"
+          - "How to keep AI use inside whatever rules your organisation has set"
+          - "A written record of who attended and what was covered"
         button:
-          label: "Discuss training"
+          label: "Discuss team training"
+          link: ":calendly"
+
+      - badge: "Organisation"
+        title: "Corporate Training Day"
+        explanation: "The same day run across departments, pitched by role, with a plan for what happens after everyone goes back to their desk."
+        price: "£3,500"
+        duration: "1 day"
+        featured: true
+        deliverables:
+          - "Up to 20 people from more than one team"
+          - "A short call beforehand so the day is pitched at the right level"
+          - "Role-specific tracks rather than one session for everybody"
+          - "An adoption plan naming who owns what after the day"
+          - "Attendance and coverage records for your management system"
+        button:
+          label: "Discuss corporate training"
+          link: ":calendly"
+
+      - badge: "Leadership"
+        title: "Leadership & Board Day"
+        explanation: "For the people signing off AI use and answering for it afterwards. What you are approving, what to ask, and where the exposure sits."
+        price: "£5,000"
+        duration: "1 day"
+        deliverables:
+          - "What current AI does well and where it still falls over, without the vendor gloss"
+          - "Where AI would and would not pay across an organisation like yours, with examples relevant to your sector"
+          - "The questions to put to a supplier, a team or a consultant before saying yes"
+          - "A written summary you can take to the board"
+        button:
+          label: "Discuss a leadership day"
           link: ":calendly"
 
   - key: "build"

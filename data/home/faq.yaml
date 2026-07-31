@@ -3,7 +3,7 @@ enable: true
 heading: "Questions"
 
 # `pages` controls which pages each question appears on.
-# Valid values: home, governance, build, services, about
+# Valid values: home, governance, training, build, services, about
 items:
   - q: "What does 10 Kinds do?"
     pages: ["home", "about"]
@@ -51,6 +51,21 @@ items:
       We work from the minimum we need to do the job, on our own equipment, and we hand back or delete what we hold at the end of an engagement.
 
       Your documents and business data never get fed into public AI models to train them. Anything we build for you runs on infrastructure scoped to your organisation and sees only the data you point it at.
+
+  - q: "Do we have to do governance work before you'll train our team?"
+    pages: ["training", "services"]
+    a: |
+      No. Training stands on its own and plenty of organisations book a day without anything else.
+
+      It does work better once there are rules to teach. If you don't have an acceptable use policy yet, we'll cover the questions your people will hit anyway and tell you straight which ones only you can answer.
+
+  - q: "Is this Copilot training, ChatGPT training, or something else?"
+    pages: ["training"]
+    a: "Whatever your organisation actually runs. We cover the tools you've bought and the ones your staff found on their own, because both are in use. The habits that matter, knowing where a model is reliable and how to check it, carry across all of them and outlast whichever one you're on this year."
+
+  - q: "Does training count towards ISO 42001?"
+    pages: ["training", "governance"]
+    a: "It contributes. ISO/IEC 42001 asks you to show the people working with AI are competent to do so, and to keep records proving it. Every day we run comes with attendance and coverage records written for that purpose. Training alone doesn't get you certified, and nothing we do makes the certification decision for you."
 
   - q: "Can you build things, or is it just advice?"
     pages: ["home", "build"]

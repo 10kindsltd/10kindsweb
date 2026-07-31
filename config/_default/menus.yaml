@@ -3,25 +3,29 @@ main:
     url: "/governance/"
     weight: 1
 
+  - name: "Training"
+    url: "/training/"
+    weight: 2
+
   - name: "Build"
     url: "/build/"
-    weight: 2
+    weight: 3
 
   - name: "Our Approach"
     url: "/approach/"
-    weight: 3
+    weight: 4
 
   - name: "Services"
     url: "/services/"
-    weight: 4
+    weight: 5
 
   - name: "Free Checklist"
     url: "/resources/ai-readiness-checklist/"
-    weight: 5
+    weight: 6
 
   - name: "About"
     url: "/about/"
-    weight: 6
+    weight: 7
 
 buttons:
   - name: "Book a free call"
@@ -35,27 +39,31 @@ footer:
   - name: "AI Governance"
     url: "/governance/"
     weight: 2
+  - name: "AI Training"
+    url: "/training/"
+    weight: 3
+
   - name: "AI Development"
     url: "/build/"
-    weight: 3
+    weight: 4
   - name: "Our Approach"
     url: "/approach/"
-    weight: 4
+    weight: 5
   - name: "Services & Pricing"
     url: "/services/"
-    weight: 5
+    weight: 6
   - name: "About"
     url: "/about/"
-    weight: 6
+    weight: 7
   - name: "Blog"
     url: "/blog/"
-    weight: 7
+    weight: 8
   - name: "Free AI Readiness Checklist"
     url: "/resources/ai-readiness-checklist/"
-    weight: 8
+    weight: 9
   - name: "Book a call"
     url: "https://calendly.com/alan-10kinds"
-    weight: 9
+    weight: 10
 
 legal:
   - name: "Terms & Conditions"
