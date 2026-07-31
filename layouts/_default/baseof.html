@@ -81,6 +81,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
 
+    <!-- Cookie consent (orestbida/cookieconsent v3), same library as bazam.ai -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
+
     <!-- Load Fonts -->
     {{ with resources.Get "css/fonts.css" }}
       {{ with resources.ExecuteAsTemplate "css/fonts.css" $ . }}
@@ -108,5 +111,12 @@
       <div class="grow">{{ block "main" . }}{{ end }}</div>
       {{ partial "shared/footer" . }}
     </div>
+
+    {{/* Loads the library and shows the banner. Anything tagged
+         data-category="analytics" stays inert until consent. */}}
+    {{ with resources.Get "js/cookieconsent-config.js" }}
+      {{ $cc := . | fingerprint }}
+      <script src="{{ $cc.RelPermalink }}" type="module"></script>
+    {{ end }}
   </body>
 </html>

@@ -1,0 +1,36 @@
+{{/* Consent-gated Google Analytics.
+
+     This partial deliberately OVERRIDES Hugo's embedded google_analytics.html.
+     The embedded one injects gtag.js immediately, which would set analytics
+     cookies before the visitor has agreed to anything. Do not delete this file
+     thinking it is unused: without it, baseof.html silently falls back to the
+     embedded template and the cookie banner becomes decorative.
+
+     The script is inert (`type="text/plain"`) until CookieConsent grants the
+     `analytics` category, at which point it is executed. See
+     assets/js/cookieconsent-config.js.
+
+     Renders nothing until services.googleAnalytics.id is set in
+     config/_default/hugo.yaml. */}}
+
+{{- if not site.Config.Privacy.GoogleAnalytics.Disable }}
+  {{- with site.Config.Services.GoogleAnalytics.ID }}
+    {{- if strings.HasPrefix (lower .) "ua-" }}
+      {{- warnf "Universal Analytics (UA-) stopped processing data on 1 July 2024. Replace the ID in config/_default/hugo.yaml with a GA4 measurement ID (G-)." }}
+    {{- else }}
+      <script type="text/plain" data-category="analytics">
+        (function () {
+          var s = document.createElement('script');
+          s.async = true;
+          s.src = 'https://www.googletagmanager.com/gtag/js?id={{ . }}';
+          document.head.appendChild(s);
+
+          window.dataLayer = window.dataLayer || [];
+          function gtag() { dataLayer.push(arguments); }
+          gtag('js', new Date());
+          gtag('config', '{{ . }}');
+        })();
+      </script>
+    {{- end }}
+  {{- end }}
+{{- end -}}

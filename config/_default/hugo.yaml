@@ -7,7 +7,15 @@ markup:
     renderer:
       unsafe: true
 
-# services:
-#   googleAnalytics:
-#     id: G-MEASUREMENT_ID
+# Uncomment and set the GA4 measurement ID when analytics goes live. The tag is
+# consent-gated in layouts/_partials/google_analytics.html and will not fire
+# until a visitor accepts the analytics category.
+#services:
+#  googleAnalytics:
+#    id: G-MEASUREMENT_ID
+
+privacy:
+  googleAnalytics:
+    disable: false
+    respectDoNotTrack: true
 
