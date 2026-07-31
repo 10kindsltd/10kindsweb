@@ -15,20 +15,33 @@ phases:
   - number: "01"
     name: "Discover"
     belief: "You cannot govern or automate what you cannot see."
-    body: "We find every AI tool in use, including the ones nobody approved. We find the manual work costing you most. And we find out how your people already work, because that decides what sticks later. You get a map, a ranked list of where AI would pay, and a straight recommendation."
+    body: "We find every AI tool in use, including the ones nobody approved. We find the manual work costing you most. And we find out how your people already work, because that decides what sticks later."
+    takeaway:
+      - "A map of every AI tool running in your business"
+      - "A ranked shortlist of where AI would pay"
+      - "A risk register covering data, suppliers and regulation"
     covers: ["AI Discovery"]
 
   - number: "02"
     name: "Foundations"
     belief: "Without cultural change, policies are just documents."
-    body: "This phase changes how people work, and it's the one most consultancies skip. Rules get agreed by the people who have to enforce them. Then everyone gets taught, desk to board, until using AI well is normal. The ISO/IEC 42001 evidence comes out of a change that has already happened."
+    body: "This phase changes how people work, and it's the one most consultancies skip. Rules get agreed by the people who have to enforce them. Then everyone gets taught so using AI well is normal."
+    takeaway:
+      - "An acceptable use policy your leadership has signed"
+      - "Staff and board trained"
+      - "Controls and evidence mapped to ISO/IEC 42001"
+      - "People who use AI well without being told to"
     covers:
       ["AI Policy & Sign-off", "Team Training Day", "Leadership & Board Day", "Gap Assessment", "Compliance Readiness"]
 
   - number: "03"
     name: "Takeoff"
     belief: "The people advising you build this for a living."
-    body: "Now we build. We prototype the process most worth fixing, ship what proves out, and measure the before and after. Then we stay on a retainer, because live AI systems and management systems both rot without upkeep."
+    body: "Now we build. We prototype the process most worth fixing, ship what proves out, and measure the before and after. Live AI systems and management systems both rot without upkeep, so we stay on."
+    takeaway:
+      - "Working systems in real use, not a prototype in a drawer"
+      - "The before and after measured, so you can see what changed"
+      - "A standing monthly line to the people who built them"
     covers: ["Prototyping", "Custom Builds", "Advisory Retainer"]
 
 footer_text: "Every stage is a fixed price against a written scope and we provide on-going support. [See the six stages in full](/approach/)."

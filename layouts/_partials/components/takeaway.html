@@ -1,0 +1,21 @@
+{{/* "You walk away with" callout. The single most scannable thing on any block,
+     so it never gets written into a paragraph. Anywhere copy names what a
+     client ends up holding, it goes through here.
+
+     Usage: {{ partial "components/takeaway" (dict "items" .takeaway) }}
+     Optional: "label" to override the heading, "class" for spacing. */}}
+{{ with .items }}
+  <div class="border-primary/30 bg-primary/5 rounded-2xl border px-5 py-4 {{ $.class | default "" }}">
+    <p class="text-primary mb-3 text-xs font-bold tracking-widest uppercase">
+      {{ $.label | default "You get" }}
+    </p>
+    <ul class="flex flex-col gap-2">
+      {{ range . }}
+        <li class="flex items-start gap-2 text-sm font-medium text-gray-800">
+          <span class="text-primary mt-0.5 shrink-0">{{ partial "icons/check" }}</span>
+          <span class="md-links">{{ . | markdownify }}</span>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+{{ end }}

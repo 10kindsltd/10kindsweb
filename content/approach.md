@@ -1,23 +1,23 @@
 ---
 title: "Our approach"
 type: "approach"
-description: "Increase trust, close deals faster, and enable more staff wins. Most consultants hand you a strategy deck and leave, we help you make it a success."
+description: "Three phases, six stages, and something usable at the end of each: a map of your AI use, a signed policy, trained staff, controls mapped to ISO/IEC 42001, and working systems. Most consultants hand you a strategy deck and leave."
 
 hero:
   eyebrow: "Our approach"
   title: "Installing Confidence & Capability"
   subtitle: "Increase trust, close deals faster, and enable more staff wins"
-  text: "Most consultants hand you a strategy deck and leave. We help you make it a success."
+  text: "Most consultants hand you a strategy deck and leave. Every stage below ends with something you can use on Monday."
 
 problem:
   heading: "Most people find us at one of these three moments"
   cards:
-    - heading: "A deal has stalled"
-      text: "A customer's procurement team sent an AI due-diligence questionnaire. Sales needs it answered, and nobody can answer it from anything you currently have in writing."
-    - heading: "The board asked a question"
-      text: "Someone senior wants to know what AI the business is running and what happens if it goes wrong. There isn't a document that answers it."
-    - heading: "Adoption has stalled"
-      text: "Staff want to use AI properly, but nobody will sign off on what's allowed, so everyone either freezes or does it unofficially."
+    - heading: "A deal is stuck"
+      text: "A customer's procurement team sent an AI due-diligence questionnaire. Sales needs it answered this week, and nothing you have in writing answers it."
+    - heading: "Your people aren't using it well"
+      text: "You're paying for licences. Half the team avoids them rather than get something wrong, and the other half can't tell a good answer from a confident wrong one."
+    - heading: "The work is still done by hand"
+      text: "You already know which process is costing you. Slow, repetitive, document-shaped, and still manual because nobody has had the time to fix it."
 
 process:
   heading: "Three phases, six stages"
@@ -39,7 +39,7 @@ process:
       title: "Agree the rules"
       engagements: ["AI Policy & Sign-off"]
       pain: "Staff who aren't sure what's allowed do one of two things. They freeze, and you get none of the upside. Or they go underground, and you get all of the risk."
-      body: "This decides what you permit, internally. We write the rules, then run the session that gets your leadership to commit to them. Staff come out knowing what's approved and where a human has to stay in the loop. What this does not do is prove any of it to an outsider; that's stage 04."
+      body: "This decides what you permit, internally. We write the rules, then run the session that gets your leadership to commit to them. What this does not do is prove any of it to an outsider; that's stage 04."
       deliverables:
         - "Acceptable use policy people can follow"
         - "A named owner for each area of AI risk"

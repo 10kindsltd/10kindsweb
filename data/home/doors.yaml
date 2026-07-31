@@ -19,10 +19,10 @@ cards:
     heading: "AI training"
     text: "Most people were handed a licence and left to work it out. Days pitched at the level of the room: what these tools do well, where they break, how to tell."
     points:
-      - "Where AI is reliable, and where it's confidently wrong"
-      - "How to check output before it reaches a client"
+      - "People who can tell a good answer from a confident wrong one"
+      - "Checking habits that still hold in six months"
       - "Team, whole-organisation and board days"
-      - "Attendance records ISO/IEC 42001 asks you to keep"
+      - "The competence ISO/IEC 42001 expects you to be able to show"
     link: "/training/"
     label: "How training works"
 

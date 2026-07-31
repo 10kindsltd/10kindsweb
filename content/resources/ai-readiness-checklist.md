@@ -7,7 +7,7 @@ hero:
   eyebrow: "Free download"
   title: "Can you answer these twelve questions about your AI use?"
   text: "Most leadership teams can't, and they find out at the worst possible moment: halfway through a customer's due-diligence questionnaire, with a deal sitting behind the answer."
-  text2: "It covers similar ground to a paid discovery engagement, condensed into twelve questions you can work through yourself in about ten minutes."
+  text2: "It covers similar ground to a paid discovery engagement, condensed into twelve questions you can work through yourself in about ten minutes. At the end you'll know which of six areas you're exposed in, and what to fix first."
 
 stakes:
   heading: "Why you need to be able to answer them"

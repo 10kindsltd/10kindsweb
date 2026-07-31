@@ -32,30 +32,34 @@ problem:
       text: "Leadership approves AI spend without a working picture of what these systems can do, what they still can't, or which supplier claims are worth anything."
 
 what_we_do:
-  title: "What a day covers"
+  title: "What changes for your people"
   text: |
     Days pitched at the level of the room, <mark class="bg-yellow-200 rounded px-1">built around what people are going to do on Monday</mark>. They leave faster at the work they already do.
   items:
-    - heading: "Where these tools are reliable"
+    - heading: "They know what to hand over"
       body: "The jobs current AI does well, with **worked examples rather than abstract demos**. Drafting, summarising, extracting from documents, sorting and routing."
 
-    - heading: "Where they go wrong"
+    - heading: "They spot the confident wrong answer"
       body: "Where a model will be **fluent, confident and incorrect**, and how to spot it before it reaches a client. Which tasks to hand over, which to check line by line, which to keep away from AI entirely."
 
-    - heading: "Choosing the right tool for the job"
+    - heading: "They pick the right tool"
       body: "Which tasks suit a chat assistant, which need a knowledge base behind them, and which are **cheaper solved with ordinary software**. People stop reaching for the same tool for everything."
 
-    - heading: "Where your rules fit"
+    - heading: "They know where the line is"
       body: "If you have rules, we cover **how to stay inside them in plain terms**. If you don't, we'll say so and point you at [governance](/governance/) rather than pretend a training day covers it."
 
-    - heading: "Habits that hold after we leave"
+    - heading: "The habits stick"
       body: "Prompting, reviewing and checking as **repeatable habits rather than tricks**, so the day still counts in six months when the tools have moved on."
 
-    - heading: "Questions for the people signing off"
+    - heading: "Leaders know what to ask"
       body: "On leadership days: **what to ask a supplier, a team or a consultant** before approving anything, and which questions belong with a solicitor rather than with us."
 
-    - heading: "The record your management system needs"
-      body: "**Attendance and coverage records** for every day we run. ISO/IEC 42001 asks you to show your people are competent. A customer's questionnaire asks the same in shorter words."
+  takeaway_label: "Your people leave with"
+  takeaway:
+    - "The ability to tell a good answer from a confident wrong one"
+    - "Checking habits that still hold in six months"
+    - "A written summary of what was covered"
+    - "A team that stops asking what they're allowed to use"
 
   closing: "Prices for all three days are below. Training stands on its own, with no other engagement needed first."
 

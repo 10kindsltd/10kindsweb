@@ -76,16 +76,7 @@
 
                       {{ with $stage.body }}<p class="md-links mb-4 text-gray-600 [&_strong]:text-primary">{{ . | markdownify }}</p>{{ end }}
 
-                      {{ with $stage.deliverables }}
-                        <ul class="flex flex-col gap-2 border-t border-gray-100 pt-4">
-                          {{ range . }}
-                            <li class="flex items-start gap-2 text-sm">
-                              <span class="text-primary mt-1 shrink-0">{{ partial "icons/arrow-right" }}</span>
-                              <span>{{ . }}</span>
-                            </li>
-                          {{ end }}
-                        </ul>
-                      {{ end }}
+                      {{ partial "components/takeaway" (dict "items" $stage.deliverables "label" "What you get") }}
 
                     </div>
                   </div>

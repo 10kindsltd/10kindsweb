@@ -123,7 +123,7 @@ groups:
           - "Where AI is reliable, where it is confidently wrong, and how to tell"
           - "Prompting and review habits that hold up under deadline pressure"
           - "How to keep AI use inside whatever rules your organisation has set"
-          - "A written record of who attended and what was covered"
+          - "A written summary of what was covered, to circulate afterwards"
         button:
           label: "Discuss team training"
           link: ":calendly"
@@ -140,7 +140,7 @@ groups:
           - "A short call beforehand so the day is pitched at the right level"
           - "Role-specific tracks rather than one session for everybody"
           - "An adoption plan naming who owns what after the day"
-          - "Attendance and coverage records for your management system"
+          - "A written summary per department, so nothing is assumed to have landed"
         button:
           label: "Discuss corporate training"
           link: ":calendly"

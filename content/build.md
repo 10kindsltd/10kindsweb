@@ -9,7 +9,7 @@ hero:
   text: |
     <mark class="bg-yellow-200 rounded px-1">The manual tasks you live with are normally the quickest wins.</mark>
 
-    We help you discover possibilities, prototype in a few days, build what works, then keep it running. See what's possible before you commit.
+    We find the parts worth automating, prototype in a few days, then build and ship what proves out.
   quote: |
     "We design, build and ship the systems ourselves, rather than handing you a specification and wishing you luck"
   footer: -- Alan Bates, Founder, 10 Kinds
@@ -53,7 +53,14 @@ what_we_do:
     - heading: "Keeping it alive"
       body: "Anything built needs upkeep as your business changes and the models move underneath it. We stay on as **the standing line to the people who built it**, rather than disappearing at handover."
 
-  closing: "Prices are below. Start with a prototype day, or scope a build straight away. You can stop after any of it."
+  takeaway_label: "What you get"
+  takeaway:
+    - "A working prototype before you commit to a full build"
+    - "Systems running inside how your teams already work"
+    - "The before and after measured, so the gain is a number"
+    - "Handover and training, plus a retainer if you want us to stay"
+
+  closing: "Prices are below. Start with a prototype day, or scope a build straight away."
 
 proof:
   heading: "Advice from people who ship"

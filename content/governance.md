@@ -38,10 +38,18 @@ what_we_do:
       body: "A customer's due-diligence questionnaire, a regulator and an auditor all ask the same underlying thing: **can you show this is controlled?** We run our **ISO/IEC 42001 gap assessment** and build the **inventory, records and oversight controls** that answer it, whichever way your regulatory classification goes."
 
     - heading: "Manage the risk your suppliers bring in"
-      body: "Most organisations don't build AI, they buy it. We assess the **third-party and vendor risk** that comes with every AI-enabled tool you've added, the exposure that never shows up in your own audit."
+      body: "Most organisations don't build AI, they buy it. You get a **third-party and vendor risk assessment** covering every AI-enabled tool you've bought, including the exposure that never shows up in your own audit."
 
     - heading: "Keep it running"
-      body: "A management system needs **internal audit, management review and fresh evidence every year**. We stay on as the retainer that keeps it live, rather than handing over a folder that goes stale."
+      body: "A management system needs **internal audit, management review and fresh evidence every year**. You get all three on an annual cycle, plus surveillance audit prep, so the next visit isn't a scramble. We stay on as the retainer rather than handing over a folder that goes stale."
+
+  takeaway_label: "What this gives you"
+  takeaway:
+    - "An AI inventory covering every tool in use, including the shadow AI"
+    - "An acceptable use policy your leadership has signed"
+    - "Staff and board trained, so the policy is followed rather than filed"
+    - "Controls and documentation mapped to ISO/IEC 42001"
+    - "A third-party risk view across every AI-enabled tool you've bought"
 
   closing: "Governance is usually the first step. Once your people are working differently and the evidence is in place, we build the tools and workflows that make AI pay."
 

@@ -69,7 +69,7 @@ items:
 
   - q: "Does training count towards ISO 42001?"
     pages: ["training", "governance"]
-    a: "It contributes. ISO/IEC 42001 asks you to show the people working with AI are competent to do so, and to keep records proving it. Every day we run comes with attendance and coverage records written for that purpose. Training alone doesn't get you certified, and nothing we do makes the certification decision for you."
+    a: "It contributes. ISO/IEC 42001 asks you to show the people working with AI are competent to do so, and training is how you get there. Keeping the records is your side of it, and we'll tell you what to keep. Training alone doesn't get you certified, and nothing we do makes the certification decision for you."
 
   - q: "Can you build things, or is it just advice?"
     pages: ["home", "build", "training"]
