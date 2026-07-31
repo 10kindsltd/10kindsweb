@@ -1,0 +1,21 @@
+# The only hard proof asset until testimonials exist: a production AI system we
+# designed, built and run. Every claim here is a capability, verifiable from the
+# product itself. Say nothing about customers, revenue, traction or launch
+# state, on this block or anywhere else.
+enable: true
+
+eyebrow: "Why our advice is worth having"
+heading: "We build this, not just advise on it"
+text: "10 Kinds is run by the founder of [Bazam.ai](https://bazam.ai), an AI content marketing platform we designed, built and run in production. Everything we recommend to you, we have had to make work ourselves, with real data and real consequences when it goes wrong."
+
+points:
+  - heading: "Multi-agent systems, in production"
+    text: "Agents that plan, draft and revise a piece of work between them, with a human approval step before anything goes out. We know when that architecture is worth its cost and when a single well-aimed prompt does the same job."
+  - heading: "Retrieval over a customer's own material"
+    text: "A knowledge layer so output comes from the customer's facts rather than the model's guesses. This is the control most organisations need, and the one most vendors gloss over."
+  - heading: "Workflows that run unattended"
+    text: "Scheduled jobs publishing into eight third-party platforms without anyone remembering to press anything, with a record of what ran and what it skipped."
+  - heading: "Tenant separation that has to hold"
+    text: "One customer's brand material must never surface in another's output. Getting that right in a live system is a different discipline from writing a policy saying it must be."
+
+closing: "That's where the advice comes from. Which problems are worth pointing a model at, which are cheaper to solve with ordinary software, and which impressive demos fall apart the moment they meet real data. You get that read before the money goes anywhere."

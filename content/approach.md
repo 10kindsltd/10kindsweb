@@ -54,7 +54,7 @@ process:
       deliverables:
         - "Days pitched separately at teams, whole departments and the board"
         - "Examples relevant to the work each room does"
-        - "Habits that hold once we've gone, rather than tricks that fade"
+        - "Habits to hold once we've gone, rather than tricks that fade"
 
     - number: "04"
       phase: "Foundations"

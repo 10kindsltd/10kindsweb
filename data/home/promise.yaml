@@ -9,7 +9,7 @@ enable: true
 # Do not put pain or qualification above this block.
 # See strategy/Site Architecture.md
 promise: |
-  **10 Kinds is a UK AI consultancy for SMEs.** We get the AI already running in your business under control, teach your people to use it well, and build the systems that automate slow work. Inside 6 to 12 months teams often do 3-5x more, without adding headcount.
+  **10 Kinds is a UK AI consultancy for SMEs.** We get the AI already running in your business under control, teach your people to use it well, and build the systems that automate slow work. Gains typically show in 6 to 12 months, without adding headcount.
 
 pillars:
   - name: "Discover"

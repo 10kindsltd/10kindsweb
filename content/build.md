@@ -62,10 +62,6 @@ what_we_do:
 
   closing: "Prices are below. Start with a prototype day, or scope a build straight away."
 
-proof:
-  heading: "Advice from people who ship"
-  text: "10 Kinds is [run by the founder](/about) of [Bazam.ai](https://bazam.ai), an automated content marketing platform sold B2B. Running AI in production teaches you things a deck can't: which problems are worth pointing a model at, which are cheaper to solve with ordinary software, and which impressive demos fall apart the moment they meet real data. You get that advice before the money goes anywhere, not after."
-
 services:
   title: "Build engagements"
   text: "Start with a day and find out what's possible. Scope the rest once you've seen it work."

@@ -121,7 +121,7 @@ groups:
         deliverables:
           - "Up to 10 people, with examples relevant to the work that team does"
           - "Where AI is reliable, where it is confidently wrong, and how to tell"
-          - "Prompting and review habits that hold up under deadline pressure"
+          - "Prompting and review habits pitched at real deadline pressure"
           - "How to keep AI use inside whatever rules your organisation has set"
           - "A written summary of what was covered, to circulate afterwards"
         button:
@@ -201,7 +201,7 @@ groups:
       - badge: "Sustain"
         title: "Advisory Retainer"
         question: "Who keeps this alive?"
-        explanation: "Most consultants build it and leave. We stay on as the standing line to the person who built it."
+        explanation: "Most consultants build it and leave. We stay on as the standing line to the team that built it."
         price: "£1,500 / month"
         duration: "Ongoing"
         deliverables:

@@ -1,0 +1,28 @@
+{{/* Bazam as a proof asset. Capabilities only: never customers, revenue,
+     traction or launch state. See data/proof.yaml */}}
+<section id="proof" class="bg-tertiary/25 py-16">
+  <div class="container mx-auto px-4">
+    <div class="mx-auto mb-10 max-w-3xl text-center">
+      {{ with .eyebrow }}
+        <p class="text-primary mb-3 text-xs font-bold tracking-widest uppercase">{{ . }}</p>
+      {{ end }}
+      {{ with .heading }}<h2 class="mb-4 text-3xl font-bold xl:text-4xl">{{ . }}</h2>{{ end }}
+      {{ with .text }}<p class="md-links text-lg text-gray-600">{{ . | markdownify }}</p>{{ end }}
+    </div>
+
+    {{ with .points }}
+      <div class="mx-auto grid max-w-5xl gap-6 md:grid-cols-2">
+        {{ range . }}
+          <div class="border-primary/20 rounded-2xl border bg-white px-6 py-6">
+            {{ with .heading }}<h3 class="text-primary mb-2 font-bold">{{ . }}</h3>{{ end }}
+            {{ with .text }}<p class="md-links text-sm text-gray-600">{{ . | markdownify }}</p>{{ end }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    {{ with .closing }}
+      <p class="md-links mx-auto mt-10 max-w-3xl text-center text-gray-700">{{ . | markdownify }}</p>
+    {{ end }}
+  </div>
+</section>

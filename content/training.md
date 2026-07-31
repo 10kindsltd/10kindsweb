@@ -48,8 +48,8 @@ what_we_do:
     - heading: "They know where the line is"
       body: "If you have rules, we cover **how to stay inside them in plain terms**. If you don't, we'll say so and point you at [governance](/governance/) rather than pretend a training day covers it."
 
-    - heading: "The habits stick"
-      body: "Prompting, reviewing and checking as **repeatable habits rather than tricks**, so the day still counts in six months when the tools have moved on."
+    - heading: "Habits built to last"
+      body: "Prompting, reviewing and checking taught as **repeatable habits rather than tricks**, so the day still counts in six months when the tools have moved on."
 
     - heading: "Leaders know what to ask"
       body: "On leadership days: **what to ask a supplier, a team or a consultant** before approving anything, and which questions belong with a solicitor rather than with us."
@@ -57,15 +57,11 @@ what_we_do:
   takeaway_label: "Your people leave with"
   takeaway:
     - "The ability to tell a good answer from a confident wrong one"
-    - "Checking habits that still hold in six months"
+    - "Checking habits built to outlast the current tools"
     - "A written summary of what was covered"
-    - "A team that stops asking what they're allowed to use"
+    - "A clear line on what's allowed, in the words of the job"
 
   closing: "Prices for all three days are below. Training stands on its own, with no other engagement needed first."
-
-proof:
-  heading: "Taught by people who build this"
-  text: "10 Kinds is [run by the founder](/about) of [Bazam.ai](https://bazam.ai), an automated content marketing platform sold B2B. Ask whether a model can be trusted with a particular job and the answer comes from having tried it, not from a vendor's brochure."
 
 services:
   title: "Three training days"

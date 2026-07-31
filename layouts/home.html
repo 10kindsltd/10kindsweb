@@ -20,6 +20,8 @@
 
   {{ with site.Data.home.testimonials }}{{ if .enable }}{{ partial "blocks/home/testimonials.html" . }}{{ end }}{{ end }}
 
+  {{ with site.Data.proof }}{{ if .enable }}{{ partial "blocks/page/proof.html" . }}{{ end }}{{ end }}
+
   {{ with site.Data.founder_profile }}{{ if .enable }}{{ partial "blocks/home/founder-profile.html" (dict "whyme" . "creds" site.Data.home.credentials) }}{{ end }}{{ end }}
 
   {{ partial "blocks/faq-for.html" (dict "page" "home") }}

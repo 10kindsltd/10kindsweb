@@ -32,7 +32,7 @@ what_we_do:
       body: "We write the **acceptable use policy**, then run the workshop that gets leadership to sign off on it. What's approved, what's off-limits, what needs a human, and who owns the call."
 
     - heading: "Change how people work"
-      body: "A policy nobody has been taught changes nothing. This is where the value is unlocked: **everyone trained, desk to board**, until using AI well is normal here. It's also the competence evidence an auditor asks for. [How training works](/training/)."
+      body: "A policy nobody has been taught changes nothing. This is where the value is unlocked: **everyone trained, desk to board**, on what's allowed and how to use these tools well. It's also the competence an auditor asks you to evidence. [How training works](/training/)."
 
     - heading: "Get ready for the questions you'll be asked"
       body: "A customer's due-diligence questionnaire, a regulator and an auditor all ask the same underlying thing: **can you show this is controlled?** We run our **ISO/IEC 42001 gap assessment** and build the **inventory, records and oversight controls** that answer it, whichever way your regulatory classification goes."
@@ -47,7 +47,7 @@ what_we_do:
   takeaway:
     - "An AI inventory covering every tool in use, including the shadow AI"
     - "An acceptable use policy your leadership has signed"
-    - "Staff and board trained, so the policy is followed rather than filed"
+    - "Staff and board trained on the policy, not just handed it"
     - "Controls and documentation mapped to ISO/IEC 42001"
     - "A third-party risk view across every AI-enabled tool you've bought"
 

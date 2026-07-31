@@ -25,12 +25,12 @@ phases:
   - number: "02"
     name: "Foundations"
     belief: "Without cultural change, policies are just documents."
-    body: "This phase changes how people work, and it's the one most consultancies skip. Rules get agreed by the people who have to enforce them. Then everyone gets taught so using AI well is normal."
+    body: "This phase supports change in how people work, and it's the one most consultancies skip. Rules get agreed by the people who have to enforce them. Then everyone gets taught so using AI well is normal."
     takeaway:
       - "An acceptable use policy your leadership has signed"
-      - "Staff and board trained"
+      - "Staff and board trained on what's allowed and how to use these tools well"
       - "Controls and evidence mapped to ISO/IEC 42001"
-      - "People who use AI well without being told to"
+      - "Support through adoption, rather than a handover at the door"
     covers:
       ["AI Policy & Sign-off", "Team Training Day", "Leadership & Board Day", "Gap Assessment", "Compliance Readiness"]
 

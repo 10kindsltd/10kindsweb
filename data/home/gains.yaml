@@ -3,13 +3,22 @@ enable: true
 # The payoff, stated before the method. Outcomes only: no deliverables, no
 # durations, no prices. Those live on /services/ and /approach/.
 # Short lines. Every pair has to be readable at a glance.
+#
+# The figures are published, peer-reviewed and linked. They replaced an
+# unsourced "3-5x capacity" claim. Do not add a number here without a citation.
+# Swap for client results once testimonials exist.
 heading: "What changes"
 text: "Two things. You can prove AI is controlled, and the slow work stops being done by hand."
 
-stat:
-  figure: "3-5x"
-  label: "capacity, without adding headcount"
-  note: "What we typically see in an SME team over 6 to 12 months, once the right processes are automated and people know how to use what they've been given."
+stats:
+  heading: "Typical improvements"
+  items:
+    - figure: "40%"
+      label: "less time on professional writing tasks, with quality rated 18% higher"
+    - figure: "15%"
+      label: "more work completed per hour, measured across 5,172 support staff"
+  note: "The largest gains go to less experienced staff and capability is what turns a tool into real savings. That's why training matters more than tools."
+  source: "Sources: [Noy & Zhang, *Science*, 2023](https://www.science.org/doi/10.1126/science.adh2586) and [Brynjolfsson, Li & Raymond, *Quarterly Journal of Economics*, 2025](https://academic.oup.com/qje/article/140/2/889/7990658)."
 
 pairs:
   - before: "A questionnaire arrives. Sales goes quiet for three weeks."

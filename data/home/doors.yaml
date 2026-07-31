@@ -19,8 +19,8 @@ cards:
     heading: "AI training"
     text: "Most people were handed a licence and left to work it out. Days pitched at the level of the room: what these tools do well, where they break, how to tell."
     points:
-      - "People who can tell a good answer from a confident wrong one"
-      - "Checking habits that still hold in six months"
+      - "How to tell a good answer from a confident wrong one"
+      - "Checking habits built to outlast the current tools"
       - "Team, whole-organisation and board days"
       - "The competence ISO/IEC 42001 expects you to be able to show"
     link: "/training/"

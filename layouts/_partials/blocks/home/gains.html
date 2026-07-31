@@ -7,14 +7,27 @@
       {{ with .text }}<p class="md-links text-lg text-gray-600">{{ . | markdownify }}</p>{{ end }}
     </div>
 
-    {{ with .stat }}
-      <div class="border-primary/25 bg-tertiary/40 mx-auto mb-12 flex max-w-4xl flex-col items-center gap-4 rounded-2xl border px-8 py-8 text-center md:flex-row md:gap-8 md:text-left">
-        <div class="shrink-0">
-          <p class="text-primary text-6xl font-extrabold lg:text-7xl">{{ .figure }}</p>
-          {{ with .label }}<p class="text-primary text-sm font-semibold tracking-wider uppercase">{{ . }}</p>{{ end }}
-        </div>
+    {{/* Published figures, each one linked. Never put an uncited number here. */}}
+    {{ with .stats }}
+      <div class="border-primary/25 bg-tertiary/40 mx-auto mb-12 max-w-4xl rounded-2xl border px-8 py-8">
+        {{ with .heading }}
+          <p class="text-primary mb-6 text-center text-xs font-bold tracking-widest uppercase">{{ . }}</p>
+        {{ end }}
+        {{ with .items }}
+          <div class="grid gap-8 text-center sm:grid-cols-2">
+            {{ range . }}
+              <div class="flex flex-col items-center gap-1">
+                {{ with .figure }}<p class="text-primary text-5xl font-extrabold lg:text-6xl">{{ . }}</p>{{ end }}
+                {{ with .label }}<p class="text-gray-600">{{ . | markdownify }}</p>{{ end }}
+              </div>
+            {{ end }}
+          </div>
+        {{ end }}
         {{ with .note }}
-          <p class="text-gray-700 md:border-primary/25 md:border-l md:pl-8">{{ . }}</p>
+          <p class="border-primary/25 mt-8 border-t pt-6 text-center text-gray-700">{{ . | markdownify }}</p>
+        {{ end }}
+        {{ with .source }}
+          <p class="md-links mt-4 text-center text-xs text-gray-500">{{ . | markdownify }}</p>
         {{ end }}
       </div>
     {{ end }}
