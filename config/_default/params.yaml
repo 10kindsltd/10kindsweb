@@ -1,7 +1,7 @@
 title: "10 Kinds"
 title_seo: "AI Consultants | Governance & Development | UK"
-tagline: "AI governance & development for organisations that use or sell AI"
-description: "UK AI consultancy. We find where AI is used in your business, put governance around it so you can prove it's controlled, then design and build the AI systems that pay for themselves."
+tagline: "AI governance, training and development for UK SMEs"
+description: "UK AI consultancy for SMEs. We find the AI already running in your business, train your people to use it well, and build the systems that automate the slow work. Discover, Foundations, Takeoff."
 images:
 #  - "images/hero-image.png"   # todo - create a proper branded card, 1200×630 with your name, "AI Consultant" and brand colours
 
@@ -34,9 +34,6 @@ social:
 #contact:
 #  - "trungkienspktnd@gamail.com"
 #  - "207.555.0119"
-
-pricing:
-  discovery: "From £1,250"
 
 copyright: "© 2026 10 Kinds of People Ltd. All Rights Reserved"
 
