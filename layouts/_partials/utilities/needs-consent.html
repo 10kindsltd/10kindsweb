@@ -1,0 +1,12 @@
+{{/* Returns true when the site loads something that legally needs consent.
+
+     Right now that means only Google Analytics. With no measurement ID set,
+     the site sets no non-essential cookies, so showing a banner would be both
+     pointless and misleading: it would claim we use analytics cookies when we
+     do not.
+
+     Three things key off this: the stylesheet and the config script in
+     baseof.html, and the "Cookie preferences" link in shared/footer.html.
+     Extend the condition here, not in those three places, if another
+     third-party tag is ever added. */}}
+{{ return (ne (string site.Config.Services.GoogleAnalytics.ID) "") }}

@@ -55,8 +55,11 @@
         {{- end -}}
         {{/* Withdrawing consent has to be as easy as giving it, so the
              preferences modal gets a permanent link here. `data-cc` is
-             CookieConsent's own trigger attribute; no extra JS needed. */}}
-        {{- $legal = $legal | append `<button type="button" data-cc="show-preferencesModal" class="cursor-pointer hover:underline">Cookie preferences</button>` -}}
+             CookieConsent's own trigger attribute; no extra JS needed.
+             Hidden when there is no banner, otherwise it is a dead button. */}}
+        {{- if partial "utilities/needs-consent" . -}}
+          {{- $legal = $legal | append `<button type="button" data-cc="show-preferencesModal" class="cursor-pointer hover:underline">Cookie preferences</button>` -}}
+        {{- end -}}
         {{ delimit $legal " | " | safeHTML }}
       </p>
       <p class="mt-2 text-xs text-gray-400">
