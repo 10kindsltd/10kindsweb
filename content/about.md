@@ -21,9 +21,9 @@ alternatives:
     - heading: "A large consultancy"
       text: "A rigorous framework and a name your board already recognises."
       us:
+        - "A fraction of the cost, because you aren't funding a pitch team, a partner's hours or a bench of graduates"
         - "We design, build and ship the systems ourselves"
         - "Advice from people running AI in production, not career advisors"
-        - "A fixed price against a written scope, agreed before anything starts"
         - "The team that scopes your work is the team that delivers it"
       better: "Better than us if you need a globally recognised name on the report, or you're covering many jurisdictions at once."
 
