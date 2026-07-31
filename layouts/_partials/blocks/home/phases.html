@@ -1,4 +1,4 @@
-{{/* The method as three named phases. The five stages sit behind these on
+{{/* The method as three named phases. The six stages sit behind these on
      /approach/, tagged with the same names. No durations or prices here.
      See strategy/Site Architecture.md */}}
 {{ $engagements := slice }}
@@ -10,7 +10,7 @@
   <div class="container mx-auto px-4">
     <div class="mx-auto mb-12 max-w-3xl text-center">
       {{ with .heading }}<h2 class="mb-4 text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
-      {{ with .text }}<p class="text-lg text-gray-600">{{ . | markdownify }}</p>{{ end }}
+      {{ with .text }}<p class="md-links text-lg text-gray-600">{{ . | markdownify }}</p>{{ end }}
     </div>
 
     {{ with .phases }}
@@ -44,7 +44,7 @@
     {{ end }}
 
     {{ with .footer_text }}
-      <p class="mx-auto mt-10 max-w-3xl text-center text-gray-600 [&_a]:font-semibold [&_a]:underline">{{ . | markdownify }}</p>
+      <p class="md-links mx-auto mt-10 max-w-3xl text-center text-gray-600">{{ . | markdownify }}</p>
     {{ end }}
   </div>
 </section>

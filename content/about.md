@@ -1,7 +1,7 @@
 ---
 title: "About"
 type: "about"
-description: "10 Kinds is a UK AI consultancy. We find where AI is being used in an organisation, put governance around it, get you to where you can prove it, then build the systems that make it pay."
+description: "10 Kinds is a UK AI consultancy for SMEs. We find the AI already running in your business, get your people using it well, and build the systems that automate the slow work. Discover, Foundations, Takeoff."
 
 hero:
   eyebrow: "About"

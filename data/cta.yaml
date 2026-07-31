@@ -1,7 +1,7 @@
 enable: true
 
-title: "Start taking control of AI"
-text: "Half an hour to see how your AI governance holds up. Bring a customer questionnaire if that's what brought you here."
+title: "Start with a conversation"
+text: "Half an hour on where you stand: what AI is running, how well your people use it, and what would be worth automating. Bring a customer questionnaire if that's what brought you here."
 #image: "images/hero-image.png"
 button:
   label: "Book a free call"

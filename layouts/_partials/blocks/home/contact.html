@@ -5,7 +5,7 @@
         <h2 class="mb-6 text-4xl font-bold xl:text-5xl">{{ . }}</h2>
       {{ end }}
       {{ with .text }}
-        <div class="mb-8 flex flex-col gap-2 text-lg text-gray-500">{{ . | markdownify }}</div>
+        <div class="md-links mb-8 flex flex-col gap-2 text-lg text-gray-500">{{ . | markdownify }}</div>
       {{ end }}
       <form id="contact_form" action="https://formtorch.com/f/emxnqnm8v9" method="POST" class="flex flex-col gap-6">
         <input type="hidden" name="_redirect" value="/thank-you">

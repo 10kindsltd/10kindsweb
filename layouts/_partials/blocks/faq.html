@@ -13,7 +13,7 @@
               {{ with .a }}
                 {{ range (split . "\n") }}
                   {{ if . }}
-                    <p class="mt-4">{{ . | markdownify }}</p>
+                    <p class="md-links mt-4">{{ . | markdownify }}</p>
                   {{ end }}
                 {{ end }}
               {{ end }}

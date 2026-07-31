@@ -23,13 +23,16 @@ hero:
 what_we_do:
   title: "What the work involves"
   text: |
-    It comes down to three things: <mark class="bg-yellow-200 rounded px-1">know where AI is being used, govern it properly, and be ready to prove it</mark>.
+    Governance is the <mark class="bg-yellow-200 rounded px-1">Discover and Foundations</mark> part of how we work. Find what's running, change how people use it, then build the evidence.
   items:
     - heading: "Find where AI is being used"
       body: "Sanctioned tools are the tip of it. We run a **use-case inventory** across your business, including the **shadow AI** nobody officially approved, so you have one accurate register instead of a guess."
 
-    - heading: "Turn policy into something people follow"
-      body: "An **acceptable use policy** nobody's read is a folder, not a control. We write the policy, run the workshop that gets leadership to sign off on it, and make sure staff know what's allowed, what needs a human, and who owns the call."
+    - heading: "Agree the rules"
+      body: "We write the **acceptable use policy**, then run the workshop that gets leadership to sign off on it. What's approved, what's off-limits, what needs a human, and who owns the call."
+
+    - heading: "Change how people work"
+      body: "A policy nobody has been taught changes nothing. This is where the value is unlocked: **everyone trained, desk to board**, until using AI well is normal here. It's also the competence evidence an auditor asks for. [How training works](/training/)."
 
     - heading: "Get ready for the questions you'll be asked"
       body: "A customer's due-diligence questionnaire, a regulator and an auditor all ask the same underlying thing: **can you show this is controlled?** We run our **ISO/IEC 42001 gap assessment** and build the **inventory, records and oversight controls** that answer it, whichever way your regulatory classification goes."
@@ -40,9 +43,9 @@ what_we_do:
     - heading: "Keep it running"
       body: "A management system needs **internal audit, management review and fresh evidence every year**. We stay on as the retainer that keeps it live, rather than handing over a folder that goes stale."
 
-  closing: "Governance is usually the first step. Once we understand your business, we can build the tools and workflows that make AI pay."
+  closing: "Governance is usually the first step. Once your people are working differently and the evidence is in place, we build the tools and workflows that make AI pay."
 
 services:
   title: "Governance engagements"
-  text: "Each one is a fixed price against a written scope agreed before we start. Stop after any of them."
+  text: "Each one is a fixed price against a written scope agreed before we start. Stop after any of them. Training is priced separately on the [training page](/training/)."
 ---

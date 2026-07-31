@@ -14,10 +14,10 @@
         <h2 class="max-w-4xl mx-auto text-secondary mb-6 text-4xl font-extrabold xl:text-4xl">{{ . }}</h2>
       {{ end }}
       {{ with .text }}
-        <p class="max-w-xl mx-auto mb-4 text-lg text-gray-600">{{ . | markdownify }}</p>
+        <p class="md-links max-w-xl mx-auto mb-4 text-lg text-gray-600">{{ . | markdownify }}</p>
       {{ end }}
       {{ with .text2 }}
-        <p class="text-lg text-gray-600">{{ . | markdownify }}</p>
+        <p class="md-links text-lg text-gray-600">{{ . | markdownify }}</p>
       {{ end }}
     </div>
 

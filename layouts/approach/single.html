@@ -12,7 +12,7 @@
       <div class="container mx-auto px-4">
         <div class="mx-auto mb-12 max-w-3xl text-center">
           {{ with .heading }}<h2 class="mb-3 text-3xl font-bold xl:text-4xl">{{ . }}</h2>{{ end }}
-          {{ with .intro }}<p class="text-lg text-gray-600 [&_a]:underline">{{ . | markdownify }}</p>{{ end }}
+          {{ with .intro }}<p class="md-links text-lg text-gray-600">{{ . | markdownify }}</p>{{ end }}
         </div>
         {{/* Flat list of every engagement, so a stage's timings come from
              data/services.yaml rather than being restated here. */}}
@@ -74,7 +74,7 @@
                         </div>
                       {{ end }}
 
-                      {{ with $stage.body }}<p class="mb-4 text-gray-600 [&_strong]:text-primary">{{ . | markdownify }}</p>{{ end }}
+                      {{ with $stage.body }}<p class="md-links mb-4 text-gray-600 [&_strong]:text-primary">{{ . | markdownify }}</p>{{ end }}
 
                       {{ with $stage.deliverables }}
                         <ul class="flex flex-col gap-2 border-t border-gray-100 pt-4">
@@ -95,6 +95,13 @@
             {{ end }}
           </div>
         {{ end }}
+
+        {{/* The list is long. Give a reader who has scrolled it a way to act
+             without hunting for the closing CTA. */}}
+        <div class="mt-12 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-6">
+          {{ partial "components/button/primary.html" (dict "href" ":calendly" "label" "Book a free call") }}
+          {{ with .outro }}<p class="md-links text-center text-gray-600 sm:text-left">{{ . | markdownify }}</p>{{ end }}
+        </div>
       </div>
     </section>
   {{ end }}

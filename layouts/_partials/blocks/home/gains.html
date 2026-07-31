@@ -4,7 +4,7 @@
   <div class="container mx-auto px-4">
     <div class="mx-auto mb-12 max-w-3xl text-center">
       {{ with .heading }}<h2 class="mb-4 text-4xl font-bold xl:text-5xl">{{ . }}</h2>{{ end }}
-      {{ with .text }}<p class="text-lg text-gray-600">{{ . | markdownify }}</p>{{ end }}
+      {{ with .text }}<p class="md-links text-lg text-gray-600">{{ . | markdownify }}</p>{{ end }}
     </div>
 
     {{ with .stat }}

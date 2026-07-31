@@ -53,7 +53,7 @@ what_we_do:
     - heading: "Keeping it alive"
       body: "Anything built needs upkeep as your business changes and the models move underneath it. We stay on as **the standing line to the people who built it**, rather than disappearing at handover."
 
-  closing: "Prices for all three steps are below. You can stop after any of them."
+  closing: "Prices are below. Start with a prototype day, or scope a build straight away. You can stop after any of it."
 
 proof:
   heading: "Advice from people who ship"

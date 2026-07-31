@@ -15,7 +15,7 @@
         <div class="border-primary/25 mx-auto max-w-3xl rounded-2xl border bg-white px-8 py-10 text-center">
           {{ with .heading }}<h2 class="text-primary mb-4 text-3xl font-bold">{{ . }}</h2>{{ end }}
           {{ with .text }}
-            <p class="text-lg text-gray-600 [&_a]:font-semibold [&_a]:underline">{{ . | markdownify }}</p>
+            <p class="md-links text-lg text-gray-600">{{ . | markdownify }}</p>
           {{ end }}
         </div>
       </div>

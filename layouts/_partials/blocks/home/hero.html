@@ -21,7 +21,7 @@
       {{ with .text }}
         {{ range (split . "\n") }}
           {{ if . }}
-            <p class="text-center lg:text-start text-xl mb-4">{{ . | markdownify }}</p>
+            <p class="md-links text-center lg:text-start text-xl mb-4">{{ . | markdownify }}</p>
           {{ end }}
         {{ end }}
       {{ end }}
@@ -31,7 +31,7 @@
       {{ end }}
 
       {{ if .footer }}
-        <p class="text-center lg:text-start text text-sm text-gray-500 [&_a]:underline [&_a]:font-semibold">{{ .footer | markdownify | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` | safeHTML }}</p>
+        <p class="md-links text-center lg:text-start text text-sm text-gray-500">{{ .footer | markdownify | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` | safeHTML }}</p>
       {{ end }}
       </div>
       {{ if .buttons }}

@@ -1,7 +1,7 @@
 enable: true
 
 title: "How we work together"
-text: "Two tracks that run independently. Take one engagement, work through a track, or mix them. Every engagement is a fixed price against a written scope, with the deliverables named up front."
+text: "Four tracks that run independently. Take one engagement, work through a track, or mix them. Every engagement is a fixed price against a written scope, with the deliverables named up front."
 
 assurances:
   heading: "Our commitments"
@@ -20,7 +20,7 @@ assurances:
 groups:
   - key: "orientate"
     title: "Orientate"
-    text: "For leadership teams working out whether AI is a fit at all, and what it could realistically do here."
+    text: "Before Discover. For leadership teams working out whether AI is a fit at all, and what it could realistically do here."
     cards:
       - badge: "Explore"
         title: "AI Possibilities Session"
@@ -40,7 +40,7 @@ groups:
 
   - key: "govern"
     title: "Govern"
-    text: "For when someone has asked you to prove AI is controlled. Join at whichever point matches where you already are."
+    text: "Discover, then Foundations. For when someone has asked you to prove AI is controlled. Join at whichever point matches where you already are."
     cards:
       - badge: "Discover"
         title: "AI Discovery"
@@ -110,7 +110,7 @@ groups:
 
   - key: "train"
     title: "Train"
-    text: "For getting your people competent with these tools: what they do well, where they break, and how to check. Stands on its own, and ISO 42001 asks for evidence of it either way."
+    text: "Foundations, and where most of the value is unlocked. Getting your people competent with these tools: what they do well, where they break, and how to check. Stands on its own, and ISO 42001 asks for evidence of it either way."
     cards:
       - badge: "Teams"
         title: "Team Training Day"
@@ -162,7 +162,7 @@ groups:
 
   - key: "build"
     title: "Build"
-    text: "Automate a process, build a tool, ship a system. This track stands on its own, with no governance engagement needed first."
+    text: "Takeoff. Automate a process, build a tool, ship a system. This track stands on its own, with no governance engagement needed first."
     cards:
       - badge: "Prototype"
         title: "Prototyping"
@@ -196,7 +196,7 @@ groups:
 
   - key: "support"
     title: "Support"
-    text: "Keeps either track alive afterwards, and available on its own."
+    text: "Takeoff, continued. Keeps any track alive afterwards, and available on its own."
     cards:
       - badge: "Sustain"
         title: "Advisory Retainer"

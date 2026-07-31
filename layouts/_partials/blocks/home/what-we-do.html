@@ -4,7 +4,7 @@
       <h2 class="mb-8 text-center text-4xl xl:text-5xl font-bold">{{ . }}</h2>
     {{ end }}
     {{ with .text }}
-      <p class="text-lg mx-auto mb-12 text-center xl:max-w-3xl">{{ . | markdownify }}</p>
+      <p class="md-links text-lg mx-auto mb-12 text-center xl:max-w-3xl">{{ . | markdownify }}</p>
     {{ end }}
     <div class="max-w-3xl mx-auto divide-y divide-gray-100">
       {{ range $i, $item := .items }}
@@ -12,7 +12,7 @@
           <span class="text-4xl font-bold text-primary/20 shrink-0 w-10 text-right leading-tight">{{ add $i 1 }}</span>
           <div>
             <h3 class="text-lg font-bold mb-1">{{ $item.heading }}</h3>
-            <p class="text-gray-600 leading-relaxed">{{ $item.body | markdownify }}</p>
+            <p class="md-links text-gray-600 leading-relaxed">{{ $item.body | markdownify }}</p>
           </div>
         </div>
       {{ end }}

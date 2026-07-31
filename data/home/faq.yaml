@@ -8,9 +8,13 @@ items:
   - q: "What does 10 Kinds do?"
     pages: ["home", "about"]
     a: |
-      Two things, usually in this order. First we find where AI is being used in your organisation, put governance around it, and get you ready to answer the questions a customer, regulator or auditor will ask about it.
+      Three phases. **Discover**: we find where AI is already being used, including the tools nobody approved, and the manual work costing you most.
 
-      Then we build. Most organisations come to us with the governance question because that's what's in front of them, but the same work shows you exactly where AI would save real money, and we design, build and ship those systems ourselves.
+      **Foundations**: the rules get agreed and everyone gets trained, desk to board. This is the phase that changes how people work, and it's where most of the value is unlocked. The ISO/IEC 42001 evidence comes out of it.
+
+      **Takeoff**: we design, build and ship the systems that automate the slow work, then keep them running.
+
+      Most organisations arrive with the governance question because that's what's in front of them. You can start at any phase and stop after any of them.
 
   - q: "We were sent a customer due-diligence questionnaire about our AI. Can you help?"
     pages: ["home", "governance"]
@@ -61,15 +65,15 @@ items:
 
   - q: "Is this Copilot training, ChatGPT training, or something else?"
     pages: ["training"]
-    a: "Whatever your organisation actually runs. We cover the tools you've bought and the ones your staff found on their own, because both are in use. The habits that matter, knowing where a model is reliable and how to check it, carry across all of them and outlast whichever one you're on this year."
+    a: "Whatever your organisation runs. We cover the tools you've bought and the ones your staff found on their own, because both are in use. The habits that matter, knowing where a model is reliable and how to check it, carry across all of them and outlast whichever one you're on this year."
 
   - q: "Does training count towards ISO 42001?"
     pages: ["training", "governance"]
     a: "It contributes. ISO/IEC 42001 asks you to show the people working with AI are competent to do so, and to keep records proving it. Every day we run comes with attendance and coverage records written for that purpose. Training alone doesn't get you certified, and nothing we do makes the certification decision for you."
 
   - q: "Can you build things, or is it just advice?"
-    pages: ["home", "build"]
-    a: "Both, and the building is the point. We design, build and ship AI systems ourselves rather than handing you a specification and wishing you luck. Governance work is usually how organisations find us, but it's what it leads to that changes how the business runs."
+    pages: ["home", "build", "training"]
+    a: "Both, and the building is the point. We design, build and ship AI systems ourselves rather than handing you a specification and wishing you luck. Governance is usually how organisations find us. Training is what changes how people work. Building is what changes what the business can do."
 
   - q: "How do we get started?"
     pages: ["home", "governance", "build", "services", "about"]

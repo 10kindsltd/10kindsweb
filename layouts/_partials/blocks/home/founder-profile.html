@@ -14,7 +14,7 @@
               {{ range . }}
                 <li class="flex items-start gap-2 text-sm text-gray-600">
                   <span class="text-primary mt-0.5 shrink-0">{{ partial "icons/arrow-right" }}</span>
-                  <span class="[&_a]:underline [&_a]:font-semibold">{{ . | markdownify | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` | safeHTML }}</span>
+                  <span class="md-links">{{ . | markdownify | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` | safeHTML }}</span>
                 </li>
               {{ end }}
             </ul>
@@ -49,7 +49,7 @@
         {{ with $w.bio }}
           <div class="mb-8">
             {{ range (split . "\n") }}
-              {{ if . }}<p class="mb-4 [&_a]:underline [&_a]:font-semibold">{{ . | markdownify | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` | safeHTML }}</p>{{ end }}
+              {{ if . }}<p class="md-links mb-4">{{ . | markdownify | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` | safeHTML }}</p>{{ end }}
             {{ end }}
           </div>
         {{ end }}
@@ -59,10 +59,10 @@
           </blockquote>
         {{ end }}
         {{ with $w.summary }}
-          <p class="mb-4 [&_a]:underline [&_a]:font-semibold">{{ . | markdownify | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` | safeHTML }}</p>
+          <p class="md-links mb-4">{{ . | markdownify | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` | safeHTML }}</p>
         {{ end }}
         {{ with $w.footer }}
-          <p class="text-gray-500 [&_a]:underline [&_a]:font-semibold">{{ . | markdownify | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` | safeHTML }}</p>
+          <p class="md-links text-gray-500">{{ . | markdownify | replaceRE `<a ` `<a target="_blank" rel="noopener noreferrer" ` | safeHTML }}</p>
         {{ end }}
         {{ with site.Params.social.linkedin }}
           <div class="mt-8 text-center">

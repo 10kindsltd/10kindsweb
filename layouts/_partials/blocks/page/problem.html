@@ -8,7 +8,7 @@
       <h2 class="mx-auto mb-4 max-w-3xl text-center text-3xl font-bold xl:text-4xl">{{ . }}</h2>
     {{ end }}
     {{ with .text }}
-      <p class="mx-auto mb-10 max-w-3xl text-center text-lg text-gray-600">{{ . | markdownify }}</p>
+      <p class="md-links mx-auto mb-10 max-w-3xl text-center text-lg text-gray-600">{{ . | markdownify }}</p>
     {{ end }}
     {{ if not .text }}<div class="mb-10"></div>{{ end }}
     {{ with .cards }}
