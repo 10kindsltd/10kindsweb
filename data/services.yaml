@@ -82,7 +82,7 @@ groups:
         duration: "Typically 2 weeks"
         note: ""
         deliverables:
-          - "Your existing controls mapped against ISO/IEC 42001, clause by clause"
+          - "Your existing controls mapped against ISO/IEC 42001, control by control"
           - "A written gap list, ranked by what a customer or auditor asks about first"
           - "Your AI inventory tested against what the standard asks for, or a first one built if you haven't got one"
           - "The regulatory questions worth putting to a solicitor, and the ones already settled"
@@ -206,7 +206,6 @@ groups:
         duration: "Ongoing"
         deliverables:
           - "Monthly strategy session"
-          - "Internal audit and management review on an annual cycle"
           - "Surveillance audit preparation"
           - "Updates on relevant AI advances and opportunities"
           - "Advice on AI tooling and vendor sense-checking"

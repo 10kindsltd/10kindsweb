@@ -41,7 +41,7 @@ what_we_do:
       body: "Most organisations don't build AI, they buy it. You get a **third-party and vendor risk assessment** covering every AI-enabled tool you've bought, including the exposure that never shows up in your own audit."
 
     - heading: "Keep it running"
-      body: "A management system needs **internal audit, management review and fresh evidence every year**. You get all three on an annual cycle, plus surveillance audit prep, so the next visit isn't a scramble. We stay on as the retainer rather than handing over a folder that goes stale."
+      body: "A management system needs **internal audit, management review and fresh evidence every year**. The retainer covers surveillance audit preparation; running the internal audit and management review itself is scoped as separate work when you need it. We stay on as the retainer rather than handing over a folder that goes stale."
 
   takeaway_label: "What this gives you"
   takeaway:

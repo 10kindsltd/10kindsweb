@@ -85,7 +85,6 @@ process:
       pain: "Management systems rot. A year after the audit the register is stale, nobody's run a review, and the next surveillance visit becomes a scramble."
       body: "Management systems need an audit cycle and fresh evidence every year, and anything we build needs upkeep. We stay on as a monthly retainer rather than handing over a folder that goes stale."
       deliverables:
-        - "Internal audit and management review"
         - "Surveillance audit preparation"
         - "A standing monthly line to the people who built it"
 
