@@ -63,9 +63,12 @@
       {{ partial "icons/arrow-right" }}
     </button>
 
-    {{ with .disclaimer }}
-      <p class="text-center text-xs text-gray-400">{{ . }}
-        See our <a href="/legals/privacy-policy/" class="underline">Privacy Policy</a>.</p>
-    {{ end }}
+    {{/* Not wrapped in `with .disclaimer`: the privacy line must render on
+         every instance of this form, whether or not the page sets a disclaimer. */}}
+    <p class="text-center text-xs text-gray-400">
+      {{ with .disclaimer }}{{ . }} {{ end }}By submitting this form you agree to our
+      <a href="/legals/privacy-policy/" class="underline">Privacy Policy</a>
+      and to us using your details to send you the resource and follow up about it.
+    </p>
   </form>
 </div>
