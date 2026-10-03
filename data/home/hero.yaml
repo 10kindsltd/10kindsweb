@@ -23,3 +23,10 @@ buttons:
     link: "#gains"
 
 image: "images/hero.jpg"
+
+# Shown in place of the image when set. Files live in static/videos/.
+video:
+  src: "/videos/10kinds-explainer.mp4"
+  poster: "/videos/10kinds-explainer-poster.jpg"
+  duration: "0:58"
+  title: "How 10 Kinds helps your team use AI safely"

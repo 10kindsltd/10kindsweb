@@ -1,0 +1,12 @@
+{{/* Click-to-play video: poster frame, play button overlay and running time. Expects the hero's `video` dict (src, poster, duration, title). */}}
+<div class="relative aspect-video w-full overflow-hidden rounded-4xl bg-black shadow-xl" data-video>
+  <video class="block h-full w-full" src="{{ .src }}" poster="{{ .poster }}" preload="none" playsinline width="1920" height="1080">
+    <a href="{{ .src }}">{{ .title }}</a>
+  </video>
+  <button type="button" class="group absolute inset-0 flex cursor-pointer items-center justify-center bg-black/10" data-video-play aria-label="Play video: {{ .title }} ({{ .duration }})">
+    <span class="bg-primary flex h-20 w-20 items-center justify-center rounded-full text-white shadow-2xl ring-8 ring-white/40 duration-300 group-hover:scale-110 lg:h-24 lg:w-24">
+      <svg class="ml-1 h-9 w-9 lg:h-11 lg:w-11" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.5-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z"/></svg>
+    </span>
+    <span class="absolute top-4 left-4 rounded-full bg-black/70 px-3 py-1 text-sm font-semibold text-white">Watch · {{ .duration }}</span>
+  </button>
+</div>
