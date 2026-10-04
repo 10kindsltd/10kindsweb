@@ -9,7 +9,7 @@ build:
 
 # Deploy happens on push to master via .github/workflows/deploy.yml
 deploy:
-    git push github master
+    git push origin master
 
 media_tag := "media"
 repo := "10kindsltd/10kindsweb"
