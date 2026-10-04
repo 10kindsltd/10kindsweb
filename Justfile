@@ -1,5 +1,3 @@
-iam_profile := "10kindsiamcli"
-
 # Run the dev server
 runserver:
     hugo server -D
@@ -9,18 +7,20 @@ build:
     -rm -rf public/
     hugo
 
-# Build and publish the site to S3
-publish:
-    hugo --minify --cleanDestinationDir
-    aws --profile={{ iam_profile }} s3 sync public/ s3://www.10kinds.co.uk --delete
+# Deploy happens on push to master via .github/workflows/deploy.yml
+deploy:
+    git push github master
 
-# Invalidate the CloudFront distro (need to run this after publishing)
-invalidate-cache:
-    aws --no-cli-pager --profile={{ iam_profile }} cloudfront create-invalidation \
-        --distribution-id $(aws --profile={{ iam_profile }} cloudfront list-distributions \
-            --query "DistributionList.Items[?Aliases.Items[?@=='www.10kinds.co.uk']].Id" \
-            --output text) \
-        --paths "/*"
+media_tag := "media"
+repo := "10kindsltd/10kindsweb"
 
-# Republish the site and invalidate the Cloudfront cache
-deploy: publish invalidate-cache
+# Upload the videos in static/videos to the media release, then redeploy the site (requires 'gh auth login')
+upload-media:
+    gh release view {{media_tag}} -R {{repo}} >/dev/null 2>&1 || gh release create {{media_tag}} -R {{repo}} --target master --title "Site media" --notes "Files for static/videos. Managed by 'just upload-media', pulled in by the Pages build." --prerelease --latest=false
+    gh release upload {{media_tag}} static/videos/*.mp4 -R {{repo}} --clobber
+    gh workflow run deploy.yml -R {{repo}} --ref master
+
+# Download site media from the media release into static/videos
+fetch-media:
+    mkdir -p static/videos
+    gh release download {{media_tag}} -R {{repo}} -D static/videos --clobber
