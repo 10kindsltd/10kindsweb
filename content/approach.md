@@ -63,7 +63,7 @@ process:
       pain: "A signed policy has never answered a questionnaire. They don't ask what your rules say. They ask you to show the rules are followed."
       body: "This is what you put in front of an outsider, and it's the stage that unsticks deals. A fixed-fee gap assessment maps your controls against ISO/IEC 42001 and tells you how far off you are. Then we close the gaps and build the evidence trail, quoted against what the assessment found. **If a questionnaire is what brought you here, start at this stage and we'll work backwards.**"
       deliverables:
-        - "Controls mapped to ISO/IEC 42001, with a costed remediation plan"
+        - "Controls mapped to ISO/IEC 42001"
         - "AI inventory, risk process and oversight controls, built and populated"
         - "Certification-ready documentation"
 

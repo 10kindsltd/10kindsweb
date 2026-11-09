@@ -77,7 +77,7 @@ groups:
       - badge: "Assess"
         title: "Gap Assessment"
         question: "How far off are we from proving it?"
-        explanation: "Where your controls stand against ISO/IEC 42001, clause by clause, and what it would cost to close the distance. Rules on paper are one thing; this tests whether you could evidence them to an auditor."
+        explanation: "Where your controls stand against ISO/IEC 42001, clause by clause. Rules on paper are one thing; this tests whether you could evidence them to an auditor."
         price: "From £4,500"
         duration: "Typically 2 weeks"
         note: ""
@@ -86,7 +86,6 @@ groups:
           - "A written gap list, ranked by what a customer or auditor asks about first"
           - "Your AI inventory tested against what the standard asks for, or a first one built if you haven't got one"
           - "The regulatory questions worth putting to a solicitor, and the ones already settled"
-          - "A remediation plan with the work costed, so the next decision is yours"
         button:
           label: "Discuss an assessment"
           link: ":calendly"
@@ -95,7 +94,7 @@ groups:
         title: "Compliance Readiness"
         question: "How do we close the gaps?"
         explanation: "The remediation itself, scoped against the gaps we found rather than guessed at before we started."
-        price: "Quoted from your gap assessment"
+        price: "Project-scoped"
         duration: "A few weeks"
         deliverables:
           - "The inventory turned into a live register, with an owner and a review cycle"
